@@ -35,4 +35,4 @@ HOW TO USE
   + Deobfuscated apk will created named as [Trolly_cf_deobfuscated_align.apk]
 + Our tool is effectively deobfuscate Android application as below : 
   + Our tool can decay dexguard's Control Flow obfuscation option which no other tools have done it!!!
-![obfuscation](/images/effect.png]
+![obfuscation](/images/effect.png)
