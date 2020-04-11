@@ -1,0 +1,5 @@
+android/lib/libartd.so filter=lfs diff=lfs merge=lfs -text
+tools/redex-all filter=lfs diff=lfs merge=lfs -text
+android/lib/libart-compiler.so filter=lfs diff=lfs merge=lfs -text
+android/lib/libart.so filter=lfs diff=lfs merge=lfs -text
+android/lib/libartd-compiler.so filter=lfs diff=lfs merge=lfs -text

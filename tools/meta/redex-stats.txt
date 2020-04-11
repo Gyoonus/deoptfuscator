@@ -1,0 +1,933 @@
+{
+	"input_stats" : 
+	{
+		"dexes_stats" : 
+		[
+			{
+				"annotation_bytes" : 0,
+				"annotation_count" : 0,
+				"annotation_set_bytes" : 1032,
+				"annotation_set_count" : 86,
+				"annotation_set_ref_list_bytes" : 0,
+				"annotation_set_ref_list_count" : 0,
+				"annotations_directory_bytes" : 0,
+				"annotations_directory_count" : 1425,
+				"call_site_id_bytes" : 0,
+				"call_site_id_count" : 0,
+				"class_data_bytes" : 4302,
+				"class_data_count" : 95,
+				"class_def_bytes" : 3072,
+				"class_def_count" : 96,
+				"code_bytes" : 0,
+				"code_count" : 437,
+				"dbg_total_size" : 9015,
+				"debug_info_bytes" : 0,
+				"debug_info_count" : 0,
+				"encoded_array_bytes" : 0,
+				"encoded_array_count" : 0,
+				"field_id_bytes" : 4032,
+				"field_id_count" : 504,
+				"field_refs_total_size" : 0,
+				"map_list_bytes" : 196,
+				"map_list_count" : 1,
+				"method_handle_bytes" : 0,
+				"method_handle_count" : 0,
+				"method_id_bytes" : 7048,
+				"method_id_count" : 881,
+				"method_refs_total_size" : 0,
+				"num_annotations" : 106,
+				"num_bytes" : 153884,
+				"num_classes" : 96,
+				"num_dbg_items" : 375,
+				"num_field_refs" : 504,
+				"num_fields" : 460,
+				"num_instructions" : 20378,
+				"num_method_refs" : 881,
+				"num_methods" : 464,
+				"num_protos" : 348,
+				"num_static_values" : 0,
+				"num_strings" : 987,
+				"num_type_lists" : 202,
+				"num_types" : 306,
+				"num_unique_field_refs" : 0,
+				"num_unique_method_refs" : 0,
+				"num_unique_protos" : 0,
+				"num_unique_strings" : 0,
+				"num_unique_types" : 0,
+				"proto_id_bytes" : 4176,
+				"proto_id_count" : 348,
+				"protos_total_size" : 0,
+				"string_data_bytes" : 18409,
+				"string_data_count" : 987,
+				"string_id_bytes" : 3948,
+				"string_id_count" : 987,
+				"strings_total_size" : 18409,
+				"type_id_bytes" : 1224,
+				"type_id_count" : 306,
+				"type_list_bytes" : 1206,
+				"type_list_count" : 201,
+				"types_total_size" : 0
+			}
+		],
+		"total_stats" : 
+		{
+			"annotation_bytes" : 0,
+			"annotation_count" : 0,
+			"annotation_set_bytes" : 1032,
+			"annotation_set_count" : 86,
+			"annotation_set_ref_list_bytes" : 0,
+			"annotation_set_ref_list_count" : 0,
+			"annotations_directory_bytes" : 0,
+			"annotations_directory_count" : 1425,
+			"call_site_id_bytes" : 0,
+			"call_site_id_count" : 0,
+			"class_data_bytes" : 4302,
+			"class_data_count" : 95,
+			"class_def_bytes" : 3072,
+			"class_def_count" : 96,
+			"code_bytes" : 0,
+			"code_count" : 437,
+			"dbg_total_size" : 9015,
+			"debug_info_bytes" : 0,
+			"debug_info_count" : 0,
+			"encoded_array_bytes" : 0,
+			"encoded_array_count" : 0,
+			"field_id_bytes" : 4032,
+			"field_id_count" : 504,
+			"field_refs_total_size" : 0,
+			"map_list_bytes" : 196,
+			"map_list_count" : 1,
+			"method_handle_bytes" : 0,
+			"method_handle_count" : 0,
+			"method_id_bytes" : 7048,
+			"method_id_count" : 881,
+			"method_refs_total_size" : 0,
+			"num_annotations" : 106,
+			"num_bytes" : 153884,
+			"num_classes" : 96,
+			"num_dbg_items" : 375,
+			"num_field_refs" : 504,
+			"num_fields" : 460,
+			"num_instructions" : 20378,
+			"num_method_refs" : 881,
+			"num_methods" : 464,
+			"num_protos" : 348,
+			"num_static_values" : 0,
+			"num_strings" : 987,
+			"num_type_lists" : 202,
+			"num_types" : 306,
+			"num_unique_field_refs" : 0,
+			"num_unique_method_refs" : 0,
+			"num_unique_protos" : 0,
+			"num_unique_strings" : 0,
+			"num_unique_types" : 0,
+			"proto_id_bytes" : 4176,
+			"proto_id_count" : 348,
+			"protos_total_size" : 0,
+			"string_data_bytes" : 18409,
+			"string_data_count" : 987,
+			"string_id_bytes" : 3948,
+			"string_id_count" : 987,
+			"strings_total_size" : 18409,
+			"type_id_bytes" : 1224,
+			"type_id_count" : 306,
+			"type_list_bytes" : 1206,
+			"type_list_count" : 201,
+			"types_total_size" : 0
+		}
+	},
+	"output_stats" : 
+	{
+		"dexes_stats" : 
+		[
+			{
+				"annotation_bytes" : 1013,
+				"annotation_count" : 105,
+				"annotation_set_bytes" : 848,
+				"annotation_set_count" : 84,
+				"annotation_set_ref_list_bytes" : 0,
+				"annotation_set_ref_list_count" : 0,
+				"annotations_directory_bytes" : 1336,
+				"annotations_directory_count" : 55,
+				"call_site_id_bytes" : 0,
+				"call_site_id_count" : 0,
+				"class_data_bytes" : 0,
+				"class_data_count" : 4309,
+				"class_def_bytes" : 2880,
+				"class_def_count" : 90,
+				"code_bytes" : 63676,
+				"code_count" : 437,
+				"dbg_total_size" : 9665,
+				"debug_info_bytes" : 9665,
+				"debug_info_count" : 378,
+				"encoded_array_bytes" : 0,
+				"encoded_array_count" : 0,
+				"field_id_bytes" : 4032,
+				"field_id_count" : 504,
+				"field_refs_total_size" : 504,
+				"map_list_bytes" : 184,
+				"map_list_count" : 1,
+				"method_handle_bytes" : 0,
+				"method_handle_count" : 0,
+				"method_id_bytes" : 6936,
+				"method_id_count" : 867,
+				"method_refs_total_size" : 867,
+				"num_annotations" : 105,
+				"num_bytes" : 124428,
+				"num_classes" : 90,
+				"num_dbg_items" : 378,
+				"num_field_refs" : 504,
+				"num_fields" : 460,
+				"num_instructions" : 13421,
+				"num_method_refs" : 867,
+				"num_methods" : 451,
+				"num_protos" : 348,
+				"num_static_values" : 0,
+				"num_strings" : 982,
+				"num_type_lists" : 195,
+				"num_types" : 302,
+				"num_unique_field_refs" : 504,
+				"num_unique_method_refs" : 867,
+				"num_unique_protos" : 348,
+				"num_unique_strings" : 982,
+				"num_unique_types" : 302,
+				"proto_id_bytes" : 4176,
+				"proto_id_count" : 348,
+				"protos_total_size" : 348,
+				"string_data_bytes" : 18325,
+				"string_data_count" : 982,
+				"string_id_bytes" : 3928,
+				"string_id_count" : 982,
+				"strings_total_size" : 982,
+				"type_id_bytes" : 1208,
+				"type_id_count" : 302,
+				"type_list_bytes" : 1870,
+				"type_list_count" : 195,
+				"types_total_size" : 302
+			}
+		],
+		"lowering_stats" : 
+		{
+			"num_2addr_instructions" : 39,
+			"num_move_added_for_check_cast" : 0
+		},
+		"pass_hashes" : 
+		{
+			"(initial)-code" : "4e1ddd8f7f1a7574",
+			"(initial)-registers" : "cb4e3e088673e3f6",
+			"(initial)-signature" : "d72c6b4974216119",
+			"BridgePass#1-code" : "92cac9ce698c1402",
+			"BridgePass#1-registers" : "cb4e3e088673e3f6",
+			"BridgePass#1-signature" : "d72c6b4974216119",
+			"CommonSubexpressionEliminationPass#1-code" : "639b16e85650d5fe",
+			"CommonSubexpressionEliminationPass#1-registers" : "5a2174dcb84c527a",
+			"CommonSubexpressionEliminationPass#1-signature" : "d72c6b4974216119",
+			"CommonSubexpressionEliminationPass#2-code" : "0a424c4d99f94ea2",
+			"CommonSubexpressionEliminationPass#2-registers" : "c9841682a2e7901b",
+			"CommonSubexpressionEliminationPass#2-signature" : "6c4bebe75f07094b",
+			"ConstantPropagationPass#1-code" : "1fd3adc81e044398",
+			"ConstantPropagationPass#1-registers" : "38b1781c0132d6ed",
+			"ConstantPropagationPass#1-signature" : "d72c6b4974216119",
+			"CopyPropagationPass#1-code" : "499ba51826afff6e",
+			"CopyPropagationPass#1-registers" : "cbc32ddbaa6dcd34",
+			"CopyPropagationPass#1-signature" : "6c4bebe75f07094b",
+			"DedupBlocksPass#1-code" : "e4baab6f4656c0ad",
+			"DedupBlocksPass#1-registers" : "ac8f9ae2e2c6fc3c",
+			"DedupBlocksPass#1-signature" : "d72c6b4974216119",
+			"DelSuperPass#1-code" : "bee9a0cb5e1b2130",
+			"DelSuperPass#1-registers" : "9a46483e575e7959",
+			"DelSuperPass#1-signature" : "d72c6b4974216119",
+			"FinalInlinePassV2#1-code" : "bee9a0cb5e1b2130",
+			"FinalInlinePassV2#1-registers" : "9a46483e575e7959",
+			"FinalInlinePassV2#1-signature" : "d72c6b4974216119",
+			"LocalDcePass#1-code" : "1fd3adc81e044398",
+			"LocalDcePass#1-registers" : "38b1781c0132d6ed",
+			"LocalDcePass#1-signature" : "d72c6b4974216119",
+			"LocalDcePass#2-code" : "499ba51826afff6e",
+			"LocalDcePass#2-registers" : "cbc32ddbaa6dcd34",
+			"LocalDcePass#2-signature" : "6c4bebe75f07094b",
+			"MethodInlinePass#1-code" : "639b16e85650d5fe",
+			"MethodInlinePass#1-registers" : "5a2174dcb84c527a",
+			"MethodInlinePass#1-signature" : "d72c6b4974216119",
+			"PeepholePass#1-code" : "09152bbb1295a624",
+			"PeepholePass#1-registers" : "b504e0fda8344094",
+			"PeepholePass#1-signature" : "d72c6b4974216119",
+			"ReBindRefsPass#1-code" : "92cac9ce698c1402",
+			"ReBindRefsPass#1-registers" : "cb4e3e088673e3f6",
+			"ReBindRefsPass#1-signature" : "d72c6b4974216119",
+			"ReduceGotosPass#1-code" : "dab3201403adbb25",
+			"ReduceGotosPass#1-registers" : "a91d861183719d13",
+			"ReduceGotosPass#1-signature" : "6c4bebe75f07094b",
+			"RegAllocPass#1-code" : "7a5f5fd9a8f1c82e",
+			"RegAllocPass#1-registers" : "299b0411f21549f3",
+			"RegAllocPass#1-signature" : "6c4bebe75f07094b",
+			"RemoveEmptyClassesPass#1-code" : "4c77c813a569556a",
+			"RemoveEmptyClassesPass#1-registers" : "22bf9ac87d526e84",
+			"RemoveEmptyClassesPass#1-signature" : "6c4bebe75f07094b",
+			"RemoveGotosPass#1-code" : "e8814d3a6bf60de3",
+			"RemoveGotosPass#1-registers" : "c463e528fc784cd6",
+			"RemoveGotosPass#1-signature" : "d72c6b4974216119",
+			"RemoveUnreachablePass#1-code" : "1fd3adc81e044398",
+			"RemoveUnreachablePass#1-registers" : "38b1781c0132d6ed",
+			"RemoveUnreachablePass#1-signature" : "d72c6b4974216119",
+			"ReorderInterfacesPass#1-code" : "4c77c813a569556a",
+			"ReorderInterfacesPass#1-registers" : "22bf9ac87d526e84",
+			"ReorderInterfacesPass#1-signature" : "6c4bebe75f07094b",
+			"ResultPropagationPass#1-code" : "bee9a0cb5e1b2130",
+			"ResultPropagationPass#1-registers" : "9a46483e575e7959",
+			"ResultPropagationPass#1-signature" : "d72c6b4974216119",
+			"ShortenSrcStringsPass#1-code" : "4c77c813a569556a",
+			"ShortenSrcStringsPass#1-registers" : "22bf9ac87d526e84",
+			"ShortenSrcStringsPass#1-signature" : "6c4bebe75f07094b",
+			"SingleImplPass#1-code" : "4c77c813a569556a",
+			"SingleImplPass#1-registers" : "22bf9ac87d526e84",
+			"SingleImplPass#1-signature" : "58209f476d541360",
+			"UpCodeMotionPass#1-code" : "dbae46242f60a937",
+			"UpCodeMotionPass#1-registers" : "c9483f79269e82c4",
+			"UpCodeMotionPass#1-signature" : "d72c6b4974216119"
+		},
+		"pass_stats" : 
+		{
+			"BridgePass#1" : 
+			{
+				"pass_order" : 1,
+				"~result~code~hash~" : 1770787842,
+				"~result~registers~hash~" : -2039225354,
+				"~result~signature~hash~" : 1948344601
+			},
+			"CommonSubexpressionEliminationPass#1" : 
+			{
+				"instr_ADD_INT_LIT8" : 1,
+				"instr_AGET_OBJECT" : 1,
+				"instr_ARRAY_LENGTH" : 1,
+				"instr_CONST_STRING" : 21,
+				"instr_IGET" : 20,
+				"instr_IGET_OBJECT" : 45,
+				"instr_INVOKE_STATIC" : 1,
+				"instr_SGET" : 44,
+				"instr_SGET_OBJECT" : 11,
+				"max_value_ids" : 199,
+				"methods_using_other_tracked_location_bit" : 0,
+				"num_array_lengths_captured" : 0,
+				"num_eliminated_instructions" : 145,
+				"num_inlined_barriers_into_methods" : 45,
+				"num_inlined_barriers_iterations" : 2,
+				"num_results_captured" : 76,
+				"num_stores_captured" : 39,
+				"pass_order" : 5,
+				"~result~code~hash~" : 1448138238,
+				"~result~registers~hash~" : -1202957702,
+				"~result~signature~hash~" : 1948344601
+			},
+			"CommonSubexpressionEliminationPass#2" : 
+			{
+				"instr_CONST_STRING" : 7,
+				"max_value_ids" : 195,
+				"methods_using_other_tracked_location_bit" : 0,
+				"num_array_lengths_captured" : 0,
+				"num_eliminated_instructions" : 7,
+				"num_inlined_barriers_into_methods" : 45,
+				"num_inlined_barriers_iterations" : 2,
+				"num_results_captured" : 4,
+				"num_stores_captured" : 0,
+				"pass_order" : 18,
+				"~result~code~hash~" : -1711714654,
+				"~result~registers~hash~" : -1561882597,
+				"~result~signature~hash~" : 1594296651
+			},
+			"ConstantPropagationPass#1" : 
+			{
+				"num_branch_propagated" : 14,
+				"num_materialized_consts" : 18,
+				"pass_order" : 8,
+				"~result~code~hash~" : 503595928,
+				"~result~registers~hash~" : 20109037,
+				"~result~signature~hash~" : 1948344601
+			},
+			"CopyPropagationPass#1" : 
+			{
+				"methods_skipped_due_to_too_many_registers" : 0,
+				"pass_order" : 20,
+				"redundant_moves_eliminated" : 45,
+				"source_regs_replaced_with_representative" : 79,
+				"~result~code~hash~" : 649068398,
+				"~result~registers~hash~" : -1435644620,
+				"~result~signature~hash~" : 1594296651
+			},
+			"DedupBlocksPass#1" : 
+			{
+				"blocks_removed" : 192,
+				"blocks_split" : 18,
+				"eligible_blocks" : 8332,
+				"pass_order" : 12,
+				"~result~code~hash~" : 1180090541,
+				"~result~registers~hash~" : -490275780,
+				"~result~signature~hash~" : 1948344601
+			},
+			"DelSuperPass#1" : 
+			{
+				"num_class_relaxed_visibility" : 0,
+				"num_methods_relaxed_visibility" : 0,
+				"num_removed_trivial_methods" : 0,
+				"num_total_methods" : 464,
+				"num_trivial_method_candidates" : 0,
+				"pass_order" : 4,
+				"~result~code~hash~" : 1578836272,
+				"~result~registers~hash~" : 1465809241,
+				"~result~signature~hash~" : 1948344601
+			},
+			"FinalInlinePassV2#1" : 
+			{
+				"pass_order" : 3,
+				"~result~code~hash~" : 1578836272,
+				"~result~registers~hash~" : 1465809241,
+				"~result~signature~hash~" : 1948344601
+			},
+			"LocalDcePass#1" : 
+			{
+				"pass_order" : 9,
+				"~result~code~hash~" : 503595928,
+				"~result~registers~hash~" : 20109037,
+				"~result~signature~hash~" : 1948344601
+			},
+			"LocalDcePass#2" : 
+			{
+				"pass_order" : 21,
+				"~result~code~hash~" : 649068398,
+				"~result~registers~hash~" : -1435644620,
+				"~result~signature~hash~" : 1594296651
+			},
+			"MethodInlinePass#1" : 
+			{
+				"pass_order" : 6,
+				"~result~code~hash~" : 1448138238,
+				"~result~registers~hash~" : -1202957702,
+				"~result~signature~hash~" : 1948344601
+			},
+			"PeepholePass#1" : 
+			{
+				"Arith_AddLit_0" : 0,
+				"Arith_DivLit_Neg1" : 0,
+				"Arith_DivLit_Pos1" : 0,
+				"Arith_DivLit_Power2" : 4,
+				"Arith_MulLit_Neg1" : 0,
+				"Arith_MulLit_Pos1" : 1,
+				"Arith_MulLit_Power2" : 0,
+				"Coalesce_AppendString_AppendBoolean" : 0,
+				"Coalesce_AppendString_AppendBoolean_WithoutMoveResult" : 0,
+				"Coalesce_AppendString_AppendChar" : 0,
+				"Coalesce_AppendString_AppendChar_WithoutMoveResult" : 0,
+				"Coalesce_AppendString_AppendInt" : 0,
+				"Coalesce_AppendString_AppendInt_WithoutMoveResult" : 0,
+				"Coalesce_AppendString_AppendLongInt" : 0,
+				"Coalesce_AppendString_AppendLongInt_WithoutMoveResult" : 0,
+				"Coalesce_AppendString_AppendString" : 0,
+				"Coalesce_AppendString_AppendString_WithoutMoveResult" : 0,
+				"Coalesce_InitVoid_AppendString" : 0,
+				"Coalesce_InitVoid_AppendString_WithoutMoveResult" : 0,
+				"Coalesce_Init_AppendChar" : 0,
+				"Coalesce_Init_AppendChar_WithoutMoveResult" : 0,
+				"CompileTime_StringCompare" : 0,
+				"CompileTime_StringHashCode" : 0,
+				"CompileTime_StringLength" : 0,
+				"Remove_AppendEmptyString" : 0,
+				"Remove_AppendEmptyString_WithoutMoveResult" : 0,
+				"Remove_LangClass_GetSimpleName" : 0,
+				"Remove_Redundant_Move" : 1,
+				"Replace_AputAget" : 0,
+				"Replace_AputAgetBoolean" : 0,
+				"Replace_AputAgetByte" : 0,
+				"Replace_AputAgetChar" : 0,
+				"Replace_AputAgetObject" : 0,
+				"Replace_AputAgetShort" : 0,
+				"Replace_AputAgetWide" : 0,
+				"Replace_PutGetBooleanDiffSrcDest" : 0,
+				"Replace_PutGetByteDiffSrcDest" : 0,
+				"Replace_PutGetCharDiffSrcDest" : 0,
+				"Replace_PutGetDiffSrcDest" : 0,
+				"Replace_PutGetObjectDiffSrcDest" : 0,
+				"Replace_PutGetShortDiffSrcDest" : 0,
+				"Replace_PutGetWideDiffSrcDest" : 0,
+				"Replace_StaticPutGet" : 0,
+				"Replace_StaticPutGetBoolean" : 0,
+				"Replace_StaticPutGetBooleanDiffSrcDest" : 0,
+				"Replace_StaticPutGetByte" : 0,
+				"Replace_StaticPutGetByteDiffSrcDest" : 0,
+				"Replace_StaticPutGetChar" : 0,
+				"Replace_StaticPutGetCharDiffSrcDest" : 0,
+				"Replace_StaticPutGetDiffSrcDest" : 0,
+				"Replace_StaticPutGetObject" : 0,
+				"Replace_StaticPutGetObjectDiffSrcDest" : 0,
+				"Replace_StaticPutGetShort" : 0,
+				"Replace_StaticPutGetShortDiffSrcDest" : 0,
+				"Replace_StaticPutGetWide" : 0,
+				"Replace_StaticPutGetWideDiffSrcDest" : 0,
+				"Replace_ValueOfBoolean" : 0,
+				"Replace_ValueOfChar" : 0,
+				"Replace_ValueOfDouble" : 0,
+				"Replace_ValueOfFloat" : 0,
+				"Replace_ValueOfInt" : 0,
+				"Replace_ValueOfLongInt" : 0,
+				"pass_order" : 7,
+				"redundant_check_casts_removed" : 2,
+				"~result~code~hash~" : 311797284,
+				"~result~registers~hash~" : -1472970604,
+				"~result~signature~hash~" : 1948344601
+			},
+			"ReBindRefsPass#1" : 
+			{
+				"method_refs_candidates" : 4,
+				"method_refs_rebound" : 1,
+				"pass_order" : 0,
+				"~result~code~hash~" : 1770787842,
+				"~result~registers~hash~" : -2039225354,
+				"~result~signature~hash~" : 1948344601
+			},
+			"ReduceGotosPass#1" : 
+			{
+				"num_gotos_replaced_with_returns" : 51,
+				"num_inverted_conditional_branches" : 64,
+				"num_reduced_switches" : 386,
+				"num_remaining_range_switch_cases" : 0,
+				"num_remaining_range_switches" : 0,
+				"num_remaining_trivial_switches" : 0,
+				"num_remaining_two_case_switches" : 0,
+				"num_removed_switch_cases" : 141,
+				"num_removed_switches" : 27,
+				"num_replaced_trivial_switches" : 385,
+				"num_trailing_moves_removed" : 1,
+				"pass_order" : 22,
+				"~result~code~hash~" : 61717285,
+				"~result~registers~hash~" : -2089706221,
+				"~result~signature~hash~" : 1594296651
+			},
+			"RegAllocPass#1" : 
+			{
+				"coalesce_count" : 669,
+				"net_moves" : -635,
+				"param spilled too early" : 1,
+				"pass_order" : 19,
+				"reiteration_count" : 16,
+				"spill_count" : 34,
+				"~result~code~hash~" : -1460549586,
+				"~result~registers~hash~" : -233485837,
+				"~result~signature~hash~" : 1594296651
+			},
+			"RemoveEmptyClassesPass#1" : 
+			{
+				"pass_order" : 16,
+				"~result~code~hash~" : -1519823510,
+				"~result~registers~hash~" : 2102554244,
+				"~result~signature~hash~" : 1594296651
+			},
+			"RemoveGotosPass#1" : 
+			{
+				"num_goto_removed" : 92,
+				"pass_order" : 11,
+				"~result~code~hash~" : 1811287523,
+				"~result~registers~hash~" : -59224874,
+				"~result~signature~hash~" : 1948344601
+			},
+			"RemoveUnreachablePass#1" : 
+			{
+				"pass_order" : 10,
+				"~result~code~hash~" : 503595928,
+				"~result~registers~hash~" : 20109037,
+				"~result~signature~hash~" : 1948344601
+			},
+			"ReorderInterfacesPass#1" : 
+			{
+				"pass_order" : 15,
+				"~result~code~hash~" : -1519823510,
+				"~result~registers~hash~" : 2102554244,
+				"~result~signature~hash~" : 1594296651
+			},
+			"ResultPropagationPass#1" : 
+			{
+				"num_erased_move_results" : 98,
+				"num_methods_which_return_parameters" : 3,
+				"num_methods_which_return_parameters_iterations" : 2,
+				"num_patched_move_results" : 4,
+				"num_unverifiable_move_results" : 0,
+				"pass_order" : 2,
+				"~result~code~hash~" : 1578836272,
+				"~result~registers~hash~" : 1465809241,
+				"~result~signature~hash~" : 1948344601
+			},
+			"ShortenSrcStringsPass#1" : 
+			{
+				"num_shortened_strings" : 1,
+				"num_shortening_bytes_saved" : 0,
+				"pass_order" : 17,
+				"~result~code~hash~" : -1519823510,
+				"~result~registers~hash~" : 2102554244,
+				"~result~signature~hash~" : 1594296651
+			},
+			"SingleImplPass#1" : 
+			{
+				"num_invoke_intf_to_virt" : 46,
+				"num_removed_interfaces" : 6,
+				"pass_order" : 14,
+				"~result~code~hash~" : -1519823510,
+				"~result~registers~hash~" : 2102554244,
+				"~result~signature~hash~" : 1834226528
+			},
+			"UpCodeMotionPass#1" : 
+			{
+				"num_branches_moved_over" : 419,
+				"num_clobbered_registers" : 354,
+				"num_instructions_moved" : 419,
+				"num_inverted_conditional_branches" : 1,
+				"pass_order" : 13,
+				"~result~code~hash~" : 794863927,
+				"~result~registers~hash~" : 647922372,
+				"~result~signature~hash~" : 1948344601
+			}
+		},
+		"time_stats" : 
+		[
+			{
+				"Load classes from dexes" : 0
+			},
+			{
+				"Deobfuscating dex elements" : 0
+			},
+			{
+				"Process keep for whyareyoukeeping" : 0
+			},
+			{
+				"Process keep for classes and members" : 0
+			},
+			{
+				"Process keep for assumenosideeffects" : 0
+			},
+			{
+				"Processing proguard rules" : 0
+			},
+			{
+				"No Optimizations Rules" : 0
+			},
+			{
+				"Initializing reachable classes" : 0
+			},
+			{
+				"Redex_frontend" : 0
+			},
+			{
+				"API Level Checker" : 0
+			},
+			{
+				"ReBindRefsPass (eval)" : 0
+			},
+			{
+				"BridgePass (eval)" : 0
+			},
+			{
+				"ResultPropagationPass (eval)" : 0
+			},
+			{
+				"FinalInlinePassV2 (eval)" : 0
+			},
+			{
+				"DelSuperPass (eval)" : 0
+			},
+			{
+				"CommonSubexpressionEliminationPass (eval)" : 0
+			},
+			{
+				"MethodInlinePass (eval)" : 0
+			},
+			{
+				"PeepholePass (eval)" : 0
+			},
+			{
+				"ConstantPropagationPass (eval)" : 0
+			},
+			{
+				"LocalDcePass (eval)" : 0
+			},
+			{
+				"RemoveUnreachablePass (eval)" : 0
+			},
+			{
+				"RemoveGotosPass (eval)" : 0
+			},
+			{
+				"DedupBlocksPass (eval)" : 0
+			},
+			{
+				"UpCodeMotionPass (eval)" : 0
+			},
+			{
+				"SingleImplPass (eval)" : 0
+			},
+			{
+				"ReorderInterfacesPass (eval)" : 0
+			},
+			{
+				"RemoveEmptyClassesPass (eval)" : 0
+			},
+			{
+				"ShortenSrcStringsPass (eval)" : 0
+			},
+			{
+				"CommonSubexpressionEliminationPass (eval)" : 0
+			},
+			{
+				"RegAllocPass (eval)" : 0
+			},
+			{
+				"CopyPropagationPass (eval)" : 0
+			},
+			{
+				"LocalDcePass (eval)" : 0
+			},
+			{
+				"ReduceGotosPass (eval)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"ReBindRefsPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"BridgePass (run)" : 0
+			},
+			{
+				"Building method override graph" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"ResultPropagationPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"FinalInlinePassV2 (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"DelSuperPass (run)" : 0
+			},
+			{
+				"Building method override graph" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"CommonSubexpressionEliminationPass (run)" : 0.10000000000000001
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"MethodInlinePass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"PeepholePass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"ConstantPropagationPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"LocalDcePass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"RemoveUnreachablePass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"RemoveGotosPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"DedupBlocksPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"UpCodeMotionPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"SingleImplPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"ReorderInterfacesPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"RemoveEmptyClassesPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"ShortenSrcStringsPass (run)" : 0
+			},
+			{
+				"Building method override graph" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"CommonSubexpressionEliminationPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"RegAllocPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"CopyPropagationPass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"LocalDcePass (run)" : 0
+			},
+			{
+				"Hasher" : 0
+			},
+			{
+				"ReduceGotosPass (run)" : 0
+			},
+			{
+				"IRTypeChecker" : 0
+			},
+			{
+				"Running optimization passes" : 0.40000000000000002
+			},
+			{
+				"Instruction lowering" : 0
+			},
+			{
+				"Writing optimized dexes" : 0
+			},
+			{
+				"Writing opt decisions data" : 0
+			},
+			{
+				"Writing stats" : 0
+			},
+			{
+				"Redex_backend" : 0
+			},
+			{
+				"Freeing global memory" : 0
+			},
+			{
+				"redex-all main()" : 0.5
+			}
+		],
+		"total_stats" : 
+		{
+			"annotation_bytes" : 1013,
+			"annotation_count" : 105,
+			"annotation_set_bytes" : 848,
+			"annotation_set_count" : 84,
+			"annotation_set_ref_list_bytes" : 0,
+			"annotation_set_ref_list_count" : 0,
+			"annotations_directory_bytes" : 1336,
+			"annotations_directory_count" : 55,
+			"call_site_id_bytes" : 0,
+			"call_site_id_count" : 0,
+			"class_data_bytes" : 0,
+			"class_data_count" : 4309,
+			"class_def_bytes" : 2880,
+			"class_def_count" : 90,
+			"code_bytes" : 63676,
+			"code_count" : 437,
+			"dbg_total_size" : 9665,
+			"debug_info_bytes" : 9665,
+			"debug_info_count" : 378,
+			"encoded_array_bytes" : 0,
+			"encoded_array_count" : 0,
+			"field_id_bytes" : 4032,
+			"field_id_count" : 504,
+			"field_refs_total_size" : 504,
+			"map_list_bytes" : 184,
+			"map_list_count" : 1,
+			"method_handle_bytes" : 0,
+			"method_handle_count" : 0,
+			"method_id_bytes" : 6936,
+			"method_id_count" : 867,
+			"method_refs_total_size" : 867,
+			"num_annotations" : 105,
+			"num_bytes" : 124428,
+			"num_classes" : 90,
+			"num_dbg_items" : 378,
+			"num_field_refs" : 504,
+			"num_fields" : 460,
+			"num_instructions" : 13421,
+			"num_method_refs" : 867,
+			"num_methods" : 451,
+			"num_protos" : 348,
+			"num_static_values" : 0,
+			"num_strings" : 982,
+			"num_type_lists" : 195,
+			"num_types" : 302,
+			"num_unique_field_refs" : 504,
+			"num_unique_method_refs" : 867,
+			"num_unique_protos" : 348,
+			"num_unique_strings" : 982,
+			"num_unique_types" : 302,
+			"proto_id_bytes" : 4176,
+			"proto_id_count" : 348,
+			"protos_total_size" : 348,
+			"string_data_bytes" : 18325,
+			"string_data_count" : 982,
+			"string_id_bytes" : 3928,
+			"string_id_count" : 982,
+			"strings_total_size" : 982,
+			"type_id_bytes" : 1208,
+			"type_id_count" : 302,
+			"type_list_bytes" : 1870,
+			"type_list_count" : 195,
+			"types_total_size" : 302
+		}
+	}
+}

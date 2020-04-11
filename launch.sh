@@ -1,0 +1,4 @@
+export ANDROID_HOST_OUT=$PWD/android
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ANDROID_HOST_OUT/lib
+export TOOLS=$PWD/tools
+export ROOT=$PWD
