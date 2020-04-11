@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## What is Deoptfuscator
 
  asdkalsjdlkjalsd
@@ -38,6 +39,10 @@ HOW TO USE
 ![obfuscation](/images/obfuscation.png) ![deobfuscation](images/deobfuscation.png)
 
 
+=======
+# deoptfuscator
+Deobfuscating android application
+>>>>>>> ba891261290f45743d9bbe572c3d1dcab5ccecc8
 =======
 # deoptfuscator
 Deobfuscating android application
