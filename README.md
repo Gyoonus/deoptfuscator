@@ -1,14 +1,10 @@
 ## What is Deoptfuscator
 
-asdkalsjdlkjalsd
-
-+ a
-+ b
-+ c
-+ d
++ Deoptfuscator is a tool for deobfuscating Android applications that have been transformed using control-flow obfuscation mechanisms.
++ Deoptfuscator can reverse the control-flow obfuscation performed by DexGuard on open-source Android applications.
 
 ## Prerequisites
-In order to build and run deoptfuscator, the following are required:
+In order to build and run deoptfuscator, the followings are required:
 + Deoptfuscator based on Ubuntu 18.04 LTS 64bit PC
   + libboost, libjson (C++ library)
     + $sudo apt-get install libboost-all-dev
@@ -25,14 +21,16 @@ In order to build and run deoptfuscator, the following are required:
     + $sudo apt-get install apksigner
 
 
-HOW TO USE
+## HOW TO USE
 + Set Local Environment
   + $. ./launch.sh 
-+ Deobfuscate Android application which is applied control flow obfuscated technique
++ Deobfuscate an Android application that has been transformed using control-flow obfuscated techniques.
   + $python3 deoptfuscator.py <obfuscated_apk>
 + Test our tools!
   + $python3 deoptfuscator.py test/Trolly_cf.apk
-  + Deobfuscated apk will created named as [Trolly_cf_deobfuscated_align.apk]
-+ Our tool is effectively deobfuscate Android application as below : 
-  + Our tool can decay dexguard's Control Flow obfuscation option which no other tools have done it!!!
+  + If the input file (an obfuscated app) was "Trolly_cf.apk", the file name of the deobfuscated apk is [Trolly_cf_deobfuscated_align.apk]
+
++ Our tool can effectively deobfuscate Android applications transformed with the control flow obfuscation option of DexGuard :
+  + Our tool can currently handle the control-flow obfuscation techniques of DexGuard.
+  + It cannot handle other obfuscation techniques such as layout obfuscation, identifier renaming, and string encryption.
 ![obfuscation](/images/effect.png)
