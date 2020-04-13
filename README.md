@@ -6,15 +6,15 @@
 ## Prerequisites
 In order to build and run deoptfuscator, the followings are required:
 + Deoptfuscator based on Ubuntu 18.04 LTS 64bit PC
-  + libboost, libjson (C++ library)
-    ` $ sudo apt-get install libboost-all-dev
-      $ sudo apt-get install libjsoncpp-dev`
+  + libboost, libjson (C++ library)  
+    `$ sudo apt-get install libboost-all-dev
+    $ sudo apt-get install libjsoncpp-dev`
   + openjdk
     `$ sudo apt-get install openjdk-11-jdk`
   + i386 libc
-    ` $ sudo dpkg --add-architecture i386
-      $ sudo apt-get update
-      $ sudo apt-get install libc6:i386 libstdc++6:i386`
+    `$ sudo dpkg --add-architecture i386  
+    $ sudo apt-get update  
+    $ sudo apt-get install libc6:i386 libstdc++6:i386`
   + zipalign
     ` $ sudo apt-get install zipalign`
   + apksigner
