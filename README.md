@@ -29,6 +29,9 @@ In order to build and run deoptfuscator, the followings are required:
     ```
     $ sudo apt-get install apksigner
     ```
+Our repository Already Contains Tools needed to run our Tool
+ + Apktools : [https://ibotpeaches.github.io/Apktool/](https://ibotpeaches.github.io/Apktool/)
+ + fbredex : [https://fbredex.com/](https://fbredex.com/)
 
 
 ## HOW TO USE
