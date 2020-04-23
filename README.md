@@ -47,7 +47,7 @@ Our repository Already Contains Tools needed to run our Tool
   ```
   $ python3 deoptfuscator.py test/Trolly_cf.apk
   ```
-  + If the input file (an obfuscated app) was `Trolly_cf.apk`, the file name of the deobfuscated apk is `Trolly_cf_deobfuscated_align.apk`
+  + If the input file (an obfuscated app) zzzwas `Trolly_cf.apk`, the file name of the deobfuscated apk is `Trolly_cf_deobfuscated_align.apk`
 
 + Our tool can effectively deobfuscate Android applications transformed with the control flow obfuscation option of DexGuard :
   + Our tool can currently handle the control-flow obfuscation techniques of DexGuard.
