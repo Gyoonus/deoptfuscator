@@ -52,4 +52,4 @@ Our repository Already Contains Tools needed to run our Tool
 + Our tool can effectively deobfuscate Android applications transformed with the control flow obfuscation option of DexGuard :
   + Our tool can currently handle the control-flow obfuscation techniques of DexGuard.
   + It cannot handle other obfuscation techniques such as layout obfuscation, identifier renaming, and string encryption.
-![obfuscation](/images/effect.png)
+![obfuscation](/graph_v2.png)
