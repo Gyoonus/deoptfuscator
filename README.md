@@ -45,7 +45,7 @@ Our repository Already Contains Tools needed to run our Tool
   ```
 + Test our tools!  
   ```
-  $ python3 deoptfuscator.py apnapak.balance_transfer_89D2FCA810EEECA060549450E18A9D28.apk
+  $ python3 deoptfuscator.py sample_apk/AndroZoo_DexGuard_apk/apnapak.balance_transfer_89D2FCA810EEECA060549450E18A9D28.apk
   ```
   + If the input file (an obfuscated app) was `apnapak.balance_transfer_89D2FCA810EEECA060549450E18A9D28.apk`, the file name of the deobfuscated apk is `apnapak.balance_transfer_89D2FCA810EEECA060549450E18A9D28_deobfuscated_align.apk`
 
