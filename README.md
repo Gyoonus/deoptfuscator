@@ -55,3 +55,6 @@ Our repository Already Contains Tools needed to run our Tool
 ![obfuscation](https://user-images.githubusercontent.com/64211521/80127450-4de81000-85cf-11ea-84fa-aeee68efab67.png)
 
 ## Acknowledgement
+
+![시그니처 가로형_영문조합형](https://user-images.githubusercontent.com/64211521/80204259-7e798980-8663-11ea-95f1-ff19ccb86a77.jpg)
+
