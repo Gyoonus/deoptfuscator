@@ -5,6 +5,7 @@
 
 ## Prerequisites
 In order to build and run deoptfuscator, the followings are required:
+
 + Deoptfuscator based on Ubuntu 18.04 LTS 64bit PC
   + libboost, libjson (C++ library)
     ```
@@ -29,6 +30,15 @@ In order to build and run deoptfuscator, the followings are required:
     ```
     $ sudo apt-get install apksigner
     ```
+## How to Install
+ + deoptfuscator's repositary need git-lfs
+  + Git LFS
+  ```
+  $ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+  $ sudo apt install git-lfs
+  $ git clone https://github.com/Gyoonus/deoptfuscator.git
+  ```
+
 Our repository Already Contains Tools needed to run our Tool
  + Apktools : [https://ibotpeaches.github.io/Apktool/](https://ibotpeaches.github.io/Apktool/)
  + fbredex : [https://fbredex.com/](https://fbredex.com/)
@@ -45,9 +55,9 @@ Our repository Already Contains Tools needed to run our Tool
   ```
 + Test our tools!  
   ```
-  $ python3 deoptfuscator.py test/AndroZoo_DexGuard_apk/apnapak.balance_transfer_89D2FCA810EEECA060549450E18A9D28.apk
+  $ python3 deoptfuscator.py test/AndroZoo_DexGuard_apk/com.alienguns.scifirifles_4F326C99558145BB636D31C96488823A.apk
   ```
-  + If the input file (an obfuscated app) was `apnapak.balance_transfer_89D2FCA810EEECA060549450E18A9D28.apk`, the file name of the deobfuscated apk is `apnapak.balance_transfer_89D2FCA810EEECA060549450E18A9D28_deobfuscated_align.apk`
+  + If the input file (an obfuscated app) was `com.alienguns.scifirifles_4F326C99558145BB636D31C96488823A.apk`, the file name of the deobfuscated apk is `com.alienguns.scifirifles_4F326C99558145BB636D31C96488823A_deobfuscated_align.apk`
 
 + Our tool can effectively deobfuscate Android applications transformed with the control flow obfuscation option of DexGuard :
   + Our tool can currently handle the control-flow obfuscation techniques of DexGuard.
