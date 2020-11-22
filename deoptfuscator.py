@@ -21,7 +21,7 @@ os.mkdir(".apk/const")
 
 for dex in dex_li:
 	deobfuscator.main(".apk/"+dex)
-	os.system("$TOOLS/redex-all -c $TOOLS/aggressive.config .apk/const/const.dex -o .apk/const")
+	os.system("$TOOLS/redex-all -c $TOOLS/default.config .apk/const/const.dex -o .apk/const")
 	print("$TOOLS/redex-all .apk/const/const.dex -o .apk/const")
 #	os.system("$TOOLS/redex-all -c $TOOLS/default.config .apk/const/const.dex -o .apk/const")
 #	print("$TOOLS/redex-all -c $TOOLS/default.config .apk/const/const.dex -o .apk/const")
