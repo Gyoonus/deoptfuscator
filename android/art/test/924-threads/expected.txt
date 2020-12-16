@@ -1,0 +1,54 @@
+currentThread OK
+TestThread
+5
+false
+java.lang.ThreadGroup[name=main,maxpri=10]
+class dalvik.system.PathClassLoader
+TestThread
+5
+false
+java.lang.ThreadGroup[name=main,maxpri=10]
+class dalvik.system.PathClassLoader
+Daemon Thread
+5
+true
+java.lang.ThreadGroup[name=main,maxpri=10]
+class dalvik.system.PathClassLoader
+Daemon Thread
+5
+true
+java.lang.ThreadGroup[name=main,maxpri=10]
+class dalvik.system.PathClassLoader
+Subclass
+5
+false
+java.lang.ThreadGroup[name=main,maxpri=10]
+class dalvik.system.PathClassLoader
+5
+5
+Thread type is class java.lang.Thread
+0 = NEW
+191 = ALIVE|WAITING_INDEFINITELY|WAITING|IN_OBJECT_WAIT
+1a1 = ALIVE|WAITING_WITH_TIMEOUT|WAITING|IN_OBJECT_WAIT
+401 = ALIVE|BLOCKED_ON_MONITOR_ENTER
+e1 = ALIVE|WAITING_WITH_TIMEOUT|SLEEPING|WAITING
+5 = ALIVE|RUNNABLE
+400005 = ALIVE|RUNNABLE|IN_NATIVE
+2 = TERMINATED
+Thread type is class art.Test924$ExtThread
+0 = NEW
+191 = ALIVE|WAITING_INDEFINITELY|WAITING|IN_OBJECT_WAIT
+1a1 = ALIVE|WAITING_WITH_TIMEOUT|WAITING|IN_OBJECT_WAIT
+401 = ALIVE|BLOCKED_ON_MONITOR_ENTER
+e1 = ALIVE|WAITING_WITH_TIMEOUT|SLEEPING|WAITING
+5 = ALIVE|RUNNABLE
+400005 = ALIVE|RUNNABLE|IN_NATIVE
+2 = TERMINATED
+[Thread[FinalizerDaemon,5,system], Thread[FinalizerWatchdogDaemon,5,system], Thread[HeapTaskDaemon,5,system], Thread[ReferenceQueueDaemon,5,system], Thread[TestThread,5,main], Thread[main,5,main]]
+JVMTI_ERROR_THREAD_NOT_ALIVE
+JVMTI_ERROR_THREAD_NOT_ALIVE
+Constructed thread
+[]
+[Thread(EventTestThread): start]
+[Thread(EventTestThread): end]
+Thread joined

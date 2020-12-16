@@ -1,0 +1,6 @@
+Test basic JVMTI breakpoint functionality.
+
+Tests that it is possible to throw exceptions while handling breakpoint events
+and that they are handled appropriately. This includes checking that it is
+possible for the method being breakpointed to catch exceptions thrown by the
+handler.

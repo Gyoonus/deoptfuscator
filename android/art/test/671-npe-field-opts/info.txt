@@ -1,0 +1,3 @@
+Regression test for the compiler, which used to
+re-order or remove field access in a way that would confuse the runtime
+when validating a NPE.

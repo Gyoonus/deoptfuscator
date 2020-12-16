@@ -1,0 +1,2 @@
+MethodHandle MethodHandle(Object)Class => class java.lang.Float
+MethodType (char,short,int,long,float,double,Object)boolean

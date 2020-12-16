@@ -1,0 +1,29 @@
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Constants within jit.h.
+
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#include "jit/jit.h"   // art::kSuspendRequest, etc.
+#endif
+
+#define DEFINE_JIT_CONSTANT(macro_name, type, expr) \
+  DEFINE_EXPR(JIT_ ## macro_name, type, (expr))
+
+DEFINE_JIT_CONSTANT(CHECK_OSR,       int16_t, art::jit::kJitCheckForOSR)
+DEFINE_JIT_CONSTANT(HOTNESS_DISABLE, int16_t, art::jit::kJitHotnessDisabled)
+
+#undef DEFINE_JIT_CONSTANT

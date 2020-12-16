@@ -1,0 +1,123 @@
+//
+// Copyright (C) 2011 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+cc_defaults {
+    name: "libartbase_defaults",
+    defaults: ["art_defaults"],
+    host_supported: true,
+    srcs: [
+        "base/allocator.cc",
+        "base/bit_vector.cc",
+        "base/file_magic.cc",
+        "base/hex_dump.cc",
+        "base/logging.cc",
+        "base/os_linux.cc",
+        "base/runtime_debug.cc",
+        "base/safe_copy.cc",
+        "base/scoped_flock.cc",
+        "base/time_utils.cc",
+        "base/unix_file/fd_file.cc",
+        "base/unix_file/random_access_file_utils.cc",
+        "base/utils.cc",
+    ],
+    generated_sources: ["art_libartbase_operator_srcs"],
+    cflags: ["-DBUILDING_LIBART=1"],
+    shared_libs: [
+        // For common macros.
+        "libbase",
+        "liblog",
+    ],
+    export_include_dirs: ["."],
+    // ART's macros.h depends on libbase's macros.h.
+    // Note: runtime_options.h depends on cmdline. But we don't really want to export this
+    //       generically. dex2oat takes care of it itself.
+    export_shared_lib_headers: ["libbase"],
+}
+
+gensrcs {
+    name: "art_libartbase_operator_srcs",
+    cmd: "$(location generate_operator_out) art/libartbase $(in) > $(out)",
+    tools: ["generate_operator_out"],
+    srcs: [
+        "base/allocator.h",
+        "base/callee_save_type.h",
+        "base/unix_file/fd_file.h",
+    ],
+    output_extension: "operator_out.cc",
+}
+
+art_cc_library {
+    name: "libartbase",
+    defaults: ["libartbase_defaults"],
+    // Leave the symbols in the shared library so that stack unwinders can
+    // produce meaningful name resolution.
+    strip: {
+        keep_symbols: true,
+    },
+    shared_libs: ["libbase"],
+    export_shared_lib_headers: ["libbase"],
+}
+
+art_cc_library {
+    name: "libartbased",
+    defaults: [
+        "art_debug_defaults",
+        "libartbase_defaults",
+    ],
+    shared_libs: ["libbase"],
+    export_shared_lib_headers: ["libbase"],
+}
+
+// For now many of these tests still use CommonRuntimeTest, almost universally because of
+// ScratchFile and related.
+// TODO: Remove CommonRuntimeTest dependency from these tests.
+art_cc_test {
+    name: "art_libartbase_tests",
+    defaults: [
+        "art_gtest_defaults",
+    ],
+    srcs: [
+        "base/bit_field_test.cc",
+        "base/bit_string_test.cc",
+        "base/bit_struct_test.cc",
+        "base/bit_utils_test.cc",
+        "base/bit_vector_test.cc",
+        "base/hash_set_test.cc",
+        "base/hex_dump_test.cc",
+        "base/histogram_test.cc",
+        "base/leb128_test.cc",
+        "base/logging_test.cc",
+        "base/safe_copy_test.cc",
+        "base/scoped_flock_test.cc",
+        "base/time_utils_test.cc",
+        "base/transform_array_ref_test.cc",
+        "base/transform_iterator_test.cc",
+        "base/unix_file/fd_file_test.cc",
+        "base/utils_test.cc",
+        "base/variant_map_test.cc",
+    ],
+    shared_libs: [
+        "libbase",
+    ],
+}
+
+cc_library_headers {
+    name: "art_libartbase_headers",
+    host_supported: true,
+    export_include_dirs: ["."],
+    shared_libs: ["libbase"],
+    export_shared_lib_headers: ["libbase"],
+}

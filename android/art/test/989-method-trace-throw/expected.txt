@@ -1,0 +1,188 @@
+Normal: Entering public static void art.Test989.doNothing()
+Normal: Leaving public static void art.Test989.doNothing() returned null
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$doNothingClass].
+Normal: Entering public static native void art.Test989.doNothingNative()
+Normal: Leaving public static native void art.Test989.doNothingNative() returned null
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$doNothingNativeClass].
+Normal: Entering public static void art.Test989.throwA()
+Normal: Leaving public static void art.Test989.throwA() returned <exception>
+Received expected error for test[class art.Test989$NormalTracer, class art.Test989$throwAClass] - art.Test989$ErrorA: Throwing Error A
+Normal: Entering public static native void art.Test989.throwANative()
+Normal: Leaving public static native void art.Test989.throwANative() returned <exception>
+Received expected error for test[class art.Test989$NormalTracer, class art.Test989$throwANativeClass] - art.Test989$ErrorA: Throwing Error A
+Normal: Entering public static java.lang.Object art.Test989.returnValue()
+Normal: Leaving public static java.lang.Object art.Test989.returnValue() returned TestObject(0)
+returnValue returned: TestObject(0)
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$returnValueClass].
+Normal: Entering public static native java.lang.Object art.Test989.returnValueNative()
+Normal: Leaving public static native java.lang.Object art.Test989.returnValueNative() returned TestObject(1)
+returnValueNative returned: TestObject(1)
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$returnValueNativeClass].
+Normal: Entering public static void art.Test989.acceptValue(java.lang.Object)
+Recieved TestObject(2)
+Normal: Leaving public static void art.Test989.acceptValue(java.lang.Object) returned null
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$acceptValueClass].
+Normal: Entering public static native void art.Test989.acceptValueNative(java.lang.Object)
+Recieved TestObject(3)
+Normal: Leaving public static native void art.Test989.acceptValueNative(java.lang.Object) returned null
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$acceptValueNativeClass].
+Normal: Entering public static void art.Test989.tryCatchExit()
+Normal: Leaving public static void art.Test989.tryCatchExit() returned null
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$tryCatchExitClass].
+Normal: Entering public static float art.Test989.returnFloat()
+Normal: Leaving public static float art.Test989.returnFloat() returned 1.618
+returnFloat returned: 1.618
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$returnFloatClass].
+Normal: Entering public static native float art.Test989.returnFloatNative()
+Normal: Leaving public static native float art.Test989.returnFloatNative() returned 1.618
+returnFloatNative returned: 1.618
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$returnFloatNativeClass].
+Normal: Entering public static double art.Test989.returnDouble()
+Normal: Leaving public static double art.Test989.returnDouble() returned 3.14159628
+returnDouble returned: 3.14159628
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$returnDoubleClass].
+Normal: Entering public static native double art.Test989.returnDoubleNative()
+Normal: Leaving public static native double art.Test989.returnDoubleNative() returned 3.14159628
+returnDoubleNative returned: 3.14159628
+Received no exception as expected for test[class art.Test989$NormalTracer, class art.Test989$returnDoubleNativeClass].
+ThrowEnter: Entering public static void art.Test989.doNothing()
+ThrowEnter: Leaving public static void art.Test989.doNothing() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$doNothingClass] - art.Test989$ErrorB: Throwing error while entering public static void art.Test989.doNothing()
+ThrowEnter: Entering public static native void art.Test989.doNothingNative()
+ThrowEnter: Leaving public static native void art.Test989.doNothingNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$doNothingNativeClass] - art.Test989$ErrorB: Throwing error while entering public static native void art.Test989.doNothingNative()
+ThrowEnter: Entering public static void art.Test989.throwA()
+ThrowEnter: Leaving public static void art.Test989.throwA() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$throwAClass] - art.Test989$ErrorB: Throwing error while entering public static void art.Test989.throwA()
+ThrowEnter: Entering public static native void art.Test989.throwANative()
+ThrowEnter: Leaving public static native void art.Test989.throwANative() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$throwANativeClass] - art.Test989$ErrorB: Throwing error while entering public static native void art.Test989.throwANative()
+ThrowEnter: Entering public static java.lang.Object art.Test989.returnValue()
+ThrowEnter: Leaving public static java.lang.Object art.Test989.returnValue() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$returnValueClass] - art.Test989$ErrorB: Throwing error while entering public static java.lang.Object art.Test989.returnValue()
+ThrowEnter: Entering public static native java.lang.Object art.Test989.returnValueNative()
+ThrowEnter: Leaving public static native java.lang.Object art.Test989.returnValueNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$returnValueNativeClass] - art.Test989$ErrorB: Throwing error while entering public static native java.lang.Object art.Test989.returnValueNative()
+ThrowEnter: Entering public static void art.Test989.acceptValue(java.lang.Object)
+ThrowEnter: Leaving public static void art.Test989.acceptValue(java.lang.Object) returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$acceptValueClass] - art.Test989$ErrorB: Throwing error while entering public static void art.Test989.acceptValue(java.lang.Object)
+ThrowEnter: Entering public static native void art.Test989.acceptValueNative(java.lang.Object)
+ThrowEnter: Leaving public static native void art.Test989.acceptValueNative(java.lang.Object) returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$acceptValueNativeClass] - art.Test989$ErrorB: Throwing error while entering public static native void art.Test989.acceptValueNative(java.lang.Object)
+ThrowEnter: Entering public static void art.Test989.tryCatchExit()
+ThrowEnter: Leaving public static void art.Test989.tryCatchExit() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$tryCatchExitClass] - art.Test989$ErrorB: Throwing error while entering public static void art.Test989.tryCatchExit()
+ThrowEnter: Entering public static float art.Test989.returnFloat()
+ThrowEnter: Leaving public static float art.Test989.returnFloat() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$returnFloatClass] - art.Test989$ErrorB: Throwing error while entering public static float art.Test989.returnFloat()
+ThrowEnter: Entering public static native float art.Test989.returnFloatNative()
+ThrowEnter: Leaving public static native float art.Test989.returnFloatNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$returnFloatNativeClass] - art.Test989$ErrorB: Throwing error while entering public static native float art.Test989.returnFloatNative()
+ThrowEnter: Entering public static double art.Test989.returnDouble()
+ThrowEnter: Leaving public static double art.Test989.returnDouble() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$returnDoubleClass] - art.Test989$ErrorB: Throwing error while entering public static double art.Test989.returnDouble()
+ThrowEnter: Entering public static native double art.Test989.returnDoubleNative()
+ThrowEnter: Leaving public static native double art.Test989.returnDoubleNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowEnterTracer, class art.Test989$returnDoubleNativeClass] - art.Test989$ErrorB: Throwing error while entering public static native double art.Test989.returnDoubleNative()
+ThrowExit: Entering public static void art.Test989.doNothing()
+ThrowExit: Leaving public static void art.Test989.doNothing() returned null
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$doNothingClass] - art.Test989$ErrorB: Throwing error while exit public static void art.Test989.doNothing() returned null
+ThrowExit: Entering public static native void art.Test989.doNothingNative()
+ThrowExit: Leaving public static native void art.Test989.doNothingNative() returned null
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$doNothingNativeClass] - art.Test989$ErrorB: Throwing error while exit public static native void art.Test989.doNothingNative() returned null
+ThrowExit: Entering public static void art.Test989.throwA()
+ThrowExit: Leaving public static void art.Test989.throwA() returned <exception>
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$throwAClass] - art.Test989$ErrorB: Throwing error while exit public static void art.Test989.throwA() returned <exception>
+ThrowExit: Entering public static native void art.Test989.throwANative()
+ThrowExit: Leaving public static native void art.Test989.throwANative() returned <exception>
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$throwANativeClass] - art.Test989$ErrorB: Throwing error while exit public static native void art.Test989.throwANative() returned <exception>
+ThrowExit: Entering public static java.lang.Object art.Test989.returnValue()
+ThrowExit: Leaving public static java.lang.Object art.Test989.returnValue() returned TestObject(7)
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$returnValueClass] - art.Test989$ErrorB: Throwing error while exit public static java.lang.Object art.Test989.returnValue() returned TestObject(7)
+ThrowExit: Entering public static native java.lang.Object art.Test989.returnValueNative()
+ThrowExit: Leaving public static native java.lang.Object art.Test989.returnValueNative() returned TestObject(8)
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$returnValueNativeClass] - art.Test989$ErrorB: Throwing error while exit public static native java.lang.Object art.Test989.returnValueNative() returned TestObject(8)
+ThrowExit: Entering public static void art.Test989.acceptValue(java.lang.Object)
+Recieved TestObject(9)
+ThrowExit: Leaving public static void art.Test989.acceptValue(java.lang.Object) returned null
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$acceptValueClass] - art.Test989$ErrorB: Throwing error while exit public static void art.Test989.acceptValue(java.lang.Object) returned null
+ThrowExit: Entering public static native void art.Test989.acceptValueNative(java.lang.Object)
+Recieved TestObject(10)
+ThrowExit: Leaving public static native void art.Test989.acceptValueNative(java.lang.Object) returned null
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$acceptValueNativeClass] - art.Test989$ErrorB: Throwing error while exit public static native void art.Test989.acceptValueNative(java.lang.Object) returned null
+ThrowExit: Entering public static void art.Test989.tryCatchExit()
+ThrowExit: Leaving public static void art.Test989.tryCatchExit() returned null
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$tryCatchExitClass] - art.Test989$ErrorB: Throwing error while exit public static void art.Test989.tryCatchExit() returned null
+ThrowExit: Entering public static float art.Test989.returnFloat()
+ThrowExit: Leaving public static float art.Test989.returnFloat() returned 1.618
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$returnFloatClass] - art.Test989$ErrorB: Throwing error while exit public static float art.Test989.returnFloat() returned 1.618
+ThrowExit: Entering public static native float art.Test989.returnFloatNative()
+ThrowExit: Leaving public static native float art.Test989.returnFloatNative() returned 1.618
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$returnFloatNativeClass] - art.Test989$ErrorB: Throwing error while exit public static native float art.Test989.returnFloatNative() returned 1.618
+ThrowExit: Entering public static double art.Test989.returnDouble()
+ThrowExit: Leaving public static double art.Test989.returnDouble() returned 3.14159628
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$returnDoubleClass] - art.Test989$ErrorB: Throwing error while exit public static double art.Test989.returnDouble() returned 3.14159628
+ThrowExit: Entering public static native double art.Test989.returnDoubleNative()
+ThrowExit: Leaving public static native double art.Test989.returnDoubleNative() returned 3.14159628
+Received expected error for test[class art.Test989$ThrowExitTracer, class art.Test989$returnDoubleNativeClass] - art.Test989$ErrorB: Throwing error while exit public static native double art.Test989.returnDoubleNative() returned 3.14159628
+ThrowBoth: Entering public static void art.Test989.doNothing()
+ThrowBoth: Leaving public static void art.Test989.doNothing() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$doNothingClass] - art.Test989$ErrorC: Throwing error while exit public static void art.Test989.doNothing() returned <exception>
+ThrowBoth: Entering public static native void art.Test989.doNothingNative()
+ThrowBoth: Leaving public static native void art.Test989.doNothingNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$doNothingNativeClass] - art.Test989$ErrorC: Throwing error while exit public static native void art.Test989.doNothingNative() returned <exception>
+ThrowBoth: Entering public static void art.Test989.throwA()
+ThrowBoth: Leaving public static void art.Test989.throwA() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$throwAClass] - art.Test989$ErrorC: Throwing error while exit public static void art.Test989.throwA() returned <exception>
+ThrowBoth: Entering public static native void art.Test989.throwANative()
+ThrowBoth: Leaving public static native void art.Test989.throwANative() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$throwANativeClass] - art.Test989$ErrorC: Throwing error while exit public static native void art.Test989.throwANative() returned <exception>
+ThrowBoth: Entering public static java.lang.Object art.Test989.returnValue()
+ThrowBoth: Leaving public static java.lang.Object art.Test989.returnValue() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$returnValueClass] - art.Test989$ErrorC: Throwing error while exit public static java.lang.Object art.Test989.returnValue() returned <exception>
+ThrowBoth: Entering public static native java.lang.Object art.Test989.returnValueNative()
+ThrowBoth: Leaving public static native java.lang.Object art.Test989.returnValueNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$returnValueNativeClass] - art.Test989$ErrorC: Throwing error while exit public static native java.lang.Object art.Test989.returnValueNative() returned <exception>
+ThrowBoth: Entering public static void art.Test989.acceptValue(java.lang.Object)
+ThrowBoth: Leaving public static void art.Test989.acceptValue(java.lang.Object) returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$acceptValueClass] - art.Test989$ErrorC: Throwing error while exit public static void art.Test989.acceptValue(java.lang.Object) returned <exception>
+ThrowBoth: Entering public static native void art.Test989.acceptValueNative(java.lang.Object)
+ThrowBoth: Leaving public static native void art.Test989.acceptValueNative(java.lang.Object) returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$acceptValueNativeClass] - art.Test989$ErrorC: Throwing error while exit public static native void art.Test989.acceptValueNative(java.lang.Object) returned <exception>
+ThrowBoth: Entering public static void art.Test989.tryCatchExit()
+ThrowBoth: Leaving public static void art.Test989.tryCatchExit() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$tryCatchExitClass] - art.Test989$ErrorC: Throwing error while exit public static void art.Test989.tryCatchExit() returned <exception>
+ThrowBoth: Entering public static float art.Test989.returnFloat()
+ThrowBoth: Leaving public static float art.Test989.returnFloat() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$returnFloatClass] - art.Test989$ErrorC: Throwing error while exit public static float art.Test989.returnFloat() returned <exception>
+ThrowBoth: Entering public static native float art.Test989.returnFloatNative()
+ThrowBoth: Leaving public static native float art.Test989.returnFloatNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$returnFloatNativeClass] - art.Test989$ErrorC: Throwing error while exit public static native float art.Test989.returnFloatNative() returned <exception>
+ThrowBoth: Entering public static double art.Test989.returnDouble()
+ThrowBoth: Leaving public static double art.Test989.returnDouble() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$returnDoubleClass] - art.Test989$ErrorC: Throwing error while exit public static double art.Test989.returnDouble() returned <exception>
+ThrowBoth: Entering public static native double art.Test989.returnDoubleNative()
+ThrowBoth: Leaving public static native double art.Test989.returnDoubleNative() returned <exception>
+Received expected error for test[class art.Test989$ThrowBothTracer, class art.Test989$returnDoubleNativeClass] - art.Test989$ErrorC: Throwing error while exit public static native double art.Test989.returnDoubleNative() returned <exception>
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$doNothingClass].
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$doNothingNativeClass].
+Received expected error for test[class art.Test989$ForceGCTracer, class art.Test989$throwAClass] - art.Test989$ErrorA: Throwing Error A
+Received expected error for test[class art.Test989$ForceGCTracer, class art.Test989$throwANativeClass] - art.Test989$ErrorA: Throwing Error A
+returnValue returned: TestObject(14)
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$returnValueClass].
+returnValueNative returned: TestObject(15)
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$returnValueNativeClass].
+Recieved TestObject(16)
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$acceptValueClass].
+Recieved TestObject(17)
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$acceptValueNativeClass].
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$tryCatchExitClass].
+returnFloat returned: 1.618
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$returnFloatClass].
+returnFloatNative returned: 1.618
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$returnFloatNativeClass].
+returnDouble returned: 3.14159628
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$returnDoubleClass].
+returnDoubleNative returned: 3.14159628
+Received no exception as expected for test[class art.Test989$ForceGCTracer, class art.Test989$returnDoubleNativeClass].
+Finished!

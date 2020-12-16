@@ -1,0 +1,2 @@
+Checker test for optimizing that checks whether our
+optimizations to remove type checks on array set operations work.

@@ -1,0 +1,10 @@
+UnresolvedClass.directCall()
+UnresolvedClass.staticMethod()
+UnresolvedClass.virtualMethod()
+UnresolvedClass.interfaceMethod()
+UnresolvedClass.superMethod()
+instanceof ok
+checkcast ok
+UnresolvedClass.directCall()
+UnresolvedClass.directCall()
+UnresolvedClass.directCall()

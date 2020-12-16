@@ -1,0 +1,7 @@
+This is more a benchmark for the verifier than a real test. We create many
+classes, each one initializing a big array of string in its class initializer.
+This generates big <clinit> methods in these classes. The goal is to stress the
+verifier on such method.
+
+Note: these classes are generated automatically. The number of classes and the
+size of string array can be modified in the script.

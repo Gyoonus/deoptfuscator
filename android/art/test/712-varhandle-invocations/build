@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# Copyright 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Make us exit on a failure
+set -e
+
+# Set variables for source directories. Using src-art so we use
+# VarHandles in the bootclasspath and can compile with the Java 8
+# compiler.
+MANUAL_SRC=src
+GENERATED_SRC=src2
+
+# Build the Java files
+mkdir -p src2
+
+# Collate list of manual test classes
+MANUAL_TESTS=$(cd "${MANUAL_SRC}" && find . -name 'Var*Tests.java' | sed -e 's@.*\(Var.*Tests\).*@\1@g' | sort)
+
+# Generate tests and Main that covers both the generated tests and manual tests
+python3 ./util-src/generate_java.py "${GENERATED_SRC}" ${MANUAL_TESTS}
+
+# Desugar is not happy with our Java 9 byte code, it shouldn't be necessary here anyway.
+export USE_DESUGAR=false
+
+# Invoke default build with increased heap size for dx
+./default-build "$@" --experimental var-handles --dx-vm-option -JXmx384m

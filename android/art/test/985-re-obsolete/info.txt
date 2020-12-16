@@ -1,0 +1,4 @@
+Tests basic obsolete method support
+
+Regression test for b/37475600 which was caused by incorrectly checking for
+differences in the obsolete methods map.

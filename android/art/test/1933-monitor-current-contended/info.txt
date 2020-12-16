@@ -1,0 +1,4 @@
+Tests jvmti monitor events in odd situations.
+
+Checks that the JVMTI monitor events are correctly dispatched and handled for
+many odd situations.

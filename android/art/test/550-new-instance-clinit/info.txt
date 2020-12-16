@@ -1,0 +1,3 @@
+Regression test for optimizing which used to treat
+HNewInstance as not having side effects even though it
+could invoke a clinit method.

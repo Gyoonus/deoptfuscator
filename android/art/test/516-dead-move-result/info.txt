@@ -1,0 +1,3 @@
+Regression test for the graph builder in optimizing,
+where a move-result was bogus, but it passed the verifier
+because it was dead code.

@@ -1,0 +1,1 @@
+Regression tests for shift instructions and constants larger than 8bits.

@@ -1,0 +1,13 @@
+Regression test for b/62237378
+
+It was possible for the JVMTI class redefinition to encounter a use-after-free
+bug if there had been an attempted redefinition that failed due to a
+verification error in the same class loader. Actually encountering the bug
+required that a later redefinition happen to get the same native pointer for its
+dex-file as the failed redefinition.
+
+Hitting this use-after-free can cause many strange outcomes, from CHECK failures
+to segfaults to incorrect redefinition failures (for example on buggy builds
+this test will fail a DCHECK on debug builds, segfault on x86_64 hosts and have
+redefinition of LDexCacheSmash$Transform; erroneously fail with
+JVMTI_ERROR_FAILS_VERIFICATION on 32 bit hosts).

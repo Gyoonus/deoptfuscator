@@ -1,0 +1,23 @@
+Tests basic functions in the jvmti plugin.
+
+This tests that we are able to redefine methods/constructors on the
+java.lang.Object class at runtime.
+
+This also (indirectly) tests that we correctly handle reading annotations on
+obsolete methods. This is something that is not normally done since there is no
+way to get a reference to an obsolete method outside of the runtime but some
+annotations on the Object class are read by the runtime directly.
+
+NB This test cannot be run on the RI at the moment.
+
+If this test starts failing during the doCommonClassRedefinition call it is
+possible that the definition of Object contained in the base64 DEX_BYTES array
+has become stale and will need to be recreated. The only difference from the
+normal Object dex bytes is that (a) it contains only the bytes of the Object
+class itself, and (b) it adds an
+'invoke-static {p0}, Ljava/lang/Object;->NotifyConstructed(Ljava/lang/Object;)V'
+to the <init> function.
+
+It is also possible it could fail due to the pattern of allocations caused by
+doing string concatenation or printing changing. In this case you should simply
+update the expected.txt file.

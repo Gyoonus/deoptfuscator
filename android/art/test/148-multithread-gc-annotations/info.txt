@@ -1,0 +1,1 @@
+Tests that getting annotations works during moving gc.

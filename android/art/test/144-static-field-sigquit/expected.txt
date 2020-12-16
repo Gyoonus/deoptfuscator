@@ -1,0 +1,4 @@
+Starting threads...
+Performing sigquits for 5 seconds
+Got date field
+Joined threads

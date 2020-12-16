@@ -1,0 +1,3 @@
+Regression test for the optimizing compiler, where
+the code generators did not expect type conversion
+instructions from one type to the same type.

@@ -1,0 +1,16 @@
+7a8,14
+> Entered private void java.lang.Thread.exit()
+> Thread: test-thread
+>   | alive: true
+>   | interrupted: false
+>   | daemon: false
+>   | group: java.lang.ThreadGroup[name=main,maxpri=10]
+> 
+34c41
+<   | group: java.lang.ThreadGroup[name=main,maxpri=10]
+---
+>   | group: null
+41c48
+<   | group: java.lang.ThreadGroup[name=main,maxpri=10]
+---
+>   | group: null

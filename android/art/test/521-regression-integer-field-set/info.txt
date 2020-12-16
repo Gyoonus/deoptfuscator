@@ -1,0 +1,3 @@
+Regression test for Optimizing's x86-64 code generator, where moving a
+32-bit immediate (integer or reference) into a field used to generate
+a `movw` instruction instead of a `movl` instruction.

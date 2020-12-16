@@ -1,0 +1,4 @@
+Tests basic functions in the jvmti plugin.
+
+Tests that we we can redefine classes that have default methods inherited from
+interfaces.

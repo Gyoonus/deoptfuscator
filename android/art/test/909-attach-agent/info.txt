@@ -1,0 +1,1 @@
+Tests jvmti plugin attaching during live phase.

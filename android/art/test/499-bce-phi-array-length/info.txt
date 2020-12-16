@@ -1,0 +1,2 @@
+Regression test for BCE phase of optimizing. See Main.java
+for a description of the bug.

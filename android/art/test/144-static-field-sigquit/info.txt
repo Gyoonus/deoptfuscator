@@ -1,0 +1,8 @@
+Regression test for ag/853775
+
+Tests that unresolved classes are not put into the dex cache by the verifier.
+This was potentially happening when receiving a signal while in the static
+initilizer of a class and also within a synchronized block.
+
+This test is flaky and produces the issue rarely, but it should be good enough
+to trigger occasionally with the buildbots.

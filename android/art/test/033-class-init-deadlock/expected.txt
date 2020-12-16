@@ -1,0 +1,5 @@
+Deadlock test starting.
+Deadlock test interrupting threads.
+Deadlock test main thread bailing.
+A initialized: false
+B initialized: false

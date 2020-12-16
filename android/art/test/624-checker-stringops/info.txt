@@ -1,0 +1,1 @@
+Verify some properties of string operations represented by intrinsics.

@@ -1,0 +1,1 @@
+Regression test for optimizing when it is building the SSA form.

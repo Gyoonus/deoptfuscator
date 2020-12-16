@@ -1,0 +1,1 @@
+Periodic sequence on integer and floating-point.

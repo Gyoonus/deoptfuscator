@@ -1,0 +1,2 @@
+Regression test for the inliner that used to crash while
+trying to find a method for an erroneous class.

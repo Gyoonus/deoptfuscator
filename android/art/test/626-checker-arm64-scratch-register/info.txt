@@ -1,0 +1,2 @@
+Regression test checking that the ARM64 scratch register pool is not
+exhausted during moves between stack slots (b/32545705).

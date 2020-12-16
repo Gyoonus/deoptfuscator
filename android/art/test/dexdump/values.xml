@@ -1,0 +1,561 @@
+<api>
+<package name=""
+>
+<class name="Test"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mB0"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="mB1"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="127"
+>
+</field>
+<field name="mB2"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-128"
+>
+</field>
+<field name="mB3"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-1"
+>
+</field>
+<field name="mC0"
+ type="char"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="mC1"
+ type="char"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="32767"
+>
+</field>
+<field name="mC2"
+ type="char"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="32768"
+>
+</field>
+<field name="mC3"
+ type="char"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="255"
+>
+</field>
+<field name="mC4"
+ type="char"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="65520"
+>
+</field>
+<field name="mC5"
+ type="char"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="65535"
+>
+</field>
+<field name="mD0"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-inf"
+>
+</field>
+<field name="mD1"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="4.94066e-324"
+>
+</field>
+<field name="mD2"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-0"
+>
+</field>
+<field name="mD3"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="mD4"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1.79769e+308"
+>
+</field>
+<field name="mD5"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="inf"
+>
+</field>
+<field name="mD6"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="nan"
+>
+</field>
+<field name="mF0"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-inf"
+>
+</field>
+<field name="mF1"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1.4013e-45"
+>
+</field>
+<field name="mF2"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-0"
+>
+</field>
+<field name="mF3"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="mF4"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="3.40282e+38"
+>
+</field>
+<field name="mF5"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="inf"
+>
+</field>
+<field name="mF6"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="nan"
+>
+</field>
+<field name="mI0"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="mI1"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2147483647"
+>
+</field>
+<field name="mI2"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-2147483648"
+>
+</field>
+<field name="mI3"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="255"
+>
+</field>
+<field name="mI4"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-16"
+>
+</field>
+<field name="mI5"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-4096"
+>
+</field>
+<field name="mI6"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-1048576"
+>
+</field>
+<field name="mI7"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-1"
+>
+</field>
+<field name="mJ0"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="mJ1"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="9223372036854775807"
+>
+</field>
+<field name="mJ2"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-9223372036854775808"
+>
+</field>
+<field name="mJ3"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="255"
+>
+</field>
+<field name="mJ4"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-16"
+>
+</field>
+<field name="mJ5"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-4096"
+>
+</field>
+<field name="mJ6"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-1048576"
+>
+</field>
+<field name="mJ7"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-268435456"
+>
+</field>
+<field name="mJ8"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-68719476736"
+>
+</field>
+<field name="mJ9"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-17592186044416"
+>
+</field>
+<field name="mJa"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-4503599627370496"
+>
+</field>
+<field name="mJb"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-1"
+>
+</field>
+<field name="mObject"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="null"
+>
+</field>
+<field name="mS0"
+ type="short"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="mS1"
+ type="short"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="32767"
+>
+</field>
+<field name="mS2"
+ type="short"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-32768"
+>
+</field>
+<field name="mS3"
+ type="short"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="255"
+>
+</field>
+<field name="mS4"
+ type="short"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-16"
+>
+</field>
+<field name="mS5"
+ type="short"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="-1"
+>
+</field>
+<field name="mString"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="&lt;&amp;&quot;JOHO&quot;&amp;&gt;&#xA;"
+>
+</field>
+<field name="mZ0"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="false"
+>
+</field>
+<field name="mZ1"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="true"
+>
+</field>
+<constructor name="Test"
+ type="Test"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+</package>
+</api>

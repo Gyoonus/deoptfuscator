@@ -1,0 +1,1 @@
+Test that GC doesn't happen too often for a few small allocations.

@@ -1,0 +1,2 @@
+Test that disables dex2oat'ing the application, and disable fallback. This is derived from test
+116. It needs it separate test as it needs a custom check script.

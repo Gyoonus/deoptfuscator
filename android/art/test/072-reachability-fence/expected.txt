@@ -1,0 +1,5 @@
+Starting
+Reference 0 was live.
+Reference 3 was live.
+Reference 4 was live.
+Finished

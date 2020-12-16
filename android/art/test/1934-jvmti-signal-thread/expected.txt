@@ -1,0 +1,27 @@
+Interrupt before start
+interrupting other thread before starting
+Caught exception java.lang.RuntimeException: JVMTI_ERROR_THREAD_NOT_ALIVE
+Stop before start
+stopping other thread before starting
+Caught exception java.lang.RuntimeException: JVMTI_ERROR_THREAD_NOT_ALIVE
+Interrupt recur
+Interrupting other thread recurring
+Other thread Interrupted. err: java.lang.Error: Interrupted!
+Stop Recur
+stopping other thread recurring
+Other thread Stopped by: java.lang.Error: AWESOME!
+Interrupt spinning
+Interrupting other thread spinning
+Other thread Interrupted.
+Stop spinning
+stopping other thread spinning
+Other thread Stopped by: java.lang.Error: AWESOME!
+Interrupt wait
+interrupting other thread waiting
+Other thread interrupted. err: java.lang.Error: Interrupted!
+Stop wait
+stopping other thread waiting
+Other thread Stopped by: java.lang.Error: AWESOME
+Stop in native
+stopping other thread
+Other thread Stopped by: java.lang.Error: AWESOME

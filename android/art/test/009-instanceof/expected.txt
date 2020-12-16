@@ -1,0 +1,11 @@
+iface1.mFloaty = 5.0 wahoo
+aa.mFloaty = 5.0 wahoo
+bb.mWhoami = ImplB!
+aaOkay (false) = false
+bbOkay (true) = true
+Caught a ClassCastException (expected)
+instanceof Serializable = true
+instanceof Cloneable = true
+instanceof Runnable = false
+aaOkay (false) = false
+bbOkay (true) = true

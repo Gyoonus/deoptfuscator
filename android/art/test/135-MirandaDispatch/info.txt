@@ -1,0 +1,6 @@
+Regression test for JIT related incompatible class changes caused by miranda methods.
+E.g.
+java.lang.IncompatibleClassChangeError: The method 'void Main$TheInterface.m()' was expected to be of type virtual but instead was found to be of type interface (declaration of 'java.lang.reflect.ArtMethod' appears in out/host/linux-x86/framework/core-libart-hostdex.jar)
+  at Main.DoStuff(Main.java:37)
+  at Main.main(Main.java:44)
+

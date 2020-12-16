@@ -1,0 +1,3 @@
+Regression test for vdex, which used to crash in AddAssignability
+called by the dex2dex compiler, not anticipating arrays of primitive
+type.

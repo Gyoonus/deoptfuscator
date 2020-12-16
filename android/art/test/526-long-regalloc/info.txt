@@ -1,0 +1,2 @@
+Regression test for optimizing that used to trip when allocating a register
+pair under certain circumstances.

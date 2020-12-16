@@ -1,0 +1,45 @@
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Export lockword values.
+
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#include "lock_word.h"         // art::LockWord
+#endif
+
+#define DEFINE_LOCK_WORD_EXPR(macro_name, type, constant_field_name) \
+  DEFINE_EXPR(LOCK_WORD_ ## macro_name, type, art::LockWord::constant_field_name)
+
+DEFINE_LOCK_WORD_EXPR(STATE_SHIFT,               int32_t,  kStateShift)
+DEFINE_LOCK_WORD_EXPR(STATE_MASK,                uint32_t, kStateMaskShifted)
+DEFINE_LOCK_WORD_EXPR(READ_BARRIER_STATE_SHIFT,  int32_t,  kReadBarrierStateShift)
+DEFINE_LOCK_WORD_EXPR(READ_BARRIER_STATE_MASK,   uint32_t,  kReadBarrierStateMaskShifted)
+DEFINE_LOCK_WORD_EXPR(READ_BARRIER_STATE_MASK_TOGGLED, uint32_t, kReadBarrierStateMaskShiftedToggled)
+DEFINE_LOCK_WORD_EXPR(THIN_LOCK_COUNT_ONE,       int32_t,  kThinLockCountOne)
+
+DEFINE_LOCK_WORD_EXPR(STATE_FORWARDING_ADDRESS, uint32_t, kStateForwardingAddress)
+DEFINE_LOCK_WORD_EXPR(STATE_FORWARDING_ADDRESS_OVERFLOW, uint32_t, kStateForwardingAddressOverflow)
+DEFINE_LOCK_WORD_EXPR(STATE_FORWARDING_ADDRESS_SHIFT, uint32_t, kForwardingAddressShift)
+
+DEFINE_LOCK_WORD_EXPR(GC_STATE_MASK_SHIFTED,   uint32_t,  kGCStateMaskShifted)
+DEFINE_LOCK_WORD_EXPR(GC_STATE_MASK_SHIFTED_TOGGLED, uint32_t, kGCStateMaskShiftedToggled)
+DEFINE_LOCK_WORD_EXPR(GC_STATE_SHIFT,   int32_t,  kGCStateShift)
+
+DEFINE_LOCK_WORD_EXPR(MARK_BIT_SHIFT, int32_t, kMarkBitStateShift)
+DEFINE_LOCK_WORD_EXPR(MARK_BIT_MASK_SHIFTED, uint32_t, kMarkBitStateMaskShifted)
+
+#undef DEFINE_LOCK_WORD_EXPR
+

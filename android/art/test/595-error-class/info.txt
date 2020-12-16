@@ -1,0 +1,1 @@
+Regression test on merging array type with error component type.

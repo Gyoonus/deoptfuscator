@@ -1,0 +1,2 @@
+Regression test for optimizing that used to emit wrong code
+for a HPackedSwitch.

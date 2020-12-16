@@ -1,0 +1,3 @@
+Smali-based tests for method handle invocations.
+
+NOTE: needs to run under ART or a Java 8 Language runtime and compiler.

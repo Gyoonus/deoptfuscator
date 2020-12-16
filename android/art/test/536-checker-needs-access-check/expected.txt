@@ -1,0 +1,4 @@
+Got expected error instanceof
+Got expected error instanceof null
+Got expected error checkcast null
+Got expected error instanceof (keep LoadClass with access check)

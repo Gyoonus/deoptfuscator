@@ -1,0 +1,1 @@
+Regression test for encoded static strings caussing OOME b/30690988

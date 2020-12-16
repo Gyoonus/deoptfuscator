@@ -1,0 +1,2 @@
+Tests a regression in which we moved the null check to an instruction which
+checked a different object. This lead to valid null checks being elided.

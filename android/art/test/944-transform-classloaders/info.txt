@@ -1,0 +1,7 @@
+Tests that redefined dex files are stored in the appropriate classloader.
+
+This test cannot run on the RI.
+
+We use reflection with setAccessible(true) to examine the private internals of
+classloaders. Changes to the internal operation or definition of
+dalvik.system.BaseDexClassLoader might cause this test to fail.

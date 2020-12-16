@@ -1,0 +1,2 @@
+Regression test for the arm backend of the optimizing
+compiler, that used to misuse ShifterOperand::CanHold.

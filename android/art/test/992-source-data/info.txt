@@ -1,0 +1,1 @@
+Tests that we can get the source file of a class from JVMTI.

@@ -1,0 +1,13 @@
+JNI_OnLoad called
+A.a: 5
+A.a: 10
+B.b: 10
+C.c: 10
+X: 4950
+Y: 5730
+str: Hello World!
+ooo: OoooooO
+Z: 11206655
+A: 100
+AA: 100
+a != 101

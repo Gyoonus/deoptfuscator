@@ -1,0 +1,1 @@
+Make sure analysis of unverified method is skipped.

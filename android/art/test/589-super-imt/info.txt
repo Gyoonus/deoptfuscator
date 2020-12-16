@@ -1,0 +1,2 @@
+Test what the IMT is properly set for a subclass, and that the
+subclass won't use the ImtConflictTable table of its super class.

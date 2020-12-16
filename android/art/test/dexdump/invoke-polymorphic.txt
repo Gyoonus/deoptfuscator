@@ -1,0 +1,109 @@
+Processing 'invoke-polymorphic.dex'...
+Opened 'invoke-polymorphic.dex', DEX version '037'
+DEX file header:
+magic               : 'dex\n037\0'
+checksum            : 0b5f9fd7
+signature           : fcf4...f0e5
+file_size           : 1160
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 30
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 11
+type_ids_off        : 232 (0x0000e8)
+proto_ids_size      : 6
+proto_ids_off       : 276 (0x000114)
+field_ids_size      : 0
+field_ids_off       : 0 (0x000000)
+method_ids_size     : 5
+method_ids_off      : 348 (0x00015c)
+class_defs_size     : 1
+class_defs_off      : 388 (0x000184)
+data_size           : 740
+data_off            : 420 (0x0001a4)
+
+Class #0 header:
+class_idx           : 2
+access_flags        : 1 (0x0001)
+superclass_idx      : 4
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 12
+annotations_off     : 528 (0x000210)
+class_data_off      : 959 (0x0003bf)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 2
+virtual_methods_size: 0
+
+Class #0 annotations:
+Annotations on method #1 'main'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Throwable; }
+
+Class #0            -
+  Class descriptor  : 'LMain;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in LMain;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0001ac:                                        |[0001ac] Main.<init>:()V
+0001bc: 7010 0200 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0002
+0001c2: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=9
+      locals        : 
+        0x0000 - 0x0004 reg=0 this LMain; 
+
+    #1              : (in LMain;)
+      name          : 'main'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 10
+      ins           : 1
+      outs          : 0
+      insns size    : 30 16-bit code units
+0001c4:                                        |[0001c4] Main.main:([Ljava/lang/String;)V
+0001d4: 1802 9a99 9999 9999 0140               |0000: const-wide v2, #double 2.2 // #400199999999999a
+0001de: 1214                                   |0005: const/4 v4, #int 1 // #1
+0001e0: 1200                                   |0006: const/4 v0, #int 0 // #0
+0001e2: 1205                                   |0007: const/4 v5, #int 0 // #0
+0001e4: 1b01 1200 0000                         |0008: const-string/jumbo v1, "a" // string@00000012
+0001ea: 0146                                   |000b: move v6, v4
+0001ec: fb07 0300 0000 0200                    |000c: invoke-polymorphic/range {v0, v1, v2, v3, v4, v5, v6}, Ljava/lang/invoke/MethodHandle;.invoke:([Ljava/lang/Object;)Ljava/lang/Object;, (Ljava/lang/String;DILjava/lang/Object;I)Ljava/lang/String; // method@0003, proto@0002
+0001f4: 0c07                                   |0010: move-result-object v7
+0001f6: fa40 0400 2043 0000                    |0011: invoke-polymorphic {v0, v2, v3, v4}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, (DI)I // method@0004, proto@0000
+0001fe: 0a08                                   |0015: move-result v8
+000200: 1b01 1200 0000                         |0016: const-string/jumbo v1, "a" // string@00000012
+000206: fa54 0300 1032 0400                    |0019: invoke-polymorphic {v0, v1, v2, v3, v4}, Ljava/lang/invoke/MethodHandle;.invoke:([Ljava/lang/Object;)Ljava/lang/Object;, (Ljava/lang/String;DI)V // method@0003, proto@0004
+00020e: 0e00                                   |001d: return-void
+      catches       : (none)
+      positions     : 
+        0x0006 line=31
+        0x0007 line=32
+        0x0008 line=33
+        0x0011 line=34
+        0x0016 line=35
+        0x001d line=56
+      locals        : 
+        0x0007 - 0x001e reg=0 handle Ljava/lang/invoke/MethodHandle; 
+        0x0008 - 0x001e reg=5 o Ljava/lang/Object; 
+        0x0011 - 0x001e reg=7 s Ljava/lang/String; 
+        0x0016 - 0x001e reg=8 x I 
+        0x0000 - 0x001e reg=9 args [Ljava/lang/String; 
+
+  Virtual methods   -
+  source_file_idx   : 12 (Main.java)
+

@@ -1,0 +1,1 @@
+Tests constant folding in the optimizing compiler.

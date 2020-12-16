@@ -1,0 +1,2 @@
+Regression check for optimizing simplify instruction pass.
+Mul should expect zero constant as input.

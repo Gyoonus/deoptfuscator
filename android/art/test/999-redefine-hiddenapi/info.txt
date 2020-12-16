@@ -1,0 +1,1 @@
+Tests that JVMTI class redefinition does not strip away hidden API access flags.

@@ -1,0 +1,3 @@
+Regression test for optimizing's type propagation:
+If a phi requests its inputs to be of a certain type, the inputs need
+to propagate that type to their users, as those users might be phis.

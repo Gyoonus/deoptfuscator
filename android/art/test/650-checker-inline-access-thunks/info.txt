@@ -1,0 +1,1 @@
+Test that access thunks for nested classes are inlined.

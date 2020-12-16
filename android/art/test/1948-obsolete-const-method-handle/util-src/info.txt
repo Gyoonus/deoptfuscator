@@ -1,0 +1,7 @@
+This builds the class files for test 1948. It does this by first compiling the
+contents of src/. Then it uses TestGenerator to add additional functions to the
+TestInvoker and Test1948 classes. These additions are a new method that loads a
+constant method-handle and invokes it in TestInvoker and functions that will
+return the dex & class bytes for the redefinition that changes the target of the
+methodHandle TestInvoker loads.
+

@@ -1,0 +1,7 @@
+Test basic JVMTI breakpoint functionality.
+
+This test places a breakpoint on the first instruction of a number of functions
+that are entered in every way possible for the given class of method.
+
+It also tests that breakpoints don't interfere with each other by having
+multiple breakpoints be set at once.

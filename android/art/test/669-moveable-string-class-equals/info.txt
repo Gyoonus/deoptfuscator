@@ -1,0 +1,2 @@
+Regression test for String.equals() intrinsic instanceof check
+when the String.class is moveable.

@@ -1,0 +1,15 @@
+Tests method tracing in JVMTI
+
+This test is sensitive to the internal implementations of:
+ * java.lang.Error
+ * java.lang.Integer
+ * java.lang.Math
+ * java.lang.String
+ * java.lang.System
+ * java.util.ArrayList
+ * java.util.Arrays
+ * java.util.StringBuilder
+ * all super-classes and super-interfaces of the above types.
+
+Changes to the internal implementation of these classes might (or might not)
+change the output of this test.

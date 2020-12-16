@@ -1,0 +1,4 @@
+VMInit: main
+ThreadStart: JVMTI_THREAD-Test1919
+Test1919AgentThread: JVMTI_THREAD-Test1919
+ThreadStart: main

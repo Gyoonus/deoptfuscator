@@ -1,0 +1,2 @@
+Regression test for a failing DCHECK in SSA liveness analysis in the presence
+of irreducible loops.

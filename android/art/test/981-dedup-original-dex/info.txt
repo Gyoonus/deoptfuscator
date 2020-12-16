@@ -1,0 +1,4 @@
+Tests basic functions in the jvmti plugin.
+
+This checks that we do not needlessly duplicate the contents of retransformed
+classes original dex files.

@@ -1,0 +1,10 @@
+class java.lang.Object 8
+class java.lang.Object 8
+class [I 12
+class [I 16
+class [I 20
+class [D 16
+class [D 24
+class [D 32
+class java.lang.String 24
+class java.lang.String 24

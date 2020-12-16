@@ -1,0 +1,72 @@
+Running public static void art.Test1913.ObjectMethod(java.lang.Runnable) with "GetGetObject" on remote thread.
+"GetGetObject" on public static void art.Test1913.ObjectMethod(java.lang.Runnable) got value: TestClass1("ObjectMethod")
+	Value is 'TestClass1("ObjectMethod")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.ObjectMethod(java.lang.Runnable) with "SetNull" on remote thread.
+"SetNull" on public static void art.Test1913.ObjectMethod(java.lang.Runnable) set value: null
+	Value is 'null' (class: NULL)
+Running public static void art.Test1913.ObjectMethod(java.lang.Runnable) with "SetTestClass1" on remote thread.
+"SetTestClass1" on public static void art.Test1913.ObjectMethod(java.lang.Runnable) set value: TestClass1("Set TestClass1")
+	Value is 'TestClass1("Set TestClass1")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.ObjectMethod(java.lang.Runnable) with "SetTestClass1ext" on remote thread.
+"SetTestClass1ext" on public static void art.Test1913.ObjectMethod(java.lang.Runnable) set value: TestClass1ext("TestClass1("Set TestClass1ext")")
+	Value is 'TestClass1ext("TestClass1("Set TestClass1ext")")' (class: class art.Test1913$TestClass1ext)
+Running public static void art.Test1913.ObjectMethod(java.lang.Runnable) with "SetTestClass2" on remote thread.
+"SetTestClass2" on public static void art.Test1913.ObjectMethod(java.lang.Runnable) set value: TestClass2("Set TestClass2")
+	Value is 'TestClass2("Set TestClass2")' (class: class art.Test1913$TestClass2)
+Running public static void art.Test1913.ObjectMethod(java.lang.Runnable) with "SetTestClass2impl" on remote thread.
+"SetTestClass2impl" on public static void art.Test1913.ObjectMethod(java.lang.Runnable) set value: TestClass2impl("TestClass2("Set TestClass2impl")")
+	Value is 'TestClass2impl("TestClass2("Set TestClass2impl")")' (class: class art.Test1913$TestClass2impl)
+Running public static void art.Test1913.InterfaceMethod(java.lang.Runnable) with "GetGetObject" on remote thread.
+"GetGetObject" on public static void art.Test1913.InterfaceMethod(java.lang.Runnable) got value: TestClass1("InterfaceMethod")
+	Value is 'TestClass1("InterfaceMethod")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.InterfaceMethod(java.lang.Runnable) with "SetNull" on remote thread.
+"SetNull" on public static void art.Test1913.InterfaceMethod(java.lang.Runnable) set value: null
+	Value is 'null' (class: NULL)
+Running public static void art.Test1913.InterfaceMethod(java.lang.Runnable) with "SetTestClass1" on remote thread.
+"SetTestClass1" on public static void art.Test1913.InterfaceMethod(java.lang.Runnable) set value: TestClass1("Set TestClass1")
+	Value is 'TestClass1("Set TestClass1")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.InterfaceMethod(java.lang.Runnable) with "SetTestClass1ext" on remote thread.
+"SetTestClass1ext" on public static void art.Test1913.InterfaceMethod(java.lang.Runnable) set value: TestClass1ext("TestClass1("Set TestClass1ext")")
+	Value is 'TestClass1ext("TestClass1("Set TestClass1ext")")' (class: class art.Test1913$TestClass1ext)
+Running public static void art.Test1913.InterfaceMethod(java.lang.Runnable) with "SetTestClass2" on remote thread.
+"SetTestClass2" on public static void art.Test1913.InterfaceMethod(java.lang.Runnable) failed to set value TestClass2("Set TestClass2") due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is 'TestClass1("InterfaceMethod")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.InterfaceMethod(java.lang.Runnable) with "SetTestClass2impl" on remote thread.
+"SetTestClass2impl" on public static void art.Test1913.InterfaceMethod(java.lang.Runnable) set value: TestClass2impl("TestClass2("Set TestClass2impl")")
+	Value is 'TestClass2impl("TestClass2("Set TestClass2impl")")' (class: class art.Test1913$TestClass2impl)
+Running public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) with "GetGetObject" on remote thread.
+"GetGetObject" on public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) got value: TestClass1("SpecificClassMethod")
+	Value is 'TestClass1("SpecificClassMethod")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) with "SetNull" on remote thread.
+"SetNull" on public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) set value: null
+	Value is 'null' (class: NULL)
+Running public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) with "SetTestClass1" on remote thread.
+"SetTestClass1" on public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) set value: TestClass1("Set TestClass1")
+	Value is 'TestClass1("Set TestClass1")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) with "SetTestClass1ext" on remote thread.
+"SetTestClass1ext" on public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) set value: TestClass1ext("TestClass1("Set TestClass1ext")")
+	Value is 'TestClass1ext("TestClass1("Set TestClass1ext")")' (class: class art.Test1913$TestClass1ext)
+Running public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) with "SetTestClass2" on remote thread.
+"SetTestClass2" on public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) failed to set value TestClass2("Set TestClass2") due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is 'TestClass1("SpecificClassMethod")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) with "SetTestClass2impl" on remote thread.
+"SetTestClass2impl" on public static void art.Test1913.SpecificClassMethod(java.lang.Runnable) failed to set value TestClass2impl("TestClass2("Set TestClass2impl")") due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is 'TestClass1("SpecificClassMethod")' (class: class art.Test1913$TestClass1)
+Running public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) with "GetGetObject" on remote thread.
+"GetGetObject" on public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) with "SetNull" on remote thread.
+"SetNull" on public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) failed to set value null due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) with "SetTestClass1" on remote thread.
+"SetTestClass1" on public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) failed to set value TestClass1("Set TestClass1") due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) with "SetTestClass1ext" on remote thread.
+"SetTestClass1ext" on public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) failed to set value TestClass1ext("TestClass1("Set TestClass1ext")") due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) with "SetTestClass2" on remote thread.
+"SetTestClass2" on public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) failed to set value TestClass2("Set TestClass2") due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) with "SetTestClass2impl" on remote thread.
+"SetTestClass2impl" on public static void art.Test1913.PrimitiveMethod(java.lang.Runnable) failed to set value TestClass2impl("TestClass2("Set TestClass2impl")") due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)

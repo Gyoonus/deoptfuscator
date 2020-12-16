@@ -1,0 +1,44 @@
+b17325447 passes
+b17630605 passes
+b17411468 passes
+b2296099 passes
+b2302318 passes
+b2487514 passes
+b5884080 passes
+b13679511Test starting
+1
+2
+3
+4
+4
+1
+1
+1
+false
+b13679511Test finishing
+b16177324TestWrapper caught NPE as expected.
+b16230771TestWrapper caught NPE as expected.
+b17969907TestWrapper caught NPE as expected.
+largeFrame passes
+largeFrameFloat passes
+mulBy1Test passes
+constantPropagationTest passes
+getterSetterTest passes
+identityTest passes
+wideGetterSetterTest passes
+wideIdentityTest passes
+returnConstantTest passes
+setterTestWithReturnArgIgnoreReturn passes
+setterTestWithReturnArgUseReturn passes
+wideSetterTestWithReturnArgIgnoreReturn passes
+wideSetterTestWithReturnArgUseReturn passes
+LVNTests.testNPE1 passes
+LVNTests.testNPE2 passes
+longDivTest passes
+longModTest passes
+testIfCcz passes
+ManyFloatArgs passes
+atomicLong passes
+LiveFlags passes trip 3
+LiveFlags passes trip 1
+minDoubleWith3ConstsTest passes

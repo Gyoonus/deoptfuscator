@@ -1,0 +1,4 @@
+Tests basic functions in the jvmti plugin.
+
+Tests that transformation works even when the class being transformed comes from
+an in-memory dex file (i.e. loaded from an InMemoryDexClassLoader).

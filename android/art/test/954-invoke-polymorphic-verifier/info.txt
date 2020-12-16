@@ -1,0 +1,3 @@
+Test cases that should be rejected by the method verifier.
+
+NOTE: needs to run under ART.

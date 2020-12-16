@@ -1,0 +1,1 @@
+Checker tests for the 'if' simplification in the compiler.

@@ -1,0 +1,91 @@
+<api>
+<package name=""
+>
+<class name="Main"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="Main"
+ type="Main"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="main"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+</class>
+</package>
+<package name="constmethodhandle"
+>
+<class name="ConstTest"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="ConstTest"
+ type="constmethodhandle.ConstTest"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="main"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+<method name="test1"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test2"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<method_handle index="0"
+ type="invoke-instance"
+ target_class="Ljava/lang/Object;"
+ target_member="getClass"
+ target_member_type="(Ljava/lang/Object;)Ljava/lang/Class;"
+>
+</method_handle>
+</package>
+</api>

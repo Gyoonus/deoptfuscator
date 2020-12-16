@@ -1,0 +1,6 @@
+Tests JVMTI ThreadEnd bug
+
+We had a bug where we were still sending events after JVMTI_EVENT_THREAD_END due
+to where we sent the event. This test ensures that the placement of the
+THREAD_END event is correct.
+

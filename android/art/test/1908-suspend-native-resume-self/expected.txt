@@ -1,0 +1,10 @@
+Resumer: isNativeThreadSpinning() = true
+Resumer: isSuspended(spinner) = false
+Resumer: Suspended spinner while native spinning
+Resumer: isNativeThreadSpinning() = true
+Resumer: isSuspended(spinner) = true
+Resuming other thread
+other thread attempting self resume
+Resumer: isSuspended(spinner) = true
+real resume
+other thread resumed.

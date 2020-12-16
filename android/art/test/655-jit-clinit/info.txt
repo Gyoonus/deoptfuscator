@@ -1,0 +1,3 @@
+Regression test for the JIT compiler, which used to wait
+on a class object, meaning application code could just block
+all JIT compilations.

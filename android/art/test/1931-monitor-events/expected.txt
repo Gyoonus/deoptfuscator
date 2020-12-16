@@ -1,0 +1,29 @@
+Testing contended locking.
+Locker thread 1 for NamedLock[Lock testLock] contended-LOCKING NamedLock[Lock testLock]
+Locker thread 1 for NamedLock[Lock testLock] LOCKED NamedLock[Lock testLock]
+Testing monitor wait.
+Locker thread 2 for NamedLock[Lock testWait] start-monitor-wait NamedLock[Lock testWait] timeout: 0
+Locker thread 2 for NamedLock[Lock testWait] monitor-waited NamedLock[Lock testWait] timed_out: false
+Testing monitor timed wait.
+Locker thread 4 for NamedLock[Lock testTimedWait] start-monitor-wait NamedLock[Lock testTimedWait] timeout: 3600000
+Locker thread 4 for NamedLock[Lock testTimedWait] monitor-waited NamedLock[Lock testTimedWait] timed_out: false
+Testing monitor timed with timeout.
+Waiting for 10 seconds.
+Locker thread 6 for NamedLock[Lock testTimedWaitTimeout] start-monitor-wait NamedLock[Lock testTimedWaitTimeout] timeout: 10000
+Locker thread 6 for NamedLock[Lock testTimedWaitTimeout] monitor-waited NamedLock[Lock testTimedWaitTimeout] timed_out: true
+Wait finished with timeout.
+Waiting on an unlocked monitor.
+Unlocked wait thread: start-monitor-wait NamedLock[Lock testUnlockedWait] timeout: 0
+Caught exception: java.lang.reflect.InvocationTargetException
+	Caused by: class java.lang.IllegalMonitorStateException
+Waiting with an illegal argument (negative timeout)
+Locker thread 7 for NamedLock[Lock testIllegalWait] start-monitor-wait NamedLock[Lock testIllegalWait] timeout: -100
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: Got an error while performing action TIMED_WAIT
+	Caused by: class java.lang.IllegalArgumentException
+Interrupt a monitor being waited on.
+Locker thread 8 for NamedLock[Lock testInteruptWait] start-monitor-wait NamedLock[Lock testInteruptWait] timeout: 0
+Locker thread 8 for NamedLock[Lock testInteruptWait] monitor-waited NamedLock[Lock testInteruptWait] timed_out: false
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: Got an error while performing action WAIT
+	Caused by: class java.lang.InterruptedException

@@ -1,0 +1,2 @@
+Test for the optimizing compiler's parallel swap support in
+the presence of register pairs (in this case, doubles on ARM).

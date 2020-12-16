@@ -1,0 +1,1 @@
+Regression test for Boolean to integral types conversions.

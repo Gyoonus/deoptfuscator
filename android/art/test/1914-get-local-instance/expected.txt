@@ -1,0 +1,15 @@
+Running public static void art.Test1914.StaticMethod(java.lang.Runnable) with "GetThis" on remote thread.
+"GetThis" on public static void art.Test1914.StaticMethod(java.lang.Runnable) got value: null
+	Value is 'null' (class: NULL)
+Running public static native void art.Test1914.NativeStaticMethod(java.lang.Runnable) with "GetThis" on remote thread.
+"GetThis" on public static native void art.Test1914.NativeStaticMethod(java.lang.Runnable) got value: null
+	Value is 'null' (class: NULL)
+Running public void art.Test1914$TargetClass.InstanceMethod(java.lang.Runnable) with "GetThis" on remote thread.
+"GetThis" on public void art.Test1914$TargetClass.InstanceMethod(java.lang.Runnable) got value: TargetClass("InstanceMethodObject")
+	Value is 'TargetClass("InstanceMethodObject")' (class: class art.Test1914$TargetClass)
+Running public native void art.Test1914$TargetClass.NativeInstanceMethod(java.lang.Runnable) with "GetThis" on remote thread.
+"GetThis" on public native void art.Test1914$TargetClass.NativeInstanceMethod(java.lang.Runnable) got value: TargetClass("NativeInstanceMethodObject")
+	Value is 'TargetClass("NativeInstanceMethodObject")' (class: class art.Test1914$TargetClass)
+Running public abstract void art.Test1914$Foo.InterfaceProxyMethod(java.lang.Runnable) with "GetThis" on remote thread.
+"GetThis" on public abstract void art.Test1914$Foo.InterfaceProxyMethod(java.lang.Runnable) got value: Proxy for [interface art.Test1914$Foo]
+	Value is 'Proxy for [interface art.Test1914$Foo]' (class: PROXY CLASS)

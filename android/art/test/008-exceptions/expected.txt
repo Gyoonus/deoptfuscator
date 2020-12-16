@@ -1,0 +1,25 @@
+Got an NPE: second throw
+java.lang.NullPointerException: second throw
+	at Main.catchAndRethrow(Main.java:94)
+	at Main.exceptions_007(Main.java:74)
+	at Main.main(Main.java:82)
+Caused by: java.lang.NullPointerException: first throw
+	at Main.throwNullPointerException(Main.java:101)
+	at Main.catchAndRethrow(Main.java:91)
+	... 2 more
+Static Init
+BadError: This is bad by convention: BadInit
+java.lang.NoClassDefFoundError: BadInit
+BadError: This is bad by convention: BadInit
+Static BadInitNoStringInit
+BadErrorNoStringInit: This is bad by convention
+java.lang.NoClassDefFoundError: BadInitNoStringInit
+BadErrorNoStringInit: This is bad by convention
+BadSuperClass Static Init
+BadError: This is bad by convention: BadInit
+MultiDexBadInit Static Init
+java.lang.Error: MultiDexBadInit
+java.lang.NoClassDefFoundError: MultiDexBadInit
+  cause: java.lang.Error: MultiDexBadInit
+java.lang.NoClassDefFoundError: MultiDexBadInit
+  cause: java.lang.Error: MultiDexBadInit

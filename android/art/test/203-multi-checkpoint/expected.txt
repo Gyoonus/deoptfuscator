@@ -1,0 +1,5 @@
+JNI_OnLoad called
+Other thread running
+pushing checkpoints
+checkpoints pushed
+Passed!

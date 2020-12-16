@@ -1,0 +1,1 @@
+Checker test that we combine ArrayLength and BoundsCheck on x86/x86_64.

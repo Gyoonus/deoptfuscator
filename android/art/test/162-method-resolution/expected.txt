@@ -1,0 +1,46 @@
+Calling Test1Derived.test():
+Test1Derived.foo()
+Calling Test1User.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IllegalAccessError
+Calling Test1User2.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IllegalAccessError
+Calling Test2User.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IncompatibleClassChangeError
+Calling Test2User2.test():
+Test2Base.foo()
+Calling Test3User.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IncompatibleClassChangeError
+Calling Test4User.test():
+Test4Derived@...
+Calling Test5User.test():
+Test5Derived.foo()
+Calling Test5User2.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IncompatibleClassChangeError
+Calling Test6User.test():
+Test6Derived@...
+Calling Test6User2.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IncompatibleClassChangeError
+Calling Test7User.test():
+Test7Interface.foo()
+Calling Test7User2.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IllegalAccessError
+Calling Test8User.test():
+Test8Derived.foo()
+Calling Test8User2.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IncompatibleClassChangeError
+Calling Test9User.test():
+Test9Derived.foo()
+Calling Test9User2.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IncompatibleClassChangeError
+Calling Test10User.test():
+Caught java.lang.reflect.InvocationTargetException
+  caused by java.lang.IncompatibleClassChangeError

@@ -1,0 +1,1 @@
+Regression test on correct processing of OOM thrown while adding a finalizer reference.

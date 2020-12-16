@@ -1,0 +1,1 @@
+Test that large objects are freed properly after a GC.

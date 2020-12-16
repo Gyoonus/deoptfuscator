@@ -1,0 +1,3 @@
+Test basic JVMTI single step functionality.
+
+Ensures that we can receive single step events from JVMTI.

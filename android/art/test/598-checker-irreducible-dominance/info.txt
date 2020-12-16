@@ -1,0 +1,2 @@
+Regression test for HGraphBuilder which would compute wrong dominance information
+in the presence of irreducible loops.

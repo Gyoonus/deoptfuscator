@@ -1,0 +1,3 @@
+Test features with a secondary dex file.
+
+- Regression test to ensure AOT compiler correctly manages overriden package-private method.

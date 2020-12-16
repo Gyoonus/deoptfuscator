@@ -1,0 +1,104 @@
+ReturnsAndArgPassing.testProxyReturns RUNNING
+ReturnsAndArgPassing.testProxyReturns PASSED
+ReturnsAndArgPassing.testProxyArgPassing RUNNING
+ReturnsAndArgPassing.testProxyArgPassing PASSED
+Invoke public abstract void Shapes.circle(int)
+ 0: 3
+--- circle 3
+Success: method circle res=null
+Invoke public abstract int Quads.rectangle(int,int)
+ 0: 10
+ 1: 20
+--- rectangle 10,20
+Success: method rectangle res=4
+Invoke public abstract java.lang.String Shapes.blob()
+ (no args)
+--- blob
+Success: method blob res=mix
+Invoke public abstract int Quads.rectangle(int,int)
+ 0: 15
+ 1: 25
+--- rectangle 15,25
+Success: method rectangle res=4
+Invoke public abstract int Quads.trapezoid(int,double,int)
+ 0: 6
+ 1: 81.18
+ 2: 4
+--- trap 6,4,81.18
+Success: method trapezoid res=8
+Invoke public abstract int Colors.red(float)
+ 0: 1.0
+--- red 1.0
+Success: method red res=0
+Invoke public abstract double Colors.blue(int)
+ 0: 777
+--- blue 777
+Success: method blue res=2.54
+Invoke public abstract int Colors.mauve(java.lang.String)
+ 0: sorry
+--- mauve sorry
+Success: method mauve res=3
+Invoke public abstract java.lang.String Shapes.blob()
+ (no args)
+--- blob
+Success: method blob res=mix
+Invoke public abstract void Trace.getTrace()
+$PROXY_CLASS_NAME0$.getTrace null:-1
+Invoke public int java.lang.Object.hashCode()
+Invoke public boolean java.lang.Object.equals(java.lang.Object)
+Invoke public java.lang.String java.lang.Object.toString()
+Invoke public abstract void Shapes.upChuck()
+ (no args)
+Got expected ioobe
+Invoke public abstract void Shapes.upCheck() throws java.lang.InterruptedException
+ (no args)
+Got expected ie
+
+Proxy interfaces: [interface Quads, interface Colors, interface Trace]
+Proxy methods: [public final R0a $PROXY_CLASS_NAME0$.checkMe(), public final R0aa $PROXY_CLASS_NAME0$.checkMe(), public final R0base $PROXY_CLASS_NAME0$.checkMe(), public final boolean $PROXY_CLASS_NAME0$.equals(java.lang.Object), public final double $PROXY_CLASS_NAME0$.blue(int), public final int $PROXY_CLASS_NAME0$.green(double), public final int $PROXY_CLASS_NAME0$.hashCode(), public final int $PROXY_CLASS_NAME0$.mauve(java.lang.String), public final int $PROXY_CLASS_NAME0$.rectangle(int,int), public final int $PROXY_CLASS_NAME0$.red(float), public final int $PROXY_CLASS_NAME0$.square(int,int), public final int $PROXY_CLASS_NAME0$.trapezoid(int,double,int), public final java.lang.String $PROXY_CLASS_NAME0$.blob(), public final java.lang.String $PROXY_CLASS_NAME0$.toString(), public final void $PROXY_CLASS_NAME0$.circle(int), public final void $PROXY_CLASS_NAME0$.getTrace(), public final void $PROXY_CLASS_NAME0$.upCheck() throws java.lang.InterruptedException, public final void $PROXY_CLASS_NAME0$.upChuck()]
+Decl annos: []
+Param annos (0) : []
+Modifiers: 17
+Dupe threw expected exception
+Clash threw expected exception
+Clash2 threw expected exception
+Clash3 threw expected exception
+Clash4 threw expected exception
+Invoke public abstract void InterfaceW1.throwFunky()
+ (no args)
+Got expected UTE
+Invoke public abstract void InterfaceW1.throwFunky2() throws BaseException,java.lang.NoSuchMethodException,java.io.IOException
+ (no args)
+Got expected IOE
+Invoke public abstract void InterfaceW1.throwFunky2() throws BaseException,java.lang.NoSuchMethodException,java.io.IOException
+ (no args)
+Got expected IOE
+Invoke public abstract void InterfaceW1.throwException() throws BaseException
+ (no args)
+Got expected UTE
+Invoke public abstract void InterfaceW1.throwBase() throws BaseException
+ (no args)
+Got expected UTE
+Invoke public abstract void InterfaceW1.throwSub() throws BaseException
+ (no args)
+Got expected exception
+Invoke public abstract void InterfaceW1.throwSubSub() throws BaseException
+ (no args)
+Got expected exception
+Invoke public abstract void InterfaceW1.bothThrowBase() throws BaseException,SubException,SubSubException
+ (no args)
+Got expected exception
+Proxy methods: [public final boolean $PROXY_CLASS_NAME1$.equals(java.lang.Object), public final int $PROXY_CLASS_NAME1$.hashCode(), public final java.lang.Object $PROXY_CLASS_NAME1$.foo(), public final java.lang.String $PROXY_CLASS_NAME1$.foo(), public final java.lang.String $PROXY_CLASS_NAME1$.toString()]
+Invocation of public abstract java.lang.String NarrowingTest$I2.foo()
+Invoking foo using I2 type: hello
+Invocation of public default java.lang.Object NarrowingTest$I2.foo()
+Invoking foo using I1 type: 1
+Invocation of public abstract java.lang.String NarrowingTest$I2.foo()
+Got expected exception
+Proxy narrowed invocation return type passed
+5.8
+JNI_OnLoad called
+callback
+Found constructor.
+Found constructors with 0 exceptions
+Received OOME

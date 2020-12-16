@@ -1,0 +1,1 @@
+Tests field access and modification watches in JVMTI

@@ -1,0 +1,2 @@
+Check that we can optimize interface calls without
+requiring the verifier to sharpen them.

@@ -1,0 +1,1 @@
+Tests that DCE can remove a packed switch.

@@ -1,0 +1,2 @@
+Regression test for the optimization of String.charAt, which
+had its SSA dependency incorrect with its corresponding bound check.

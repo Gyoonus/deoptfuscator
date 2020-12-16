@@ -1,0 +1,2 @@
+Regression test for the building phase of the optimizing
+compiler. See comment in smali file.

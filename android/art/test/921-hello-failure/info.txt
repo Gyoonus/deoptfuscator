@@ -1,0 +1,7 @@
+Tests for redefinition failure modes.
+
+Tests
+----
+
+- NewName: The name of the class is changed
+- DifferentAccess: Class access is changed from <default> to 'public'

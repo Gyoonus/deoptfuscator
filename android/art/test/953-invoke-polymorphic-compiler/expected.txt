@@ -1,0 +1,25 @@
+Running Main.Min2Print2([33, -4])
+Running Main.Min2Print2([-4, 33])
+Running Main.Min2Print3([33, -4, 17])
+Running Main.Min2Print3([-4, 17, 33])
+Running Main.Min2Print3([17, 33, -4])
+Running Main.Min2Print6([33, -4, 77, 88, 99, 111])
+Running Main.Min2Print6([-4, 77, 88, 99, 111, 33])
+Running Main.Min2Print6([77, 88, 99, 111, 33, -4])
+Running Main.Min2Print6([88, 99, 111, 33, -4, 77])
+Running Main.Min2Print6([99, 111, 33, -4, 77, 88])
+Running Main.Min2Print6([111, 33, -4, 77, 88, 99])
+Running Main.Min2Print26([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25])
+Running Main.Min2Print26([25, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24])
+Running Main.Min2Print26([24, 25, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])
+BasicTest done.
+$opt$ReturnBooleanTest done.
+$opt$ReturnCharTest done.
+$opt$ReturnByteTest done.
+$opt$ReturnShortTest done.
+$opt$ReturnIntTest done.
+$opt$ReturnLongTest done.
+$opt$ReturnFloatTest done.
+$opt$ReturnDoubleTest done.
+$opt$ReturnStringTest done.
+ReturnValuesTest done.

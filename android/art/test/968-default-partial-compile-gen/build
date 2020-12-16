@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+# Copyright 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# make us exit on a failure
+set -e
+
+# TODO: Support running with jack.
+
+if [[ $@ == *"--jvm"* ]]; then
+  # Build the Java files if we are running a --jvm test
+  mkdir -p classes
+  mkdir -p src
+  echo "${JAVAC} \$@" >> ./javac_exec.sh
+  # This will use java_exec.sh to execute the javac compiler. It will place the
+  # compiled class files in ./classes and the expected values in expected.txt
+  #
+  # After this the src directory will contain the final versions of all files.
+  ./util-src/generate_java.py ./javac_exec.sh ./src ./classes ./expected.txt ./build_log
+else
+  mkdir -p ./smali
+  # Generate the smali files and expected.txt or fail
+  ./util-src/generate_smali.py ./smali ./expected.txt
+  # Use the default build script
+  ./default-build "$@" "$EXTRA_ARGS" --experimental default-methods
+fi

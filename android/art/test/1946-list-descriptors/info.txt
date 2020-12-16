@@ -1,0 +1,1 @@
+Tests the jvmti-extension to get the classes contained in class-loaders.

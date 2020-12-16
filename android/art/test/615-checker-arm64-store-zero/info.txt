@@ -1,0 +1,1 @@
+Checker test to verify we correctly use wzr and xzr to store zero constants.

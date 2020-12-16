@@ -1,0 +1,2 @@
+Test code generation for field accesses.
+

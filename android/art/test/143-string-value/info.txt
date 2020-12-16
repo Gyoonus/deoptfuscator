@@ -1,0 +1,2 @@
+Test to ensure we emit an error message when being asked
+for String#value.

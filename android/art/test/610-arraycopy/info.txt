@@ -1,0 +1,2 @@
+Regression test for the System.arraycopy intrinsic, which had a bug
+when doing the copy on the same array.

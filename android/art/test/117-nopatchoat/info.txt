@@ -1,0 +1,1 @@
+Test that disables patchoat'ing the application.

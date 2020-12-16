@@ -1,0 +1,27 @@
+BadError:
+  @@com.android.jack.annotations.ForceInMainDex
+  class BadError
+BadInit:
+  @@com.android.jack.annotations.ForceInMainDex
+  class BadInit
+BadErrorNoStringInit:
+  @@com.android.jack.annotations.ForceInMainDex
+  class BadErrorNoStringInit
+BadInitNoStringInit:
+  @@com.android.jack.annotations.ForceInMainDex
+  class BadInitNoStringInit
+BadSuperClass:
+  @@com.android.jack.annotations.ForceInMainDex
+  class BadSuperClass
+DerivedFromBadSuperClass:
+  @@com.android.jack.annotations.ForceInMainDex
+  class DerivedFromBadSuperClass
+Main:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Main
+MultiDexBadInit:
+  @@com.android.jack.annotations.ForceInMainDex
+  class MultiDexBadInit
+MultiDexBadInitWrapper1:
+  @@com.android.jack.annotations.ForceInMainDex
+  class MultiDexBadInitWrapper1

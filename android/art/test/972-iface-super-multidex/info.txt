@@ -1,0 +1,3 @@
+Smali-based tests for experimental interface default methods.
+
+Obviously needs to run under ART or a Java 8 Language runtime and compiler.

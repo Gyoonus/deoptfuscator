@@ -1,0 +1,5 @@
+Tests for dalvik.system.EmulatedStackFrame, which is used to implement
+MethodHandle transformations. This is a separate test because it tests
+an implementation detail and hence cannot be used with --mode=jvm.
+
+NOTE: needs to run under ART or a Java 8 Language runtime and compiler.

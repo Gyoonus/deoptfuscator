@@ -1,0 +1,1 @@
+Test for the --count-hotness-in-compiled-code compiler option.

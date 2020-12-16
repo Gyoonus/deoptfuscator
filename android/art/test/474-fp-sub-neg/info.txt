@@ -1,0 +1,11 @@
+Regression check for optimizing simplify instruction pass.
+
+A pair (sub, neg) should not be transforemd to (sub) for
+fp calculation because we can lose the sign of zero for
+the following expression:
+  - ( A - B ) != B - A ; if B == A
+
+Addition or subtraction with fp zero should not be eliminated
+because:
+  -0.0 + 0.0 = 0.0
+  -0.0 - -0.0 = 0.0

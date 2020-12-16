@@ -1,0 +1,5 @@
+Test basic JVMTI exception event functionality.
+
+Ensures we can throw exceptions during the exception event without causing
+problems. Note that we do not allow exceptions to propogate past the event,
+matching RI behavior. See b/65049545.

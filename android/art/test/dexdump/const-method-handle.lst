@@ -1,0 +1,9 @@
+#const-method-handle.dex
+0x000003c0 8 Main <init> ()V Main.java 22
+0x000003d8 50 Main main ([Ljava/lang/String;)V Main.java 26
+0x0000041c 8 constmethodhandle.ConstTest <init> ()V ConstTest.java 22
+0x00000434 94 constmethodhandle.ConstTest displayMethodHandle (Ljava/lang/invoke/MethodHandle;)V ConstTest.java 24
+0x000004a4 50 constmethodhandle.ConstTest displayMethodType (Ljava/lang/invoke/MethodType;)V ConstTest.java 29
+0x000004e8 30 constmethodhandle.ConstTest main ([Ljava/lang/String;)V ConstTest.java -1
+0x00000518 6 constmethodhandle.ConstTest test1 ()Ljava/lang/invoke/MethodHandle; ConstTest.java -1
+0x00000530 6 constmethodhandle.ConstTest test2 ()Ljava/lang/invoke/MethodType; ConstTest.java -1

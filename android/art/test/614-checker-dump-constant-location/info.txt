@@ -1,0 +1,2 @@
+Test that the graph visualizer outputs useful information for constant
+locations in parallel moves.

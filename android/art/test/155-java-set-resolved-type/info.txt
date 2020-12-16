@@ -1,0 +1,2 @@
+Regression test for Java call to DexCache.setResolvedType() storing the
+type in the dex cache while it was not in the class loader's class table.

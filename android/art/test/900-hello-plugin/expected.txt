@@ -1,0 +1,10 @@
+ArtPlugin_Initialize called in test 900
+Agent_OnLoad called with options "test_900"
+GetEnvHandler called in test 900
+GetEnvHandler called with version 0x900fffff
+GetEnv returned '900' environment!
+Agent_OnLoad called with options "test_900_round_2"
+Hello, world!
+Agent_OnUnload called
+Agent_OnUnload called
+ArtPlugin_Deinitialize called in test 900

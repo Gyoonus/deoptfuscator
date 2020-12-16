@@ -1,0 +1,4 @@
+Regression test for load store elimination not respecting the loaded type. When
+a wider value is stored in a narrower field and then loaded from that field,
+LSE needs to replace the value to be stored with a type conversion to the
+narrower type.

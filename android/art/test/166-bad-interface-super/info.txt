@@ -1,0 +1,1 @@
+Test that linking an interface declaring a superclass other than j.l.Object throws CFE.

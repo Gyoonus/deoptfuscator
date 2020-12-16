@@ -1,0 +1,3 @@
+Dex file hook for art/Test983$Transform
+Dex file hook for java/lang/Object
+Dex file hook for java/lang/ClassLoader

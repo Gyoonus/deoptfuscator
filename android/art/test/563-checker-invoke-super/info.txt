@@ -1,0 +1,2 @@
+Tests that invoke-super's to interface methods are optimized to direct method
+calls when in the same dex file.

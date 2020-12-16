@@ -1,0 +1,3 @@
+Regression test for optimizing that used to not return
+the right dex register in debuggable when a new value
+was overwriting the high dex register of a wide value.

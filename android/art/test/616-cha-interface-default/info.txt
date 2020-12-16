@@ -1,0 +1,2 @@
+Test for Class Hierarchy Analysis (CHA) on interface method.
+Test it under multidex configuration to check cross-dex inlining.

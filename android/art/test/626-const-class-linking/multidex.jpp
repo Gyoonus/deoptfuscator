@@ -1,0 +1,27 @@
+ClassPair:
+  @@com.android.jack.annotations.ForceInMainDex
+  class ClassPair
+DefiningLoader:
+  @@com.android.jack.annotations.ForceInMainDex
+  class DefiningLoader
+DelegatingLoader:
+  @@com.android.jack.annotations.ForceInMainDex
+  class DelegatingLoader
+Helper1:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Helper1
+Main:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Main
+MisbehavingLoader:
+  @@com.android.jack.annotations.ForceInMainDex
+  class MisbehavingLoader
+RacyLoader:
+  @@com.android.jack.annotations.ForceInMainDex
+  class RacyLoader
+RacyMisbehavingHelper:
+  @@com.android.jack.annotations.ForceInMainDex
+  class RacyMisbehavingHelper
+RacyMisbehavingLoader:
+  @@com.android.jack.annotations.ForceInMainDex
+  class RacyMisbehavingLoader

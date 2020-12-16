@@ -1,0 +1,5 @@
+Test basic JVMTI breakpoint functionality.
+
+This test ensures we can place breakpoints on particular lines of a method. It
+sets breakpoints on each line in turn of a function with multiple execution
+paths and then runs the function, receiving the breakpoint events.

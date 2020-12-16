@@ -1,0 +1,1 @@
+Got exception JVMTI_ERROR_THREAD_SUSPENDED

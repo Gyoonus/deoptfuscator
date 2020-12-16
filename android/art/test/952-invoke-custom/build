@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# Copyright 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# make us exit on a failure
+set -e
+
+ASM_JAR="${ANDROID_BUILD_TOP}/prebuilts/misc/common/asm/asm-6.0.jar"
+INTERMEDIATE_CLASSES=classes-intermediate
+CLASSES=classes
+
+DEXER="${DX:-dx}"
+if [ "${USE_D8=false}" = "true" ]; then
+  DEXER="${ANDROID_HOST_OUT}/bin/d8-compat-dx"
+fi
+
+# Create directory for intermediate classes
+rm -rf "${INTERMEDIATE_CLASSES}"
+mkdir "${INTERMEDIATE_CLASSES}"
+
+# Generate intermediate classes that will allow transform to be applied to test classes
+JAVAC_ARGS="${JAVAC_ARGS} -source 1.8 -target 1.8 -cp ${ASM_JAR}"
+${JAVAC:-javac} ${JAVAC_ARGS} -d ${INTERMEDIATE_CLASSES} $(find src -name '*.java')
+
+# Create directory for transformed classes
+rm -rf "${CLASSES}"
+mkdir "${CLASSES}"
+
+# Run transform
+for class in ${INTERMEDIATE_CLASSES}/*.class ; do
+  transformed_class=${CLASSES}/$(basename ${class})
+  ${JAVA:-java} -cp "${ASM_JAR}:${INTERMEDIATE_CLASSES}" transformer.IndyTransformer ${class} ${transformed_class}
+done
+
+# Create DEX
+DX_FLAGS="${DX_FLAGS} --min-sdk-version=26 --debug --dump-width=1000"
+${DEXER} -JXmx256m --dex ${DX_FLAGS} --dump-to=${CLASSES}.lst --output=classes.dex ${CLASSES}
+
+# Zip DEX to file name expected by test runner
+zip ${TEST_NAME:-classes-dex}.jar classes.dex

@@ -1,0 +1,3 @@
+Tests for method handle transformations.
+
+NOTE: needs to run under ART or a Java 8 Language runtime and compiler.

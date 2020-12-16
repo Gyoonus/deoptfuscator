@@ -1,0 +1,3 @@
+Simple tests for new-array, filled-new-array and fill-array-data.
+Regression test for the arm64 mterp miscalculating the fill-array-data-payload
+address, zero-extending a register instead of sign-extending.

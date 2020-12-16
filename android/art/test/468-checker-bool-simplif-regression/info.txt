@@ -1,0 +1,2 @@
+Regression test for optimizing's boolean simplifier
+that used to trip when a boolean value was the input of an If.

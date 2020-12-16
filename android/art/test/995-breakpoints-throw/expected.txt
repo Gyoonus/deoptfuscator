@@ -1,0 +1,34 @@
+Test "call Test995::breakpoint": Running breakpoint with handler "do nothing"
+	Breakpoint: public static void art.Test995.breakpoint() @ line=34
+Test "call Test995::breakpoint": No error caught with handler "do nothing"
+Test "call Test995::breakpoint": Finished running with handler "do nothing"
+Test "call Test995::breakpointCatch": Running breakpoint with handler "do nothing"
+	Breakpoint: public static void art.Test995.breakpointCatch() @ line=48
+Test "call Test995::breakpointCatch": No error caught with handler "do nothing"
+Test "call Test995::breakpointCatch": Finished running with handler "do nothing"
+Test "call Test995::breakpointCatchLate": Running breakpoint with handler "do nothing"
+	Breakpoint: public static void art.Test995.breakpointCatchLate() @ line=38
+Test "call Test995::breakpointCatchLate": No error caught with handler "do nothing"
+Test "call Test995::breakpointCatchLate": Finished running with handler "do nothing"
+Test "catch subroutine Test995::breakpoint": Running breakpoint with handler "do nothing"
+	Breakpoint: public static void art.Test995.breakpoint() @ line=34
+Test "catch subroutine Test995::breakpoint": No error caught with handler "do nothing"
+Test "catch subroutine Test995::breakpoint": Finished running with handler "do nothing"
+Test "call Test995::breakpoint": Running breakpoint with handler "throw"
+	Breakpoint: public static void art.Test995.breakpoint() @ line=34
+Test "call Test995::breakpoint": Caught error java.lang.Error:"throwing error!" with handler "throw"
+Test "call Test995::breakpoint": Finished running with handler "throw"
+Test "call Test995::breakpointCatch": Running breakpoint with handler "throw"
+	Breakpoint: public static void art.Test995.breakpointCatch() @ line=48
+Caught java.lang.Error: "throwing error!"
+Test "call Test995::breakpointCatch": No error caught with handler "throw"
+Test "call Test995::breakpointCatch": Finished running with handler "throw"
+Test "call Test995::breakpointCatchLate": Running breakpoint with handler "throw"
+	Breakpoint: public static void art.Test995.breakpointCatchLate() @ line=38
+Test "call Test995::breakpointCatchLate": Caught error java.lang.Error:"throwing error!" with handler "throw"
+Test "call Test995::breakpointCatchLate": Finished running with handler "throw"
+Test "catch subroutine Test995::breakpoint": Running breakpoint with handler "throw"
+	Breakpoint: public static void art.Test995.breakpoint() @ line=34
+Caught java.lang.Error:"throwing error!"
+Test "catch subroutine Test995::breakpoint": No error caught with handler "throw"
+Test "catch subroutine Test995::breakpoint": Finished running with handler "throw"

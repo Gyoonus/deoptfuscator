@@ -1,0 +1,2 @@
+Tests a regression in float addition for optimizing. The second argument
+could be now be a constant for floating point numbers.

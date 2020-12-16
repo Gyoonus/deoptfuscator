@@ -1,0 +1,3 @@
+basis: performed 50000000 iterations
+test1: performed 50000000 iterations
+Timing is acceptable.

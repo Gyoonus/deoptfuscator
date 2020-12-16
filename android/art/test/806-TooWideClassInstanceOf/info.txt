@@ -1,0 +1,2 @@
+Test the instanceof in the case the classes are too wide (> the classes each depth's bitstring can
+represent).

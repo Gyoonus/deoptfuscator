@@ -1,0 +1,1 @@
+Test for native calls to JNI GetFieldID() with odd signatures.

@@ -1,0 +1,1 @@
+Tests if blocked fp register work correctly on optimizing compiler.

@@ -1,0 +1,1 @@
+Test deoptimizing when returning from suspend-check runtime method.

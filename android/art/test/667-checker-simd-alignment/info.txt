@@ -1,0 +1,1 @@
+Test SIMD vectorization alignment optimizations.

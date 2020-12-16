@@ -1,0 +1,2 @@
+Regression test for the JIT that used to crash when compiling
+a static method of an interface.

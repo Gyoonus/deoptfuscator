@@ -1,0 +1,2 @@
+Checks that we don't store the current method when the compiled
+code does not need it.

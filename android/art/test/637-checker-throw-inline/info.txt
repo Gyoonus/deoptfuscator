@@ -1,0 +1,1 @@
+Test that the compiler can inline methods that throw.

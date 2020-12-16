@@ -1,0 +1,85 @@
+Checker is a testing tool which compiles a given test file and compares the
+state of the control-flow graph before and after each optimization pass
+against a set of assertions specified alongside the tests.
+
+Tests are written in Java or Smali, turned into DEX and compiled with the
+Optimizing compiler. "Check lines" are assertions formatted as comments of the
+source file. They begin with prefix "/// CHECK" or "## CHECK", respectively,
+followed by a pattern that the engine attempts to match in the compiler output.
+
+Assertions are tested in groups which correspond to the individual compiler
+passes. Each group of check lines therefore must start with a 'CHECK-START'
+header which specifies the output group it should be tested against. The group
+name must exactly match one of the groups recognized in the output (they can
+be listed with the '--list-passes' command-line flag).
+
+Matching of check lines is carried out in the order of appearance in the
+source file. There are three types of check lines:
+ - CHECK:      Must match an output line which appears in the output group
+               later than lines matched against any preceeding checks. Output
+               lines must therefore match the check lines in the same order.
+               These are referred to as "in-order" checks in the code.
+ - CHECK-DAG:  Must match an output line which appears in the output group
+               later than lines matched against any preceeding in-order checks.
+               In other words, the order of output lines does not matter
+               between consecutive DAG checks.
+ - CHECK-NOT:  Must not match any output line which appears in the output group
+               later than lines matched against any preceeding checks and
+               earlier than lines matched against any subsequent checks.
+               Surrounding non-negative checks (or boundaries of the group)
+               therefore create a scope within which the assertion is verified.
+ - CHECK-NEXT: Must match the output line which comes right after the line which
+               matched the previous check. Cannot be used after any but the
+               in-order CHECK.
+ - CHECK-EVAL: Specifies a Python expression which must evaluate to 'True'.
+
+Check-line patterns are treated as plain text rather than regular expressions
+but are whitespace agnostic.
+
+Actual regex patterns can be inserted enclosed in '{{' and '}}' brackets. If
+curly brackets need to be used inside the body of the regex, they need to be
+enclosed in round brackets. For example, the pattern '{{foo{2}}}' will parse
+the invalid regex 'foo{2', but '{{(fo{2})}}' will match 'foo'.
+
+Regex patterns can be named and referenced later. A new variable is defined
+with '<<name:regex>>' and can be referenced with '<<name>>'. Variables are
+only valid within the scope of the defining group. Within a group they cannot
+be redefined or used undefined.
+
+Example:
+  The following assertions can be placed in a Java source file:
+
+  /// CHECK-START: int MyClass.MyMethod() constant_folding (after)
+  /// CHECK:         <<ID:i\d+>>  IntConstant {{11|22}}
+  /// CHECK:                      Return [<<ID>>]
+
+  The engine will attempt to match the check lines against the output of the
+  group named on the first line. Together they verify that the CFG after
+  constant folding returns an integer constant with value either 11 or 22.
+
+
+Of the language constructs above, 'CHECK-EVAL' lines support only referencing of
+variables. Any other surrounding text will be passed to Python's `eval` as is.
+
+Example:
+  /// CHECK-START: int MyClass.MyMethod() liveness (after)
+  /// CHECK:         InstructionA liveness:<<VarA:\d+>>
+  /// CHECK:         InstructionB liveness:<<VarB:\d+>>
+  /// CHECK-EVAL:    <<VarA>> != <<VarB>>
+
+
+A group of check lines can be made architecture-specific by inserting '-<arch>'
+after the 'CHECK-START' keyword. The previous example can be updated to run for
+arm64 only with:
+
+Example:
+  /// CHECK-START-ARM64: int MyClass.MyMethod() constant_folding (after)
+  /// CHECK:         <<ID:i\d+>>  IntConstant {{11|22}}
+  /// CHECK:                      Return [<<ID>>]
+
+For convenience, several architectures can be specified as set after the
+'CHECK-START' keyword. Any listed architecture will match in that case,
+thereby avoiding to repeat the check lines if some, but not all architectures
+match. An example line looks like:
+
+  /// CHECK-START-{MIPS,ARM,ARM64}: int MyClass.MyMethod() constant_folding (after)

@@ -1,0 +1,2 @@
+Regression test for the BCE phase of optimizing,
+that used to have wrong assumptions about array length bounds.

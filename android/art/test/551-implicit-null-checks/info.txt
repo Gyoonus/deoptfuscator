@@ -1,0 +1,1 @@
+Test that implicit null checks are recorded correctly for longs and doubles.

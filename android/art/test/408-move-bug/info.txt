@@ -1,0 +1,2 @@
+Regression test for the register allocator in the optimizing
+compiler. Input moves where being overridden by sibling moves.

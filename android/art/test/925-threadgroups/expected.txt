@@ -1,0 +1,16 @@
+java.lang.ThreadGroup[name=main,maxpri=10]
+  java.lang.ThreadGroup[name=system,maxpri=10]
+  main
+  10
+  false
+java.lang.ThreadGroup[name=system,maxpri=10]
+  null
+  system
+  10
+  false
+main:
+  [Thread[main,5,main]]
+  []
+system:
+  [Thread[FinalizerDaemon,5,system], Thread[FinalizerWatchdogDaemon,5,system], Thread[HeapTaskDaemon,5,system], Thread[ReferenceQueueDaemon,5,system], Thread[Signal Catcher,5,system]]
+  [java.lang.ThreadGroup[name=main,maxpri=10]]

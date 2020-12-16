@@ -1,0 +1,3 @@
+Tests basic functions in the jvmti plugin.
+
+Tests that the GetObjectMonitorUsage function works correctly.

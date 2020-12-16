@@ -1,0 +1,1 @@
+Test that disables dex2oat'ing the application.

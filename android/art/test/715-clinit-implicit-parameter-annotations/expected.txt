@@ -1,0 +1,113 @@
+Main
+ public Main()
+Main$1LocalClassStaticContext
+ Main$1LocalClassStaticContext(int)
+  Parameter [0]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+Main$1LocalClassStaticContextWithCapture
+ Main$1LocalClassStaticContextWithCapture(java.lang.String,long)
+  Parameter [0]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+Main$1LocalClassStaticContextWithCaptureAlternateOrdering
+ Main$1LocalClassStaticContextWithCaptureAlternateOrdering(java.lang.String,long)
+  Parameter [0]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+Main$1LocalClass
+ Main$1LocalClass(Main,int)
+  Parameter [0]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+Main$1LocalClassWithCapture
+ Main$1LocalClassWithCapture(Main,java.lang.String,long)
+  Parameter [0]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+Main$Inner
+ Main$Inner(Main,int,java.lang.String)
+  Parameter [0]:    Main$AnnotationA No
+    Main$AnnotationB No
+  Parameter [1]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+  Parameter [2]:    Main$AnnotationA No
+    Main$AnnotationB No
+ Main$Inner(Main,int,java.lang.String,boolean)
+  Parameter [0]:    Main$AnnotationA No
+    Main$AnnotationB No
+  Parameter [1]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+  Parameter [2]:    Main$AnnotationA No
+    Main$AnnotationB No
+  Parameter [3]:    Indexed : @Main$AnnotationB(value=x)
+    Array : @Main$AnnotationB(value=x)
+    Main$AnnotationA No
+    Main$AnnotationB Yes
+    @Main$AnnotationB(value=x)
+Main$StaticInner
+ Main$StaticInner(int,java.lang.String)
+  Parameter [0]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+  Parameter [1]:    Main$AnnotationA No
+    Main$AnnotationB No
+ Main$StaticInner(int,java.lang.String,boolean)
+  Parameter [0]:    Indexed : @Main$AnnotationB(value=foo)
+    Array : @Main$AnnotationB(value=foo)
+    Main$AnnotationA No
+    Main$AnnotationB Yes
+    @Main$AnnotationB(value=foo)
+  Parameter [1]:    Main$AnnotationA No
+    Main$AnnotationB No
+  Parameter [2]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+Main$ImportantNumber
+ private Main$ImportantNumber(java.lang.String,int,double)
+  Parameter [0]:    Indexed : @Main$AnnotationA()
+    Array : @Main$AnnotationA()
+    Main$AnnotationA Yes
+    @Main$AnnotationA()
+    Main$AnnotationB No
+ private Main$ImportantNumber(java.lang.String,int,double,boolean)
+  Parameter [0]:    Indexed : @Main$AnnotationB(value=x)
+    Array : @Main$AnnotationB(value=x)
+    Main$AnnotationA No
+    Main$AnnotationB Yes
+    @Main$AnnotationB(value=x)
+  Parameter [1]:    Indexed : @Main$AnnotationB(value=y)
+    Array : @Main$AnnotationB(value=y)
+    Main$AnnotationA No
+    Main$AnnotationB Yes
+    @Main$AnnotationB(value=y)
+Main$BinaryNumber
+ private Main$BinaryNumber(java.lang.String,int)
+  Parameter [0]:    Main$AnnotationA No
+    Main$AnnotationB No
+  Parameter [1]:    Main$AnnotationA No
+    Main$AnnotationB No
+Main$1
+ Main$1(java.lang.String)
+  Parameter [0]:    Main$AnnotationA No
+    Main$AnnotationB No

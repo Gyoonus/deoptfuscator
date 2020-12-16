@@ -1,0 +1,1 @@
+Tests the invoke-custom bytecode.

@@ -1,0 +1,1 @@
+Test for b/30183883, that we emit the dex pc when the line number is missing.

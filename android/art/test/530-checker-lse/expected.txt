@@ -1,0 +1,2 @@
+java.lang.ArrayIndexOutOfBoundsException: length=3; index=3
+Got NegativeArraySizeException.

@@ -1,0 +1,4 @@
+Smali-based tests.
+Will compile and run all the smali files in smali/ and run the test cases mentioned in src/Main.java.
+
+Obviously needs to run under Dalvik or ART.

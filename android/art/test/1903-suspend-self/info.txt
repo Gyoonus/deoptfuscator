@@ -1,0 +1,1 @@
+Test jvmti suspend/resume of the current thread.

@@ -1,0 +1,2 @@
+Checker test for testing store/allocation elimination in presence of
+HDeoptimize.

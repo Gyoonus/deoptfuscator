@@ -1,0 +1,2 @@
+Tests a regression in which simplification of a boolean selection could attempt
+to remove a Phi from the wrong instruction list.

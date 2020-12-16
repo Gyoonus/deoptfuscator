@@ -1,0 +1,3 @@
+Tests notify frame pop JVMTI functionality.
+
+This tests setting frame-pop on the current thread

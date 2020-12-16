@@ -1,0 +1,3 @@
+Regression test for the x86/x64 backends which under certain
+cirumstances used to pass the wrong value for the length of
+an array when throwing an AIOOBE.

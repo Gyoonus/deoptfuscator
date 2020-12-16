@@ -1,0 +1,2 @@
+Regression test for Optimizing's GraphChecker which used to verify the internal
+type of a boolean input.

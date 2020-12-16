@@ -1,0 +1,5 @@
+Test to make sure the runtime will not crash if an agent calls exit(3) while
+other threads are performing operations.
+
+In this case we have multiple threads all performing single stepping when we
+call exit(3).

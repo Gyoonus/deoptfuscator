@@ -1,0 +1,1 @@
+Tests internal GC functions which are not exposed through normal APIs.

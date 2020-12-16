@@ -1,0 +1,1 @@
+Regression test for unquickening a vdex that has duplicate methods.

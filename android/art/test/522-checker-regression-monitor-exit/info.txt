@@ -1,0 +1,3 @@
+Regression test for removal of monitor-exit due to lack of specified side-effects.
+The test invokes a synchronized version of Object.hashCode in multiple threads.
+If monitor-exit is removed, the following threads will get stuck and timeout.

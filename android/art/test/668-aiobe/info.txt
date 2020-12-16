@@ -1,0 +1,2 @@
+Regression test for the mterp arm interpreter which used to throw
+the wrong exception when accessing out of bounds a long/double array.

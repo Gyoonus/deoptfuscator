@@ -1,0 +1,3 @@
+Tests basic functions in the jvmti plugin.
+
+Tests that the StopThread and InterruptThread functions work as expected.

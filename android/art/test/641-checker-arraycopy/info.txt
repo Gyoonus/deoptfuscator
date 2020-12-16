@@ -1,0 +1,2 @@
+Checker test for testing the arraycopy optimization in
+instruction simplifier.

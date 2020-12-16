@@ -1,0 +1,100 @@
+Dex File Poisoning Access
+=========================
+
+These set of executables are useful for condensing large amounts of memory reads
+of Dex Files into smaller, split pieces of information. Two kinds of information
+are provided:
+	1. Visualizing what part of a Dex File is being accessed at what time
+	as a graph
+	2. Ordering stack traces by most commonly occurring
+Both of these kinds of information can be split up further by providing category
+names as arguments. A trace is put into a category if the category name is a
+substring of the symbolized trace.
+
+How:
+======
+These set of tools  work in conjunction with the class
+DexFileTrackingRegistrar, which marks sections of Dex Files as poisoned. As Dex
+Files are marked for poisoning, their starting addresses are logged in logcat.
+In addition, when poisoned sections of memory are accesses, their stack trace is
+also outputted to logcat.
+
+sanitizer_logcat_analysis.sh is the main executable that will use the other two
+in order to give both types of information. The other two are used in some of
+the intermediary steps which are described in sanitizer_logcat_analysis.sh,
+though they can also be executed individually if provided the necessary input.
+
+Why:
+======
+
+The main reason for splitting the functionality across multiple files is because
+sanitizer_logcat_analysis.sh uses external executable development/scripts/stack.
+This is necessary  in order to get symbolized traces from the output given by
+Address Sanitizer.
+
+How to Use:
+
+sanitizer_logcat_analysis.sh at minimum requires all logcat output in the form
+of a file. Additional options specified below are useful for removing
+unnecessary trace information.
+
+===========================================================================
+Usage: sanitizer_logcat_analysis.sh [options] [LOGCAT_FILE] [CATEGORIES...]
+    -a
+        Forces all pids associated with registered dex
+        files in the logcat to be processed.
+        default: only the last pid is processed
+
+    -b  [DEX_FILE_NUMBER]
+        Outputs data for the specified baksmali
+        dump if -p is provided.
+        default: first baksmali dump in order of dex
+          file registration
+
+    -d  OUT_DIRECTORY
+        Puts all output in specified directory.
+        If not given, output will be put in a local
+        temp folder which will be deleted after
+        execution.
+
+    -e
+        All traces will have exactly the same number
+        of categories which is specified by either
+        the -m argument or by prune_sanitizer_output.py
+
+    -f
+        Forces redo of all commands even if output
+        files exist. Steps are skipped if their output
+        exist already and this is not enabled.
+
+    -m  [MINIMUM_CALLS_PER_TRACE]
+        Filters out all traces that do not have
+        at least MINIMUM_CALLS_PER_TRACE lines.
+        default: specified by prune_sanitizer_output.py
+
+    -o  [OFFSET],[OFFSET]
+        Filters out all Dex File offsets outside the
+        range between provided offsets. 'inf' can be
+        provided for infinity.
+        default: 0,inf
+
+    -p  [PACKAGE_NAME]
+        Using the package name, uses baksmali to get
+        a dump of the Dex File format for the package.
+
+    -t  [TIME_OFFSET],[TIME_OFFSET]
+        Filters out all time offsets outside the
+        range between provided offsets. 'inf' can be
+        provided for infinity.
+        default: 0,inf
+
+    CATEGORIES are words that are expected to show in
+       a large subset of symbolized traces. Splits
+       output based on each word.
+
+    LOGCAT_FILE is the piped output from adb logcat.
+===========================================================================
+
+
+
+

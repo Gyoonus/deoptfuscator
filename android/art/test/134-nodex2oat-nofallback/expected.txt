@@ -1,0 +1,64 @@
+# This file isn't used, but gives an example of the output we expect.
+Unable to locate class 'Main'
+java.lang.ClassNotFoundException: Didn't find class "Main" on path: DexPathList[[zip file "/tmp/user/test-12345/134-nodex2oat-nofallback.jar"],nativeLibraryDirectories=[/ssd2/aosp-master3/out/host/linux-x86/lib]]
+       at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+       at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+       at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+       Suppressed: java.io.IOException: Fallback mode disabled, skipping dex files.
+               at dalvik.system.DexFile.openDexFileNative(Native Method)
+               at dalvik.system.DexFile.openDexFile(DexFile.java:295)
+               at dalvik.system.DexFile.<init>(DexFile.java:80)
+               at dalvik.system.DexFile.<init>(DexFile.java:59)
+               at dalvik.system.DexPathList.loadDexFile(DexPathList.java:262)
+               at dalvik.system.DexPathList.makeDexElements(DexPathList.java:231)
+               at dalvik.system.DexPathList.<init>(DexPathList.java:109)
+               at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:48)
+               at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:38)
+               at java.lang.ClassLoader.createSystemClassLoader(ClassLoader.java:128)
+               at java.lang.ClassLoader.access$000(ClassLoader.java:65)
+               at java.lang.ClassLoader$SystemClassLoader.<clinit>(ClassLoader.java:81)
+               at java.lang.ClassLoader.getSystemClassLoader(ClassLoader.java:137)
+       Caused by: java.io.IOException: Failed to open oat file from dex location '/tmp/user/test-12345/134-nodex2oat-nofallback.jar'
+               ... 13 more
+       Caused by: java.io.IOException: Failed to open oat file from /tmp/user/test-12345/x86/134-nodex2oat-nofallback.odex (error Failed to open oat filename for reading: No such file or directory) (no dalvik_cache availible) and relocation failed.
+               ... 13 more
+       Caused by: java.io.IOException 
+               ... 13 more
+       Suppressed: java.lang.ClassNotFoundException: Main
+               at java.lang.Class.classForName(Native Method)
+               at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+               at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+               at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+               ... 1 more
+       Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available
+java.lang.ClassNotFoundException: Didn't find class "Main" on path: DexPathList[[zip file "/tmp/user/test-12345/134-nodex2oat-nofallback.jar"],nativeLibraryDirectories=[/ssd2/aosp-master3/out/host/linux-x86/lib]]
+       at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+       at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+       at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+       Suppressed: java.io.IOException: Fallback mode disabled, skipping dex files.
+               at dalvik.system.DexFile.openDexFileNative(Native Method)
+               at dalvik.system.DexFile.openDexFile(DexFile.java:295)
+               at dalvik.system.DexFile.<init>(DexFile.java:80)
+               at dalvik.system.DexFile.<init>(DexFile.java:59)
+               at dalvik.system.DexPathList.loadDexFile(DexPathList.java:262)
+               at dalvik.system.DexPathList.makeDexElements(DexPathList.java:231)
+               at dalvik.system.DexPathList.<init>(DexPathList.java:109)
+               at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:48)
+               at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:38)
+               at java.lang.ClassLoader.createSystemClassLoader(ClassLoader.java:128)
+               at java.lang.ClassLoader.access$000(ClassLoader.java:65)
+               at java.lang.ClassLoader$SystemClassLoader.<clinit>(ClassLoader.java:81)
+               at java.lang.ClassLoader.getSystemClassLoader(ClassLoader.java:137)
+       Caused by: java.io.IOException: Failed to open oat file from dex location '/tmp/user/test-12345/134-nodex2oat-nofallback.jar'
+               ... 13 more
+       Caused by: java.io.IOException: Failed to open oat file from /tmp/user/test-12345/x86/134-nodex2oat-nofallback.odex (error Failed to open oat filename for reading: No such file or directory) (no dalvik_cache availible) and relocation failed.
+               ... 13 more
+       Caused by: java.io.IOException: 
+               ... 13 more
+       Suppressed: java.lang.ClassNotFoundException: Main
+               at java.lang.Class.classForName(Native Method)
+               at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+               at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+               at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+               ... 1 more
+       Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available

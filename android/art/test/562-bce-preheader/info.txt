@@ -1,0 +1,1 @@
+Regression test for correct placement of hoisting/deopting code.

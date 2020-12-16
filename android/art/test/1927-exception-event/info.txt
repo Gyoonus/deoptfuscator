@@ -1,0 +1,3 @@
+Test basic JVMTI exception event functionality
+
+Ensures that we can receive exception and exception catch events from JVMTI.

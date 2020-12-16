@@ -1,0 +1,7 @@
+target_thread is sleeping in a wait.
+Suspend target_thread.
+Wake up the target_thread.
+target_thread is sleeping in suspend without lock.
+target_thread.isAlive() = true
+resumed target_thread
+target_thread doesn't hold lock!

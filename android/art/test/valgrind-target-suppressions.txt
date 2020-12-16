@@ -1,0 +1,76 @@
+# Valgrind does not recognize the ashmen ioctl() calls on ARM64, so it assumes that a size
+# parameter is a pointer.
+{
+   ashmem ioctl
+   Memcheck:Param
+   ioctl(generic)
+   ...
+   fun:ioctl
+   fun:ashmem_create_region
+}
+
+# It seems that on ARM64 Valgrind considers the canary value used by the Clang stack protector to
+# be an uninitialized value.
+{
+   jemalloc chunk_alloc_cache
+   Memcheck:Cond
+   fun:je_chunk_alloc_cache
+}
+
+# The VectorImpl class does not hold a pointer to the allocated SharedBuffer structure, but to the
+# beginning of the data, which is effectively an interior pointer. Valgrind has limitations when
+# dealing with interior pointers.
+{
+   VectorImpl
+   Memcheck:Leak
+   match-leak-kinds:possible
+   fun:malloc
+   # The wildcards make this rule work both for 32-bit and 64-bit environments.
+   fun:_ZN7android12SharedBuffer5allocE?
+   fun:_ZN7android10VectorImpl5_growE??
+}
+
+# Clang/LLVM uses memcpy for *x = *y, even though x == y (which is undefined behavior). Ignore.
+# b/29279679, https://llvm.org/bugs/show_bug.cgi?id=11763
+{
+   MemCpySelfAssign
+   Memcheck:Overlap
+   fun:memcpy
+   ...
+   fun:je_malloc_tsd_boot0
+}
+
+# Setenv is known-leaking when overwriting mappings. This is triggered by re-initializing
+# ANDROID_DATA. Ignore all setenv leaks.
+{
+   SetenvAndroidDataReinit
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:setenv
+}
+
+{
+   b/31275764
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   ...
+   fun:_ZN3art7Runtime17InitNativeMethodsEv
+}
+
+# art::MemMap::MapInternal() uses msync() to check for the existence of memory mappings.
+{
+  art::MemMap::MapInternal()
+  Memcheck:Param
+  msync(start)
+  fun:msync
+  fun:_ZN3art6MemMap11MapInternalEPvmiiilb
+}
+
+{
+   process_vm_readv
+   Memcheck:Param
+   process_vm_readv(lvec[...])
+   fun:process_vm_readv
+}

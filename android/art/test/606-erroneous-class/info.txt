@@ -1,0 +1,3 @@
+Regression test for a DCHECK in the DexCache which prevented erroneous classes
+from being stored into it. This was bogus because the status of a class can be
+changed by another thread.

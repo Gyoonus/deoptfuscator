@@ -1,0 +1,2 @@
+Tests that BoundType created for if-not-null does not force untyped loop phis
+to Object.

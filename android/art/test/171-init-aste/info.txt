@@ -1,0 +1,1 @@
+Regression test for failure to initialize dalvik.system.AnnotatedStackTraceElement.

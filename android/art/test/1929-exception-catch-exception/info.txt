@@ -1,0 +1,1 @@
+Test JVMTI behavior when throwing exceptions during the Exception catch Event.

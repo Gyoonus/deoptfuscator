@@ -1,0 +1,1 @@
+Fuzz test that exposed bug in bounds check elimination visiting of blocks.

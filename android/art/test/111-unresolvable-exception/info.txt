@@ -1,0 +1,2 @@
+Test that we do not segfault when we check a catch handler
+for an unresolvable exception.

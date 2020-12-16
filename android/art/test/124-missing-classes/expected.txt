@@ -1,0 +1,6 @@
+Test Started
+testMissingFieldType caught NoClassDefFoundError
+testMissingMethodReturnType caught NoClassDefFoundError
+testMissingMethodParameterType caught NoClassDefFoundError
+testMissingInnerClass caught NoClassDefFoundError
+Test Finished

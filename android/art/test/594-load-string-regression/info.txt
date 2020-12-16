@@ -1,0 +1,2 @@
+Regression test for LoadString listing side effects when it doesn't have any
+and triggering a DCHECK() failure when merging ClinitCheck into NewInstance.

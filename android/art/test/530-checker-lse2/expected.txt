@@ -1,0 +1,8 @@
+Start....
+r  = 9.649776E8
+mZ = false
+mI = 0
+mJ = -576460752303423488
+mF = NaN
+mD = NaN
+Done....

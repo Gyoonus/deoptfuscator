@@ -1,0 +1,3 @@
+Test an SsaBuilder regression where storing into the high vreg of a pair
+would not invalidate the low vreg. The resulting environment would generate
+an incorrect stack map, causing deopt and try/catch to use a wrong location.

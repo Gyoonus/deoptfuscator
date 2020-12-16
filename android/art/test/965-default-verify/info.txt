@@ -1,0 +1,8 @@
+Smali-based tests for verification interaction with experimental interface
+default methods.
+
+build-src contains java files that are needed if you are to compile with javac
+since it is much more proactive about finding likely runtime errors then smali.
+
+To run with --jvm you must export JAVA_HOME to a Java 8 Language installation
+and pass the --use-java-home to run-test

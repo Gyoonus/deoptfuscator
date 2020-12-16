@@ -1,0 +1,104 @@
+==============================
+Are These Methods Default:
+==============================
+IsDefaultTest$DefaultInterface is default = yes
+IsDefaultTest$RegularInterface is default = no
+IsDefaultTest$ImplementsWithDefault is default = yes
+IsDefaultTest$ImplementsWithRegular is default = no
+==============================
+Are These Methods found by getDeclaredMethod:
+==============================
+No error thrown for class interface DefaultDeclared$DefaultInterface
+No error thrown for class interface DefaultDeclared$RegularInterface
+NoSuchMethodException thrown for class class DefaultDeclared$ImplementsWithDefault
+No error thrown for class class DefaultDeclared$ImplementsWithDeclared
+No error thrown for class class DefaultDeclared$ImplementsWithRegular
+NoSuchMethodException thrown for class class DefaultDeclared$UnimplementedWithRegular
+==============================
+Class annotations by type:
+==============================
+Annotations by type, defined by class SingleUser with annotation Calendar: @Calendar(dayOfMonth=unspecified_month, dayOfWeek=single, hour=23)
+Annotations by type, defined by class SingleUser with annotation Calendars: <empty>
+Annotations by type, defined by class User with annotation Calendar: @Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)
+Annotations by type, defined by class User with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+Annotations by type, defined by class User2 with annotation Calendar: @Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)
+Annotations by type, defined by class User2 with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)])
+Annotations by type, defined by class UserComplex with annotation Calendar: @Calendar(dayOfMonth=afirst, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)
+Annotations by type, defined by class UserComplex with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)])
+Annotations by type, defined by class UserSub with annotation Calendar: @Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)
+Annotations by type, defined by class UserSub with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+Annotations by type, defined by class UserSub2 with annotation Calendar: @Calendar(dayOfMonth=sub2, dayOfWeek=unspecified_week, hour=6)
+Annotations by type, defined by class UserSub2 with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+-----------------------------
+-----------------------------
+==============================
+Class declared annotation:
+==============================
+Declared annotations by class class SingleUser, annotation interface Calendar: @Calendar(dayOfMonth=unspecified_month, dayOfWeek=single, hour=23)
+Declared annotations by class class SingleUser, annotation interface Calendars: <null>
+Declared annotations by class class User, annotation interface Calendar: <null>
+Declared annotations by class class User, annotation interface Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+Declared annotations by class class UserComplex, annotation interface Calendar: @Calendar(dayOfMonth=afirst, dayOfWeek=unspecified_week, hour=6)
+Declared annotations by class class UserComplex, annotation interface Calendars: @Calendars(value=[@Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)])
+Declared annotations by class class UserSub, annotation interface Calendar: <null>
+Declared annotations by class class UserSub, annotation interface Calendars: <null>
+Declared annotations by class class UserSub2, annotation interface Calendar: @Calendar(dayOfMonth=sub2, dayOfWeek=unspecified_week, hour=6)
+Declared annotations by class class UserSub2, annotation interface Calendars: <null>
+-----------------------------
+-----------------------------
+==============================
+Declared class annotations by type:
+==============================
+Declared annnotations by type, defined by class SingleUser with annotation Calendar: @Calendar(dayOfMonth=unspecified_month, dayOfWeek=single, hour=23)
+Declared annnotations by type, defined by class SingleUser with annotation Calendars: <empty>
+Declared annnotations by type, defined by class User with annotation Calendar: @Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)
+Declared annnotations by type, defined by class User with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+Declared annnotations by type, defined by class User2 with annotation Calendar: @Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)
+Declared annnotations by type, defined by class User2 with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)])
+Declared annnotations by type, defined by class UserComplex with annotation Calendar: @Calendar(dayOfMonth=afirst, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)
+Declared annnotations by type, defined by class UserComplex with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)])
+Declared annnotations by type, defined by class UserSub with annotation Calendar: <empty>
+Declared annnotations by type, defined by class UserSub with annotation Calendars: <empty>
+Declared annnotations by type, defined by class UserSub2 with annotation Calendar: @Calendar(dayOfMonth=sub2, dayOfWeek=unspecified_week, hour=6)
+Declared annnotations by type, defined by class UserSub2 with annotation Calendars: <empty>
+-----------------------------
+-----------------------------
+==============================
+Method annotations by type:
+==============================
+Annotations by type, defined by method singleUser with annotation Calendar: @Calendar(dayOfMonth=unspecified_month, dayOfWeek=single, hour=23)
+Annotations by type, defined by method singleUser with annotation Calendars: <empty>
+Annotations by type, defined by method user with annotation Calendar: @Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)
+Annotations by type, defined by method user with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+Annotations by type, defined by method user2 with annotation Calendar: @Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)
+Annotations by type, defined by method user2 with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)])
+Annotations by type, defined by method userComplex with annotation Calendar: @Calendar(dayOfMonth=afirst, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)
+Annotations by type, defined by method userComplex with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)])
+-----------------------------
+-----------------------------
+==============================
+Declared method annotations:
+==============================
+Annotations declared by method singleUser with annotation Calendar: @Calendar(dayOfMonth=unspecified_month, dayOfWeek=single, hour=23)
+Annotations declared by method singleUser with annotation Calendars: <null>
+Annotations declared by method user with annotation Calendar: <null>
+Annotations declared by method user with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+Annotations declared by method user2 with annotation Calendar: <null>
+Annotations declared by method user2 with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)])
+Annotations declared by method userComplex with annotation Calendar: @Calendar(dayOfMonth=afirst, dayOfWeek=unspecified_week, hour=6)
+Annotations declared by method userComplex with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)])
+-----------------------------
+-----------------------------
+==============================
+Declared method annotations by type:
+==============================
+Annotations by type, defined by method singleUser with annotation Calendar: @Calendar(dayOfMonth=unspecified_month, dayOfWeek=single, hour=23)
+Annotations by type, defined by method singleUser with annotation Calendars: <empty>
+Annotations by type, defined by method user with annotation Calendar: @Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)
+Annotations by type, defined by method user with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=last, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=unspecified_month, dayOfWeek=Fri, hour=23)])
+Annotations by type, defined by method user2 with annotation Calendar: @Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)
+Annotations by type, defined by method user2 with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=z, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=x, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=y, dayOfWeek=unspecified_week, hour=6)])
+Annotations by type, defined by method userComplex with annotation Calendar: @Calendar(dayOfMonth=afirst, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)
+Annotations by type, defined by method userComplex with annotation Calendars: @Calendars(value=[@Calendar(dayOfMonth=zsecond, dayOfWeek=unspecified_week, hour=6), @Calendar(dayOfMonth=athird, dayOfWeek=unspecified_week, hour=23)])
+-----------------------------
+-----------------------------

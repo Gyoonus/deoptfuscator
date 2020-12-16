@@ -1,0 +1,4 @@
+Smali-based tests for experimental interface static methods.
+
+To run with --jvm you must export JAVA_HOME to a Java 8 Language installation
+and pass the --use-java-home to run-test

@@ -1,0 +1,2 @@
+Regression test for FakeString simplification which incorrectly assumed that
+it cannot be used before a call to StringFactory.

@@ -1,0 +1,2 @@
+Test a regression where SsaChecker would fail comparing raw value of IntConstant
+vs FloatConstant due to a static_cast sign extend.

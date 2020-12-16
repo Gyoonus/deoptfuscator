@@ -1,0 +1,3 @@
+Test that we correctly handle basic non-generated-code fault handlers
+
+Tests that we can use and remove these handlers and they can change mappings.

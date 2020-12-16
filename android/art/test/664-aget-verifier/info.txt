@@ -1,0 +1,6 @@
+Tests how the verifier handles aget on an array that was initially null.
+
+The verifier will flag aget instructions as have_pending_runtime_throw_failure_
+if the array register is potentially null, even if the aget is guarded by null
+checks and never actually null at runtime. This fails compile-time verification,
+preventing otherwise good method from being compiled.

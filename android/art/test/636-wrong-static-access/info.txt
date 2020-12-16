@@ -1,0 +1,2 @@
+Test that the compiler checks if a resolved field is
+of the expected static/instance kind.

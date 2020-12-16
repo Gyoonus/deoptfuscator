@@ -1,0 +1,14 @@
+Test for select generation for conditional returns.
+
+Tests the rewriting from:
+
+             If [ Condition ]
+               /          \
+     false branch        true branch
+     return FalseValue   return TrueValue
+
+to:
+
+     true branch
+     false branch
+     return Select [FalseValue, TrueValue, Condition]

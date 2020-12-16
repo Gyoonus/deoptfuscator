@@ -1,0 +1,5 @@
+Tests ART synthesizes parameter annotations for implicit parameters on
+constructors. Inner class and enum constructors may have implicit
+parameters. If the constructor has parameter annotations, the implicit
+parameters may not have annotations in the DEX file, but code that
+looks at these annotations will expect them to.

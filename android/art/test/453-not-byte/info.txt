@@ -1,0 +1,2 @@
+Regression test for optimizing, which was expecting int only on a not-int instruction.
+

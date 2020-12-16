@@ -1,0 +1,56 @@
+#!/bin/bash
+#
+# Copyright (C) 2014 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+flags="$@"
+
+# Force relocation otherwise we will just use the already created core.oat/art pair.
+# Note: relocate is the default.
+if [[ "${flags}" == *--no-relocate* ]] ; then
+  echo "Test 119-noimage-patchoat is not intended to run in no-relocate mode."
+  exit 1
+fi
+
+if [[ $@ == *--host* ]]; then
+  false_bin="/bin/false"
+else
+  false_bin="/system/bin/false"
+fi
+
+# Make sure we can run without an image file.
+echo "Run -Xnoimage-dex2oat -Xpatchoat:/system/bin/false"
+${RUN} ${flags} ${BPATH} --runtime-option -Xnoimage-dex2oat \
+  --runtime-option -Xpatchoat:${false_bin}
+return_status1=$?
+
+# Make sure we cannot run without an image file without fallback.
+echo "Run -Xnoimage-dex2oat -Xpatchoat:/system/bin/false -Xno-dex-file-fallback"
+${RUN} ${flags} ${BPATH} --runtime-option -Xnoimage-dex2oat \
+  --runtime-option -Xpatchoat:${false_bin} --runtime-option -Xno-dex-file-fallback
+# This second run is expected to fail: invert the return status of the previous command.
+return_status2=$((! $?))
+
+# Make sure we can run with the image file.
+echo "Run -Ximage-dex2oat"
+${RUN} ${flags} ${BPATH} --runtime-option -Ximage-dex2oat
+return_status3=$?
+
+# Make sure we can run with the default settings.
+echo "Run default"
+${RUN} ${flags} ${BPATH}
+return_status4=$?
+
+# Make sure we don't silently ignore an early failure.
+(exit $return_status1) && (exit $return_status2) && (exit $return_status3) && (exit $return_status4)

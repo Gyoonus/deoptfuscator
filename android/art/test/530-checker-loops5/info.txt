@@ -1,0 +1,1 @@
+Test on loop optimizations, in particular with polynomial induction.

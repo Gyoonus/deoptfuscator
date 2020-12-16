@@ -1,0 +1,4 @@
+JNI_OnLoad called
+Running sayHi() - hello
+redefining TransformAbstract
+Running sayHi() - Goodbye

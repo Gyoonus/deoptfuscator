@@ -1,0 +1,51 @@
+#!/bin/bash
+#
+# Copyright (C) 2014 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Stop if something fails.
+set -e
+
+# All except MirandaInterface
+mkdir classes
+${JAVAC} -d classes `find src -name '*.java'`
+rm classes/MirandaInterface.class
+
+# Only MirandaInterface
+mkdir classes2
+${JAVAC} -d classes2 `find src -name '*.java'`
+rm classes2/Main.class classes2/MirandaAbstract.class classes2/MirandaClass*.class classes2/MirandaInterface2*.class
+
+if [ ${USE_JACK} = "true" ]; then
+  jar cf classes.jill.jar -C classes .
+  jar cf classes2.jill.jar -C classes2 .
+
+  ${JACK} --import classes.jill.jar --output-dex .
+  mv classes.dex classes-1.dex
+  ${JACK} --import classes2.jill.jar --output-dex .
+  mv classes.dex classes2.dex
+  mv classes-1.dex classes.dex
+else
+  if [ ${NEED_DEX} = "true" ]; then
+    # All except Main
+    ${DX} -JXmx256m --debug --dex --dump-to=classes.lst --output=classes.dex classes
+
+    # Only Main
+    ${DX} -JXmx256m --debug --dex --dump-to=classes2.lst --output=classes2.dex classes2
+  fi
+fi
+
+if [ ${NEED_DEX} = "true" ]; then
+  zip $TEST_NAME.jar classes.dex classes2.dex
+fi

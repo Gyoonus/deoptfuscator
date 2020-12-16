@@ -1,0 +1,4 @@
+A test that is only available as a DEX binary.
+
+This tests that an attempt to use check-cast with the void type doesn't
+cause the compiler to crash.

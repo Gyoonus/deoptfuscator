@@ -1,0 +1,1 @@
+Test that we optimize ArraySet when the value is not null.

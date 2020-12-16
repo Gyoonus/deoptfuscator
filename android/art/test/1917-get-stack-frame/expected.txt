@@ -1,0 +1,33 @@
+Recurring 5 times
+'private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread)' line: -1
+'public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread)' line: 61
+'public void art.Test1917$StackTraceGenerator.run()' line: 82
+'public void art.Test1917$RecurCount.doRecur(int)' line: 104
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.run()' line: 97
+'public static void art.Test1917.run() throws java.lang.Exception' line: 133
+Recurring 5 times on another thread
+'private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread)' line: -1
+'public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread)' line: 61
+'public void art.Test1917$StackTraceGenerator.run()' line: 82
+'public void art.Test1917$RecurCount.doRecur(int)' line: 104
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.run()' line: 97
+Recurring 5 times on another thread. Stack trace from main thread!
+'public void java.util.concurrent.Semaphore.acquire() throws java.lang.InterruptedException' line: <NOT-DETERMINISTIC>
+'public void art.Test1917$ThreadPauser.run()' line: 46
+'public void art.Test1917$RecurCount.doRecur(int)' line: 104
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.doRecur(int)' line: 102
+'public void art.Test1917$RecurCount.run()' line: 97

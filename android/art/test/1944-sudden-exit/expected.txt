@@ -1,0 +1,3 @@
+All threads started
+Exiting suddenly
+exit status:  12

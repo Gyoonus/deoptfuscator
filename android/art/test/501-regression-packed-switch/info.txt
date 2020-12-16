@@ -1,0 +1,4 @@
+Regression test for the interpreter and optimizing's builder which used
+to trip when compiled code contained a packed switch with no targets.
+Regression test for the arm64 mterp miscalculating the switch table
+address, zero-extending a register instead of sign-extending.

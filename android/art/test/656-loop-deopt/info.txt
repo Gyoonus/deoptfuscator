@@ -1,0 +1,2 @@
+Regression test for the compiler, whose loop optimization used to wrongly
+remove environment uses of HDeoptimize instructions.

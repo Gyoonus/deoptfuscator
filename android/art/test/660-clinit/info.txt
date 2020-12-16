@@ -1,0 +1,1 @@
+Tests that class initializers are executed correctly.

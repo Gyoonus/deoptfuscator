@@ -1,0 +1,1 @@
+Regression test on new-instance that reaches multiple <init> calls.

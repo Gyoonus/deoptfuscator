@@ -1,0 +1,6 @@
+This is a test for bad optimizations affecting multi-threaded program
+behavior.
+
+This test covers fixed AOT/JIT bugs to prevent regressions.
+
+17689750 GVN assigns the same value names across MONITOR_ENTER and volatile reads.

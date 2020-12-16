@@ -1,0 +1,1 @@
+Tests invocation of VarHandles wrapped with MethodHandles.

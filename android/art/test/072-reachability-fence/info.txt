@@ -1,0 +1,4 @@
+Check that reachabilityFence() prevents garbage collection of objects only referred to by a dead
+reference.
+
+This is not very convincing, since we currently usually keep such objects around anyway.

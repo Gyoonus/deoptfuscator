@@ -1,0 +1,2 @@
+Tests the register allocator's optimization of adding synthesized uses
+at back edges.

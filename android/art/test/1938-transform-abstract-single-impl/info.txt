@@ -1,0 +1,2 @@
+Tests that single-implementation abstract methods don't crash the runtime when
+their declaring class is redefined.

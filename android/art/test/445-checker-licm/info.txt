@@ -1,0 +1,1 @@
+Checker test for testing loop invariant code motion.

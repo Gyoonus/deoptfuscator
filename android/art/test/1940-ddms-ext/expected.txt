@@ -1,0 +1,21 @@
+Sending data [1, 2, 3, 4, 5, 6, 7, 8]
+MyDdmHandler: Chunk received: Chunk(Type: 0xDEADBEEF, Len: 8, data: [1, 2, 3, 4, 5, 6, 7, 8])
+MyDdmHandler: Putting value 0x800025
+MyDdmHandler: Chunk returned: Chunk(Type: 0xFADE7357, Len: 8, data: [0, 0, 0, 0, 0, -128, 0, 37])
+JVMTI returned chunk: Chunk(Type: 0xFADE7357, Len: 8, data: [0, 0, 0, 0, 0, -128, 0, 37])
+Sending empty data array
+MyDdmHandler: Chunk received: Chunk(Type: 0xDEADBEEF, Len: 0, data: [])
+MyDdmHandler: Putting value 0x1
+MyDdmHandler: Chunk returned: Chunk(Type: 0xFADE7357, Len: 8, data: [0, 0, 0, 0, 0, 0, 0, 1])
+JVMTI returned chunk: Chunk(Type: 0xFADE7357, Len: 8, data: [0, 0, 0, 0, 0, 0, 0, 1])
+Sending chunk: Chunk(Type: 0xDEADBEEF, Len: 8, data: [9, 10, 11, 12, 13, 14, 15, 16])
+Chunk published: Chunk(Type: 0xDEADBEEF, Len: 8, data: [9, 10, 11, 12, 13, 14, 15, 16])
+Sending data [1] to chunk handler -1412567295
+MyDdmHandler: Chunk received: Chunk(Type: 0xABCDEF01, Len: 1, data: [1])
+JVMTI returned chunk: Chunk(Type: 0xFADE7357, Len: 0, data: [])
+Sending data [1] to chunk handler 305419896
+MyDdmHandler: Chunk received: Chunk(Type: 0x12345678, Len: 1, data: [1])
+Got error: JVMTI_ERROR_INTERNAL
+Saw expected thread events.
+Expected chunk type published: 1213221190
+Expected chunk type published: 1297109829

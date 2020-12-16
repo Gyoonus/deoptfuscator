@@ -1,0 +1,9 @@
+[String1]+[String2]
+[String1]
+[String1]+[String2]
+42
+40
+43
+44
+0
+-1

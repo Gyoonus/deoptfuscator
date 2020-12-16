@@ -1,0 +1,1 @@
+Regression test for "jit at first use" (-Xjitthreshold:0) crash for proxy methods. b/73718713

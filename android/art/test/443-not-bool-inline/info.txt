@@ -1,0 +1,2 @@
+Regression test for optimizing, who used a wrong instruction
+for simplifying Equals(foo, false);

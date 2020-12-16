@@ -1,0 +1,3 @@
+Regression test for app image class table being erroneously omitted
+when it contains only boot image class loader classes while dex caches
+were written with references to these classes.

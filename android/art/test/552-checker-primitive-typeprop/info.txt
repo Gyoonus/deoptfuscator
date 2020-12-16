@@ -1,0 +1,2 @@
+Test that phis with environment uses which can be properly typed are kept
+in --debuggable mode.

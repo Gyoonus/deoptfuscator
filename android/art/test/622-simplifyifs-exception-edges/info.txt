@@ -1,0 +1,2 @@
+Regression test for the SimplifyIfs() graph simplification erroneously trying
+to redirect exception handler edges.

@@ -1,0 +1,7 @@
+This test checks const-method-handle and const-method-type bytecodes.
+
+The class files in this test come from:
+
+  dalvik/dx/tests/142-const-method-handle
+
+and are built using ASM bytecode manipulation library.

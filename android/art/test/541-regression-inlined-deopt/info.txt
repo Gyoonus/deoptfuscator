@@ -1,0 +1,4 @@
+Regression test for deopt from optimized code which would use the top-level
+stack map for deopting inlined frames. Test case is written in smali for full
+control over vregs because the previous test 449 would pass because the vreg
+maps at the various inlining depths were similar.

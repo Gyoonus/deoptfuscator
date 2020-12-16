@@ -1,0 +1,130 @@
+<api>
+<package name=""
+>
+<class name="StaticFields"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="test00_public_static_final_byte_42"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="42"
+>
+</field>
+<field name="test01_public_static_final_short_43"
+ type="short"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="43"
+>
+</field>
+<field name="test02_public_static_final_char_X"
+ type="char"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="88"
+>
+</field>
+<field name="test03_public_static_final_int_44"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="44"
+>
+</field>
+<field name="test04_public_static_final_long_45"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="45"
+>
+</field>
+<field name="test05_public_static_final_float_46_47"
+ type="float"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="46.47"
+>
+</field>
+<field name="test06_public_static_final_double_48_49"
+ type="double"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="48.49"
+>
+</field>
+<field name="test07_public_static_final_string"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="abc \&gt;&lt;&quot;'&amp;&#x9;&#xD;&#xA;"
+>
+</field>
+<field name="test08_public_static_final_object_null"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="null"
+>
+</field>
+<field name="test09_public_static_final_boolean_true"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="true"
+>
+</field>
+<field name="test99_empty_value"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<constructor name="StaticFields"
+ type="StaticFields"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+</package>
+</api>

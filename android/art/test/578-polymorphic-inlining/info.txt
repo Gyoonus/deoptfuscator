@@ -1,0 +1,2 @@
+Regression test for polymorphic inlining that used to propagate
+wrongly the try/catch information of new blocks.

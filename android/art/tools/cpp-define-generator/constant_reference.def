@@ -1,0 +1,30 @@
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#include "mirror/object.h"            // mirror::Object
+#include "stack.h"                    // StackReference
+#include "mirror/object_reference.h"  // mirror::CompressedReference
+#include "base/bit_utils.h"           // WhichPowerOf2
+#endif
+
+// Size of references to the heap on the stack.
+DEFINE_EXPR(STACK_REFERENCE_SIZE,            size_t, sizeof(art::StackReference<art::mirror::Object>))
+// Size of heap references
+DEFINE_EXPR(COMPRESSED_REFERENCE_SIZE,       size_t, sizeof(art::mirror::CompressedReference<art::mirror::Object>))
+DEFINE_EXPR(COMPRESSED_REFERENCE_SIZE_SHIFT, size_t, art::WhichPowerOf2(sizeof(art::mirror::CompressedReference<art::mirror::Object>)))
+
+#undef DEFINE_REFERENCE_OFFSET

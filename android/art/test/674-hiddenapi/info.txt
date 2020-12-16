@@ -1,0 +1,16 @@
+Test whether hidden API access flags are being enforced. The test is composed of
+two JARs. The first (parent) defines methods and fields and the second (child)
+tries to access them with reflection/JNI/MethodHandles or link against them.
+Note that the first is compiled twice - once with and once without hidden access
+flags.
+
+The test then proceeds to exercise the following combinations of class loading:
+(a) Both parent and child dex loaded with PathClassLoader, parent's class loader
+    is the child's class loader's parent. Access flags should not be enforced as
+    the parent does not belong to boot class path.
+(b) Parent is appended to boot class path, child is loaded with PathClassLoader.
+    In this situation child should not be able to access hidden methods/fields
+    of the parent.
+(c) Both parent and child are appended to boot class path. Restrictions should
+    not apply as hidden APIs are accessible within the boundaries of the boot
+    class path.

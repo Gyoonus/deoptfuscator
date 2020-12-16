@@ -1,0 +1,216 @@
+#!/bin/bash
+#
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Stop if something fails.
+set -e
+
+# Write out the source file.
+
+mkdir src
+cat >src/Main.java <<EOF
+/*
+ * Copyright (C) 2018 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+EOF
+
+for i in {0..8192}; do echo "class Level1Class$i { }" >>src/Main.java; done
+for i in {0..1024}; do echo "class Level2Class$i extends Level1Class0 { }" >>src/Main.java; done
+
+cat >>src/Main.java <<EOF
+class Level3Class0 extends Level2Class0 { }
+class Level4Class0 extends Level3Class0 { }
+class Level5Class0 extends Level4Class0 { }
+class Level6Class0 extends Level5Class0 { }
+class Level7Class0 extends Level6Class0 { }
+class Level8Class0 extends Level7Class0 { }
+class Level9Class0 extends Level8Class0 { }
+
+public class Main {
+  public static void main(String[] args) throws Exception {
+    // 8193 classes at level 1 make sure we shall have an overflow if there are 13 or
+    // less bits for the level 1 character. 1025 classes at level 2 similarly guarantees
+    // an overflow if the number of bits for level 2 character is 10 or less. To test
+    // type checks also for the depth overflow, we provide a hierarchy 9 levels deep.
+
+    // Make sure the bitstrings are initialized.
+    for (int i = 0; i <= 8192; ++i) {
+      Class.forName("Level1Class" + i).newInstance();
+    }
+    for (int i = 0; i <= 1024; ++i) {
+      Class.forName("Level2Class" + i).newInstance();
+    }
+
+    // Note: Using a different class for tests so that verification of Main.main() does
+    // not try to resolve classes used by the tests. This guarantees uninitialized type
+    // check bitstrings when we enter Main.main() and start initializing them above.
+    Helper.testInstanceOf();
+    Helper.testCheckCast();
+  }
+}
+
+class Helper {
+  public static void testInstanceOf() throws Exception {
+    for (int i = 1; i <= 9; ++i) {
+      Object o = createInstance("Level" + i + "Class0");
+      assertTrue(o instanceof Level1Class0);
+      if (o instanceof Level2Class0) {
+        assertFalse(i < 2);
+      } else {
+        assertTrue(i < 2);
+      }
+      if (o instanceof Level3Class0) {
+        assertFalse(i < 3);
+      } else {
+        assertTrue(i < 3);
+      }
+      if (o instanceof Level4Class0) {
+        assertFalse(i < 4);
+      } else {
+        assertTrue(i < 4);
+      }
+      if (o instanceof Level5Class0) {
+        assertFalse(i < 5);
+      } else {
+        assertTrue(i < 5);
+      }
+      if (o instanceof Level6Class0) {
+        assertFalse(i < 6);
+      } else {
+        assertTrue(i < 6);
+      }
+      if (o instanceof Level7Class0) {
+        assertFalse(i < 7);
+      } else {
+        assertTrue(i < 7);
+      }
+      if (o instanceof Level8Class0) {
+        assertFalse(i < 8);
+      } else {
+        assertTrue(i < 8);
+      }
+      if (o instanceof Level9Class0) {
+        assertFalse(i < 9);
+      } else {
+        assertTrue(i < 9);
+      }
+    }
+
+    assertTrue(createInstance("Level1Class8192") instanceof Level1Class8192);
+    assertFalse(createInstance("Level1Class8192") instanceof Level1Class0);
+    assertTrue(createInstance("Level2Class1024") instanceof Level2Class1024);
+    assertTrue(createInstance("Level2Class1024") instanceof Level1Class0);
+    assertFalse(createInstance("Level2Class1024") instanceof Level2Class0);
+  }
+
+  public static void testCheckCast() throws Exception {
+    for (int i = 1; i <= 9; ++i) {
+      Object o = createInstance("Level" + i + "Class0");
+      Level1Class0 l1c0 = (Level1Class0) o;
+      try {
+        Level2Class0 l2c0 = (Level2Class0) o;
+        assertFalse(i < 2);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 2);
+      }
+      try {
+        Level3Class0 l3c0 = (Level3Class0) o;
+        assertFalse(i < 3);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 3);
+      }
+      try {
+        Level4Class0 l4c0 = (Level4Class0) o;
+        assertFalse(i < 4);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 4);
+      }
+      try {
+        Level5Class0 l5c0 = (Level5Class0) o;
+        assertFalse(i < 5);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 5);
+      }
+      try {
+        Level6Class0 l6c0 = (Level6Class0) o;
+        assertFalse(i < 6);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 6);
+      }
+      try {
+        Level7Class0 l7c0 = (Level7Class0) o;
+        assertFalse(i < 7);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 7);
+      }
+      try {
+        Level8Class0 l8c0 = (Level8Class0) o;
+        assertFalse(i < 8);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 8);
+      }
+      try {
+        Level9Class0 l9c0 = (Level9Class0) o;
+        assertFalse(i < 9);
+      } catch (ClassCastException cce) {
+        assertTrue(i < 9);
+      }
+    }
+
+    Level1Class8192 l1c8192 = (Level1Class8192) createInstance("Level1Class8192");
+    try {
+      Level1Class0 l1c0 = (Level1Class0) createInstance("Level1Class8192");
+      throw new AssertionError("Unexpected");
+    } catch (ClassCastException expected) {}
+    Level2Class1024 l2c1024 = (Level2Class1024) createInstance("Level2Class1024");
+    Level1Class0 l1c0 = (Level1Class0) createInstance("Level2Class1024");
+    try {
+      Level2Class0 l2c0 = (Level2Class0) createInstance("Level2Class1024");
+      throw new AssertionError("Unexpected");
+    } catch (ClassCastException expected) {}
+  }
+
+  public static Object createInstance(String className) throws Exception {
+    return Class.forName(className).newInstance();
+  }
+
+  public static void assertTrue(boolean value) throws Exception {
+    if (!value) {
+      throw new AssertionError();
+    }
+  }
+
+  public static void assertFalse(boolean value) throws Exception {
+    if (value) {
+      throw new AssertionError();
+    }
+  }
+}
+EOF
+
+./default-build "$@"

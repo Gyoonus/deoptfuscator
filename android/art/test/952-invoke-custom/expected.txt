@@ -1,0 +1,20 @@
+Caught exception from uninitialized call site
+Caught exception from uninitialized call site
+linkerMethod failure type 1
+Returning null instead of CallSite for _add (int,int)int
+linkerMethod failure type 2
+Throwing InstantiationException in linkerMethod()
+linkerMethod failure type 3
+Throwing ArithmeticException in add()
+Failure Type + 0 (1013)
+Linking _add (int,int)int
+100
+-9000
+9000
+TestLinkerUnrelatedBSM
+Winners 1 Votes 16
+TestInvocationKinds
+testStaticFieldAccessors
+testInstanceFieldAccessors
+testInvokeVirtual => max(77, -3) = 77
+testConstructor => class TestInvocationKinds$Widget

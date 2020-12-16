@@ -1,0 +1,10 @@
+hello
+transforming calling function
+Retrieving obsolete method from current stack
+goodbye
+Invoking redefined version of method.
+Hello - Transformed
+Not doing anything here
+Goodbye - Transformed
+invoking obsolete method
+Caught expected error from attempting to invoke an obsolete method.

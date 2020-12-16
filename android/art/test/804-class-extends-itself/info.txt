@@ -1,0 +1,1 @@
+Exercise class linker check for classes extending themselves (b/28685551).

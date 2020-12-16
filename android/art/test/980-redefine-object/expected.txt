@@ -1,0 +1,36 @@
+	Initializing and loading the TestWatcher class that will (eventually) be notified of object allocations
+	Allocating an j.l.Object before redefining Object class
+	Allocating a Transform before redefining Object class
+	Redefining the Object class to add a hook into the <init> method
+	Allocating an j.l.Object after redefining Object class
+Object allocated of type 'java.lang.Object'
+	Allocating a Transform after redefining Object class
+Object allocated of type 'Transform'
+	Allocating an int[] after redefining Object class
+	Allocating an array list
+Object allocated of type 'java.util.ArrayList'
+	Adding a bunch of stuff to the array list
+Object allocated of type 'java.lang.Object'
+Object allocated of type 'java.lang.Object'
+Object allocated of type 'Transform'
+	Allocating a linked list
+Object allocated of type 'java.util.LinkedList'
+	Adding a bunch of stuff to the linked list
+Object allocated of type 'java.lang.Object'
+Object allocated of type 'java.util.LinkedList$Node'
+Object allocated of type 'java.lang.Object'
+Object allocated of type 'java.util.LinkedList$Node'
+Object allocated of type 'java.util.LinkedList$Node'
+Object allocated of type 'java.util.LinkedList$Node'
+Object allocated of type 'java.util.LinkedList$Node'
+Object allocated of type 'java.util.LinkedList$Node'
+Object allocated of type 'Transform'
+Object allocated of type 'java.util.LinkedList$Node'
+	Throwing from down 4 stack frames
+Object allocated of type 'java.lang.Exception'
+	Exception caught.
+	Finishing test!
+Object allocated of type 'java.lang.Thread'
+Object allocated of type 'java.lang.Object'
+Object allocated of type 'java.lang.Object'
+Object allocated of type 'java.security.AccessControlContext'

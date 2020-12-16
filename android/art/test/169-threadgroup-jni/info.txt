@@ -1,0 +1,1 @@
+Ensure that attached threads are correctly handled in ThreadGroups.

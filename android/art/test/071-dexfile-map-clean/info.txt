@@ -1,0 +1,11 @@
+Exercise Dalvik-specific DEX file feature. Will not work on RI.
+
+If these conditions are met:
+* When we are loading in a secondary dex file
+* and when dex2oat is not used
+* and the dex file is stored uncompressed in a ZIP file
+
+Then check:
+* The dex file is memory-mapped file-backed as clean memory
+(i.e. there is no extraction step)
+

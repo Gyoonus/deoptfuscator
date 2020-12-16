@@ -1,0 +1,1 @@
+Hello World test with --dm-file passed to dex2oat.

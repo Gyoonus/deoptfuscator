@@ -1,0 +1,2 @@
+Regression test for the optimizing compiler that used to incorrectly pass
+index and/or length to the pThrowArrayBounds entrypoint.

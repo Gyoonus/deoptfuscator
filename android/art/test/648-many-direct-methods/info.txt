@@ -1,0 +1,2 @@
+Regression test checking that the runtime can handle a huge number of
+direct methods (b/33650497).

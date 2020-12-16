@@ -1,0 +1,2 @@
+Regression test for vdex that used to not AOT compile
+methods when the VerifierDeps were verified.

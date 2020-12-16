@@ -1,0 +1,3 @@
+Tests basic functions in the jvmti plugin.
+
+Tests that the basic monitor-events work as we expect them to.

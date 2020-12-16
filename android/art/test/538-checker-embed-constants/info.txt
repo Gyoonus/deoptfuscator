@@ -1,0 +1,1 @@
+Test embedding of constants in assembler instructions.

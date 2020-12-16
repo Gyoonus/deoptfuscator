@@ -1,0 +1,5 @@
+JNI_OnLoad called
+From GetLocalInt(), value is 42
+	Value is '42'
+Setting TARGET to 1337
+	Value is '1337'

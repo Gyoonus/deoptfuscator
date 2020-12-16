@@ -1,0 +1,1 @@
+Regression test on pattern that caused double removal of AND by ARM64 simplifier.

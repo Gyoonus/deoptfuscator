@@ -1,0 +1,6 @@
+No contention
+current thread is contending for monitor: null
+Normal contended monitor
+c2 is contending for monitor: NamedLock[test testNormalContendedMonitor]
+Waiting on a monitor
+c1 is contending for monitor: NamedLock[test testNormalWaitMonitor]

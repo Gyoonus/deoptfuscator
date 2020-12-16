@@ -1,0 +1,104 @@
+Testing contended locking where lock is released before callback ends.
+Locker thread 1 for NamedLock[Lock testLockUncontend] contended-LOCKING NamedLock[Lock testLockUncontend]
+Releasing NamedLock[Lock testLockUncontend] during monitorEnter event.
+Locker thread 1 for NamedLock[Lock testLockUncontend] LOCKED NamedLock[Lock testLockUncontend]
+Testing throwing exceptions in monitor_enter
+Locker thread 3 for NamedLock[Lock testLockThrowEnter] contended-LOCKING NamedLock[Lock testLockThrowEnter]
+Throwing exception in MonitorEnter
+Locker thread 3 for NamedLock[Lock testLockThrowEnter] LOCKED NamedLock[Lock testLockThrowEnter]
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during monitorEnter of NamedLock[Lock testLockThrowEnter]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testLockThrowEnter], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing throwing exceptions in monitor_entered
+Locker thread 5 for NamedLock[Lock testLockThrowEntered] contended-LOCKING NamedLock[Lock testLockThrowEntered]
+Locker thread 5 for NamedLock[Lock testLockThrowEntered] LOCKED NamedLock[Lock testLockThrowEntered]
+Throwing exception in MonitorEntered
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during monitorEntered of NamedLock[Lock testLockThrowEntered]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testLockThrowEntered], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing throwing exceptions in both monitorEnter & MonitorEntered
+Locker thread 7 for NamedLock[Lock testLockThrowBoth] contended-LOCKING NamedLock[Lock testLockThrowBoth]
+Throwing exception in MonitorEnter
+Locker thread 7 for NamedLock[Lock testLockThrowBoth] LOCKED NamedLock[Lock testLockThrowBoth]
+Throwing exception in MonitorEntered
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during monitorEntered of NamedLock[Lock testLockThrowBoth]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testLockThrowBoth], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing throwing exception in MonitorWait event
+Locker thread 8 for NamedLock[Lock testThrowWait] start-monitor-wait NamedLock[Lock testThrowWait] timeout: 0
+Throwing exception in MonitorWait
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during MonitorWait of NamedLock[Lock testThrowWait]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testThrowWait], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing throwing exception in MonitorWait event with illegal aruments
+Locker thread 9 for NamedLock[Lock testThrowIllegalWait] start-monitor-wait NamedLock[Lock testThrowIllegalWait] timeout: -100000
+Throwing exception in MonitorWait timeout = -100000
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during monitorWait of NamedLock[Lock testThrowIllegalWait]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testThrowIllegalWait], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing throwing exception in MonitorWaited event
+Locker thread 10 for NamedLock[Lock testThrowWaited] start-monitor-wait NamedLock[Lock testThrowWaited] timeout: 0
+Locker thread 10 for NamedLock[Lock testThrowWaited] monitor-waited NamedLock[Lock testThrowWaited] timed_out: false
+Throwing exception in MonitorWaited
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during monitorWaited of NamedLock[Lock testThrowWaited]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testThrowWaited], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing throwing exception in MonitorWaited event caused by timeout
+Locker thread 12 for NamedLock[Lock testThrowWaitedTimeout] start-monitor-wait NamedLock[Lock testThrowWaitedTimeout] timeout: 5000
+Locker thread 12 for NamedLock[Lock testThrowWaitedTimeout] monitor-waited NamedLock[Lock testThrowWaitedTimeout] timed_out: true
+Throwing exception in MonitorWaited
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during monitorWaited of NamedLock[Lock testThrowWaitedTimeout]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testThrowWaitedTimeout], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing throwing exception in MonitorWaited event caused by interrupt
+Locker thread 13 for NamedLock[Lock testThrowWaitedInterrupt] start-monitor-wait NamedLock[Lock testThrowWaitedInterrupt] timeout: 0
+Locker thread 13 for NamedLock[Lock testThrowWaitedInterrupt] monitor-waited NamedLock[Lock testThrowWaitedInterrupt] timed_out: false
+Throwing exception in MonitorWaited
+Caught exception: art.Monitors$TestException: Exception thrown by other thread!
+	Caused by: art.Monitors$TestException: throwing exception during monitorWaited of NamedLock[Lock testThrowWaitedInterrupt]
+lock state is: MonitorUsage{ monitor: NamedLock[Lock testThrowWaitedInterrupt], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing ObjectMonitorInfo inside of events
+Locker thread 15 for NamedLock[Lock testMonitorInfoInEvents] contended-LOCKING NamedLock[Lock testMonitorInfoInEvents]
+Monitor usage in MonitorEnter: MonitorUsage{ monitor: NamedLock[Lock testMonitorInfoInEvents], owner: Locker thread 14 for NamedLock[Lock testMonitorInfoInEvents], entryCount: 1, waiters: [], notify_waiters: [] }
+Locker thread 15 for NamedLock[Lock testMonitorInfoInEvents] LOCKED NamedLock[Lock testMonitorInfoInEvents]
+Monitor usage in MonitorEntered: MonitorUsage{ monitor: NamedLock[Lock testMonitorInfoInEvents], owner: Locker thread 15 for NamedLock[Lock testMonitorInfoInEvents], entryCount: 1, waiters: [], notify_waiters: [] }
+Locker thread 15 for NamedLock[Lock testMonitorInfoInEvents] start-monitor-wait NamedLock[Lock testMonitorInfoInEvents] timeout: 0
+Monitor usage in MonitorWait: MonitorUsage{ monitor: NamedLock[Lock testMonitorInfoInEvents], owner: Locker thread 15 for NamedLock[Lock testMonitorInfoInEvents], entryCount: 1, waiters: [], notify_waiters: [] }
+Locker thread 15 for NamedLock[Lock testMonitorInfoInEvents] monitor-waited NamedLock[Lock testMonitorInfoInEvents] timed_out: false
+Monitor usage in MonitorWaited: MonitorUsage{ monitor: NamedLock[Lock testMonitorInfoInEvents], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Testing that the monitor can be stolen during the MonitorWaited event.
+Locker thread 17 for NamedLock[test testWaitEnterInterleaving] start-monitor-wait NamedLock[test testWaitEnterInterleaving] timeout: 0
+Locker thread 17 for NamedLock[test testWaitEnterInterleaving] monitor-waited NamedLock[test testWaitEnterInterleaving] timed_out: false
+locking controller3 in controller2 MonitorWaited event
+Controller3 now holds the lock the monitor wait will try to re-acquire
+Testing that we can lock and release the monitor in the MonitorWait event
+Locker thread 20 for NamedLock[test testWaitMonitorEnter] start-monitor-wait NamedLock[test testWaitMonitorEnter] timeout: 0
+In wait monitor usage: MonitorUsage{ monitor: NamedLock[test testWaitMonitorEnter], owner: Locker thread 20 for NamedLock[test testWaitMonitorEnter], entryCount: 1, waiters: [], notify_waiters: [] }
+In wait monitor usage sync: MonitorUsage{ monitor: NamedLock[test testWaitMonitorEnter], owner: Locker thread 20 for NamedLock[test testWaitMonitorEnter], entryCount: 2, waiters: [], notify_waiters: [] }
+Locker thread 20 for NamedLock[test testWaitMonitorEnter] monitor-waited NamedLock[test testWaitMonitorEnter] timed_out: false
+Testing that we can lock and release the monitor in the MonitorWaited event
+Locker thread 22 for NamedLock[test testWaitedMonitorEnter] start-monitor-wait NamedLock[test testWaitedMonitorEnter] timeout: 0
+Locker thread 22 for NamedLock[test testWaitedMonitorEnter] monitor-waited NamedLock[test testWaitedMonitorEnter] timed_out: false
+In waited monitor usage: MonitorUsage{ monitor: NamedLock[test testWaitedMonitorEnter], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+In waited monitor usage sync: MonitorUsage{ monitor: NamedLock[test testWaitedMonitorEnter], owner: Locker thread 22 for NamedLock[test testWaitedMonitorEnter], entryCount: 1, waiters: [], notify_waiters: [] }
+Testing we can perform recursive lock in MonitorEntered
+Locker thread 25 for NamedLock[test testRecursiveMontiorEnteredLock] contended-LOCKING NamedLock[test testRecursiveMontiorEnteredLock]
+Locker thread 25 for NamedLock[test testRecursiveMontiorEnteredLock] LOCKED NamedLock[test testRecursiveMontiorEnteredLock]
+In MonitorEntered usage: MonitorUsage{ monitor: NamedLock[test testRecursiveMontiorEnteredLock], owner: Locker thread 25 for NamedLock[test testRecursiveMontiorEnteredLock], entryCount: 1, waiters: [], notify_waiters: [] }
+In MonitorEntered sync: MonitorUsage{ monitor: NamedLock[test testRecursiveMontiorEnteredLock], owner: Locker thread 25 for NamedLock[test testRecursiveMontiorEnteredLock], entryCount: 2, waiters: [], notify_waiters: [] }
+Testing the lock state if MonitorEnter throws in a native method
+NativeLockStateThrowEnter thread contended-LOCKING NamedLock[test testNativeLockStateThrowEnter]
+Unlocking controller1 in MonitorEnter
+Throwing exception in MonitorEnter
+NativeLockStateThrowEnter thread LOCKED NamedLock[test testNativeLockStateThrowEnter]
+MonitorEnter returned: -1
+Lock state is: MonitorUsage{ monitor: NamedLock[test testNativeLockStateThrowEnter], owner: NativeLockStateThrowEnter thread, entryCount: 1, waiters: [], notify_waiters: [] }
+Caught exception: art.Monitors$TestException: throwing exception during monitorEnter of NamedLock[test testNativeLockStateThrowEnter]
+Testing the lock state if MonitorEntered throws in a native method
+NativeLockStateThrowEntered thread contended-LOCKING NamedLock[test testNativeLockStateThrowEntered]
+Unlocking controller1 in MonitorEnter
+NativeLockStateThrowEntered thread LOCKED NamedLock[test testNativeLockStateThrowEntered]
+Throwing exception in MonitorEntered
+MonitorEnter returned: -1
+Lock state is: MonitorUsage{ monitor: NamedLock[test testNativeLockStateThrowEntered], owner: NativeLockStateThrowEntered thread, entryCount: 1, waiters: [], notify_waiters: [] }
+Caught exception: art.Monitors$TestException: throwing exception during monitorEntered of NamedLock[test testNativeLockStateThrowEntered]

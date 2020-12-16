@@ -1,0 +1,12 @@
+Result is Hello
+take1 is Hello
+take2 is Goodbye
+Result is start
+take1 is start
+take2 is end
+Result is Goodbye
+take1 is Hello
+take2 is Goodbye
+Result is end
+take1 is start
+take2 is end

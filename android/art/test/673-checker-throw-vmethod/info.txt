@@ -1,0 +1,1 @@
+Test detecting throwing methods for code sinking.

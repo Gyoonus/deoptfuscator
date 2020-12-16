@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Generates asm_support_gen.h
+# - This must be run after a build since it uses cpp-define-generator-data
+
+[[ -z ${ANDROID_BUILD_TOP+x} ]] && (echo "Run source build/envsetup.sh first" >&2 && exit 1)
+
+cpp-define-generator-data > ${ANDROID_BUILD_TOP}/art/runtime/generated/asm_support_gen.h

@@ -1,0 +1,3 @@
+Regression test for erroneously storing an ArtMethod* in the app image DexCache
+when the class from the corresponding MethodId is not in the app image, only the
+declaring class is.

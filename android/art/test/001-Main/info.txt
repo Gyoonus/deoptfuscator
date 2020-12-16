@@ -1,0 +1,1 @@
+Import of a previous oat test. Empty main, just test starting up the runtime.

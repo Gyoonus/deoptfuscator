@@ -1,0 +1,20 @@
+[PI, D, null]
+class java.lang.Math
+25
+false
+[value, I, null]
+class java.lang.Integer
+18
+false
+[this$0, Lart/Test918;, null]
+class art.Test918$Foo
+4112
+true
+[VAL, I, null]
+interface art.Test918$Bar
+25
+false
+[generics, Ljava/lang/Object;, TT;]
+class art.Test918$Generics
+0
+false

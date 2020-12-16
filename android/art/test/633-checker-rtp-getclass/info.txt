@@ -1,0 +1,3 @@
+Regression test for the RTP pass of the compiler, which
+used the wrong block when bounding a type after a obj.getClass()
+check.

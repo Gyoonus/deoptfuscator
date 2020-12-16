@@ -1,0 +1,456 @@
+12c12
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+15c15
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+18c18
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+21c21
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+24c24
+<  doTest ()V 34 25
+---
+>  doTest ()V 33 25
+32c32
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+35c35
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+38c38
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+41c41
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+44c44
+<  doTest ()V 38 26
+---
+>  doTest ()V 37 26
+57c57
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+62c62
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+70c70
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+84c84
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+87c87
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+90c90
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+93c93
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+102c102
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+105c105
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+108c108
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+111c111
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+125c125
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+132c132
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+137c137
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+140c140
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+148c148
+<  printOrWait (IILart/ControlData;)V 44 54
+---
+>  printOrWait (IILart/ControlData;)V 45 54
+152c152
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+155c155
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+158c158
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+161c161
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+169c169
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+172c172
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+175c175
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+178c178
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+183c183
+<  printOrWait (IILart/ControlData;)V 44 54
+---
+>  printOrWait (IILart/ControlData;)V 45 54
+187c187
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+191c191
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+199c199
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+204c204
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+207c207
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+363c363
+<  doTest ()V 122 59
+---
+>  doTest ()V 120 59
+376c376
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+379c379
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+382c382
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+385c385
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+397c397
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+400c400
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+403c403
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+406c406
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+418c418
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+421c421
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+424c424
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+427c427
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+439c439
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+442c442
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+445c445
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+448c448
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+460c460
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+463c463
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+466c466
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+469c469
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+481c481
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+484c484
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+487c487
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+490c490
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+502c502
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+505c505
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+508c508
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+511c511
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+523c523
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+526c526
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+529c529
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+532c532
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+544c544
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+547c547
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+550c550
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+553c553
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+565c565
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+568c568
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+571c571
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+574c574
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+598c598
+<  doTest ()V 127 61
+---
+>  doTest ()V 125 61
+630c630
+<  doTest ()V 112 54
+---
+>  doTest ()V 110 54
+677c677
+<  doTest ()V 117 56
+---
+>  doTest ()V 115 56
+687c687
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+690c690
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+693c693
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+696c696
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+708c708
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+711c711
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+714c714
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+717c717
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+729c729
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+732c732
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+735c735
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+738c738
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+750c750
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+753c753
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+756c756
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+759c759
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+771c771
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+774c774
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+777c777
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+780c780
+<  baz (IIILart/ControlData;)Ljava/lang/Object; 9 34
+---
+>  baz (IIILart/ControlData;)Ljava/lang/Object; 8 34
+792c792
+< [public static void art.Frames.doTestSameThread(), 35]
+---
+> [public static void art.Frames.doTestSameThread(), 40]
+807c807
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]
+810c810
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]
+813c813
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]
+816c816
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]
+827c827
+< [private static void art.Recurse.printOrWait(int,int,art.ControlData), 2c]
+---
+> [private static void art.Recurse.printOrWait(int,int,art.ControlData), 2d]
+831c831
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]
+834c834
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]
+837c837
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]
+840c840
+< [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 9]
+---
+> [private static java.lang.Object art.Recurse.baz(int,int,int,art.ControlData), 8]

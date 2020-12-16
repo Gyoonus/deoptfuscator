@@ -1,0 +1,7 @@
+This is a test to verify that duplicate methods in a dex file are handled
+properly (all but the first are ignored).
+
+We need to build a dex file with duplicate methods. We cannot do that
+with Jack (this is invalid) or smali (it does not keep duplicate
+methods, only one is in the dex). Therefore, having a precompiled
+dex file allows to run the test on whatever toolchain.

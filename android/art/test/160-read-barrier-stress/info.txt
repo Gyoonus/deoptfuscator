@@ -1,0 +1,1 @@
+Test stressing read barriers for CC GC.

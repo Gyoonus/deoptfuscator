@@ -1,0 +1,3 @@
+Regression test for artQuickResolutionTrampoline() erroneously storing an
+ArtMethod to a DexCache for a MethodId referencing a class missing from the
+associated ClassTable. This discrepancy then led to a crash when JITting.

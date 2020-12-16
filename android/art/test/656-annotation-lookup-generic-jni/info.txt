@@ -1,0 +1,7 @@
+Non-regression test for b/38454151, where the invocation of a native
+method with an annotation (to be found in a custom class loader)
+through Generic JNI would crash the Generic JNI trampoline because it
+would throw an exception (that should eventually be caught) and walk a
+stack with an unexpected layout when trying to resolve the method's
+annotation classes (during the CriticalNative/FastNative optimization
+annotation lookup).

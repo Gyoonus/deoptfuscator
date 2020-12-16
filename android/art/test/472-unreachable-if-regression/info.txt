@@ -1,0 +1,3 @@
+Regression test for crashes during compilation of methods which end
+with an if-cc or switch, i.e. there's a fall-through out of method code.
+Also tests a packed-switch with negative offset to its data.

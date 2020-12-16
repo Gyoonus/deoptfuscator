@@ -1,0 +1,1 @@
+Regression test for a bug in ARM's code generator for HSelect.

@@ -1,0 +1,2 @@
+This test ensures that cross-dex-file Miranda methods are correctly resolved.
+See b/18193682 for details.

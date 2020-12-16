@@ -1,0 +1,6 @@
+JNI_OnLoad called
+Monitor list grew by at least 4000 monitors
+Monitor list shrank correctly
+Finished first check
+Finished second check
+Total checks: 10000

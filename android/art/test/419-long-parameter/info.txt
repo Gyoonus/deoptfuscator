@@ -1,0 +1,3 @@
+Regression test for the long parameter passed both in stack and register
+on 32bits architectures. The move to hard float ABI makes it so that the
+register index does not necessarily match the stack index anymore.

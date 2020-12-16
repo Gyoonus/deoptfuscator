@@ -1,0 +1,6 @@
+Got expected npe
+OK
+ true true true true
+ true true true true
+ true true true true
+ true true true true

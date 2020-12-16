@@ -1,0 +1,2 @@
+Regression test for a crash due to the removal
+of HCurrentMethod from the optimizing graph.

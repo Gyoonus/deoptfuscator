@@ -1,0 +1,1425 @@
+Processing 'invoke-custom.dex'...
+Opened 'invoke-custom.dex', DEX version '038'
+DEX file header:
+magic               : 'dex\n038\0'
+checksum            : d11a9e29
+signature           : 5b54...15c3
+file_size           : 8984
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 165
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 38
+type_ids_off        : 772 (0x000304)
+proto_ids_size      : 51
+proto_ids_off       : 924 (0x00039c)
+field_ids_size      : 3
+field_ids_off       : 1536 (0x000600)
+method_ids_size     : 78
+method_ids_off      : 1560 (0x000618)
+class_defs_size     : 2
+class_defs_off      : 2184 (0x000888)
+data_size           : 6552
+data_off            : 2432 (0x000980)
+
+Class #0 header:
+class_idx           : 8
+access_flags        : 1024 (0x0400)
+superclass_idx      : 13
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 27
+annotations_off     : 0 (0x000000)
+class_data_off      : 8589 (0x00218d)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 1
+virtual_methods_size: 2
+
+Class #0            -
+  Class descriptor  : 'Linvokecustom/Super;'
+  Access flags      : 0x0400 (ABSTRACT)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Linvokecustom/Super;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+000990:                                        |[000990] invokecustom.Super.<init>:()V
+0009a0: 7010 2b00 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@002b
+0009a6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=29
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Linvokecustom/Super; 
+
+  Virtual methods   -
+    #0              : (in Linvokecustom/Super;)
+      name          : 'helperMethodTest9'
+      type          : '()V'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #1              : (in Linvokecustom/Super;)
+      name          : 'targetMethodTest4'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 8 16-bit code units
+0009a8:                                        |[0009a8] invokecustom.Super.targetMethodTest4:()V
+0009b8: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+0009bc: 1a01 8b00                              |0002: const-string v1, "targetMethodTest4 from Super" // string@008b
+0009c0: 6e20 2900 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+0009c6: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=31
+        0x0007 line=32
+      locals        : 
+        0x0000 - 0x0008 reg=2 this Linvokecustom/Super; 
+
+  source_file_idx   : 27 (InvokeCustom.java)
+
+Class #1 header:
+class_idx           : 7
+access_flags        : 1 (0x0001)
+superclass_idx      : 8
+interfaces_off      : 5460 (0x001554)
+source_file_idx     : 27
+annotations_off     : 5396 (0x001514)
+class_data_off      : 8607 (0x00219f)
+static_fields_size  : 1
+instance_fields_size: 1
+direct_methods_size : 29
+virtual_methods_size: 3
+
+Class #1 annotations:
+Annotations on method #3 'bsmCreateCallSite'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Throwable; }
+Annotations on method #4 'bsmLookupStatic'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/NoSuchMethodException; Ljava/lang/IllegalAccessException; }
+Annotations on method #5 'bsmLookupStaticWithExtraArgs'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/NoSuchMethodException; Ljava/lang/IllegalAccessException; }
+Annotations on method #6 'bsmLookupTest9'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Throwable; }
+Annotations on method #7 'checkFieldTest9'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Throwable; }
+Annotations on method #8 'checkStaticFieldTest9'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Throwable; }
+
+Class #1            -
+  Class descriptor  : 'Linvokecustom/InvokeCustom;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Linvokecustom/Super;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+    #0              : (in Linvokecustom/InvokeCustom;)
+      name          : 'staticFieldTest9'
+      type          : 'I'
+      access        : 0x000a (PRIVATE STATIC)
+  Instance fields   -
+    #0              : (in Linvokecustom/InvokeCustom;)
+      name          : 'fieldTest9'
+      type          : 'F'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Linvokecustom/InvokeCustom;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 4 16-bit code units
+0009c8:                                        |[0009c8] invokecustom.InvokeCustom.<clinit>:()V
+0009d8: 1200                                   |0000: const/4 v0, #int 0 // #0
+0009da: 6700 0100                              |0001: sput v0, Linvokecustom/InvokeCustom;.staticFieldTest9:I // field@0001
+0009de: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=102
+      locals        : 
+
+    #1              : (in Linvokecustom/InvokeCustom;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 7 16-bit code units
+0009e0:                                        |[0009e0] invokecustom.InvokeCustom.<init>:()V
+0009f0: 7010 2000 0100                         |0000: invoke-direct {v1}, Linvokecustom/Super;.<init>:()V // method@0020
+0009f6: 1200                                   |0003: const/4 v0, #int 0 // #0
+0009f8: 5910 0000                              |0004: iput v0, v1, Linvokecustom/InvokeCustom;.fieldTest9:F // field@0000
+0009fc: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=39
+        0x0003 line=115
+        0x0006 line=39
+      locals        : 
+        0x0000 - 0x0007 reg=1 this Linvokecustom/InvokeCustom; 
+
+    #2              : (in Linvokecustom/InvokeCustom;)
+      name          : '<init>'
+      type          : '(I)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 5
+      ins           : 2
+      outs          : 2
+      insns size    : 37 16-bit code units
+000a00:                                        |[000a00] invokecustom.InvokeCustom.<init>:(I)V
+000a10: 7010 2000 0300                         |0000: invoke-direct {v3}, Linvokecustom/Super;.<init>:()V // method@0020
+000a16: 1200                                   |0003: const/4 v0, #int 0 // #0
+000a18: 5930 0000                              |0004: iput v0, v3, Linvokecustom/InvokeCustom;.fieldTest9:F // field@0000
+000a1c: 6200 0200                              |0006: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000a20: 2201 1000                              |0008: new-instance v1, Ljava/lang/StringBuilder; // type@0010
+000a24: 7010 3000 0100                         |000a: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+000a2a: 1a02 1a00                              |000d: const-string v2, "InvokeCustom.<init>(" // string@001a
+000a2e: 6e20 3600 2100                         |000f: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000a34: 0c01                                   |0012: move-result-object v1
+000a36: 6e20 3300 4100                         |0013: invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+000a3c: 0c01                                   |0016: move-result-object v1
+000a3e: 1a02 0800                              |0017: const-string v2, ")" // string@0008
+000a42: 6e20 3600 2100                         |0019: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000a48: 0c01                                   |001c: move-result-object v1
+000a4a: 6e10 3700 0100                         |001d: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+000a50: 0c01                                   |0020: move-result-object v1
+000a52: 6e20 2900 1000                         |0021: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000a58: 0e00                                   |0024: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=40
+        0x0003 line=115
+        0x0006 line=41
+        0x0024 line=42
+      locals        : 
+        0x0000 - 0x0025 reg=3 this Linvokecustom/InvokeCustom; 
+        0x0000 - 0x0025 reg=4 (null) I 
+
+    #3              : (in Linvokecustom/InvokeCustom;)
+      name          : 'bsmCreateCallSite'
+      type          : '(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 7
+      ins           : 4
+      outs          : 2
+      insns size    : 36 16-bit code units
+000a5c:                                        |[000a5c] invokecustom.InvokeCustom.bsmCreateCallSite:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+000a6c: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000a70: 2201 1000                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@0010
+000a74: 7010 3000 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+000a7a: 1a02 6000                              |0007: const-string v2, "bsmCreateCallSite [" // string@0060
+000a7e: 6e20 3600 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000a84: 0c01                                   |000c: move-result-object v1
+000a86: 6e20 3500 6100                         |000d: invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@0035
+000a8c: 0c01                                   |0010: move-result-object v1
+000a8e: 1a02 5900                              |0011: const-string v2, "]" // string@0059
+000a92: 6e20 3600 2100                         |0013: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000a98: 0c01                                   |0016: move-result-object v1
+000a9a: 6e10 3700 0100                         |0017: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+000aa0: 0c01                                   |001a: move-result-object v1
+000aa2: 6e20 2900 1000                         |001b: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000aa8: 2200 1400                              |001e: new-instance v0, Ljava/lang/invoke/ConstantCallSite; // type@0014
+000aac: 7020 3800 6000                         |0020: invoke-direct {v0, v6}, Ljava/lang/invoke/ConstantCallSite;.<init>:(Ljava/lang/invoke/MethodHandle;)V // method@0038
+000ab2: 1100                                   |0023: return-object v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=160
+        0x001e line=161
+      locals        : 
+        0x0000 - 0x0024 reg=3 (null) Ljava/lang/invoke/MethodHandles$Lookup; 
+        0x0000 - 0x0024 reg=4 (null) Ljava/lang/String; 
+        0x0000 - 0x0024 reg=5 (null) Ljava/lang/invoke/MethodType; 
+        0x0000 - 0x0024 reg=6 (null) Ljava/lang/invoke/MethodHandle; 
+
+    #4              : (in Linvokecustom/InvokeCustom;)
+      name          : 'bsmLookupStatic'
+      type          : '(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 4
+      insns size    : 29 16-bit code units
+000ab4:                                        |[000ab4] invokecustom.InvokeCustom.bsmLookupStatic:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+000ac4: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000ac8: 1a01 6200                              |0002: const-string v1, "bsmLookupStatic []" // string@0062
+000acc: 6e20 2900 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000ad2: 7100 4600 0000                         |0007: invoke-static {}, Ljava/lang/invoke/MethodHandles;.lookup:()Ljava/lang/invoke/MethodHandles$Lookup; // method@0046
+000ad8: 0c00                                   |000a: move-result-object v0
+000ada: 6e10 4500 0000                         |000b: invoke-virtual {v0}, Ljava/lang/invoke/MethodHandles$Lookup;.lookupClass:()Ljava/lang/Class; // method@0045
+000ae0: 0c01                                   |000e: move-result-object v1
+000ae2: 6e40 4400 1043                         |000f: invoke-virtual {v0, v1, v3, v4}, Ljava/lang/invoke/MethodHandles$Lookup;.findStatic:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; // method@0044
+000ae8: 0c00                                   |0012: move-result-object v0
+000aea: 2201 1400                              |0013: new-instance v1, Ljava/lang/invoke/ConstantCallSite; // type@0014
+000aee: 6e20 3a00 4000                         |0015: invoke-virtual {v0, v4}, Ljava/lang/invoke/MethodHandle;.asType:(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; // method@003a
+000af4: 0c00                                   |0018: move-result-object v0
+000af6: 7020 3800 0100                         |0019: invoke-direct {v1, v0}, Ljava/lang/invoke/ConstantCallSite;.<init>:(Ljava/lang/invoke/MethodHandle;)V // method@0038
+000afc: 1101                                   |001c: return-object v1
+      catches       : (none)
+      positions     : 
+        0x0000 line=142
+        0x0007 line=143
+        0x000b line=144
+        0x0013 line=145
+      locals        : 
+        0x0000 - 0x001d reg=2 (null) Ljava/lang/invoke/MethodHandles$Lookup; 
+        0x0000 - 0x001d reg=3 (null) Ljava/lang/String; 
+        0x0000 - 0x001d reg=4 (null) Ljava/lang/invoke/MethodType; 
+
+    #5              : (in Linvokecustom/InvokeCustom;)
+      name          : 'bsmLookupStaticWithExtraArgs'
+      type          : '(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;IJFD)Ljava/lang/invoke/CallSite;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 12
+      ins           : 9
+      outs          : 4
+      insns size    : 82 16-bit code units
+000b00:                                        |[000b00] invokecustom.InvokeCustom.bsmLookupStaticWithExtraArgs:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;IJFD)Ljava/lang/invoke/CallSite;
+000b10: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000b14: 2201 1000                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@0010
+000b18: 7010 3000 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+000b1e: 1a02 6400                              |0007: const-string v2, "bsmLookupStaticWithExtraArgs [" // string@0064
+000b22: 6e20 3600 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000b28: 0c01                                   |000c: move-result-object v1
+000b2a: 6e20 3300 6100                         |000d: invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+000b30: 0c01                                   |0010: move-result-object v1
+000b32: 1a02 0900                              |0011: const-string v2, ", " // string@0009
+000b36: 6e20 3600 2100                         |0013: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000b3c: 0c01                                   |0016: move-result-object v1
+000b3e: 6e30 3400 7108                         |0017: invoke-virtual {v1, v7, v8}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@0034
+000b44: 0c01                                   |001a: move-result-object v1
+000b46: 1a02 0900                              |001b: const-string v2, ", " // string@0009
+000b4a: 6e20 3600 2100                         |001d: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000b50: 0c01                                   |0020: move-result-object v1
+000b52: 6e20 3200 9100                         |0021: invoke-virtual {v1, v9}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@0032
+000b58: 0c01                                   |0024: move-result-object v1
+000b5a: 1a02 0900                              |0025: const-string v2, ", " // string@0009
+000b5e: 6e20 3600 2100                         |0027: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000b64: 0c01                                   |002a: move-result-object v1
+000b66: 6e30 3100 a10b                         |002b: invoke-virtual {v1, v10, v11}, Ljava/lang/StringBuilder;.append:(D)Ljava/lang/StringBuilder; // method@0031
+000b6c: 0c01                                   |002e: move-result-object v1
+000b6e: 1a02 5900                              |002f: const-string v2, "]" // string@0059
+000b72: 6e20 3600 2100                         |0031: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000b78: 0c01                                   |0034: move-result-object v1
+000b7a: 6e10 3700 0100                         |0035: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+000b80: 0c01                                   |0038: move-result-object v1
+000b82: 6e20 2900 1000                         |0039: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000b88: 7100 4600 0000                         |003c: invoke-static {}, Ljava/lang/invoke/MethodHandles;.lookup:()Ljava/lang/invoke/MethodHandles$Lookup; // method@0046
+000b8e: 0c00                                   |003f: move-result-object v0
+000b90: 6e10 4500 0000                         |0040: invoke-virtual {v0}, Ljava/lang/invoke/MethodHandles$Lookup;.lookupClass:()Ljava/lang/Class; // method@0045
+000b96: 0c01                                   |0043: move-result-object v1
+000b98: 6e40 4400 1054                         |0044: invoke-virtual {v0, v1, v4, v5}, Ljava/lang/invoke/MethodHandles$Lookup;.findStatic:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; // method@0044
+000b9e: 0c00                                   |0047: move-result-object v0
+000ba0: 2201 1400                              |0048: new-instance v1, Ljava/lang/invoke/ConstantCallSite; // type@0014
+000ba4: 6e20 3a00 5000                         |004a: invoke-virtual {v0, v5}, Ljava/lang/invoke/MethodHandle;.asType:(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; // method@003a
+000baa: 0c00                                   |004d: move-result-object v0
+000bac: 7020 3800 0100                         |004e: invoke-direct {v1, v0}, Ljava/lang/invoke/ConstantCallSite;.<init>:(Ljava/lang/invoke/MethodHandle;)V // method@0038
+000bb2: 1101                                   |0051: return-object v1
+      catches       : (none)
+      positions     : 
+        0x0000 line=151
+        0x003c line=152
+        0x0040 line=153
+        0x0048 line=154
+      locals        : 
+        0x0000 - 0x0052 reg=3 (null) Ljava/lang/invoke/MethodHandles$Lookup; 
+        0x0000 - 0x0052 reg=4 (null) Ljava/lang/String; 
+        0x0000 - 0x0052 reg=5 (null) Ljava/lang/invoke/MethodType; 
+        0x0000 - 0x0052 reg=6 (null) I 
+        0x0000 - 0x0052 reg=7 (null) J 
+        0x0000 - 0x0052 reg=9 (null) F 
+        0x0000 - 0x0052 reg=10 (null) D 
+
+    #6              : (in Linvokecustom/InvokeCustom;)
+      name          : 'bsmLookupTest9'
+      type          : '(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 13
+      ins           : 10
+      outs          : 4
+      insns size    : 135 16-bit code units
+000bb4:                                        |[000bb4] invokecustom.InvokeCustom.bsmLookupTest9:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+000bc4: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000bc8: 2201 1000                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@0010
+000bcc: 7010 3000 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+000bd2: 1a02 6600                              |0007: const-string v2, "bsmLookupTest9 [" // string@0066
+000bd6: 6e20 3600 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000bdc: 0c01                                   |000c: move-result-object v1
+000bde: 6e20 3500 6100                         |000d: invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@0035
+000be4: 0c01                                   |0010: move-result-object v1
+000be6: 1a02 0900                              |0011: const-string v2, ", " // string@0009
+000bea: 6e20 3600 2100                         |0013: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000bf0: 0c01                                   |0016: move-result-object v1
+000bf2: 6e20 3500 7100                         |0017: invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@0035
+000bf8: 0c01                                   |001a: move-result-object v1
+000bfa: 1a02 0900                              |001b: const-string v2, ", " // string@0009
+000bfe: 6e20 3600 2100                         |001d: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000c04: 0c01                                   |0020: move-result-object v1
+000c06: 6e20 3500 8100                         |0021: invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@0035
+000c0c: 0c01                                   |0024: move-result-object v1
+000c0e: 1a02 0900                              |0025: const-string v2, ", " // string@0009
+000c12: 6e20 3600 2100                         |0027: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000c18: 0c01                                   |002a: move-result-object v1
+000c1a: 6e20 3500 9100                         |002b: invoke-virtual {v1, v9}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@0035
+000c20: 0c01                                   |002e: move-result-object v1
+000c22: 1a02 5900                              |002f: const-string v2, "]" // string@0059
+000c26: 6e20 3600 2100                         |0031: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000c2c: 0c01                                   |0034: move-result-object v1
+000c2e: 6e10 3700 0100                         |0035: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+000c34: 0c01                                   |0038: move-result-object v1
+000c36: 6e20 2900 1000                         |0039: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000c3c: 6200 0200                              |003c: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000c40: 2201 1000                              |003e: new-instance v1, Ljava/lang/StringBuilder; // type@0010
+000c44: 7010 3000 0100                         |0040: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+000c4a: 6e20 3600 4100                         |0043: invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000c50: 0c01                                   |0046: move-result-object v1
+000c52: 1a02 0100                              |0047: const-string v2, " " // string@0001
+000c56: 6e20 3600 2100                         |0049: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000c5c: 0c01                                   |004c: move-result-object v1
+000c5e: 6e20 3500 5100                         |004d: invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@0035
+000c64: 0c01                                   |0050: move-result-object v1
+000c66: 6e10 3700 0100                         |0051: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+000c6c: 0c01                                   |0054: move-result-object v1
+000c6e: 6e20 2900 1000                         |0055: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000c74: 7120 0800 7600                         |0058: invoke-static {v6, v7}, Linvokecustom/InvokeCustom;.checkStaticFieldTest9:(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)V // method@0008
+000c7a: 2200 0700                              |005b: new-instance v0, Linvokecustom/InvokeCustom; // type@0007
+000c7e: 7010 0100 0000                         |005d: invoke-direct {v0}, Linvokecustom/InvokeCustom;.<init>:()V // method@0001
+000c84: 7030 0700 8009                         |0060: invoke-direct {v0, v8, v9}, Linvokecustom/InvokeCustom;.checkFieldTest9:(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)V // method@0007
+000c8a: fa20 4000 0a00 2700                    |0063: invoke-polymorphic {v10, v0}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, (Linvokecustom/InvokeCustom;)V // method@0040, proto@0027
+000c92: 1230                                   |0067: const/4 v0, #int 3 // #3
+000c94: fa20 4000 0b00 0500                    |0068: invoke-polymorphic {v11, v0}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, (I)Linvokecustom/InvokeCustom; // method@0040, proto@0005
+000c9c: 0c00                                   |006c: move-result-object v0
+000c9e: fa20 3b00 0c00 2700                    |006d: invoke-polymorphic {v12, v0}, Ljava/lang/invoke/MethodHandle;.invoke:([Ljava/lang/Object;)Ljava/lang/Object;, (Linvokecustom/InvokeCustom;)V // method@003b, proto@0027
+000ca6: 7100 4600 0000                         |0071: invoke-static {}, Ljava/lang/invoke/MethodHandles;.lookup:()Ljava/lang/invoke/MethodHandles$Lookup; // method@0046
+000cac: 0c00                                   |0074: move-result-object v0
+000cae: 6e10 4500 0000                         |0075: invoke-virtual {v0}, Ljava/lang/invoke/MethodHandles$Lookup;.lookupClass:()Ljava/lang/Class; // method@0045
+000cb4: 0c01                                   |0078: move-result-object v1
+000cb6: 6e40 4400 1054                         |0079: invoke-virtual {v0, v1, v4, v5}, Ljava/lang/invoke/MethodHandles$Lookup;.findStatic:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; // method@0044
+000cbc: 0c00                                   |007c: move-result-object v0
+000cbe: 2201 1400                              |007d: new-instance v1, Ljava/lang/invoke/ConstantCallSite; // type@0014
+000cc2: 6e20 3a00 5000                         |007f: invoke-virtual {v0, v5}, Ljava/lang/invoke/MethodHandle;.asType:(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; // method@003a
+000cc8: 0c00                                   |0082: move-result-object v0
+000cca: 7020 3800 0100                         |0083: invoke-direct {v1, v0}, Ljava/lang/invoke/ConstantCallSite;.<init>:(Ljava/lang/invoke/MethodHandle;)V // method@0038
+000cd0: 1101                                   |0086: return-object v1
+      catches       : (none)
+      positions     : 
+        0x0000 line=170
+        0x003c line=172
+        0x0058 line=175
+        0x005b line=176
+        0x0060 line=177
+        0x0063 line=180
+        0x0067 line=182
+        0x006d line=183
+        0x0071 line=185
+        0x0075 line=186
+        0x007d line=187
+      locals        : 
+        0x0000 - 0x0087 reg=3 (null) Ljava/lang/invoke/MethodHandles$Lookup; 
+        0x0000 - 0x0087 reg=4 (null) Ljava/lang/String; 
+        0x0000 - 0x0087 reg=5 (null) Ljava/lang/invoke/MethodType; 
+        0x0000 - 0x0087 reg=6 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0087 reg=7 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0087 reg=8 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0087 reg=9 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0087 reg=10 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0087 reg=11 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0087 reg=12 (null) Ljava/lang/invoke/MethodHandle; 
+
+    #7              : (in Linvokecustom/InvokeCustom;)
+      name          : 'checkFieldTest9'
+      type          : '(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 9
+      ins           : 3
+      outs          : 3
+      insns size    : 82 16-bit code units
+000cd4:                                        |[000cd4] invokecustom.InvokeCustom.checkFieldTest9:(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)V
+000ce4: 1405 0ff0 6a20                         |0000: const v5, #float 1.99e-19 // #206af00f
+000cea: fa20 4000 6700 0100                    |0003: invoke-polymorphic {v7, v6}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, (Linvokecustom/InvokeCustom;)F // method@0040, proto@0001
+000cf2: 0a00                                   |0007: move-result v0
+000cf4: fa30 4000 6805 2800                    |0008: invoke-polymorphic {v8, v6, v5}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, (Linvokecustom/InvokeCustom;F)V // method@0040, proto@0028
+000cfc: fa20 4000 6700 0100                    |000c: invoke-polymorphic {v7, v6}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, (Linvokecustom/InvokeCustom;)F // method@0040, proto@0001
+000d04: 0a01                                   |0010: move-result v1
+000d06: 6202 0200                              |0011: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000d0a: 2203 1000                              |0013: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+000d0e: 7010 3000 0300                         |0015: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+000d14: 1a04 6800                              |0018: const-string v4, "checkFieldTest9: old " // string@0068
+000d18: 6e20 3600 4300                         |001a: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000d1e: 0c03                                   |001d: move-result-object v3
+000d20: 6e20 3200 0300                         |001e: invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@0032
+000d26: 0c00                                   |0021: move-result-object v0
+000d28: 1a03 0700                              |0022: const-string v3, " new " // string@0007
+000d2c: 6e20 3600 3000                         |0024: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000d32: 0c00                                   |0027: move-result-object v0
+000d34: 6e20 3200 1000                         |0028: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@0032
+000d3a: 0c00                                   |002b: move-result-object v0
+000d3c: 1a03 0600                              |002c: const-string v3, " expected " // string@0006
+000d40: 6e20 3600 3000                         |002e: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000d46: 0c00                                   |0031: move-result-object v0
+000d48: 6e20 3200 5000                         |0032: invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@0032
+000d4e: 0c00                                   |0035: move-result-object v0
+000d50: 1a03 0100                              |0036: const-string v3, " " // string@0001
+000d54: 6e20 3600 3000                         |0038: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000d5a: 0c00                                   |003b: move-result-object v0
+000d5c: 6e10 3700 0000                         |003c: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+000d62: 0c00                                   |003f: move-result-object v0
+000d64: 6e20 2300 0200                         |0040: invoke-virtual {v2, v0}, Ljava/io/PrintStream;.print:(Ljava/lang/String;)V // method@0023
+000d6a: 6202 0200                              |0043: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000d6e: 2d00 0105                              |0045: cmpl-float v0, v1, v5
+000d72: 3900 0800                              |0047: if-nez v0, 004f // +0008
+000d76: 1a00 4400                              |0049: const-string v0, "OK" // string@0044
+000d7a: 6e20 2900 0200                         |004b: invoke-virtual {v2, v0}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000d80: 0e00                                   |004e: return-void
+000d82: 1a00 1100                              |004f: const-string v0, "ERROR" // string@0011
+000d86: 28fa                                   |0051: goto 004b // -0006
+      catches       : (none)
+      positions     : 
+        0x0003 line=120
+        0x0008 line=121
+        0x000c line=122
+        0x0011 line=123
+        0x0043 line=125
+        0x004e line=126
+        0x004f line=125
+      locals        : 
+        0x0000 - 0x0052 reg=6 this Linvokecustom/InvokeCustom; 
+        0x0000 - 0x0052 reg=7 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0052 reg=8 (null) Ljava/lang/invoke/MethodHandle; 
+
+    #8              : (in Linvokecustom/InvokeCustom;)
+      name          : 'checkStaticFieldTest9'
+      type          : '(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 8
+      ins           : 2
+      outs          : 2
+      insns size    : 80 16-bit code units
+000d88:                                        |[000d88] invokecustom.InvokeCustom.checkStaticFieldTest9:(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)V
+000d98: 1405 1032 5476                         |0000: const v5, #float 1.07596e+33 // #76543210
+000d9e: fa10 4000 0600 0200                    |0003: invoke-polymorphic {v6}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, ()I // method@0040, proto@0002
+000da6: 0a00                                   |0007: move-result v0
+000da8: fa20 4000 5700 2500                    |0008: invoke-polymorphic {v7, v5}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, (I)V // method@0040, proto@0025
+000db0: fa10 4000 0600 0200                    |000c: invoke-polymorphic {v6}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, ()I // method@0040, proto@0002
+000db8: 0a01                                   |0010: move-result v1
+000dba: 6202 0200                              |0011: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000dbe: 2203 1000                              |0013: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+000dc2: 7010 3000 0300                         |0015: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+000dc8: 1a04 6a00                              |0018: const-string v4, "checkStaticFieldTest9: old " // string@006a
+000dcc: 6e20 3600 4300                         |001a: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000dd2: 0c03                                   |001d: move-result-object v3
+000dd4: 6e20 3300 0300                         |001e: invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+000dda: 0c00                                   |0021: move-result-object v0
+000ddc: 1a03 0700                              |0022: const-string v3, " new " // string@0007
+000de0: 6e20 3600 3000                         |0024: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000de6: 0c00                                   |0027: move-result-object v0
+000de8: 6e20 3300 1000                         |0028: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+000dee: 0c00                                   |002b: move-result-object v0
+000df0: 1a03 0600                              |002c: const-string v3, " expected " // string@0006
+000df4: 6e20 3600 3000                         |002e: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000dfa: 0c00                                   |0031: move-result-object v0
+000dfc: 6e20 3300 5000                         |0032: invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+000e02: 0c00                                   |0035: move-result-object v0
+000e04: 1a03 0100                              |0036: const-string v3, " " // string@0001
+000e08: 6e20 3600 3000                         |0038: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+000e0e: 0c00                                   |003b: move-result-object v0
+000e10: 6e10 3700 0000                         |003c: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+000e16: 0c00                                   |003f: move-result-object v0
+000e18: 6e20 2300 0200                         |0040: invoke-virtual {v2, v0}, Ljava/io/PrintStream;.print:(Ljava/lang/String;)V // method@0023
+000e1e: 6202 0200                              |0043: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000e22: 3351 0800                              |0045: if-ne v1, v5, 004d // +0008
+000e26: 1a00 4400                              |0047: const-string v0, "OK" // string@0044
+000e2a: 6e20 2900 0200                         |0049: invoke-virtual {v2, v0}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000e30: 0e00                                   |004c: return-void
+000e32: 1a00 1100                              |004d: const-string v0, "ERROR" // string@0011
+000e36: 28fa                                   |004f: goto 0049 // -0006
+      catches       : (none)
+      positions     : 
+        0x0003 line=107
+        0x0008 line=108
+        0x000c line=109
+        0x0011 line=110
+        0x0043 line=112
+        0x004c line=113
+        0x004d line=112
+      locals        : 
+        0x0000 - 0x0050 reg=6 (null) Ljava/lang/invoke/MethodHandle; 
+        0x0000 - 0x0050 reg=7 (null) Ljava/lang/invoke/MethodHandle; 
+
+    #9              : (in Linvokecustom/InvokeCustom;)
+      name          : 'lambda$lambdaTest$0'
+      type          : '(Ljava/lang/String;)Z'
+      access        : 0x100a (PRIVATE STATIC SYNTHETIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 11 16-bit code units
+000e38:                                        |[000e38] invokecustom.InvokeCustom.lambda$lambdaTest$0:(Ljava/lang/String;)Z
+000e48: 1a00 4500                              |0000: const-string v0, "One" // string@0045
+000e4c: 6e10 2f00 0200                         |0002: invoke-virtual {v2}, Ljava/lang/String;.trim:()Ljava/lang/String; // method@002f
+000e52: 0c01                                   |0005: move-result-object v1
+000e54: 6e20 2e00 1000                         |0006: invoke-virtual {v0, v1}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@002e
+000e5a: 0a00                                   |0009: move-result v0
+000e5c: 0f00                                   |000a: return v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=192
+      locals        : 
+        0x0000 - 0x000b reg=2 (null) Ljava/lang/String; 
+
+    #10              : (in Linvokecustom/InvokeCustom;)
+      name          : 'lambdaTest'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 2
+      insns size    : 71 16-bit code units
+000e60:                                        |[000e60] invokecustom.InvokeCustom.lambdaTest:()V
+000e70: 1230                                   |0000: const/4 v0, #int 3 // #3
+000e72: 2300 2500                              |0001: new-array v0, v0, [Ljava/lang/String; // type@0025
+000e76: 1201                                   |0003: const/4 v1, #int 0 // #0
+000e78: 1a02 4900                              |0004: const-string v2, "Three" // string@0049
+000e7c: 4d02 0001                              |0006: aput-object v2, v0, v1
+000e80: 1211                                   |0008: const/4 v1, #int 1 // #1
+000e82: 1a02 4500                              |0009: const-string v2, "One" // string@0045
+000e86: 4d02 0001                              |000b: aput-object v2, v0, v1
+000e8a: 1221                                   |000d: const/4 v1, #int 2 // #2
+000e8c: 1a02 1600                              |000e: const-string v2, "FortyTwo" // string@0016
+000e90: 4d02 0001                              |0010: aput-object v2, v0, v1
+000e94: 7110 4700 0000                         |0012: invoke-static {v0}, Ljava/util/Arrays;.asList:([Ljava/lang/Object;)Ljava/util/List; // method@0047
+000e9a: 0c01                                   |0015: move-result-object v1
+000e9c: 7210 4800 0100                         |0016: invoke-interface {v1}, Ljava/util/List;.stream:()Ljava/util/stream/Stream; // method@0048
+000ea2: 0c00                                   |0019: move-result-object v0
+000ea4: fc00 0000 0000                         |001a: invoke-custom {}, call_site@0000
+000eaa: 0c02                                   |001d: move-result-object v2
+000eac: 7220 4a00 2000                         |001e: invoke-interface {v0, v2}, Ljava/util/stream/Stream;.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream; // method@004a
+000eb2: 0c00                                   |0021: move-result-object v0
+000eb4: fc00 0100 0000                         |0022: invoke-custom {}, call_site@0001
+000eba: 0c02                                   |0025: move-result-object v2
+000ebc: 7220 4d00 2000                         |0026: invoke-interface {v0, v2}, Ljava/util/stream/Stream;.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream; // method@004d
+000ec2: 0c00                                   |0029: move-result-object v0
+000ec4: 7210 4b00 0000                         |002a: invoke-interface {v0}, Ljava/util/stream/Stream;.findAny:()Ljava/util/Optional; // method@004b
+000eca: 0c00                                   |002d: move-result-object v0
+000ecc: 1a02 0000                              |002e: const-string v2, "" // string@0000
+000ed0: 6e20 4900 2000                         |0030: invoke-virtual {v0, v2}, Ljava/util/Optional;.orElse:(Ljava/lang/Object;)Ljava/lang/Object; // method@0049
+000ed6: 0c00                                   |0033: move-result-object v0
+000ed8: 1f00 0f00                              |0034: check-cast v0, Ljava/lang/String; // type@000f
+000edc: 7210 4800 0100                         |0036: invoke-interface {v1}, Ljava/util/List;.stream:()Ljava/util/stream/Stream; // method@0048
+000ee2: 0c00                                   |0039: move-result-object v0
+000ee4: 6201 0200                              |003a: sget-object v1, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000ee8: 6e10 2c00 0100                         |003c: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@002c
+000eee: fc10 0200 0100                         |003f: invoke-custom {v1}, call_site@0002
+000ef4: 0c01                                   |0042: move-result-object v1
+000ef6: 7220 4c00 1000                         |0043: invoke-interface {v0, v1}, Ljava/util/stream/Stream;.forEach:(Ljava/util/function/Consumer;)V // method@004c
+000efc: 0e00                                   |0046: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=191
+        0x0016 line=192
+        0x0026 line=193
+        0x0036 line=194
+        0x0046 line=195
+      locals        : 
+
+    #11              : (in Linvokecustom/InvokeCustom;)
+      name          : 'main'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 28 16-bit code units
+000f00:                                        |[000f00] invokecustom.InvokeCustom.main:([Ljava/lang/String;)V
+000f10: 7100 1700 0000                         |0000: invoke-static {}, Linvokecustom/InvokeCustom;.test1:()V // method@0017
+000f16: 7100 1800 0000                         |0003: invoke-static {}, Linvokecustom/InvokeCustom;.test2:()V // method@0018
+000f1c: 7100 1900 0000                         |0006: invoke-static {}, Linvokecustom/InvokeCustom;.test3:()V // method@0019
+000f22: 7100 1a00 0000                         |0009: invoke-static {}, Linvokecustom/InvokeCustom;.test4:()V // method@001a
+000f28: 7100 1b00 0000                         |000c: invoke-static {}, Linvokecustom/InvokeCustom;.test5:()V // method@001b
+000f2e: 7100 1c00 0000                         |000f: invoke-static {}, Linvokecustom/InvokeCustom;.test6:()V // method@001c
+000f34: 7100 1d00 0000                         |0012: invoke-static {}, Linvokecustom/InvokeCustom;.test7:()V // method@001d
+000f3a: 7100 1e00 0000                         |0015: invoke-static {}, Linvokecustom/InvokeCustom;.test8:()V // method@001e
+000f40: 7100 1f00 0000                         |0018: invoke-static {}, Linvokecustom/InvokeCustom;.test9:()V // method@001f
+000f46: 0e00                                   |001b: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #12              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest1'
+      type          : '()V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 8 16-bit code units
+000f48:                                        |[000f48] invokecustom.InvokeCustom.targetMethodTest1:()V
+000f58: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000f5c: 1a01 1700                              |0002: const-string v1, "Hello World!" // string@0017
+000f60: 6e20 2900 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000f66: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=45
+        0x0007 line=46
+      locals        : 
+
+    #13              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest2'
+      type          : '(ZBCSIFJDLjava/lang/String;)V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 13
+      ins           : 11
+      outs          : 3
+      insns size    : 46 16-bit code units
+000f68:                                        |[000f68] invokecustom.InvokeCustom.targetMethodTest2:(ZBCSIFJDLjava/lang/String;)V
+000f78: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000f7c: 6e20 2a00 2000                         |0002: invoke-virtual {v0, v2}, Ljava/io/PrintStream;.println:(Z)V // method@002a
+000f82: 6200 0200                              |0005: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000f86: 6e20 2700 3000                         |0007: invoke-virtual {v0, v3}, Ljava/io/PrintStream;.println:(I)V // method@0027
+000f8c: 6200 0200                              |000a: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000f90: 6e20 2400 4000                         |000c: invoke-virtual {v0, v4}, Ljava/io/PrintStream;.println:(C)V // method@0024
+000f96: 6200 0200                              |000f: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000f9a: 6e20 2700 5000                         |0011: invoke-virtual {v0, v5}, Ljava/io/PrintStream;.println:(I)V // method@0027
+000fa0: 6200 0200                              |0014: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000fa4: 6e20 2700 6000                         |0016: invoke-virtual {v0, v6}, Ljava/io/PrintStream;.println:(I)V // method@0027
+000faa: 6200 0200                              |0019: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000fae: 6e20 2600 7000                         |001b: invoke-virtual {v0, v7}, Ljava/io/PrintStream;.println:(F)V // method@0026
+000fb4: 6200 0200                              |001e: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000fb8: 6e30 2800 8009                         |0020: invoke-virtual {v0, v8, v9}, Ljava/io/PrintStream;.println:(J)V // method@0028
+000fbe: 6200 0200                              |0023: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000fc2: 6e30 2500 a00b                         |0025: invoke-virtual {v0, v10, v11}, Ljava/io/PrintStream;.println:(D)V // method@0025
+000fc8: 6200 0200                              |0028: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000fcc: 6e20 2900 c000                         |002a: invoke-virtual {v0, v12}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000fd2: 0e00                                   |002d: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=50
+        0x0005 line=51
+        0x000a line=52
+        0x000f line=53
+        0x0014 line=54
+        0x0019 line=55
+        0x001e line=56
+        0x0023 line=57
+        0x0028 line=58
+        0x002d line=59
+      locals        : 
+        0x0000 - 0x002e reg=2 (null) Z 
+        0x0000 - 0x002e reg=3 (null) B 
+        0x0000 - 0x002e reg=4 (null) C 
+        0x0000 - 0x002e reg=5 (null) S 
+        0x0000 - 0x002e reg=6 (null) I 
+        0x0000 - 0x002e reg=7 (null) F 
+        0x0000 - 0x002e reg=8 (null) J 
+        0x0000 - 0x002e reg=10 (null) D 
+        0x0000 - 0x002e reg=12 (null) Ljava/lang/String; 
+
+    #14              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest3'
+      type          : '()V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 8 16-bit code units
+000fd4:                                        |[000fd4] invokecustom.InvokeCustom.targetMethodTest3:()V
+000fe4: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+000fe8: 1a01 8800                              |0002: const-string v1, "targetMethodTest3 from InvokeCustom" // string@0088
+000fec: 6e20 2900 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+000ff2: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=62
+        0x0007 line=63
+      locals        : 
+
+    #15              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest5'
+      type          : '(III)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 7
+      ins           : 3
+      outs          : 2
+      insns size    : 83 16-bit code units
+000ff4:                                        |[000ff4] invokecustom.InvokeCustom.targetMethodTest5:(III)I
+001004: 9000 0405                              |0000: add-int v0, v4, v5
+001008: 6201 0200                              |0002: sget-object v1, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+00100c: 2202 1000                              |0004: new-instance v2, Ljava/lang/StringBuilder; // type@0010
+001010: 7010 3000 0200                         |0006: invoke-direct {v2}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+001016: 1a03 8d00                              |0009: const-string v3, "targetMethodTest5 " // string@008d
+00101a: 6e20 3600 3200                         |000b: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001020: 0c02                                   |000e: move-result-object v2
+001022: 6e20 3300 4200                         |000f: invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+001028: 0c02                                   |0012: move-result-object v2
+00102a: 1a03 0400                              |0013: const-string v3, " + " // string@0004
+00102e: 6e20 3600 3200                         |0015: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001034: 0c02                                   |0018: move-result-object v2
+001036: 6e20 3300 5200                         |0019: invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+00103c: 0c02                                   |001c: move-result-object v2
+00103e: 1a03 0500                              |001d: const-string v3, " = " // string@0005
+001042: 6e20 3600 3200                         |001f: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001048: 0c02                                   |0022: move-result-object v2
+00104a: 6e20 3300 0200                         |0023: invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+001050: 0c02                                   |0026: move-result-object v2
+001052: 6e10 3700 0200                         |0027: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+001058: 0c02                                   |002a: move-result-object v2
+00105a: 6e20 2900 2100                         |002b: invoke-virtual {v1, v2}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001060: 3260 2400                              |002e: if-eq v0, v6, 0052 // +0024
+001064: 6201 0200                              |0030: sget-object v1, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+001068: 2202 1000                              |0032: new-instance v2, Ljava/lang/StringBuilder; // type@0010
+00106c: 7010 3000 0200                         |0034: invoke-direct {v2}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+001072: 1a03 1400                              |0037: const-string v3, "Failed " // string@0014
+001076: 6e20 3600 3200                         |0039: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+00107c: 0c02                                   |003c: move-result-object v2
+00107e: 6e20 3300 0200                         |003d: invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+001084: 0c02                                   |0040: move-result-object v2
+001086: 1a03 0200                              |0041: const-string v3, " != " // string@0002
+00108a: 6e20 3600 3200                         |0043: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001090: 0c02                                   |0046: move-result-object v2
+001092: 6e20 3300 6200                         |0047: invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+001098: 0c02                                   |004a: move-result-object v2
+00109a: 6e10 3700 0200                         |004b: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+0010a0: 0c02                                   |004e: move-result-object v2
+0010a2: 6e20 2900 2100                         |004f: invoke-virtual {v1, v2}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+0010a8: 0f00                                   |0052: return v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=72
+        0x0002 line=73
+        0x002e line=74
+        0x0030 line=75
+        0x0052 line=77
+      locals        : 
+        0x0000 - 0x0053 reg=4 (null) I 
+        0x0000 - 0x0053 reg=5 (null) I 
+        0x0000 - 0x0053 reg=6 (null) I 
+
+    #16              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest6'
+      type          : '(JJJ)J'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 12
+      ins           : 6
+      outs          : 3
+      insns size    : 85 16-bit code units
+0010ac:                                        |[0010ac] invokecustom.InvokeCustom.targetMethodTest6:(JJJ)J
+0010bc: 9b00 0608                              |0000: add-long v0, v6, v8
+0010c0: 6202 0200                              |0002: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+0010c4: 2203 1000                              |0004: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+0010c8: 7010 3000 0300                         |0006: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+0010ce: 1a04 9000                              |0009: const-string v4, "targetMethodTest6 " // string@0090
+0010d2: 6e20 3600 4300                         |000b: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+0010d8: 0c03                                   |000e: move-result-object v3
+0010da: 6e30 3400 6307                         |000f: invoke-virtual {v3, v6, v7}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@0034
+0010e0: 0c03                                   |0012: move-result-object v3
+0010e2: 1a04 0400                              |0013: const-string v4, " + " // string@0004
+0010e6: 6e20 3600 4300                         |0015: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+0010ec: 0c03                                   |0018: move-result-object v3
+0010ee: 6e30 3400 8309                         |0019: invoke-virtual {v3, v8, v9}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@0034
+0010f4: 0c03                                   |001c: move-result-object v3
+0010f6: 1a04 0500                              |001d: const-string v4, " = " // string@0005
+0010fa: 6e20 3600 4300                         |001f: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001100: 0c03                                   |0022: move-result-object v3
+001102: 6e30 3400 0301                         |0023: invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@0034
+001108: 0c03                                   |0026: move-result-object v3
+00110a: 6e10 3700 0300                         |0027: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+001110: 0c03                                   |002a: move-result-object v3
+001112: 6e20 2900 3200                         |002b: invoke-virtual {v2, v3}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001118: 3102 000a                              |002e: cmp-long v2, v0, v10
+00111c: 3802 2400                              |0030: if-eqz v2, 0054 // +0024
+001120: 6202 0200                              |0032: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+001124: 2203 1000                              |0034: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+001128: 7010 3000 0300                         |0036: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+00112e: 1a04 1400                              |0039: const-string v4, "Failed " // string@0014
+001132: 6e20 3600 4300                         |003b: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001138: 0c03                                   |003e: move-result-object v3
+00113a: 6e30 3400 0301                         |003f: invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@0034
+001140: 0c03                                   |0042: move-result-object v3
+001142: 1a04 0200                              |0043: const-string v4, " != " // string@0002
+001146: 6e20 3600 4300                         |0045: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+00114c: 0c03                                   |0048: move-result-object v3
+00114e: 6e30 3400 a30b                         |0049: invoke-virtual {v3, v10, v11}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@0034
+001154: 0c03                                   |004c: move-result-object v3
+001156: 6e10 3700 0300                         |004d: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+00115c: 0c03                                   |0050: move-result-object v3
+00115e: 6e20 2900 3200                         |0051: invoke-virtual {v2, v3}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001164: 1000                                   |0054: return-wide v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=81
+        0x0002 line=82
+        0x002e line=83
+        0x0032 line=84
+        0x0054 line=86
+      locals        : 
+        0x0000 - 0x0055 reg=6 (null) J 
+        0x0000 - 0x0055 reg=8 (null) J 
+        0x0000 - 0x0055 reg=10 (null) J 
+
+    #17              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest7'
+      type          : '(FFD)D'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 10
+      ins           : 4
+      outs          : 3
+      insns size    : 86 16-bit code units
+001168:                                        |[001168] invokecustom.InvokeCustom.targetMethodTest7:(FFD)D
+001178: a800 0607                              |0000: mul-float v0, v6, v7
+00117c: 8900                                   |0002: float-to-double v0, v0
+00117e: 6202 0200                              |0003: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+001182: 2203 1000                              |0005: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+001186: 7010 3000 0300                         |0007: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+00118c: 1a04 9300                              |000a: const-string v4, "targetMethodTest7 " // string@0093
+001190: 6e20 3600 4300                         |000c: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001196: 0c03                                   |000f: move-result-object v3
+001198: 6e20 3200 6300                         |0010: invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@0032
+00119e: 0c03                                   |0013: move-result-object v3
+0011a0: 1a04 0300                              |0014: const-string v4, " * " // string@0003
+0011a4: 6e20 3600 4300                         |0016: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+0011aa: 0c03                                   |0019: move-result-object v3
+0011ac: 6e20 3200 7300                         |001a: invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@0032
+0011b2: 0c03                                   |001d: move-result-object v3
+0011b4: 1a04 0500                              |001e: const-string v4, " = " // string@0005
+0011b8: 6e20 3600 4300                         |0020: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+0011be: 0c03                                   |0023: move-result-object v3
+0011c0: 6e30 3100 0301                         |0024: invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;.append:(D)Ljava/lang/StringBuilder; // method@0031
+0011c6: 0c03                                   |0027: move-result-object v3
+0011c8: 6e10 3700 0300                         |0028: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+0011ce: 0c03                                   |002b: move-result-object v3
+0011d0: 6e20 2900 3200                         |002c: invoke-virtual {v2, v3}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+0011d6: 2f02 0008                              |002f: cmpl-double v2, v0, v8
+0011da: 3802 2400                              |0031: if-eqz v2, 0055 // +0024
+0011de: 6202 0200                              |0033: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+0011e2: 2203 1000                              |0035: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+0011e6: 7010 3000 0300                         |0037: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+0011ec: 1a04 1400                              |003a: const-string v4, "Failed " // string@0014
+0011f0: 6e20 3600 4300                         |003c: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+0011f6: 0c03                                   |003f: move-result-object v3
+0011f8: 6e30 3100 0301                         |0040: invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;.append:(D)Ljava/lang/StringBuilder; // method@0031
+0011fe: 0c03                                   |0043: move-result-object v3
+001200: 1a04 0200                              |0044: const-string v4, " != " // string@0002
+001204: 6e20 3600 4300                         |0046: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+00120a: 0c03                                   |0049: move-result-object v3
+00120c: 6e30 3100 8309                         |004a: invoke-virtual {v3, v8, v9}, Ljava/lang/StringBuilder;.append:(D)Ljava/lang/StringBuilder; // method@0031
+001212: 0c03                                   |004d: move-result-object v3
+001214: 6e10 3700 0300                         |004e: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+00121a: 0c03                                   |0051: move-result-object v3
+00121c: 6e20 2900 3200                         |0052: invoke-virtual {v2, v3}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001222: 1000                                   |0055: return-wide v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=90
+        0x0003 line=91
+        0x002f line=92
+        0x0033 line=93
+        0x0055 line=95
+      locals        : 
+        0x0000 - 0x0056 reg=6 (null) F 
+        0x0000 - 0x0056 reg=7 (null) F 
+        0x0000 - 0x0056 reg=8 (null) D 
+
+    #18              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest8'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 25 16-bit code units
+001224:                                        |[001224] invokecustom.InvokeCustom.targetMethodTest8:(Ljava/lang/String;)V
+001234: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+001238: 2201 1000                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@0010
+00123c: 7010 3000 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+001242: 1a02 9500                              |0007: const-string v2, "targetMethodTest8 " // string@0095
+001246: 6e20 3600 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+00124c: 0c01                                   |000c: move-result-object v1
+00124e: 6e20 3600 3100                         |000d: invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001254: 0c01                                   |0010: move-result-object v1
+001256: 6e10 3700 0100                         |0011: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+00125c: 0c01                                   |0014: move-result-object v1
+00125e: 6e20 2900 1000                         |0015: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001264: 0e00                                   |0018: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=99
+        0x0018 line=100
+      locals        : 
+        0x0000 - 0x0019 reg=3 (null) Ljava/lang/String; 
+
+    #19              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest9'
+      type          : '()V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 8 16-bit code units
+001268:                                        |[001268] invokecustom.InvokeCustom.targetMethodTest9:()V
+001278: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+00127c: 1a01 9700                              |0002: const-string v1, "targetMethodTest9()" // string@0097
+001280: 6e20 2900 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001286: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=133
+        0x0007 line=134
+      locals        : 
+
+    #20              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test1'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 0
+      ins           : 0
+      outs          : 0
+      insns size    : 4 16-bit code units
+001288:                                        |[001288] invokecustom.InvokeCustom.test1:()V
+001298: fc00 0300 0000                         |0000: invoke-custom {}, call_site@0003
+00129e: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #21              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test2'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 11
+      ins           : 0
+      outs          : 11
+      insns size    : 27 16-bit code units
+0012a0:                                        |[0012a0] invokecustom.InvokeCustom.test2:()V
+0012b0: 1210                                   |0000: const/4 v0, #int 1 // #1
+0012b2: 1301 7f00                              |0001: const/16 v1, #int 127 // #7f
+0012b6: 1302 6300                              |0003: const/16 v2, #int 99 // #63
+0012ba: 1303 0004                              |0005: const/16 v3, #int 1024 // #400
+0012be: 1404 40e2 0100                         |0007: const v4, #float 1.72999e-40 // #0001e240
+0012c4: 1405 9a99 993f                         |000a: const v5, #float 1.2 // #3f99999a
+0012ca: 1706 15cd 5b07                         |000d: const-wide/32 v6, #float 1.6536e-34 // #075bcd15
+0012d0: 1808 b6fa f8b0 4819 0c40               |0010: const-wide v8, #double 3.51235 // #400c1948b0f8fab6
+0012da: 1a0a 4800                              |0015: const-string v10, "String" // string@0048
+0012de: fd0b 0400 0000                         |0017: invoke-custom/range {v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10}, call_site@0004
+0012e4: 0e00                                   |001a: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #22              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test3'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 0
+      ins           : 0
+      outs          : 0
+      insns size    : 4 16-bit code units
+0012e8:                                        |[0012e8] invokecustom.InvokeCustom.test3:()V
+0012f8: fc00 0b00 0000                         |0000: invoke-custom {}, call_site@000b
+0012fe: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #23              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test4'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 9 16-bit code units
+001300:                                        |[001300] invokecustom.InvokeCustom.test4:()V
+001310: 2200 0700                              |0000: new-instance v0, Linvokecustom/InvokeCustom; // type@0007
+001314: 7010 0100 0000                         |0002: invoke-direct {v0}, Linvokecustom/InvokeCustom;.<init>:()V // method@0001
+00131a: fc10 0c00 0000                         |0005: invoke-custom {v0}, call_site@000c
+001320: 0e00                                   |0008: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #24              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test5'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 0
+      outs          : 3
+      insns size    : 35 16-bit code units
+001324:                                        |[001324] invokecustom.InvokeCustom.test5:()V
+001334: 1300 e803                              |0000: const/16 v0, #int 1000 // #3e8
+001338: 1301 65fc                              |0002: const/16 v1, #int -923 // #fc65
+00133c: 1302 4d00                              |0004: const/16 v2, #int 77 // #4d
+001340: fc30 0500 1002                         |0006: invoke-custom {v0, v1, v2}, call_site@0005
+001346: 0a00                                   |0009: move-result v0
+001348: 6201 0200                              |000a: sget-object v1, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+00134c: 2202 1000                              |000c: new-instance v2, Ljava/lang/StringBuilder; // type@0010
+001350: 7010 3000 0200                         |000e: invoke-direct {v2}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+001356: 1a03 8e00                              |0011: const-string v3, "targetMethodTest5 returned: " // string@008e
+00135a: 6e20 3600 3200                         |0013: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+001360: 0c02                                   |0016: move-result-object v2
+001362: 6e20 3300 0200                         |0017: invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0033
+001368: 0c00                                   |001a: move-result-object v0
+00136a: 6e10 3700 0000                         |001b: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+001370: 0c00                                   |001e: move-result-object v0
+001372: 6e20 2900 0100                         |001f: invoke-virtual {v1, v0}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001378: 0e00                                   |0022: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #25              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test6'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 0
+      outs          : 6
+      insns size    : 44 16-bit code units
+00137c:                                        |[00137c] invokecustom.InvokeCustom.test6:()V
+00138c: 1800 7777 7777 7707 0000               |0000: const-wide v0, #double 4.05612e-311 // #0000077777777777
+001396: 1802 efee eeee eefe ffff               |0005: const-wide v2, #double -nan // #fffffeeeeeeeeeef
+0013a0: 1804 6666 6666 6606 0000               |000a: const-wide v4, #double 3.47668e-311 // #0000066666666666
+0013aa: fd06 0600 0000                         |000f: invoke-custom/range {v0, v1, v2, v3, v4, v5}, call_site@0006
+0013b0: 0b00                                   |0012: move-result-wide v0
+0013b2: 6202 0200                              |0013: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+0013b6: 2203 1000                              |0015: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+0013ba: 7010 3000 0300                         |0017: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+0013c0: 1a04 9100                              |001a: const-string v4, "targetMethodTest6 returned: " // string@0091
+0013c4: 6e20 3600 4300                         |001c: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+0013ca: 0c03                                   |001f: move-result-object v3
+0013cc: 6e30 3400 0301                         |0020: invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@0034
+0013d2: 0c00                                   |0023: move-result-object v0
+0013d4: 6e10 3700 0000                         |0024: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+0013da: 0c00                                   |0027: move-result-object v0
+0013dc: 6e20 2900 0200                         |0028: invoke-virtual {v2, v0}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+0013e2: 0e00                                   |002b: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #26              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test7'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 0
+      outs          : 4
+      insns size    : 40 16-bit code units
+0013e4:                                        |[0013e4] invokecustom.InvokeCustom.test7:()V
+0013f4: 1400 0040 003f                         |0000: const v0, #float 0.500977 // #3f004000
+0013fa: 1401 0040 00bf                         |0003: const v1, #float -0.500977 // #bf004000
+001400: 1802 0000 0000 0410 d0bf               |0006: const-wide v2, #double -0.250978 // #bfd0100400000000
+00140a: fc40 0700 1032                         |000b: invoke-custom {v0, v1, v2, v3}, call_site@0007
+001410: 0b00                                   |000e: move-result-wide v0
+001412: 6202 0200                              |000f: sget-object v2, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+001416: 2203 1000                              |0011: new-instance v3, Ljava/lang/StringBuilder; // type@0010
+00141a: 7010 3000 0300                         |0013: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+001420: 1a04 9100                              |0016: const-string v4, "targetMethodTest6 returned: " // string@0091
+001424: 6e20 3600 4300                         |0018: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+00142a: 0c03                                   |001b: move-result-object v3
+00142c: 6e30 3100 0301                         |001c: invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;.append:(D)Ljava/lang/StringBuilder; // method@0031
+001432: 0c00                                   |001f: move-result-object v0
+001434: 6e10 3700 0000                         |0020: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+00143a: 0c00                                   |0023: move-result-object v0
+00143c: 6e20 2900 0200                         |0024: invoke-virtual {v2, v0}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001442: 0e00                                   |0027: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #27              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test8'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 16 16-bit code units
+001444:                                        |[001444] invokecustom.InvokeCustom.test8:()V
+001454: 1a00 1500                              |0000: const-string v0, "First invokedynamic invocation" // string@0015
+001458: fc10 0800 0000                         |0002: invoke-custom {v0}, call_site@0008
+00145e: 1a00 4700                              |0005: const-string v0, "Second invokedynamic invocation" // string@0047
+001462: fc10 0900 0000                         |0007: invoke-custom {v0}, call_site@0009
+001468: 1a00 1000                              |000a: const-string v0, "Dupe first invokedynamic invocation" // string@0010
+00146c: fc10 0a00 0000                         |000c: invoke-custom {v0}, call_site@000a
+001472: 0e00                                   |000f: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #28              : (in Linvokecustom/InvokeCustom;)
+      name          : 'test9'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 0
+      ins           : 0
+      outs          : 0
+      insns size    : 4 16-bit code units
+001474:                                        |[001474] invokecustom.InvokeCustom.test9:()V
+001484: fc00 0d00 0000                         |0000: invoke-custom {}, call_site@000d
+00148a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+  Virtual methods   -
+    #0              : (in Linvokecustom/InvokeCustom;)
+      name          : 'helperMethodTest9'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 27 16-bit code units
+00148c:                                        |[00148c] invokecustom.InvokeCustom.helperMethodTest9:()V
+00149c: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+0014a0: 2201 1000                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@0010
+0014a4: 7010 3000 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0030
+0014aa: 1a02 7300                              |0007: const-string v2, "helperMethodTest9 in " // string@0073
+0014ae: 6e20 3600 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0036
+0014b4: 0c01                                   |000c: move-result-object v1
+0014b6: 1c02 0700                              |000d: const-class v2, Linvokecustom/InvokeCustom; // type@0007
+0014ba: 6e20 3500 2100                         |000f: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@0035
+0014c0: 0c01                                   |0012: move-result-object v1
+0014c2: 6e10 3700 0100                         |0013: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0037
+0014c8: 0c01                                   |0016: move-result-object v1
+0014ca: 6e20 2900 1000                         |0017: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+0014d0: 0e00                                   |001a: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=129
+        0x001a line=130
+      locals        : 
+        0x0000 - 0x001b reg=3 this Linvokecustom/InvokeCustom; 
+
+    #1              : (in Linvokecustom/InvokeCustom;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 8 16-bit code units
+0014d4:                                        |[0014d4] invokecustom.InvokeCustom.run:()V
+0014e4: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+0014e8: 1a01 8200                              |0002: const-string v1, "run() for Test9" // string@0082
+0014ec: 6e20 2900 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+0014f2: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=137
+        0x0007 line=138
+      locals        : 
+        0x0000 - 0x0008 reg=2 this Linvokecustom/InvokeCustom; 
+
+    #2              : (in Linvokecustom/InvokeCustom;)
+      name          : 'targetMethodTest4'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 8 16-bit code units
+0014f4:                                        |[0014f4] invokecustom.InvokeCustom.targetMethodTest4:()V
+001504: 6200 0200                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0002
+001508: 1a01 8a00                              |0002: const-string v1, "targetMethodTest4 from InvokeCustom (oops!)" // string@008a
+00150c: 6e20 2900 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0029
+001512: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=68
+        0x0007 line=69
+      locals        : 
+        0x0000 - 0x0008 reg=2 this Linvokecustom/InvokeCustom; 
+
+  source_file_idx   : 27 (InvokeCustom.java)
+
+Method handle #0:
+  type        : put-static
+  target      : Linvokecustom/InvokeCustom; staticFieldTest9
+  target_type : I
+Method handle #1:
+  type        : get-static
+  target      : Linvokecustom/InvokeCustom; staticFieldTest9
+  target_type : I
+Method handle #2:
+  type        : put-instance
+  target      : Linvokecustom/InvokeCustom; fieldTest9
+  target_type : (Linvokecustom/InvokeCustom;
+Method handle #3:
+  type        : get-instance
+  target      : Linvokecustom/InvokeCustom; fieldTest9
+  target_type : (Linvokecustom/InvokeCustom;
+Method handle #4:
+  type        : invoke-static
+  target      : Linvokecustom/InvokeCustom; bsmCreateCallSite
+  target_type : (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+Method handle #5:
+  type        : invoke-static
+  target      : Linvokecustom/InvokeCustom; bsmLookupStatic
+  target_type : (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+Method handle #6:
+  type        : invoke-static
+  target      : Linvokecustom/InvokeCustom; bsmLookupStaticWithExtraArgs
+  target_type : (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;IJFD)Ljava/lang/invoke/CallSite;
+Method handle #7:
+  type        : invoke-static
+  target      : Linvokecustom/InvokeCustom; bsmLookupTest9
+  target_type : (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+Method handle #8:
+  type        : invoke-static
+  target      : Linvokecustom/InvokeCustom; lambda$lambdaTest$0
+  target_type : (Ljava/lang/String;)Z
+Method handle #9:
+  type        : invoke-static
+  target      : Ljava/lang/invoke/LambdaMetafactory; metafactory
+  target_type : (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+Method handle #10:
+  type        : invoke-instance
+  target      : Linvokecustom/InvokeCustom; helperMethodTest9
+  target_type : (Linvokecustom/InvokeCustom;)V
+Method handle #11:
+  type        : invoke-instance
+  target      : Ljava/io/PrintStream; println
+  target_type : (Ljava/io/PrintStream;Ljava/lang/String;)V
+Method handle #12:
+  type        : invoke-instance
+  target      : Ljava/lang/String; trim
+  target_type : (Ljava/lang/String;)Ljava/lang/String;
+Method handle #13:
+  type        : invoke-constructor
+  target      : Linvokecustom/InvokeCustom; <init>
+  target_type : (Linvokecustom/InvokeCustom;I)V
+Method handle #14:
+  type        : invoke-direct
+  target      : Linvokecustom/Super; targetMethodTest4
+  target_type : (Linvokecustom/Super;)V
+Method handle #15:
+  type        : invoke-interface
+  target      : Ljava/lang/Runnable; run
+  target_type : (Ljava/lang/Runnable;)V
+Call site #0: // offset 8450
+  link_argument[0] : 9 (MethodHandle)
+  link_argument[1] : test (String)
+  link_argument[2] : ()Ljava/util/function/Predicate; (MethodType)
+  link_argument[3] : (Ljava/lang/Object;)Z (MethodType)
+  link_argument[4] : 8 (MethodHandle)
+  link_argument[5] : (Ljava/lang/String;)Z (MethodType)
+Call site #1: // offset 8463
+  link_argument[0] : 9 (MethodHandle)
+  link_argument[1] : apply (String)
+  link_argument[2] : ()Ljava/util/function/Function; (MethodType)
+  link_argument[3] : (Ljava/lang/Object;)Ljava/lang/Object; (MethodType)
+  link_argument[4] : 12 (MethodHandle)
+  link_argument[5] : (Ljava/lang/String;)Ljava/lang/String; (MethodType)
+Call site #2: // offset 8476
+  link_argument[0] : 9 (MethodHandle)
+  link_argument[1] : accept (String)
+  link_argument[2] : (Ljava/io/PrintStream;)Ljava/util/function/Consumer; (MethodType)
+  link_argument[3] : (Ljava/lang/Object;)V (MethodType)
+  link_argument[4] : 11 (MethodHandle)
+  link_argument[5] : (Ljava/lang/String;)V (MethodType)
+Call site #3: // offset 8489
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest1 (String)
+  link_argument[2] : ()V (MethodType)
+Call site #4: // offset 8496
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest2 (String)
+  link_argument[2] : (ZBCSIFJDLjava/lang/String;)V (MethodType)
+Call site #5: // offset 8503
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest5 (String)
+  link_argument[2] : (III)I (MethodType)
+Call site #6: // offset 8510
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest6 (String)
+  link_argument[2] : (JJJ)J (MethodType)
+Call site #7: // offset 8517
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest7 (String)
+  link_argument[2] : (FFD)D (MethodType)
+Call site #8: // offset 8524
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest8 (String)
+  link_argument[2] : (Ljava/lang/String;)V (MethodType)
+Call site #9: // offset 8524
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest8 (String)
+  link_argument[2] : (Ljava/lang/String;)V (MethodType)
+Call site #10: // offset 8524
+  link_argument[0] : 5 (MethodHandle)
+  link_argument[1] : targetMethodTest8 (String)
+  link_argument[2] : (Ljava/lang/String;)V (MethodType)
+Call site #11: // offset 8531
+  link_argument[0] : 6 (MethodHandle)
+  link_argument[1] : targetMethodTest3 (String)
+  link_argument[2] : ()V (MethodType)
+  link_argument[3] : 1 (int)
+  link_argument[4] : 123456789 (long)
+  link_argument[5] : 123.456 (float)
+  link_argument[6] : 123457 (double)
+Call site #12: // offset 8559
+  link_argument[0] : 4 (MethodHandle)
+  link_argument[1] : targetMethodTest4 (String)
+  link_argument[2] : (Linvokecustom/InvokeCustom;)V (MethodType)
+  link_argument[3] : 14 (MethodHandle)
+Call site #13: // offset 8568
+  link_argument[0] : 7 (MethodHandle)
+  link_argument[1] : targetMethodTest9 (String)
+  link_argument[2] : ()V (MethodType)
+  link_argument[3] : 1 (MethodHandle)
+  link_argument[4] : 0 (MethodHandle)
+  link_argument[5] : 3 (MethodHandle)
+  link_argument[6] : 2 (MethodHandle)
+  link_argument[7] : 10 (MethodHandle)
+  link_argument[8] : 13 (MethodHandle)
+  link_argument[9] : 15 (MethodHandle)

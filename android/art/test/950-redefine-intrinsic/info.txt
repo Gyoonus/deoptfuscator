@@ -1,0 +1,3 @@
+Tests basic functions in the jvmti plugin.
+
+Tests that we are able to redefine intrinsic functions.

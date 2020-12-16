@@ -1,0 +1,2 @@
+Regression test for the newStringFromBytes entrypoint,
+which used to wrongly setup the stack.

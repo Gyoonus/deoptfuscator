@@ -1,0 +1,31 @@
+Running with single thread.
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testSingleThread], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testSingleThread], owner: main, entryCount: 1, waiters: [], notify_waiters: [] }
+Running with single thread in native.
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testSingleThread], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testSingleThread], owner: main, entryCount: 1, waiters: [], notify_waiters: [] }
+Lock twice
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwice], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwice], owner: main, entryCount: 1, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwice], owner: main, entryCount: 2, waiters: [], notify_waiters: [] }
+Lock twice native
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceNative], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceNative], owner: main, entryCount: 1, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceNative], owner: main, entryCount: 2, waiters: [], notify_waiters: [] }
+Lock twice Java then native
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceJN], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceJN], owner: main, entryCount: 1, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceJN], owner: main, entryCount: 2, waiters: [], notify_waiters: [] }
+Lock twice native then Java
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceNJ], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Pre-lock[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceNJ], owner: main, entryCount: 1, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockedTwiceNJ], owner: main, entryCount: 2, waiters: [], notify_waiters: [] }
+lock with wait
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockWait], owner: main, entryCount: 1, waiters: [Test1930 Thread - testLockWait], notify_waiters: [] }
+Thread[Test1930 Thread - testLockWait]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockWait], owner: Test1930 Thread - testLockWait, entryCount: 1, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testLockWait], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }
+Wait for notify.
+Thread[Test1930 Thread - testLockWait]: MonitorUsage{ monitor: NamedLock[Test1930 - testNotifyWait], owner: Test1930 Thread - testLockWait, entryCount: 1, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testNotifyWait], owner: main, entryCount: 1, waiters: [Test1930 Thread - testLockWait], notify_waiters: [Test1930 Thread - testLockWait] }
+Thread[Test1930 Thread - testLockWait]: MonitorUsage{ monitor: NamedLock[Test1930 - testNotifyWait], owner: Test1930 Thread - testLockWait, entryCount: 1, waiters: [], notify_waiters: [] }
+Thread[main]: MonitorUsage{ monitor: NamedLock[Test1930 - testNotifyWait], owner: <NULL>, entryCount: 0, waiters: [], notify_waiters: [] }

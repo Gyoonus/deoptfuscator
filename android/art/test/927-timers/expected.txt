@@ -1,0 +1,3 @@
+availableProcessors OK
+[-1, true, true, 32]
+Time OK

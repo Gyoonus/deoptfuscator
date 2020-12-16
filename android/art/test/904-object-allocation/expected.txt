@@ -1,0 +1,8 @@
+[]
+[ObjectAllocated type java.lang.Object/java.lang.Object size 8, ObjectAllocated type java.lang.Integer/java.lang.Integer size 16, ObjectAllocated type java.lang.Short/java.lang.Short size 16]
+Tracking on same thread
+[ObjectAllocated type java.lang.Double/java.lang.Double size 16]
+Tracking on same thread, not disabling tracking
+[ObjectAllocated type java.lang.Double/java.lang.Double size 16]
+Tracking on different thread
+[]

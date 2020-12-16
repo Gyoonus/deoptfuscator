@@ -1,0 +1,43 @@
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Offsets within art::ArtMethod.
+
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#include "art_method.h"         // art::ArtMethod
+#include "base/enums.h"         // PointerSize
+#include "mirror/dex_cache.h"   // art::DexCache
+#endif
+
+#define DEFINE_ART_METHOD_OFFSET_SIZED(field_name, method_name) \
+  DEFINE_EXPR(ART_METHOD_ ## field_name ## _OFFSET_32, int32_t, art::ArtMethod::method_name##Offset(art::PointerSize::k32).Int32Value()) \
+  DEFINE_EXPR(ART_METHOD_ ## field_name ## _OFFSET_64, int32_t, art::ArtMethod::method_name##Offset(art::PointerSize::k64).Int32Value())
+
+#define DEFINE_ART_METHOD_OFFSET(field_name, method_name) \
+  DEFINE_EXPR(ART_METHOD_ ## field_name ## _OFFSET, int32_t, art::ArtMethod::method_name##Offset().Int32Value())
+
+#define DEFINE_DECLARING_CLASS_OFFSET(field_name, method_name) \
+  DEFINE_EXPR(DECLARING_CLASS_ ## field_name ## _OFFSET, int32_t, art::mirror::Class::method_name##Offset().Int32Value())
+
+//                         New macro suffix          Method Name (of the Offset method)
+DEFINE_ART_METHOD_OFFSET_SIZED(JNI,                  EntryPointFromJni)
+DEFINE_ART_METHOD_OFFSET_SIZED(QUICK_CODE,           EntryPointFromQuickCompiledCode)
+DEFINE_ART_METHOD_OFFSET(DECLARING_CLASS,            DeclaringClass)
+DEFINE_ART_METHOD_OFFSET(ACCESS_FLAGS,               AccessFlags)
+
+#undef DEFINE_ART_METHOD_OFFSET
+#undef DEFINE_ART_METHOD_OFFSET_32
+#undef DEFINE_DECLARING_CLASS_OFFSET

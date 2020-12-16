@@ -1,0 +1,2 @@
+Tests simplification of catch blocks in the presence of trivially dead code
+that was not verified by the verifier.

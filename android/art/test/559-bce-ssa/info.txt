@@ -1,0 +1,2 @@
+Regression test for the optimizing compiler which used
+to hit a bogus DCHECK on the test case.

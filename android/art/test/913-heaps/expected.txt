@@ -1,0 +1,392 @@
+---
+true true
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+1001@0 --(superclass)--> 1000@0 [size=123456780000, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780004, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780001, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780003, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780001, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780002, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780000, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780004, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780001, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780003, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780001, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780002, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780000, length=-1]
+---
+root@root --(jni-global)--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=5,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 1@1000 [size=16, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+1001@0 --(superclass)--> 1000@0 [size=123456780005, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780009, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780006, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780008, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780006, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780007, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780005, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780009, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780006, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780008, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780006, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780007, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780005, length=-1]
+---
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+---
+3@1001 --(class)--> 1001@0 [size=123456780011, length=-1]
+---
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+---
+3@1001 --(class)--> 1001@0 [size=123456780016, length=-1]
+---
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780020, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780021, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+---
+root@root --(jni-global)--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=5,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 1@1000 [size=16, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780025, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780026, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+---
+[1@0 (32, 'HelloWorld'), 2@0 (16, '')]
+2
+3
+2@0 (15, 3xB '010203')
+3@0 (16, 2xC '41005a00')
+8@0 (32, 2xD '0000000000000000000000000000f03f')
+6@0 (20, 2xF '000000000000803f')
+5@0 (24, 3xI '010000000200000003000000')
+7@0 (40, 3xJ '010000000000000002000000000000000300000000000000')
+4@0 (18, 3xS '010002000300')
+1@0 (14, 2xZ '0001')
+23456789
+10000@0 (static, int, index=3) 0000000000000000
+10001
+10000@0 (static, int, index=11) 0000000000000000
+10001
+10001
+10001
+10000@0 (instance, int, index=2) 0000000000000000
+10001@0 (instance, byte, index=4) 0000000000000001
+10002@0 (instance, char, index=5) 0000000000000061
+10003@0 (instance, int, index=6) 0000000000000003
+10004@0 (instance, long, index=7) 0000000000000004
+10005@0 (instance, short, index=9) 0000000000000002
+10006
+10000@0 (instance, int, index=3) 0000000000000000
+10001@0 (instance, byte, index=5) 0000000000000001
+10002@0 (instance, char, index=6) 0000000000000061
+10003@0 (instance, int, index=7) 0000000000000003
+10004@0 (instance, long, index=8) 0000000000000004
+10005@0 (instance, short, index=10) 0000000000000002
+10006@0 (instance, double, index=12) 3ff3ae147ae147ae
+10007@0 (instance, float, index=13) 000000003f9d70a4
+10008
+--- klass ---
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+root@root --(jni-global)--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=5,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+root@root --(thread)--> 1@1000 [size=16, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+--- heap_filter ---
+---- tagged objects
+---
+---
+---
+---
+---- untagged objects
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+1001@0 --(superclass)--> 1000@0 [size=123456780050, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780054, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780051, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780053, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780051, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780052, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780050, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780054, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780051, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780053, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780051, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780052, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780050, length=-1]
+---
+root@root --(jni-global)--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=5,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 1@1000 [size=16, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+1001@0 --(superclass)--> 1000@0 [size=123456780055, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780059, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780056, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780058, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780056, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780057, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780055, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780059, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780056, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780058, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780056, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780057, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+6@1000 --(class)--> 1000@0 [size=123456780055, length=-1]
+---
+---- tagged classes
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+1001@0 --(superclass)--> 1000@0 [size=123456780060, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780064, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780061, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780063, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780061, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780062, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+6@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780060, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780064, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780061, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780063, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780061, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780062, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+6@1000 --(class)--> 1000@0 [size=123456780060, length=-1]
+---
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 3000@0 [size=136, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=5,method=run,vreg=2,location= 0])--> 3000@0 [size=136, length=-1]
+root@root --(thread)--> 3000@0 [size=136, length=-1]
+1001@0 --(superclass)--> 1000@0 [size=123456780065, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780069, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780066, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780068, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780066, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780067, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+6@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+---
+1001@0 --(superclass)--> 1000@0 [size=123456780065, length=-1]
+1002@0 --(interface)--> 2001@0 [size=123456780069, length=-1]
+1002@0 --(superclass)--> 1001@0 [size=123456780066, length=-1]
+1@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+2001@0 --(interface)--> 2000@0 [size=123456780068, length=-1]
+2@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+3@1001 --(class)--> 1001@0 [size=123456780066, length=-1]
+4@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+5@1002 --(class)--> 1002@0 [size=123456780067, length=-1]
+5@1002 --(field@8)--> 500@0 [size=20, length=2]
+6@1000 --(class)--> 1000@0 [size=123456780065, length=-1]
+---
+---- untagged classes
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+root@root --(jni-global)--> 1@1000 [size=16, length=-1]
+root@root --(jni-local[id=1,tag=3000,depth=0,method=followReferences])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=5,location= 8])--> 1@1000 [size=16, length=-1]
+root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+root@root --(thread)--> 1@1000 [size=16, length=-1]
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+1@1000 --(field@2)--> 2@1000 [size=16, length=-1]
+1@1000 --(field@3)--> 3@1001 [size=24, length=-1]
+3@1001 --(field@4)--> 4@1000 [size=16, length=-1]
+3@1001 --(field@5)--> 5@1002 [size=36, length=-1]
+500@0 --(array-element@1)--> 2@1000 [size=16, length=-1]
+5@1002 --(field@10)--> 1@1000 [size=16, length=-1]
+5@1002 --(field@9)--> 6@1000 [size=16, length=-1]
+---
+
+default
+image
+zygote
+app
+
+3

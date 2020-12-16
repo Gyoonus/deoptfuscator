@@ -1,0 +1,4 @@
+Tests that the method resolution is consistent with JLS and the RI.
+Where the RI conflicts with JLS, we follow the JLS and suppress the divergence
+when the test is executed with --jvm.
+(See Main.java for per-test details.)

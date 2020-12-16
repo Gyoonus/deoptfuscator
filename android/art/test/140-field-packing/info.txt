@@ -1,0 +1,1 @@
+Test field packing for classes with various arrangements of fields.

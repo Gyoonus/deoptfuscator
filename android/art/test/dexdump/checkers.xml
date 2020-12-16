@@ -1,0 +1,676 @@
+<api>
+<package name="com.google.android.checkers"
+>
+<class name="Checkers"
+ extends="android.app.Activity"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="Checkers"
+ type="com.google.android.checkers.Checkers"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="onConfigurationChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.content.res.Configuration">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="onCreateOptionsMenu"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.view.Menu">
+</parameter>
+</method>
+<method name="onKeyDown"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="onOptionsItemSelected"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.view.MenuItem">
+</parameter>
+</method>
+<method name="onPause"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onStop"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onTrackballEvent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.view.MotionEvent">
+</parameter>
+</method>
+</class>
+<class name="CheckersView"
+ extends="android.view.View"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="CheckersView"
+ type="com.google.android.checkers.CheckersView"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.content.Context">
+</parameter>
+<parameter name="arg1" type="android.content.SharedPreferences">
+</parameter>
+</constructor>
+<method name="a"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+</method>
+<method name="a"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="float">
+</parameter>
+<parameter name="arg1" type="float">
+</parameter>
+</method>
+<method name="a"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="arg3" type="int">
+</parameter>
+</method>
+<method name="a"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="android.content.SharedPreferences.Editor">
+</parameter>
+</method>
+<method name="a"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="a"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="b"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+</method>
+<method name="b"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="c"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+</method>
+<method name="c"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="d"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="draw"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method name="e"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="onSizeChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="arg3" type="int">
+</parameter>
+</method>
+<method name="onTouchEvent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method name="setLevel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+</class>
+<class name="a"
+ extends="java.lang.Thread"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="a"
+ type="int[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="b"
+ type="int[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="c"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="d"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="e"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="f"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="g"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="h"
+ type="int"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<constructor name="a"
+ type="com.google.android.checkers.a"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.google.android.checkers.CheckersView">
+</parameter>
+</constructor>
+<method name="a"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="a"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+</method>
+<method name="a"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="a"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="arg3" type="int">
+</parameter>
+<parameter name="arg4" type="boolean">
+</parameter>
+</method>
+<method name="b"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+</method>
+</class>
+<class name="g"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="a"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="b"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="c"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="d"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="e"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="f"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="g"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="h"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="i"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="j"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="k"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="l"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="m"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="n"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="o"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="p"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="q"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="r"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+</api>

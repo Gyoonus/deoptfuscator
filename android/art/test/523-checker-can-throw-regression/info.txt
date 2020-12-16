@@ -1,0 +1,2 @@
+Regression test for the HGraphBuilder which would split a throwing catch block
+but would not update information about which blocks throw.

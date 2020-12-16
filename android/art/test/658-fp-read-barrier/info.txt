@@ -1,0 +1,2 @@
+Regression test for the read barrier implementation in ARM64,
+which used to not restore floating point registers.

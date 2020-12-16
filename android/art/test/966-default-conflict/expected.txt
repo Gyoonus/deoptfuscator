@@ -1,0 +1,18 @@
+Create Main instance
+Calling functions on concrete Main
+Calling non-conflicting function on Main
+CHARGE
+Calling conflicting function on Main
+Expected ICCE Thrown on Main
+Calling non-conflicting function on Main
+CHARGE
+Calling functions on interface Iface
+Calling non-conflicting function on Iface
+CHARGE
+Calling conflicting function on Iface
+Expected ICCE Thrown on Iface
+Calling non-conflicting function on Iface
+CHARGE
+Calling functions on interface Iface2
+Calling conflicting function on Iface2
+Expected ICCE Thrown on Iface2

@@ -1,0 +1,3 @@
+#invoke-polymorphic.dex
+0x000001bc 8 Main <init> ()V Main.java 9
+0x000001d4 60 Main main ([Ljava/lang/String;)V Main.java 31

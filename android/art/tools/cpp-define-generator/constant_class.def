@@ -1,0 +1,30 @@
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#include "base/bit_utils.h"       // MostSignificantBit
+#include "dex/modifiers.h"        // kAccClassIsFinalizable
+#endif
+
+#define DEFINE_FLAG_OFFSET(type_name, field_name, expr) \
+  DEFINE_EXPR(type_name ## _ ## field_name, uint32_t, (expr))
+
+DEFINE_FLAG_OFFSET(ACCESS_FLAGS, CLASS_IS_FINALIZABLE,     art::kAccClassIsFinalizable)
+DEFINE_FLAG_OFFSET(ACCESS_FLAGS, CLASS_IS_INTERFACE,       art::kAccInterface)
+// TODO: We should really have a BitPosition which also checks it's a power of 2.
+DEFINE_FLAG_OFFSET(ACCESS_FLAGS, CLASS_IS_FINALIZABLE_BIT, art::MostSignificantBit(art::kAccClassIsFinalizable))
+
+#undef DEFINE_FLAG_OFFSET

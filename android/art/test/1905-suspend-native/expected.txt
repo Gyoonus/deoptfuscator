@@ -1,0 +1,8 @@
+Resumer: isNativeThreadSpinning() = true
+Resumer: isSuspended(spinner) = false
+Resumer: Suspended spinner while native spinning
+Resumer: isNativeThreadSpinning() = true
+Resumer: isSuspended(spinner) = true
+Resumer: resumed spinner while native spinning
+Resumer: isNativeThreadSpinning() = true
+Resumer: isSuspended(spinner) = false

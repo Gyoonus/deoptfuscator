@@ -1,0 +1,714 @@
+Running static invoke
+	Breaking on []
+		Native invoking: public static void art.Test993.breakpoint() args: [this: null]
+		Reflective invoking: public static void art.Test993.breakpoint() args: [this: null]
+		Invoking "Test993::breakpoint"
+	Breaking on [public static void art.Test993.breakpoint() @ 41]
+		Native invoking: public static void art.Test993.breakpoint() args: [this: null]
+			Breakpoint: public static void art.Test993.breakpoint() @ line=41
+		Reflective invoking: public static void art.Test993.breakpoint() args: [this: null]
+			Breakpoint: public static void art.Test993.breakpoint() @ line=41
+		Invoking "Test993::breakpoint"
+			Breakpoint: public static void art.Test993.breakpoint() @ line=41
+Running private static invoke
+	Breaking on []
+		Native invoking: private static void art.Test993.privateBreakpoint() args: [this: null]
+		Invoking "Test993::privateBreakpoint"
+	Breaking on [private static void art.Test993.privateBreakpoint() @ 45]
+		Native invoking: private static void art.Test993.privateBreakpoint() args: [this: null]
+			Breakpoint: private static void art.Test993.privateBreakpoint() @ line=45
+		Invoking "Test993::privateBreakpoint"
+			Breakpoint: private static void art.Test993.privateBreakpoint() @ line=45
+Running interface static invoke
+	Breaking on []
+		Native invoking: public static void art.Test993$Breakable.iBreakpoint() args: [this: null]
+		Reflective invoking: public static void art.Test993$Breakable.iBreakpoint() args: [this: null]
+		Invoking "Breakable::iBreakpoint"
+	Breaking on [public static void art.Test993$Breakable.iBreakpoint() @ 51]
+		Native invoking: public static void art.Test993$Breakable.iBreakpoint() args: [this: null]
+			Breakpoint: public static void art.Test993$Breakable.iBreakpoint() @ line=51
+		Reflective invoking: public static void art.Test993$Breakable.iBreakpoint() args: [this: null]
+			Breakpoint: public static void art.Test993$Breakable.iBreakpoint() @ line=51
+		Invoking "Breakable::iBreakpoint"
+			Breakpoint: public static void art.Test993$Breakable.iBreakpoint() @ line=51
+Running TestClass1 invokes
+	Breaking on []
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1]
+		Invoking "((Breakable)new TestClass1()).breakit()"
+		Invoking "new TestClass1().breakit()"
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass1()).breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass1().breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+Running TestClass1ext invokes
+	Breaking on []
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+		Native invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+		Reflective invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+		Invoking "((Breakable)new TestClass1ext()).breakit()"
+		Invoking "((TestClass1)new TestClass1ext()).breakit()"
+		Invoking "new TestClass1ext().breakit()"
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass1ext()).breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((TestClass1)new TestClass1ext()).breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass1ext().breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+	Breaking on [public void art.Test993$TestClass1ext.breakit() @ 74]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+		Native invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+		Reflective invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+		Invoking "((Breakable)new TestClass1ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+		Invoking "((TestClass1)new TestClass1ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+		Invoking "new TestClass1ext().breakit()"
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass1ext.breakit() @ 74]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass1ext.breakit() args: [this: TestClass1Ext]
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass1ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((TestClass1)new TestClass1ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass1ext().breakit()"
+			Breakpoint: public void art.Test993$TestClass1ext.breakit() @ line=74
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+Running TestClass2 invokes
+	Breaking on []
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+		Invoking "((Breakable)new TestClass2()).breakit()"
+		Invoking "new TestClass2().breakit()"
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+		Invoking "((Breakable)new TestClass2()).breakit()"
+		Invoking "new TestClass2().breakit()"
+	Breaking on [public void art.Test993$TestClass2.breakit() @ 83]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((Breakable)new TestClass2()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "new TestClass2().breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass2.breakit() @ 83]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((Breakable)new TestClass2()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "new TestClass2().breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+Running TestClass2ext invokes
+	Breaking on []
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+		Invoking "new TestClass2ext().breakit())"
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+		Invoking "new TestClass2ext().breakit())"
+	Breaking on [public void art.Test993$TestClass2.breakit() @ 83]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "new TestClass2ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+	Breaking on [public void art.Test993$TestClass2ext.breakit() @ 91]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Invoking "new TestClass2ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass2.breakit() @ 83]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "new TestClass2ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass2ext.breakit() @ 91]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+		Invoking "new TestClass2ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+	Breaking on [public void art.Test993$TestClass2.breakit() @ 83, public void art.Test993$TestClass2ext.breakit() @ 91]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "new TestClass2ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass2.breakit() @ 83, public void art.Test993$TestClass2ext.breakit() @ 91]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Native invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Reflective invoking: public void art.Test993$TestClass2ext.breakit() args: [this: TestClass2ext]
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((Breakable)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "((TestClass2)new TestClass2ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+		Invoking "new TestClass2ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass2ext.breakit() @ line=91
+			Breakpoint: public void art.Test993$TestClass2.breakit() @ line=83
+Running TestClass3 invokes
+	Breaking on []
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+		Invoking "((Breakable)new TestClass3()).breakit()"
+		Invoking "new TestClass3().breakit())"
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass3()).breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass3().breakit())"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+	Breaking on [public void art.Test993$TestClass3.breakit() @ 99]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "((Breakable)new TestClass3()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "new TestClass3().breakit())"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass3.breakit() @ 99]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass3()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass3().breakit())"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+Running TestClass3ext invokes
+	Breaking on []
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+		Invoking "new TestClass3ext().breakit())"
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass3ext().breakit())"
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+	Breaking on [public void art.Test993$TestClass3.breakit() @ 99]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "new TestClass3ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+	Breaking on [public void art.Test993$TestClass3ext.breakit() @ 108]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+		Invoking "new TestClass3ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass3.breakit() @ 99]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass3ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass3ext.breakit() @ 108]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass3ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+	Breaking on [public void art.Test993$TestClass3.breakit() @ 99, public void art.Test993$TestClass3ext.breakit() @ 108]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+		Invoking "new TestClass3ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+	Breaking on [public default void art.Test993$Breakable.breakit() @ 55, public void art.Test993$TestClass3.breakit() @ 99, public void art.Test993$TestClass3ext.breakit() @ 108]
+		Native invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Native invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public default void art.Test993$Breakable.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Reflective invoking: public void art.Test993$TestClass3ext.breakit() args: [this: TestClass3ext]
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((Breakable)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "((TestClass3)new TestClass3ext()).breakit()"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+		Invoking "new TestClass3ext().breakit())"
+			Breakpoint: public void art.Test993$TestClass3ext.breakit() @ line=108
+			Breakpoint: public void art.Test993$TestClass3.breakit() @ line=99
+			Breakpoint: public default void art.Test993$Breakable.breakit() @ line=55
+Running private instance invoke
+	Breaking on []
+		Native invoking: private void art.Test993$TestClass4.privateMethod() args: [this: TestClass4]
+		Invoking "new TestClass4().callPrivateMethod()"
+	Breaking on [private void art.Test993$TestClass4.privateMethod() @ 118]
+		Native invoking: private void art.Test993$TestClass4.privateMethod() args: [this: TestClass4]
+			Breakpoint: private void art.Test993$TestClass4.privateMethod() @ line=118
+		Invoking "new TestClass4().callPrivateMethod()"
+			Breakpoint: private void art.Test993$TestClass4.privateMethod() @ line=118
+Running Vector constructor
+	Breaking on []
+		Native constructor: public java.util.Vector(), type: class java.util.Vector
+			Created: []
+		Reflective constructor: public java.util.Vector()
+			Created: []
+		Constructing: new Vector()
+			Created: []
+	Breaking on [public java.util.Vector() @ <NON-DETERMINISTIC>]
+		Native constructor: public java.util.Vector(), type: class java.util.Vector
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Reflective constructor: public java.util.Vector()
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Constructing: new Vector()
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+Running Stack constructor
+	Breaking on []
+		Native constructor: public java.util.Stack(), type: class java.util.Stack
+			Created: []
+		Reflective constructor: public java.util.Stack()
+			Created: []
+		Constructing: new Stack()
+			Created: []
+	Breaking on [public java.util.Stack() @ <NON-DETERMINISTIC>]
+		Native constructor: public java.util.Stack(), type: class java.util.Stack
+			Breakpoint: public java.util.Stack() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Reflective constructor: public java.util.Stack()
+			Breakpoint: public java.util.Stack() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Constructing: new Stack()
+			Breakpoint: public java.util.Stack() @ line=<NON-DETERMINISTIC>
+			Created: []
+	Breaking on [public java.util.Vector() @ <NON-DETERMINISTIC>]
+		Native constructor: public java.util.Stack(), type: class java.util.Stack
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Reflective constructor: public java.util.Stack()
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Constructing: new Stack()
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+	Breaking on [public java.util.Stack() @ <NON-DETERMINISTIC>, public java.util.Vector() @ <NON-DETERMINISTIC>]
+		Native constructor: public java.util.Stack(), type: class java.util.Stack
+			Breakpoint: public java.util.Stack() @ line=<NON-DETERMINISTIC>
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Reflective constructor: public java.util.Stack()
+			Breakpoint: public java.util.Stack() @ line=<NON-DETERMINISTIC>
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+		Constructing: new Stack()
+			Breakpoint: public java.util.Stack() @ line=<NON-DETERMINISTIC>
+			Breakpoint: public java.util.Vector() @ line=<NON-DETERMINISTIC>
+			Created: []
+Running bcp static invoke
+	Breaking on []
+		Native invoking: public static java.util.Optional java.util.Optional.empty() args: [this: null]
+		Reflective invoking: public static java.util.Optional java.util.Optional.empty() args: [this: null]
+		Invoking "Optional::empty"
+	Breaking on [public static java.util.Optional java.util.Optional.empty() @ <NON-DETERMINISTIC>]
+		Native invoking: public static java.util.Optional java.util.Optional.empty() args: [this: null]
+			Breakpoint: public static java.util.Optional java.util.Optional.empty() @ line=<NON-DETERMINISTIC>
+		Reflective invoking: public static java.util.Optional java.util.Optional.empty() args: [this: null]
+			Breakpoint: public static java.util.Optional java.util.Optional.empty() @ line=<NON-DETERMINISTIC>
+		Invoking "Optional::empty"
+			Breakpoint: public static java.util.Optional java.util.Optional.empty() @ line=<NON-DETERMINISTIC>
+Running bcp private static invoke
+	Breaking on []
+		Native invoking: private static long java.util.Random.seedUniquifier() args: [this: null]
+		Invoking "Random::seedUniquifier"
+	Breaking on [private static long java.util.Random.seedUniquifier() @ <NON-DETERMINISTIC>]
+		Native invoking: private static long java.util.Random.seedUniquifier() args: [this: null]
+			Breakpoint: private static long java.util.Random.seedUniquifier() @ line=<NON-DETERMINISTIC>
+		Invoking "Random::seedUniquifier"
+			Breakpoint: private static long java.util.Random.seedUniquifier() @ line=<NON-DETERMINISTIC>
+Running bcp private invoke
+	Breaking on []
+		Native invoking: private java.math.BigDecimal java.time.Duration.toSeconds() args: [this: PT336H]
+		Invoking "Duration::toSeconds"
+	Breaking on [private java.math.BigDecimal java.time.Duration.toSeconds() @ <NON-DETERMINISTIC>]
+		Native invoking: private java.math.BigDecimal java.time.Duration.toSeconds() args: [this: PT336H]
+			Breakpoint: private java.math.BigDecimal java.time.Duration.toSeconds() @ line=<NON-DETERMINISTIC>
+		Invoking "Duration::toSeconds"
+			Breakpoint: private java.math.BigDecimal java.time.Duration.toSeconds() @ line=<NON-DETERMINISTIC>
+Running bcp invoke
+	Breaking on []
+		Native invoking: public boolean java.util.Optional.isPresent() args: [this: Optional[test]]
+		Reflective invoking: public boolean java.util.Optional.isPresent() args: [this: Optional[test2]]
+		Invoking "Optional::isPresent"
+	Breaking on [public boolean java.util.Optional.isPresent() @ <NON-DETERMINISTIC>]
+		Native invoking: public boolean java.util.Optional.isPresent() args: [this: Optional[test]]
+			Breakpoint: public boolean java.util.Optional.isPresent() @ line=<NON-DETERMINISTIC>
+		Reflective invoking: public boolean java.util.Optional.isPresent() args: [this: Optional[test2]]
+			Breakpoint: public boolean java.util.Optional.isPresent() @ line=<NON-DETERMINISTIC>
+		Invoking "Optional::isPresent"
+			Breakpoint: public boolean java.util.Optional.isPresent() @ line=<NON-DETERMINISTIC>
+Running TestClass1 constructor
+	Breaking on []
+		Native constructor: public art.Test993$TestClass1(), type: class art.Test993$TestClass1
+			Created: TestClass1
+		Reflective constructor: public art.Test993$TestClass1()
+			Created: TestClass1
+		Constructing: new TestClass1()
+			Created: TestClass1
+	Breaking on [public art.Test993$TestClass1() @ 62]
+		Native constructor: public art.Test993$TestClass1(), type: class art.Test993$TestClass1
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1
+		Reflective constructor: public art.Test993$TestClass1()
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1
+		Constructing: new TestClass1()
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1
+Running TestClass1ext constructor
+	Breaking on []
+		Native constructor: public art.Test993$TestClass1ext(), type: class art.Test993$TestClass1ext
+			Created: TestClass1Ext
+		Reflective constructor: public art.Test993$TestClass1ext()
+			Created: TestClass1Ext
+		Constructing: new TestClass1ext()
+			Created: TestClass1Ext
+	Breaking on [public art.Test993$TestClass1() @ 62]
+		Native constructor: public art.Test993$TestClass1ext(), type: class art.Test993$TestClass1ext
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1Ext
+		Reflective constructor: public art.Test993$TestClass1ext()
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1Ext
+		Constructing: new TestClass1ext()
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1Ext
+	Breaking on [public art.Test993$TestClass1ext() @ 70]
+		Native constructor: public art.Test993$TestClass1ext(), type: class art.Test993$TestClass1ext
+			Breakpoint: public art.Test993$TestClass1ext() @ line=70
+			Created: TestClass1Ext
+		Reflective constructor: public art.Test993$TestClass1ext()
+			Breakpoint: public art.Test993$TestClass1ext() @ line=70
+			Created: TestClass1Ext
+		Constructing: new TestClass1ext()
+			Breakpoint: public art.Test993$TestClass1ext() @ line=70
+			Created: TestClass1Ext
+	Breaking on [public art.Test993$TestClass1() @ 62, public art.Test993$TestClass1ext() @ 70]
+		Native constructor: public art.Test993$TestClass1ext(), type: class art.Test993$TestClass1ext
+			Breakpoint: public art.Test993$TestClass1ext() @ line=70
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1Ext
+		Reflective constructor: public art.Test993$TestClass1ext()
+			Breakpoint: public art.Test993$TestClass1ext() @ line=70
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1Ext
+		Constructing: new TestClass1ext()
+			Breakpoint: public art.Test993$TestClass1ext() @ line=70
+			Breakpoint: public art.Test993$TestClass1() @ line=62
+			Created: TestClass1Ext

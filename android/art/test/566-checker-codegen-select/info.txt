@@ -1,0 +1,1 @@
+Test the use positions of inputs of non-materialized conditions.

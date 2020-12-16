@@ -1,0 +1,71 @@
+#!/bin/bash
+#
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# ---------------------------------------------------------------------------
+
+# Generates asm_support_gen.h into a temporary location.
+# Then verifies it is the same as our local stored copy.
+
+GEN_TOOL=cpp-define-generator-data
+
+if ! which "$GEN_TOOL"; then
+  if [[ -z $ANDROID_BUILD_TOP ]]; then
+    echo "ERROR: Can't find '$GEN_TOOL' in \$PATH. Perhaps try 'source build/envsetup.sh' ?" >&2
+  else
+    echo "ERROR: Can't find '$GEN_TOOL' in \$PATH. Perhaps try 'make $GEN_TOOL' ?" >&2
+  fi
+  exit 1
+fi
+
+#######################
+#######################
+
+PREUPLOAD_COMMIT_COPY="$(mktemp ${TMPDIR:-/tmp}/tmp.XXXXXX)"
+BUILD_COPY="$(mktemp ${TMPDIR:-/tmp}/tmp.XXXXXX)"
+
+function finish() {
+  # Delete temp files.
+  [[ -f "$PREUPLOAD_COMMIT_COPY" ]] && rm "$PREUPLOAD_COMMIT_COPY"
+  [[ -f "$BUILD_COPY" ]] && rm "$BUILD_COPY"
+}
+trap finish EXIT
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ART_DIR="$( cd "$DIR/../.." && pwd )"
+ASM_SUPPORT_GEN_CHECKED_IN_COPY="runtime/generated/asm_support_gen.h"
+
+# Repo upload hook runs inside of the top-level git directory.
+# If we run this script manually, be in the right place for git.
+cd "$ART_DIR"
+
+if [[ -z $PREUPLOAD_COMMIT ]]; then
+  echo "WARNING: Not running as a pre-upload hook. Assuming commit to check = 'HEAD'"
+  PREUPLOAD_COMMIT=HEAD
+fi
+
+# Get version we are about to push into git.
+git show "$PREUPLOAD_COMMIT:$ASM_SUPPORT_GEN_CHECKED_IN_COPY" > "$PREUPLOAD_COMMIT_COPY" || exit 1
+# Get version that our build would have made.
+"$GEN_TOOL" > "$BUILD_COPY" || exit 1
+
+if ! diff "$PREUPLOAD_COMMIT_COPY" "$BUILD_COPY"; then
+  echo "asm-support: ERROR: Checked-in copy of '$ASM_SUPPORT_GEN_CHECKED_IN_COPY' " >&2
+  echo "             has diverged from the build copy." >&2
+  echo "             Please re-run the 'generate-asm-support' command to resync the header." >&2
+  exit 1
+fi
+
+# Success. Print nothing to avoid spamming users.

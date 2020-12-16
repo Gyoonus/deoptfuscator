@@ -1,0 +1,4 @@
+Tests basic obsolete method support
+
+This test ensures that obsolete methods will work even if the obsolete method is
+on a different thread then where the redefinition was triggered.

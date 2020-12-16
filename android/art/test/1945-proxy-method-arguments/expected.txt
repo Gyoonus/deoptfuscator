@@ -1,0 +1,26 @@
+JNI_OnLoad called
+proxy: $Proxy0
+Proxy for interface TestInterface.method0
+  arg0: $Proxy0
+Proxy for interface TestInterface.method1
+  arg0: $Proxy0
+  arg1: java.lang.String "a"
+Proxy for interface TestInterface.method10
+  arg0: $Proxy0
+  arg1: java.lang.String "one"
+  arg2: java.lang.String "two"
+  arg3: java.lang.String "three"
+  arg4: java.lang.String "four"
+  arg5: java.lang.String "five"
+  arg6: java.lang.String "six"
+  arg7: java.lang.String "seven"
+  arg8: java.lang.String "eight"
+  arg9: java.lang.String "nine"
+  arg10: java.lang.String "ten"
+Proxy for interface TestInterface.method10Even
+  arg0: $Proxy0
+  arg2: java.lang.String "two"
+  arg4: java.lang.String "four"
+  arg6: java.lang.String "six"
+  arg8: java.lang.String "eight"
+  arg10: java.lang.String "ten"

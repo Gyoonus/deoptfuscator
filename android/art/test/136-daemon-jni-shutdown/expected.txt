@@ -1,0 +1,5 @@
+JNI_OnLoad called
+About to call exception check
+About to call exception check
+About to call exception check
+About to call exception check

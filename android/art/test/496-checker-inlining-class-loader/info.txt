@@ -1,0 +1,2 @@
+Regression test to ensure compilers preserve JLS
+semantics of class loading.

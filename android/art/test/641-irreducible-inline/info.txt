@@ -1,0 +1,2 @@
+Regression test for optimizing in the presence of
+inlining a method that throws in an irreducible loop

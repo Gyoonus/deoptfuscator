@@ -1,0 +1,4 @@
+Tests basic functions in the jvmti plugin.
+
+Tests that we are able to use java/lang/reflect/Method objects to invoke methods
+that have been redefined.

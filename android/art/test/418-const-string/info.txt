@@ -1,0 +1,1 @@
+Small test case for testing CONST_STRING.

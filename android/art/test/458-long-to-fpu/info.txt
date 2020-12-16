@@ -1,0 +1,2 @@
+Regression test for x86's code generator, which had a bug in
+the long-to-float and long-to-double implementations.

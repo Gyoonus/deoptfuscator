@@ -1,0 +1,1 @@
+Tests getting local variable table from JVMTI

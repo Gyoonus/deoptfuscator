@@ -1,0 +1,9 @@
+Run -Xnodex2oat
+JNI_OnLoad called
+Has oat is false, is dex2oat enabled is false.
+Run -Xdex2oat
+JNI_OnLoad called
+Has oat is true, is dex2oat enabled is true.
+Run default
+JNI_OnLoad called
+Has oat is true, is dex2oat enabled is true.

@@ -1,0 +1,2 @@
+This test checks VarHandle creation and the VarHandle instance methods
+other than the signature polymorphic ones.

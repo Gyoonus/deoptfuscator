@@ -1,0 +1,525 @@
+<api>
+<package name="invokecustom"
+>
+<class name="InvokeCustom"
+ extends="invokecustom.Super"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.Runnable">
+</implements>
+<constructor name="InvokeCustom"
+ type="invokecustom.InvokeCustom"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<constructor name="InvokeCustom"
+ type="invokecustom.InvokeCustom"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</constructor>
+<method name="bsmCreateCallSite"
+ return="java.lang.invoke.CallSite"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandles.Lookup">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg3" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="bsmLookupStatic"
+ return="java.lang.invoke.CallSite"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandles.Lookup">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="bsmLookupStaticWithExtraArgs"
+ return="java.lang.invoke.CallSite"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandles.Lookup">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg3" type="int">
+</parameter>
+<parameter name="arg4" type="long">
+</parameter>
+<parameter name="arg5" type="float">
+</parameter>
+<parameter name="arg6" type="double">
+</parameter>
+</method>
+<method name="bsmLookupTest9"
+ return="java.lang.invoke.CallSite"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandles.Lookup">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg3" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg4" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg5" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg6" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg7" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg8" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg9" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="lambdaTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="main"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+<method name="targetMethodTest5"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+</method>
+<method name="targetMethodTest6"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+<parameter name="arg1" type="long">
+</parameter>
+<parameter name="arg2" type="long">
+</parameter>
+</method>
+<method name="targetMethodTest7"
+ return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="float">
+</parameter>
+<parameter name="arg1" type="float">
+</parameter>
+<parameter name="arg2" type="double">
+</parameter>
+</method>
+<method name="targetMethodTest8"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="test1"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test2"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test3"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test4"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test5"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test6"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test7"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test8"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="test9"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="helperMethodTest9"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="targetMethodTest4"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<method_handle index="0"
+ type="put-static"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="staticFieldTest9"
+ target_member_type="I"
+>
+</method_handle>
+<method_handle index="1"
+ type="get-static"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="staticFieldTest9"
+ target_member_type="I"
+>
+</method_handle>
+<method_handle index="2"
+ type="put-instance"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="fieldTest9"
+ target_member_type="(Linvokecustom/InvokeCustom;"
+>
+</method_handle>
+<method_handle index="3"
+ type="get-instance"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="fieldTest9"
+ target_member_type="(Linvokecustom/InvokeCustom;"
+>
+</method_handle>
+<method_handle index="4"
+ type="invoke-static"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="bsmCreateCallSite"
+ target_member_type="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;"
+>
+</method_handle>
+<method_handle index="5"
+ type="invoke-static"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="bsmLookupStatic"
+ target_member_type="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+>
+</method_handle>
+<method_handle index="6"
+ type="invoke-static"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="bsmLookupStaticWithExtraArgs"
+ target_member_type="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;IJFD)Ljava/lang/invoke/CallSite;"
+>
+</method_handle>
+<method_handle index="7"
+ type="invoke-static"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="bsmLookupTest9"
+ target_member_type="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;"
+>
+</method_handle>
+<method_handle index="8"
+ type="invoke-static"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="lambda$lambdaTest$0"
+ target_member_type="(Ljava/lang/String;)Z"
+>
+</method_handle>
+<method_handle index="9"
+ type="invoke-static"
+ target_class="Ljava/lang/invoke/LambdaMetafactory;"
+ target_member="metafactory"
+ target_member_type="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+>
+</method_handle>
+<method_handle index="10"
+ type="invoke-instance"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="helperMethodTest9"
+ target_member_type="(Linvokecustom/InvokeCustom;)V"
+>
+</method_handle>
+<method_handle index="11"
+ type="invoke-instance"
+ target_class="Ljava/io/PrintStream;"
+ target_member="println"
+ target_member_type="(Ljava/io/PrintStream;Ljava/lang/String;)V"
+>
+</method_handle>
+<method_handle index="12"
+ type="invoke-instance"
+ target_class="Ljava/lang/String;"
+ target_member="trim"
+ target_member_type="(Ljava/lang/String;)Ljava/lang/String;"
+>
+</method_handle>
+<method_handle index="13"
+ type="invoke-constructor"
+ target_class="Linvokecustom/InvokeCustom;"
+ target_member="<init>"
+ target_member_type="(Linvokecustom/InvokeCustom;I)V"
+>
+</method_handle>
+<method_handle index="14"
+ type="invoke-direct"
+ target_class="Linvokecustom/Super;"
+ target_member="targetMethodTest4"
+ target_member_type="(Linvokecustom/Super;)V"
+>
+</method_handle>
+<method_handle index="15"
+ type="invoke-interface"
+ target_class="Ljava/lang/Runnable;"
+ target_member="run"
+ target_member_type="(Ljava/lang/Runnable;)V"
+>
+</method_handle>
+<call_site index="0" offset="8450">
+<link_argument index="0" type="MethodHandle" value="9"/>
+<link_argument index="1" type="String" values="test"/>
+<link_argument index="2" type="MethodType" value="()Ljava/util/function/Predicate;"/>
+<link_argument index="3" type="MethodType" value="(Ljava/lang/Object;)Z"/>
+<link_argument index="4" type="MethodHandle" value="8"/>
+<link_argument index="5" type="MethodType" value="(Ljava/lang/String;)Z"/>
+</call_site>
+<call_site index="1" offset="8463">
+<link_argument index="0" type="MethodHandle" value="9"/>
+<link_argument index="1" type="String" values="apply"/>
+<link_argument index="2" type="MethodType" value="()Ljava/util/function/Function;"/>
+<link_argument index="3" type="MethodType" value="(Ljava/lang/Object;)Ljava/lang/Object;"/>
+<link_argument index="4" type="MethodHandle" value="12"/>
+<link_argument index="5" type="MethodType" value="(Ljava/lang/String;)Ljava/lang/String;"/>
+</call_site>
+<call_site index="2" offset="8476">
+<link_argument index="0" type="MethodHandle" value="9"/>
+<link_argument index="1" type="String" values="accept"/>
+<link_argument index="2" type="MethodType" value="(Ljava/io/PrintStream;)Ljava/util/function/Consumer;"/>
+<link_argument index="3" type="MethodType" value="(Ljava/lang/Object;)V"/>
+<link_argument index="4" type="MethodHandle" value="11"/>
+<link_argument index="5" type="MethodType" value="(Ljava/lang/String;)V"/>
+</call_site>
+<call_site index="3" offset="8489">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest1"/>
+<link_argument index="2" type="MethodType" value="()V"/>
+</call_site>
+<call_site index="4" offset="8496">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest2"/>
+<link_argument index="2" type="MethodType" value="(ZBCSIFJDLjava/lang/String;)V"/>
+</call_site>
+<call_site index="5" offset="8503">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest5"/>
+<link_argument index="2" type="MethodType" value="(III)I"/>
+</call_site>
+<call_site index="6" offset="8510">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest6"/>
+<link_argument index="2" type="MethodType" value="(JJJ)J"/>
+</call_site>
+<call_site index="7" offset="8517">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest7"/>
+<link_argument index="2" type="MethodType" value="(FFD)D"/>
+</call_site>
+<call_site index="8" offset="8524">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest8"/>
+<link_argument index="2" type="MethodType" value="(Ljava/lang/String;)V"/>
+</call_site>
+<call_site index="9" offset="8524">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest8"/>
+<link_argument index="2" type="MethodType" value="(Ljava/lang/String;)V"/>
+</call_site>
+<call_site index="10" offset="8524">
+<link_argument index="0" type="MethodHandle" value="5"/>
+<link_argument index="1" type="String" values="targetMethodTest8"/>
+<link_argument index="2" type="MethodType" value="(Ljava/lang/String;)V"/>
+</call_site>
+<call_site index="11" offset="8531">
+<link_argument index="0" type="MethodHandle" value="6"/>
+<link_argument index="1" type="String" values="targetMethodTest3"/>
+<link_argument index="2" type="MethodType" value="()V"/>
+<link_argument index="3" type="int" value="1"/>
+<link_argument index="4" type="long" value="123456789"/>
+<link_argument index="5" type="float" value="123.456"/>
+<link_argument index="6" type="double" value="123457"/>
+</call_site>
+<call_site index="12" offset="8559">
+<link_argument index="0" type="MethodHandle" value="4"/>
+<link_argument index="1" type="String" values="targetMethodTest4"/>
+<link_argument index="2" type="MethodType" value="(Linvokecustom/InvokeCustom;)V"/>
+<link_argument index="3" type="MethodHandle" value="14"/>
+</call_site>
+<call_site index="13" offset="8568">
+<link_argument index="0" type="MethodHandle" value="7"/>
+<link_argument index="1" type="String" values="targetMethodTest9"/>
+<link_argument index="2" type="MethodType" value="()V"/>
+<link_argument index="3" type="MethodHandle" value="1"/>
+<link_argument index="4" type="MethodHandle" value="0"/>
+<link_argument index="5" type="MethodHandle" value="3"/>
+<link_argument index="6" type="MethodHandle" value="2"/>
+<link_argument index="7" type="MethodHandle" value="10"/>
+<link_argument index="8" type="MethodHandle" value="13"/>
+<link_argument index="9" type="MethodHandle" value="15"/>
+</call_site>
+</package>
+</api>

@@ -1,0 +1,153 @@
+DexFuzz
+=======
+
+DexFuzz is primarily a tool for fuzzing DEX files. Fuzzing is the introduction of
+subtle changes ("mutations") to a file to produce a new test case. These test cases
+can be used to test the various modes of execution available to ART (Interpreter,
+Optimizing compiler) to check for bugs in these modes of execution.
+This is done by differential testing - each test file is executed with each mode of
+execution, and any differences between the resulting outputs may be an indication of
+a bug in one of the modes.
+
+For a wider overview of DexFuzz, see:
+
+http://community.arm.com/groups/android-community/blog/2014/11/26/the-art-of-fuzz-testing
+
+In typical operation, you provide DexFuzz with a set of DEX files that are the "seeds"
+for mutation - e.g. some tests taken from the ART test suite - and point it at an
+ADB-connected Android device, and it will fuzz these seed files, and execute the
+resulting new tests on the Android device.
+
+How to run DexFuzz
+==================
+
+DexFuzz can run its test programs on either an ADB-connected device, or a host-build of
+ART locally.
+
+Execution on an ADB-connected device
+------------------------------------
+
+1. Build dexfuzz with mmma tools/dexfuzz from within art/.
+2. Make sure you have an Android device connected via ADB, that is capable of
+   having DEX files pushed to it and executed with the dalvikvm command.
+3. Make sure you're in the Android build environment!
+   (That is, . build/envsetup.sh && lunch)
+4. Create a new directory, and place some DEX files in here. These are the seed files
+   that are mutated to form new tests.
+5. Create a directory on your device that mutated test files can be pushed to and
+   executed in, using dalvikvm. For example, /data/art-test/
+6. If you currently have multiple devices connected via ADB, find out the name of
+   your device using "adb devices -l".
+7. Run this command:
+
+dexfuzz --inputs=<seeds dir> --execute --repeat=<attempts> \
+    --dump-output <combination of ISA(s) and and backend(s)>
+
+You MUST specify one of the following ISAs:
+  --arm
+  --arm64
+  --x86
+  --x86_64
+  --mips
+  --mips64
+
+And also at least two of the following backends:
+  --interpreter
+  --optimizing
+
+Note that if you wanted to test both ARM and ARM64 on an ARM64 device, you can use
+--allarm. Also in this case only one backend is needed, if i.e., you wanted to test
+ARM Optimizing Backend vs. ARM64 Optimizing Backend.
+
+Some legal examples:
+  --arm --optimizing --interpreter
+  --x86 --optimizing --interpreter
+  --allarm --optimizing
+
+Add in --device=<device name, e.g. device:generic> if you want to specify a device.
+Add in --execute-dir=<dir on device> if you want to specify an execution directory.
+  (The default is /data/art-test/)
+
+Host Execution
+--------------
+
+DexFuzz now supports execution on your host machine.
+Follow steps 1, 3, 4, and 7 as above, but also observe the following:
+ - instead of specifying an ISA, use --host
+ - ANDROID_DATA must be set, pointing to a location where dex2oat will place
+   OAT files after compilation.
+ - Files will always be executed in the same directory where you are executing DexFuzz.
+
+Fuzzer Operation
+----------------
+
+As the fuzzer works, you'll see output like:
+
+|-----------------------------------------------------------------|
+|Iterations|VerifyFail|MutateFail|Timed Out |Successful|Divergence|
+|-----------------------------------------------------------------|
+| 48       | 37       | 4        | 0        | 6        | 1        |
+
+Iterations - number of attempts we've made to mutate DEX files.
+VerifyFail - the number of mutated files that ended up failing to verify, either
+             on the host, or the target.
+MutateFail - because mutation is a random process, and has attempt thresholds to
+             avoid attempting to mutate a file indefinitely, it is possible that
+             an attempt to mutate a file doesn't actually mutate it. This counts
+             those occurrences.
+Timed Out  - mutated files that timed out for one or more backends.
+             Current timeouts are:
+               Optimizing - 5 seconds
+               Interpreter - 30 seconds
+              (use --short-timeouts to set all backends to 2 seconds.)
+Successful - mutated files that executed and all backends agreed on the resulting
+             output. NB: if all backends crashed with the same output, this would
+             be considered a success - proper detection of crashes is still to come.
+Divergence - mutated files that executed and some backend disagreed about the
+             resulting output. Divergent programs are run multiple times with a
+             single backend, to check if they diverge from themselves, and these are
+             not included in the count. If multiple architectures are being used
+             (ARM/ARM64), and the divergences align with different architectures,
+             these are also not included in the count.
+
+8. Check report.log for the full report, including input file and RNG seed for each
+   test program. This allows you to recreate a bad program with, e.g.:
+
+dexfuzz --input=<input file> --seed=<seed value>
+
+Check dexfuzz --help for the full list of options.
+
+NOTE: DEX files with unicode strings are not fully supported yet, and DEX files with
+JNI elements are not supported at all currently.
+
+Mutation Likelihoods
+====================
+
+Each bytecode mutation has a chance out of 100% of firing. Following is the listing
+of each mutation's probability. If you wish to easily adjust these values, copy
+these values into a file called likelihoods.txt, and run dexfuzz with
+--likelihoods=likelihoods.txt.
+
+ArithOpChanger 75
+BranchShifter 30
+CmpBiasChanger 30
+ConstantValueChanger 70
+ConversionRepeater 50
+FieldFlagChanger 40
+InstructionDeleter 40
+InstructionDuplicator 80
+InstructionSwapper 80
+InvokeChanger 30
+NewArrayLengthChanger 50
+NewInstanceChanger 10
+NewMethodCaller 10
+NonsenseStringPrinter 10
+OppositeBranchChanger 40
+PoolIndexChanger 30
+RandomBranchChanger 30
+RandomInstructionGenerator 30
+RegisterClobber 10
+SwitchBranchShifter 30
+TryBlockShifter 40
+ValuePrinter 40
+VRegChanger 60

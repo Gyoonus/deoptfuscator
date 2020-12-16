@@ -1,0 +1,7 @@
+Tests that new-instance throws:
+- InstantiationError on interfaces and abstract classes
+- IllegalAccessError on inaccessible classes
+- NoClassDefFoundError on unknown classes
+
+This also verifies that we don't remove dead (code) new-instances which may
+throw.

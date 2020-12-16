@@ -1,0 +1,2 @@
+Regression test for optimizing's code generator which wouldn't
+materialize a condition when used only by an environment.

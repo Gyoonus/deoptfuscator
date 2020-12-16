@@ -1,0 +1,64 @@
+JNI_OnLoad called
+ABC.XYZ = 12, GetStaticIntField(DEF.class, 'XYZ') = 12
+Super.<init>
+Super.<init>
+Subclass.<init>
+Super.<init>
+Super.<init>
+Subclass.<init>
+Super.<init>
+RUNNING super object, super class, super nonstatic
+Super.nonstaticMethod
+PASSED super object, super class, super nonstatic
+Super.<init>
+RUNNING super object, sub class, super nonstatic
+Super.nonstaticMethod
+PASSED super object, sub class, super nonstatic
+Super.<init>
+Subclass.<init>
+RUNNING sub object, super class, super nonstatic
+Super.nonstaticMethod
+PASSED sub object, super class, super nonstatic
+Super.<init>
+Subclass.<init>
+RUNNING sub object, sub class, super nonstatic
+Super.nonstaticMethod
+PASSED sub object, sub class, super nonstatic
+Super.<init>
+Subclass.<init>
+RUNNING sub object, sub class, sub nonstatic
+Subclass.nonstaticMethod
+PASSED sub object, sub class, sub nonstatic
+Calling method ConcreteClass->JniCallNonOverridenDefaultMethod on object of type ConcreteClass
+DefaultInterface.JniCallNonOverridenDefaultMethod
+Calling method ConcreteClass->JniCallOverridenDefaultMethod on object of type ConcreteClass
+ConcreteClass.JniCallOverridenDefaultMethod
+Calling method ConcreteClass->JniCallOverridenDefaultMethodWithSuper on object of type ConcreteClass
+ConcreteClass.JniCallOverridenDefaultMethodWithSuper
+DefaultInterface.JniCallOverridenDefaultMethod
+Calling method ConcreteClass->JniCallOverridenAbstractMethod on object of type ConcreteClass
+ConcreteClass.JniCallOverridenAbstractMethod
+Calling method ConcreteClass->JniCallConflictDefaultMethod on object of type ConcreteClass
+EXCEPTION OCCURED: java.lang.IncompatibleClassChangeError: Conflicting default method implementations void ConflictInterface.JniCallConflictDefaultMethod()
+Calling method ConcreteClass->JniCallSoftConflictMethod on object of type ConcreteClass
+DefaultInterface.JniCallSoftConflictMethod
+Calling method DefaultInterface->JniCallNonOverridenDefaultMethod on object of type ConcreteClass
+DefaultInterface.JniCallNonOverridenDefaultMethod
+Calling method DefaultInterface->JniCallOverridenDefaultMethod on object of type ConcreteClass
+ConcreteClass.JniCallOverridenDefaultMethod
+Calling method DefaultInterface->JniCallOverridenAbstractMethod on object of type ConcreteClass
+ConcreteClass.JniCallOverridenAbstractMethod
+Calling method DefaultInterface->JniCallConflictDefaultMethod on object of type ConcreteClass
+EXCEPTION OCCURED: java.lang.IncompatibleClassChangeError: Conflicting default method implementations void ConflictInterface.JniCallConflictDefaultMethod()
+Calling method DefaultInterface->JniCallSoftConflictMethod on object of type ConcreteClass
+DefaultInterface.JniCallSoftConflictMethod
+Calling method AbstractInterface->JniCallSoftConflictMethod on object of type ConcreteClass
+DefaultInterface.JniCallSoftConflictMethod
+Calling method ConflictInterface->JniCallConflictDefaultMethod on object of type ConcreteClass
+EXCEPTION OCCURED: java.lang.IncompatibleClassChangeError: Conflicting default method implementations void ConflictInterface.JniCallConflictDefaultMethod()
+hi-lambda: λ
+hi-default δλ
+hi-default δλ
+Clinit Lookup: ClassWithoutClinit: <NSME Exception>
+Clinit Lookup: ClassWithClinit: Main$ClassWithClinit()(Class: class java.lang.reflect.Constructor)
+Got UnsatisfiedLinkError for duplicate loadLibrary

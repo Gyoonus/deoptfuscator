@@ -1,0 +1,1 @@
+Test deoptimizing when returning from a quick-to-interpreter bridge.

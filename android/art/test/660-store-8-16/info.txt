@@ -1,0 +1,3 @@
+Regression test for the compiler whose x86 and x64 backends
+used to crash on 8bits / 16bits immediate stores when the Java
+input was a wide immediate.

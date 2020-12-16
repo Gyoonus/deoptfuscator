@@ -1,0 +1,117 @@
+#!/bin/bash
+#
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#
+# Export some environment variables used by ART's Android.mk/Android.bp
+# build systems to configure ART [to use a different implementation].
+#
+# Currently only varies on ART_USE_READ_BARRIER for a concurrent/non-concurrent
+# flavor of the ART garbage collector.
+#
+# Only meant for golem use since when building ART directly, one can/should set
+# these environment flags themselves.
+#
+# These environment flags are not really meant here to be for "correctness",
+# but rather telling the ART C++ to use alternative algorithms.
+# In other words, the same exact binary build with a different "target"
+# should run in the same context (e.g. it does not change arch or the OS it's built for).
+#
+
+setenv() {
+  local name="$1"
+  local value="$2"
+
+  export $name="$value"
+  echo export $name="$value"
+}
+
+# Enforce specified target-name is one of these.
+# Perhaps we should be less strict?
+ALL_TARGETS=(art-interpreter art-opt art-jit art-jit-cc art-opt-cc art-opt-debuggable art-vdex)
+
+usage() {
+  echo >&2 "Usage: $(basename $0) (--list-targets | <target-name>)"
+  echo >&2
+  echo >&2 "Exports the necessary ART environment variables"
+  echo >&2 "to pass to the Golem build to correctly configure ART."
+  echo >&2 "--------------------------------------------------------"
+  echo >&2 "Required Arguments:"
+  echo >&2 "  <target-name>       Specify the golem target to get environment variables for."
+  echo >&2
+  echo >&2 "Optional Flags":
+  echo >&2 "  --list-targets      Display all the targets. Do not require the main target-name."
+  echo >&2 "  --help              Print this help listing."
+  echo >&2
+  echo >&2 "Available Targets:"
+
+  list_targets 2 "  "
+}
+
+list_targets() {
+  local out_fd="${1:-1}" # defaults to 1 if no param was set
+  local prefix="$2"
+
+  for target in "${ALL_TARGETS[@]}"; do
+    echo >&$out_fd "${prefix}${target}"
+  done
+}
+
+
+# Check if $1 element is in array $2
+contains_element() {
+  local e
+  for e in "${@:2}"; do [[ "$e" == "$1" ]] && return 0; done
+  return 1
+}
+
+main() {
+  if [[ $# -lt 1 ]]; then
+    usage
+    exit 1
+  fi
+
+  if [[ "$1" == "--help" ]]; then
+    usage
+    exit 1
+  fi
+
+  if [[ "$1" == "--list-targets" ]]; then
+    list_targets
+    exit 0
+  fi
+
+  local selected_target="$1"
+  if ! contains_element "$selected_target" "${ALL_TARGETS[@]}"; then
+    echo "ERROR: Invalid target value '$selected_target'" >&2
+    exit 1
+  fi
+
+  case "$selected_target" in
+    *-cc)
+      setenv ART_USE_READ_BARRIER true
+      ;;
+    *)
+      setenv ART_USE_READ_BARRIER false
+      ;;
+  esac
+
+  # Make smaller .tar.gz files by excluding debug targets.
+  setenv ART_BUILD_TARGET_DEBUG false
+  setenv ART_BUILD_HOST_DEBUG false
+  setenv USE_DEX2OAT_DEBUG false
+}
+
+main "$@"

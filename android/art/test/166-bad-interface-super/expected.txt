@@ -1,0 +1,2 @@
+Caught java.lang.ClassFormatError when trying to resolve BadSuper1.
+Caught java.lang.ClassFormatError when trying to resolve BadSuper2.

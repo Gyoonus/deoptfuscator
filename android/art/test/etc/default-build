@@ -1,0 +1,575 @@
+#!/bin/bash
+#
+# Copyright (C) 2008 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Stop if something fails.
+set -e
+
+if [[ $# -le 0 ]]; then
+  echo 'Error:' '$0 should have the parameters from the "build" script forwarded to it' >&2
+  echo 'Error: An example of how do it correctly is ./default-build "$@"'
+  exit 1
+fi
+
+# Set default values for directories.
+if [ -d smali ]; then
+  HAS_SMALI=true
+else
+  HAS_SMALI=false
+fi
+
+# .j files in jasmin get compiled into classes.jar
+if [ -d jasmin ]; then
+  HAS_JASMIN=true
+else
+  HAS_JASMIN=false
+fi
+
+if [ -d src ]; then
+  HAS_SRC=true
+else
+  HAS_SRC=false
+fi
+
+# .java files in src-art get compiled with libcore on the bootclasspath
+if [ -d src-art ]; then
+  HAS_SRC_ART=true
+else
+  HAS_SRC_ART=false
+fi
+
+if [ -d src2 ]; then
+  HAS_SRC2=true
+else
+  HAS_SRC2=false
+fi
+
+if [ -d src-multidex ]; then
+  HAS_SRC_MULTIDEX=true
+else
+  HAS_SRC_MULTIDEX=false
+fi
+
+if [ -d smali-multidex ]; then
+  HAS_SMALI_MULTIDEX=true
+else
+  HAS_SMALI_MULTIDEX=false
+fi
+
+# .j files in jasmin-multidex get compiled into classes2.jar
+if [ -d jasmin-multidex ]; then
+  HAS_JASMIN_MULTIDEX=true
+else
+  HAS_JASMIN_MULTIDEX=false
+fi
+
+if [ -d src-ex ]; then
+  HAS_SRC_EX=true
+else
+  HAS_SRC_EX=false
+fi
+
+if [ -d src-dex2oat-unresolved ]; then
+  HAS_SRC_DEX2OAT_UNRESOLVED=true
+else
+  HAS_SRC_DEX2OAT_UNRESOLVED=false
+fi
+
+if [ -f api-light-greylist.txt -o -f api-dark-greylist.txt -o -f api-blacklist.txt ]; then
+  HAS_HIDDENAPI_SPEC=true
+else
+  HAS_HIDDENAPI_SPEC=false
+fi
+
+# USE_HIDDENAPI=false run-test... will disable hiddenapi.
+if [ -z "${USE_HIDDENAPI}" ]; then
+  USE_HIDDENAPI=true
+fi
+
+# DESUGAR=false run-test... will disable desugar.
+if [[ "$DESUGAR" == false ]]; then
+  USE_DESUGAR=false
+fi
+
+# Allow overriding ZIP_COMPRESSION_METHOD with e.g. 'store'
+ZIP_COMPRESSION_METHOD="deflate"
+# Align every ZIP file made by calling $ZIPALIGN command?
+WITH_ZIP_ALIGN=false
+ZIP_ALIGN_BYTES="-1"
+
+DX_FLAGS="--min-sdk-version=24"
+DX_VM_FLAGS=""
+EXPERIMENTAL=""
+
+BUILD_MODE="target"
+DEV_MODE="no"
+
+# The key for default arguments if no experimental things are enabled.
+DEFAULT_EXPERIMENT="no-experiment"
+
+# Setup experimental flag mappings in a bash associative array.
+declare -A JACK_EXPERIMENTAL_ARGS
+JACK_EXPERIMENTAL_ARGS["agents"]="-D jack.java.source.version=1.8 -D jack.android.min-api-level=24"
+JACK_EXPERIMENTAL_ARGS["default-methods"]="-D jack.java.source.version=1.8 -D jack.android.min-api-level=24"
+JACK_EXPERIMENTAL_ARGS["lambdas"]="-D jack.java.source.version=1.8 -D jack.android.min-api-level=24"
+JACK_EXPERIMENTAL_ARGS["method-handles"]="-D jack.java.source.version=1.7 -D jack.android.min-api-level=o-b1"
+JACK_EXPERIMENTAL_ARGS[${DEFAULT_EXPERIMENT}]="-D jack.java.source.version=1.8 -D jack.android.min-api-level=24"
+
+declare -A SMALI_EXPERIMENTAL_ARGS
+SMALI_EXPERIMENTAL_ARGS["default-methods"]="--api 24"
+SMALI_EXPERIMENTAL_ARGS["method-handles"]="--api 26"
+SMALI_EXPERIMENTAL_ARGS["var-handles"]="--api 26"
+SMALI_EXPERIMENTAL_ARGS["agents"]="--api 26"
+
+declare -A JAVAC_EXPERIMENTAL_ARGS
+JAVAC_EXPERIMENTAL_ARGS["default-methods"]="-source 1.8 -target 1.8"
+JAVAC_EXPERIMENTAL_ARGS["lambdas"]="-source 1.8 -target 1.8"
+JAVAC_EXPERIMENTAL_ARGS["method-handles"]="-source 1.8 -target 1.8"
+JAVAC_EXPERIMENTAL_ARGS["parameter-annotations"]="-source 1.8 -target 1.8"
+JAVAC_EXPERIMENTAL_ARGS["var-handles"]="-source 1.8 -target 1.8"
+JAVAC_EXPERIMENTAL_ARGS[${DEFAULT_EXPERIMENT}]="-source 1.8 -target 1.8"
+JAVAC_EXPERIMENTAL_ARGS["agents"]="-source 1.8 -target 1.8"
+
+declare -A DX_EXPERIMENTAL_ARGS
+DX_EXPERIMENTAL_ARGS["method-handles"]="--min-sdk-version=26"
+DX_EXPERIMENTAL_ARGS["parameter-annotations"]="--min-sdk-version=25"
+DX_EXPERIMENTAL_ARGS["var-handles"]="--min-sdk-version=26"
+
+while true; do
+  if [ "x$1" = "x--dx-option" ]; then
+    shift
+    option="$1"
+    DX_FLAGS="${DX_FLAGS} $option"
+    shift
+  elif [ "x$1" = "x--dx-vm-option" ]; then
+    shift
+    option="$1"
+    DX_VM_FLAGS="${DX_VM_FLAGS} $option"
+    shift
+  elif [ "x$1" = "x--no-src" ]; then
+    HAS_SRC=false
+    shift
+  elif [ "x$1" = "x--no-src2" ]; then
+    HAS_SRC2=false
+    shift
+  elif [ "x$1" = "x--no-src-multidex" ]; then
+    HAS_SRC_MULTIDEX=false
+    shift
+  elif [ "x$1" = "x--no-smali-multidex" ]; then
+    HAS_SMALI_MULTIDEX=false
+    shift
+  elif [ "x$1" = "x--no-src-ex" ]; then
+    HAS_SRC_EX=false
+    shift
+  elif [ "x$1" = "x--no-smali" ]; then
+    HAS_SMALI=false
+    shift
+  elif [ "x$1" = "x--experimental" ]; then
+    shift
+    # We have a specific experimental configuration so don't use the default.
+    DEFAULT_EXPERIMENT=""
+    EXPERIMENTAL="${EXPERIMENTAL} $1"
+    shift
+  elif [ "x$1" = "x--zip-compression-method" ]; then
+    # Allow using different zip compression method, e.g. 'store'
+    shift
+    ZIP_COMPRESSION_METHOD="$1"
+    shift
+  elif [ "x$1" = "x--zip-align" ]; then
+    # Align ZIP entries to some # of bytes.
+    shift
+    WITH_ZIP_ALIGN=true
+    ZIP_ALIGN_BYTES="$1"
+    shift
+  elif [ "x$1" = "x--host" ]; then
+    BUILD_MODE="host"
+    shift
+  elif [ "x$1" = "x--target" ]; then
+    BUILD_MODE="target"
+    shift
+  elif [ "x$1" = "x--jvm" ]; then
+    BUILD_MODE="jvm"
+    shift
+  elif [ "x$1" = "x--dev" ]; then
+    DEV_MODE="yes"
+    shift
+  elif expr "x$1" : "x--" >/dev/null 2>&1; then
+    echo "unknown $0 option: $1" 1>&2
+    exit 1
+  else
+    break
+  fi
+done
+
+if [[ $BUILD_MODE == jvm ]]; then
+  # Does not need desugar on jvm because it supports the latest functionality.
+  USE_DESUGAR=false
+  # Do not attempt to build src-art directories on jvm, it would fail without libcore.
+  HAS_SRC_ART=false
+fi
+
+# Be sure to get any default arguments if not doing any experiments.
+EXPERIMENTAL="${EXPERIMENTAL} ${DEFAULT_EXPERIMENT}"
+
+if [ "${JACK_SERVER}" = "false" ]; then
+  # Run in single-threaded mode for the continuous buildbot.
+  JACK_ARGS="${JACK_ARGS} -D sched.runner=single-threaded"
+else
+  # Run with 4 threads to reduce memory footprint and thread contention.
+  JACK_ARGS="${JACK_ARGS} -D sched.runner=multi-threaded"
+  JACK_ARGS="${JACK_ARGS} -D sched.runner.thread.kind=fixed"
+  JACK_ARGS="${JACK_ARGS} -D sched.runner.thread.fixed.count=4"
+fi
+
+# Add args from the experimental mappings.
+for experiment in ${EXPERIMENTAL}; do
+  JACK_ARGS="${JACK_ARGS} ${JACK_EXPERIMENTAL_ARGS[${experiment}]}"
+  SMALI_ARGS="${SMALI_ARGS} ${SMALI_EXPERIMENTAL_ARGS[${experiment}]}"
+  JAVAC_ARGS="${JAVAC_ARGS} ${JAVAC_EXPERIMENTAL_ARGS[${experiment}]}"
+  DX_FLAGS="${DX_FLAGS} ${DX_EXPERIMENTAL_ARGS[${experiment}]}"
+done
+
+#########################################
+
+# Catch all commands to 'ZIP' and prepend extra flags.
+# Optionally, zipalign results to some alignment.
+function zip() {
+  local zip_target="$1"
+  local entry_src="$2"
+  shift 2
+
+  command zip --compression-method "$ZIP_COMPRESSION_METHOD" "$zip_target" "$entry_src" "$@"
+
+  if "$WITH_ZIP_ALIGN"; then
+    # zipalign does not operate in-place, so write results to a temp file.
+    local tmp_file="$(mktemp)"
+    "$ZIPALIGN" -f "$ZIP_ALIGN_BYTES" "$zip_target" "$tmp_file"
+    # replace original zip target with our temp file.
+    mv "$tmp_file" "$zip_target"
+  fi
+}
+
+function make_jasmin() {
+  local out_directory="$1"
+  shift
+  local jasmin_sources=("$@")
+
+  mkdir -p "$out_directory"
+
+  if [[ $DEV_MODE == yes ]]; then
+    echo ${JASMIN} -d "$out_directory" "${jasmin_sources[@]}"
+    ${JASMIN} -d "$out_directory" "${jasmin_sources[@]}"
+  else
+    ${JASMIN} -d "$out_directory" "${jasmin_sources[@]}" >/dev/null
+  fi
+}
+
+function desugar() {
+  local desugar_args="--mode=$BUILD_MODE"
+
+  if [[ $DEV_MODE == yes ]]; then
+    desugar_args="$desugar_args --show-commands"
+  fi
+
+  "$DESUGAR" --core-only $desugar_args "$@"
+}
+
+# Like regular javac but may include libcore on the bootclasspath.
+function javac_with_bootclasspath {
+  local helper_args="--mode=$BUILD_MODE"
+
+  if [[ $DEV_MODE == yes ]]; then
+    helper_args="$helper_args --show-commands"
+  fi
+
+  # build with libcore for host and target, or openjdk for jvm
+  "$ANDROID_BUILD_TOP/art/tools/javac-helper.sh" --core-only $helper_args ${JAVAC_ARGS} "$@"
+}
+
+# Make a "dex" file given a directory of classes in $1.
+# Also calls desugar on the classes first to convert lambdas.
+function make_dex() {
+  local name="$1"
+
+  local dx_input
+  if [[ "$USE_DESUGAR" == "true" ]]; then
+    # Make a jar first so desugar doesn't need every .class file individually.
+    jar cf "$name.before-desugar.jar" -C "$name" .
+
+    dx_input="${name}.desugar.jar"
+
+    # Make desugared JAR.
+    desugar --input "$name.before-desugar.jar" --output "$dx_input"
+  else
+    dx_input="${name}"
+  fi
+
+  local dexer="${DX}"
+  if [ ${USE_D8} = "true" ]; then
+    dexer="${ANDROID_HOST_OUT}/bin/d8-compat-dx"
+  fi
+
+  # Make dex file from desugared JAR.
+  ${dexer} -JXmx256m ${DX_VM_FLAGS} --debug --dex --dump-to=${name}.lst --output=${name}.dex --dump-width=1000 ${DX_FLAGS} "${dx_input}"
+}
+
+# Merge all the dex files in $1..$N into $1. Skip non-existing files, but at least 1 file must exist.
+function make_dexmerge() {
+  # Dex file that acts as the destination.
+  local dst_file="$1"
+
+  # Dex files that act as the source.
+  local dex_files_to_merge=()
+
+  # Skip any non-existing files.
+  while [[ $# -gt 0 ]]; do
+    if [[ -e "$1" ]]; then
+      dex_files_to_merge+=("$1")
+    fi
+    shift
+  done
+
+  # Should have at least 1 dex_files_to_merge here, otherwise dxmerger will print the help.
+  ${DXMERGER} "$dst_file" "${dex_files_to_merge[@]}"
+}
+
+function make_hiddenapi() {
+  local args=()
+  while [[ $# -gt 0 ]]; do
+    args+=("--dex=$1")
+    shift
+  done
+  if [ -f api-light-greylist.txt ]; then
+    args+=("--light-greylist=api-light-greylist.txt")
+  fi
+  if [ -f api-dark-greylist.txt ]; then
+    args+=("--dark-greylist=api-dark-greylist.txt")
+  fi
+  if [ -f api-blacklist.txt ]; then
+    args+=("--blacklist=api-blacklist.txt")
+  fi
+  ${HIDDENAPI} "${args[@]}"
+}
+
+# Print the directory name only if it exists.
+function maybe_dir() {
+  local dirname="$1"
+  if [[ -d "$dirname" ]]; then
+    echo "$dirname"
+  fi
+}
+
+if [ -e classes.dex ]; then
+  zip $TEST_NAME.jar classes.dex
+  exit 0
+fi
+
+# Helper function for a common test. Evaluate with $(has_mutlidex).
+function has_multidex() {
+  echo [ ${HAS_SRC_MULTIDEX} = "true" \
+         -o ${HAS_JASMIN_MULTIDEX} = "true" \
+         -o ${HAS_SMALI_MULTIDEX} = "true" ]
+}
+
+if [ ${HAS_SRC_DEX2OAT_UNRESOLVED} = "true" ]; then
+  mkdir -p classes
+  mkdir classes-ex
+  javac_with_bootclasspath -implicit:none -sourcepath src-dex2oat-unresolved -d classes `find src -name '*.java'`
+  javac_with_bootclasspath -implicit:none -sourcepath src -d classes-ex `find src-dex2oat-unresolved -name '*.java'`
+  if [ ${USE_JACK} = "true" ]; then
+    jar cf classes.jill.jar -C classes .
+    jar cf classes-ex.jill.jar -C classes-ex .
+
+    ${JACK} --import classes-ex.jill.jar --output-dex .
+    zip ${TEST_NAME}-ex.jar classes.dex
+    ${JACK} --import classes.jill.jar --output-dex .
+  else
+    if [ ${NEED_DEX} = "true" ]; then
+      make_dex classes-ex
+      mv classes-ex.dex classes.dex   # rename it so it shows up as "classes.dex" in the zip file.
+      zip ${TEST_NAME}-ex.jar classes.dex
+      make_dex classes
+    fi
+  fi
+else
+  if [ ${USE_JACK} = "true" ]; then
+    # Jack toolchain
+    if [[ "$HAS_SRC" == true || "$HAS_SRC_ART" == true ]]; then
+      if [ "${HAS_SRC_MULTIDEX}" = "true" ]; then
+        # Compile src and src-multidex in the same .jack file. We will apply multidex partitioning
+        # when creating the output .dex file.
+        ${JACK} ${JACK_ARGS} --output-jack src.jack $(maybe_dir src) src-multidex $(maybe_dir src-art)
+        jack_extra_args="${jack_extra_args} -D jack.dex.output.policy=minimal-multidex"
+        jack_extra_args="${jack_extra_args} -D jack.preprocessor=true"
+        jack_extra_args="${jack_extra_args} -D jack.preprocessor.file=multidex.jpp"
+      else
+        ${JACK} ${JACK_ARGS} --output-jack src.jack $(maybe_dir src) $(maybe_dir src-art)
+      fi
+      jack_extra_args="${jack_extra_args} --import src.jack"
+    fi
+
+    if [ "${HAS_SRC2}" = "true" ]; then
+      ${JACK} ${JACK_ARGS} --output-jack src2.jack src2
+      # In case of duplicate classes, we want to take into account the classes from src2. Therefore
+      # we apply the 'keep-first' policy and import src2.jack file *before* the src.jack file.
+      jack_extra_args="${jack_extra_args} -D jack.import.type.policy=keep-first"
+      jack_extra_args="--import src2.jack ${jack_extra_args}"
+    fi
+
+    # Compile jack files into a DEX file.
+    if [ "${HAS_SRC}" = "true" ] || [ "${HAS_SRC2}" = "true" ] || [ "${HAS_SRC_ART}" = "true" ]; then
+      ${JACK} ${JACK_ARGS} ${jack_extra_args} --output-dex .
+    fi
+  else
+    # Legacy toolchain with javac+dx
+    if [ "${HAS_SRC}" = "true" ]; then
+      mkdir -p classes
+      javac_with_bootclasspath -implicit:none -classpath src-multidex -d classes `find src -name '*.java'`
+    fi
+
+    if [ "${HAS_SRC_ART}" = "true" ]; then
+      mkdir -p classes
+      javac_with_bootclasspath -implicit:none -classpath src-multidex -d classes `find src-art -name '*.java'`
+    fi
+
+    if [ "${HAS_SRC_MULTIDEX}" = "true" ]; then
+      mkdir classes2
+      javac_with_bootclasspath -implicit:none -classpath src -d classes2 `find src-multidex -name '*.java'`
+      if [ ${NEED_DEX} = "true" ]; then
+        make_dex classes2
+      fi
+    fi
+
+    if [ "${HAS_SRC2}" = "true" ]; then
+      mkdir -p classes
+      javac_with_bootclasspath -classpath classes -d classes `find src2 -name '*.java'`
+    fi
+
+    if [[ "${HAS_SRC}" == "true" || "${HAS_SRC2}" == "true" || "${HAS_SRC_ART}" == "true" ]]; then
+      if [ ${NEED_DEX} = "true" ]; then
+        make_dex classes
+      fi
+    fi
+  fi
+fi
+
+if [[ "${HAS_JASMIN}" == true ]]; then
+  # Compile Jasmin classes as if they were part of the classes.dex file.
+  make_jasmin jasmin_classes $(find 'jasmin' -name '*.j')
+  if [[ "${NEED_DEX}" == "true" ]]; then
+    # Disable desugar because it won't handle intentional linkage errors.
+    USE_DESUGAR=false make_dex jasmin_classes
+    make_dexmerge classes.dex jasmin_classes.dex
+  else
+    # Move jasmin classes into classes directory so that they are picked up with -cp classes.
+    mkdir -p classes
+    mv jasmin_classes/* classes
+  fi
+fi
+
+if [ "${HAS_SMALI}" = "true" -a ${NEED_DEX} = "true" ]; then
+  # Compile Smali classes
+  ${SMALI} -JXmx512m assemble ${SMALI_ARGS} --output smali_classes.dex `find smali -name '*.smali'`
+
+  # Merge smali files into classes.dex, this takes priority over any jasmin files.
+  make_dexmerge classes.dex smali_classes.dex
+fi
+
+# Compile Jasmin classes in jasmin-multidex as if they were part of the classes2.jar
+if [[ "$HAS_JASMIN_MULTIDEX" == true ]]; then
+  make_jasmin jasmin_classes2 $(find 'jasmin-multidex' -name '*.j')
+
+  if [[ "${NEED_DEX}" == "true" ]]; then
+    # Disable desugar because it won't handle intentional linkage errors.
+    USE_DESUGAR=false make_dex jasmin_classes2
+
+    # Merge jasmin_classes2.dex into classes2.dex
+    make_dexmerge classes2.dex jasmin_classes2.dex
+  else
+    # Move jasmin classes into classes2 directory so that they are picked up with -cp classes2.
+    mkdir -p classes2
+    mv jasmin_classes2/* classes2
+  fi
+fi
+
+if [ "${HAS_SMALI_MULTIDEX}" = "true" -a ${NEED_DEX} = "true" ]; then
+  # Compile Smali classes
+  ${SMALI} -JXmx512m assemble ${SMALI_ARGS} --output smali_classes2.dex `find smali-multidex -name '*.smali'`
+
+  # Merge smali_classes2.dex into classes2.dex
+  make_dexmerge classes2.dex smali_classes2.dex
+fi
+
+
+if [ ${HAS_SRC_EX} = "true" ]; then
+  if [ ${USE_JACK} = "true" ]; then
+      # Rename previous "classes.dex" so it is not overwritten.
+      mv classes.dex classes-1.dex
+      #TODO find another way to append src.jack to the jack classpath
+      ${JACK}:src.jack ${JACK_ARGS} --output-dex . src-ex
+      zip $TEST_NAME-ex.jar classes.dex
+      # Restore previous "classes.dex" so it can be zipped.
+      mv classes-1.dex classes.dex
+  else
+    # Build src-ex into classes-ex.
+    # Includes 'src', 'src-art' source when compiling classes-ex, but exclude their .class files.
+    if [[ "${HAS_SRC}" == "true" ]]; then
+      mkdir -p classes-tmp-for-ex
+      javac_with_bootclasspath -d classes-tmp-for-ex `find src -name '*.java'`
+      src_tmp_for_ex="-cp classes-tmp-for-ex"
+    fi
+    if [[ "${HAS_SRC_ART}" == "true" ]]; then
+      mkdir -p classes-tmp-for-ex
+      javac_with_bootclasspath -d classes-tmp-for-ex `find src-art -name '*.java'`
+      src_tmp_for_ex="-cp classes-tmp-for-ex"
+    fi
+    mkdir classes-ex
+    javac_with_bootclasspath -d classes-ex $src_tmp_for_ex `find src-ex -name '*.java'`
+  fi
+fi
+
+if [[ -d classes-ex ]] && [ ${NEED_DEX} = "true" ]; then
+  make_dex classes-ex
+
+  # Apply hiddenapi on the dex files if the test has API list file(s).
+  if [ ${USE_HIDDENAPI} = "true" -a ${HAS_HIDDENAPI_SPEC} = "true" ]; then
+    make_hiddenapi classes-ex.dex
+  fi
+
+  # quick shuffle so that the stored name is "classes.dex"
+  mv classes.dex classes-1.dex
+  mv classes-ex.dex classes.dex
+  zip $TEST_NAME-ex.jar classes.dex
+  mv classes.dex classes-ex.dex
+  mv classes-1.dex classes.dex
+fi
+
+# Apply hiddenapi on the dex files if the test has API list file(s).
+if [ ${NEED_DEX} = "true" -a ${USE_HIDDENAPI} = "true" -a ${HAS_HIDDENAPI_SPEC} = "true" ]; then
+  if $(has_multidex); then
+    make_hiddenapi classes.dex classes2.dex
+  else
+    make_hiddenapi classes.dex
+  fi
+fi
+
+# Create a single dex jar with two dex files for multidex.
+if [ ${NEED_DEX} = "true" ]; then
+  if $(has_multidex); then
+    zip $TEST_NAME.jar classes.dex classes2.dex
+  else
+    zip $TEST_NAME.jar classes.dex
+  fi
+fi

@@ -1,0 +1,4 @@
+Test that we correctly handle checkpoints that suspend.
+
+This could cause problems with asserts when there were multiple checkpoints
+queued and earlier ones suspended.

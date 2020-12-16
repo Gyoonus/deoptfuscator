@@ -1,0 +1,2 @@
+SuperInterface default method called
+Expected ICCE caught

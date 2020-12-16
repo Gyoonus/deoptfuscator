@@ -1,0 +1,5 @@
+Loaded class B.
+Caught VerifyError.
+Loaded class B.
+Caught wrapped VerifyError.
+Everything OK.

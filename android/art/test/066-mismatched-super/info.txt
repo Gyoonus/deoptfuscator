@@ -1,0 +1,5 @@
+This tests two cases:
+1. What happens when class A extends abstract class B, but somebody
+   turns B into an interface without rebuilding A.
+2. What happens when class A extends a class B, but somebody
+   turns B into a final class without rebuilding A.

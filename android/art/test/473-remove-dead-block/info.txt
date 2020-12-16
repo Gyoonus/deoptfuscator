@@ -1,0 +1,3 @@
+Regression test for optimizing's dead block removing:
+Removing from predecessors require remove successor otherwise
+CFG remains in an unexpected shape causing further crash of compiler.

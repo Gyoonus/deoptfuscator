@@ -1,0 +1,2 @@
+Tests loop information update after DCE because block removal can disconnect loops, leaving other
+live blocks outside the loop they had been a member of.

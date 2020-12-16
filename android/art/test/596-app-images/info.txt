@@ -1,0 +1,1 @@
+Tests that app-images are loaded and used.

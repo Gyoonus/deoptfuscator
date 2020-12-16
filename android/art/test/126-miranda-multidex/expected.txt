@@ -1,0 +1,32 @@
+MirandaClass:
+  inInterface:  true
+  inInterface2: 27
+  inAbstract:   false
+MirandaAbstract / MirandaClass:
+  inInterface:  true
+  inInterface2: 27
+  inAbstract:   false
+true 27
+MirandaAbstract / MirandaClass2:
+  inInterface:  true
+  inInterface2: 28
+  inAbstract:   true
+true 28
+Test getting miranda method via reflection:
+  caught expected NoSuchMethodException
+MirandaClass:
+  inInterface:  true
+  inInterface2: 27
+  inAbstract:   false
+MirandaAbstract / MirandaClass:
+  inInterface:  true
+  inInterface2: 27
+  inAbstract:   false
+true 27
+MirandaAbstract / MirandaClass2:
+  inInterface:  true
+  inInterface2: 28
+  inAbstract:   true
+true 28
+Test getting miranda method via reflection:
+  caught expected NoSuchMethodException

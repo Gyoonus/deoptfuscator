@@ -1,0 +1,2 @@
+This test verifies that running out of file descriptors in the process doesn't
+prevent us from launching a new thread.

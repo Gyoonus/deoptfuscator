@@ -1,0 +1,8 @@
+Running public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) with "GetThis" on remote thread.
+"GetThis" on public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) got value: Proxy for [interface art.Test1939$Foo]
+Running public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) with "GetLocalReference0" on remote thread.
+"GetLocalReference0" on public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) failed due to JVMTI_ERROR_OPAQUE_FRAME
+Running public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) with "GetProxyFrameLocation" on remote thread.
+"GetProxyFrameLocation" on public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) got value: -1
+Running public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) with "GetProxyFrameMethod" on remote thread.
+"GetProxyFrameMethod" on public abstract void art.Test1939$Foo.InterfaceProxyMethod(java.lang.Runnable) got value: public final void $__PROXY__.InterfaceProxyMethod(java.lang.Runnable)

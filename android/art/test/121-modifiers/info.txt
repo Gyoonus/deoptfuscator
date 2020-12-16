@@ -1,0 +1,18 @@
+This is a test checking the modifier (access flags) handling of ART.
+
+The classes are pre-compiled and modified with ASM.
+
+To reproduce, compile the source files. Asm.java needs the ASM libraries (core and tree). Then
+run Asm.java, which produces Inf.out and NonInf.out. Rename these to class files and put them
+into the classes directory (this assumes the ASM libraries are names asm.jar and asm-tree.jar).
+Finally, compile with jack/jill or dx, and run baksmali.
+
+javac Inf.java NonInf.java Main.java
+javac -cp asm.jar:asm-tree.jar:. Asm.java
+java -cp asm.jar:asm-tree.jar:. Asm
+mv Inf.out classes/Inf.class
+mv NonInf.out classes/NonInf.class
+mv Main.class A.class A\$B.class A\$C.class classes/
+dx --debug --dex --output=classes.dex classes
+baksmali disassemble classes.dex
+mv out/*.smali smali/

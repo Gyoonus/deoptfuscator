@@ -1,0 +1,5 @@
+GetLocalInt on current thread!
+From GetLocalInt(), value is 42
+	Value is '42'
+SetLocalInt on current thread!
+	Value is '1337'

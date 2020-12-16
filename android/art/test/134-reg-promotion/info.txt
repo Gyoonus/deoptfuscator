@@ -1,0 +1,4 @@
+Test that a vreg value that was defined by a const 0 and is used is both ref
+and float operations is flushed to all home location.
+
+See: b/19417710, b/7250540 & b.android.com/147187

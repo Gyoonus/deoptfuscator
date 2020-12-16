@@ -1,0 +1,1 @@
+Tests simplification of boolean NOT in optimizing compiler.

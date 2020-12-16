@@ -1,0 +1,3 @@
+Test that we do the right thing with invoke-super on interfaces when there are
+verifier errors.
+

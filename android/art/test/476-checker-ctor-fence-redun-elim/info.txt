@@ -1,0 +1,2 @@
+Tests to ensure constructor fences (after new-instance, new-array, or final fields) are properly
+merged together by the compiler when they are redundant.

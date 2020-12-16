@@ -1,0 +1,108 @@
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "GetInt" on remote thread.
+"GetInt" on public static void art.Test1912.IntMethod(java.lang.Runnable) got value: 42
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "GetLong" on remote thread.
+"GetLong" on public static void art.Test1912.IntMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "GetFloat" on remote thread.
+"GetFloat" on public static void art.Test1912.IntMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "GetDouble" on remote thread.
+"GetDouble" on public static void art.Test1912.IntMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "SetInt" on remote thread.
+"SetInt" on public static void art.Test1912.IntMethod(java.lang.Runnable) set value: 2147483647
+	Value is '2147483647' (class: class java.lang.Integer)
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "SetLong" on remote thread.
+"SetLong" on public static void art.Test1912.IntMethod(java.lang.Runnable) failed to set value 9223372036854775807 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "SetFloat" on remote thread.
+"SetFloat" on public static void art.Test1912.IntMethod(java.lang.Runnable) failed to set value 9.2 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1912.IntMethod(java.lang.Runnable) with "SetDouble" on remote thread.
+"SetDouble" on public static void art.Test1912.IntMethod(java.lang.Runnable) failed to set value 12.4 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '42' (class: class java.lang.Integer)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "GetInt" on remote thread.
+"GetInt" on public static void art.Test1912.LongMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '9001' (class: class java.lang.Long)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "GetLong" on remote thread.
+"GetLong" on public static void art.Test1912.LongMethod(java.lang.Runnable) got value: 9001
+	Value is '9001' (class: class java.lang.Long)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "GetFloat" on remote thread.
+"GetFloat" on public static void art.Test1912.LongMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '9001' (class: class java.lang.Long)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "GetDouble" on remote thread.
+"GetDouble" on public static void art.Test1912.LongMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '9001' (class: class java.lang.Long)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "SetInt" on remote thread.
+"SetInt" on public static void art.Test1912.LongMethod(java.lang.Runnable) failed to set value 2147483647 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '9001' (class: class java.lang.Long)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "SetLong" on remote thread.
+"SetLong" on public static void art.Test1912.LongMethod(java.lang.Runnable) set value: 9223372036854775807
+	Value is '9223372036854775807' (class: class java.lang.Long)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "SetFloat" on remote thread.
+"SetFloat" on public static void art.Test1912.LongMethod(java.lang.Runnable) failed to set value 9.2 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '9001' (class: class java.lang.Long)
+Running public static void art.Test1912.LongMethod(java.lang.Runnable) with "SetDouble" on remote thread.
+"SetDouble" on public static void art.Test1912.LongMethod(java.lang.Runnable) failed to set value 12.4 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '9001' (class: class java.lang.Long)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "GetInt" on remote thread.
+"GetInt" on public static void art.Test1912.FloatMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '1.618' (class: class java.lang.Float)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "GetLong" on remote thread.
+"GetLong" on public static void art.Test1912.FloatMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '1.618' (class: class java.lang.Float)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "GetFloat" on remote thread.
+"GetFloat" on public static void art.Test1912.FloatMethod(java.lang.Runnable) got value: 1.618
+	Value is '1.618' (class: class java.lang.Float)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "GetDouble" on remote thread.
+"GetDouble" on public static void art.Test1912.FloatMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '1.618' (class: class java.lang.Float)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "SetInt" on remote thread.
+"SetInt" on public static void art.Test1912.FloatMethod(java.lang.Runnable) failed to set value 2147483647 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '1.618' (class: class java.lang.Float)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "SetLong" on remote thread.
+"SetLong" on public static void art.Test1912.FloatMethod(java.lang.Runnable) failed to set value 9223372036854775807 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '1.618' (class: class java.lang.Float)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "SetFloat" on remote thread.
+"SetFloat" on public static void art.Test1912.FloatMethod(java.lang.Runnable) set value: 9.2
+	Value is '9.2' (class: class java.lang.Float)
+Running public static void art.Test1912.FloatMethod(java.lang.Runnable) with "SetDouble" on remote thread.
+"SetDouble" on public static void art.Test1912.FloatMethod(java.lang.Runnable) failed to set value 12.4 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '1.618' (class: class java.lang.Float)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "GetInt" on remote thread.
+"GetInt" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '3.1415' (class: class java.lang.Double)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "GetLong" on remote thread.
+"GetLong" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '3.1415' (class: class java.lang.Double)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "GetFloat" on remote thread.
+"GetFloat" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) failed due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '3.1415' (class: class java.lang.Double)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "GetDouble" on remote thread.
+"GetDouble" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) got value: 3.1415
+	Value is '3.1415' (class: class java.lang.Double)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "SetInt" on remote thread.
+"SetInt" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) failed to set value 2147483647 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '3.1415' (class: class java.lang.Double)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "SetLong" on remote thread.
+"SetLong" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) failed to set value 9223372036854775807 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '3.1415' (class: class java.lang.Double)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "SetFloat" on remote thread.
+"SetFloat" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) failed to set value 9.2 due to JVMTI_ERROR_TYPE_MISMATCH
+	Value is '3.1415' (class: class java.lang.Double)
+Running public static void art.Test1912.DoubleMethod(java.lang.Runnable) with "SetDouble" on remote thread.
+"SetDouble" on public static void art.Test1912.DoubleMethod(java.lang.Runnable) set value: 12.4
+	Value is '12.4' (class: class java.lang.Double)
+Running public static void art.Test1912.BooleanMethod(java.lang.Runnable) with "SetIntBoolSize" on remote thread.
+"SetIntBoolSize" on public static void art.Test1912.BooleanMethod(java.lang.Runnable) set value: 1
+	Value is 'true' (class: class java.lang.Boolean)
+Running public static void art.Test1912.ByteMethod(java.lang.Runnable) with "SetIntByteSize" on remote thread.
+"SetIntByteSize" on public static void art.Test1912.ByteMethod(java.lang.Runnable) set value: 126
+	Value is '126' (class: class java.lang.Byte)
+Running public static void art.Test1912.CharMethod(java.lang.Runnable) with "SetIntCharSize" on remote thread.
+"SetIntCharSize" on public static void art.Test1912.CharMethod(java.lang.Runnable) set value: 65534
+	Value is '<Char: -1>' (class: class java.lang.String)
+Running public static void art.Test1912.ShortMethod(java.lang.Runnable) with "SetIntShortSize" on remote thread.
+"SetIntShortSize" on public static void art.Test1912.ShortMethod(java.lang.Runnable) set value: 32766
+	Value is '32766' (class: class java.lang.Short)

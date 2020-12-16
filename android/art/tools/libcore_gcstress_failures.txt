@@ -1,0 +1,13 @@
+/*
+ * This file contains expectations for ART's buildbot when running gcstress.
+ * The script that uses this file is art/tools/run-libcore-tests.sh.
+ */
+
+[
+{
+  description: "Timeouts on target with gcstress.",
+  result: EXEC_FAILED,
+  modes: [device],
+  names: ["libcore.javax.crypto.CipherBasicsTest#testGcmEncryption"]
+}
+]

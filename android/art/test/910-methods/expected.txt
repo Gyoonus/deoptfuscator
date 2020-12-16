@@ -1,0 +1,59 @@
+[toString, ()Ljava/lang/String;, null]
+class java.lang.Object
+1
+Max locals: 3
+Argument size: 1
+Location start: 0
+Location end: 39
+Is native: false
+Is obsolete: false
+Is synthetic: false
+[charAt, (I)C, null]
+class java.lang.String
+257
+Max locals: JVMTI_ERROR_NATIVE_METHOD
+Argument size: JVMTI_ERROR_NATIVE_METHOD
+Location start: JVMTI_ERROR_NATIVE_METHOD
+Location end: JVMTI_ERROR_NATIVE_METHOD
+Is native: true
+Is obsolete: false
+Is synthetic: false
+[sqrt, (D)D, null]
+class java.lang.Math
+265
+Max locals: JVMTI_ERROR_NATIVE_METHOD
+Argument size: JVMTI_ERROR_NATIVE_METHOD
+Location start: JVMTI_ERROR_NATIVE_METHOD
+Location end: JVMTI_ERROR_NATIVE_METHOD
+Is native: true
+Is obsolete: false
+Is synthetic: false
+[add, (Ljava/lang/Object;)Z, (TE;)Z]
+interface java.util.List
+1025
+Max locals: 0
+Argument size: 2
+Location start: -1
+Location end: -1
+Is native: false
+Is obsolete: false
+Is synthetic: false
+[run, ()V, null]
+class $Proxy20
+17
+Max locals: 0
+Argument size: 1
+Location start: -1
+Location end: -1
+Is native: false
+Is obsolete: false
+Is synthetic: false
+class art.Test910$NestedSynthetic
+4104
+Max locals: 1
+Argument size: 0
+Location start: 0
+Location end: 2
+Is native: false
+Is obsolete: false
+Is synthetic: true

@@ -1,0 +1,14 @@
+Initially setting breakpoint to line 42
+Running transform without redefinition.
+Should be after first breakpoint.
+Breakpoint reached: public void art.Test996$Transform.run(java.lang.Runnable) @ line=42
+Running transform with redefinition.
+Redefining calling function!
+Setting breakpoint on now obsolete method to line 40
+Breakpoint reached: public void art.Test996$Transform.run(java.lang.Runnable) @ line=40
+Should be after first breakpoint.
+Running transform post redefinition. Should not hit any breakpoints.
+Doing nothing transformed
+Setting initial breakpoint on redefined method.
+Doing nothing transformed
+Breakpoint reached: public void art.Test996$Transform.run(java.lang.Runnable) @ line=8

@@ -1,0 +1,2 @@
+invoke-interface test with hopefully enough interface methods to trigger
+a conflict in our imt table.

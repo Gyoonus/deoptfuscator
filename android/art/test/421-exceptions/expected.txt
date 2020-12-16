@@ -1,0 +1,20 @@
+1
+3
+4
+1
+4
+1
+4
+1
+4
+Caught class java.lang.RuntimeException
+1
+2
+4
+1
+4
+1
+4
+1
+4
+Caught class java.lang.NullPointerException

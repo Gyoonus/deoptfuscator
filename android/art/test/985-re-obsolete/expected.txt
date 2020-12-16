@@ -1,0 +1,35 @@
+Pre Start private method call
+hello - private
+Post Start private method call
+Not doing anything here
+Pre Finish private method call
+goodbye - private
+Post Finish private method call
+Pre Start private method call
+hello - private
+Post Start private method call
+transforming calling function
+Pre Finish private method call
+Goodbye - private - Transformed
+Post Finish private method call
+Pre Start private method call - Transformed
+Hello - private - Transformed
+Post Start private method call - Transformed
+Not doing anything here
+Pre Finish private method call - Transformed
+Goodbye - private - Transformed
+Post Finish private method call - Transformed
+Pre Start private method call - Transformed
+Hello - private - Transformed
+Post Start private method call - Transformed
+transforming calling function
+Pre Finish private method call - Transformed
+second - Goodbye - private - Transformed
+Post Finish private method call - Transformed
+second - Pre Start private method call - Transformed
+second - Hello - private - Transformed
+second - Post Start private method call - Transformed
+Not doing anything here
+second - Pre Finish private method call - Transformed
+second - Goodbye - private - Transformed
+second - Post Finish private method call - Transformed

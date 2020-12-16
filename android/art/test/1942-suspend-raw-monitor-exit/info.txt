@@ -1,0 +1,3 @@
+Tests jvmti suspending of a thread that is interacting with a raw monitor.
+
+Makes sure that the RawMonitorExit function does not act as a suspend point.

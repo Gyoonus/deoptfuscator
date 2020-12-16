@@ -1,0 +1,1 @@
+Test on loop optimizations on induction.

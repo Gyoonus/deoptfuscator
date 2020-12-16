@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+# Copyright (C) 2014 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+flags="${@}"
+
+# This test is supposed to test without oat files, so doesn't work for prebuild. Make sure that
+# flag isn't set, or complain.
+# Note: prebuild is the default.
+if [[ "${flags}" == *--prebuild* || "${flags}" != *--no-prebuild* ]] ; then
+  echo "Test 116-nodex2oat cannot run in prebuild mode."
+  exit 1
+fi
+
+# Make sure we can run without an oat file.
+echo "Run -Xnodex2oat"
+${RUN} ${flags} --runtime-option -Xnodex2oat
+return_status1=$?
+
+# Make sure we can run with the oat file.
+echo "Run -Xdex2oat"
+${RUN} ${flags} --runtime-option -Xdex2oat
+return_status2=$?
+
+# Make sure we can run with the default settings.
+echo "Run default"
+${RUN} ${flags}
+return_status3=$?
+
+# Make sure we don't silently ignore an early failure.
+(exit $return_status1) && (exit $return_status2) && (exit $return_status3)

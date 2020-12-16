@@ -1,0 +1,2 @@
+Tests if we add memory barriers on constructors when needed (i.e when the
+class has final fields).

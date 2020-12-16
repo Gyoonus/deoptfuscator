@@ -1,0 +1,3 @@
+Tests for inspecting live DEX registers. The test must
+also pass for non-debuggable, as we need to know live DEX registers
+when de-opting.

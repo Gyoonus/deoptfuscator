@@ -1,0 +1,1 @@
+Tests class loading and GC running in parallel.

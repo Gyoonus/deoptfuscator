@@ -1,0 +1,3 @@
+Regression test that temp (erroneous) classes don't get conflict tables created.
+
+Obviously needs to run under Dalvik or ART.

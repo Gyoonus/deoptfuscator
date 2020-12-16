@@ -1,0 +1,2 @@
+Tests that IllegalAccessError is thrown when a subclass invokes-direct a
+private method from the super class.

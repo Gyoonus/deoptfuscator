@@ -1,0 +1,32 @@
+boolean: false
+char: h
+short: 56
+int: 72
+long: 2147483689
+float: 0.56
+double: 100.0
+String: hello
+Object: goodbye
+boolean: false
+char: h
+short: 56
+int: 72
+long: 73
+float: 0.56
+double: 100.0
+String: hello
+Object: goodbye
+true
+true
+a
+a
+42
+42
+43
+43
+43.0
+43.0
+43.0
+43.0
+plank
+plank

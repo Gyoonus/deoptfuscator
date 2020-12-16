@@ -1,0 +1,302 @@
+//
+// Copyright (C) 2011 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+art_cc_defaults {
+    name: "libart-dex2oat-defaults",
+    defaults: ["art_defaults"],
+    host_supported: true,
+    srcs: [
+        "linker/elf_writer.cc",
+        "linker/elf_writer_quick.cc",
+        "linker/image_writer.cc",
+        "linker/multi_oat_relative_patcher.cc",
+        "linker/oat_writer.cc",
+    ],
+    target: {
+        android: {
+            // For atrace.
+            shared_libs: ["libcutils"],
+        },
+    },
+    generated_sources: ["art_dex2oat_operator_srcs"],
+    shared_libs: [
+        "libbase",
+        "liblz4",
+        "liblzma",
+    ],
+    include_dirs: [
+        "external/lz4/lib",
+        "external/zlib",
+    ],
+    export_include_dirs: ["."],
+
+    // For SHA-1 checksumming of build ID
+    static: {
+        whole_static_libs: ["libcrypto"],
+    },
+    shared: {
+        shared_libs: ["libcrypto"],
+    },
+}
+
+gensrcs {
+    name: "art_dex2oat_operator_srcs",
+    cmd: "$(location generate_operator_out) art/dex2oat $(in) > $(out)",
+    tools: ["generate_operator_out"],
+    srcs: [
+        "linker/image_writer.h",
+    ],
+    output_extension: "operator_out.cc",
+}
+
+art_cc_static_library {
+    name: "libart-dex2oat",
+    defaults: ["libart-dex2oat-defaults"],
+    shared_libs: [
+        "libart-compiler",
+        "libart-dexlayout",
+        "libart",
+    ],
+}
+
+art_cc_static_library {
+    name: "libartd-dex2oat",
+    defaults: [
+        "art_debug_defaults",
+        "libart-dex2oat-defaults",
+    ],
+    shared_libs: [
+        "libartd-compiler",
+        "libartd-dexlayout",
+        "libartd",
+    ],
+}
+
+cc_library_headers {
+    name: "dex2oat_headers",
+    host_supported: true,
+    export_include_dirs: ["include"],
+}
+
+cc_defaults {
+    name: "dex2oat-defaults",
+    host_supported: true,
+    defaults: ["art_defaults"],
+    srcs: [
+        "dex2oat_options.cc",
+        "dex2oat.cc",
+    ],
+
+    target: {
+        android: {
+            // Use the 32-bit version of dex2oat on devices
+            compile_multilib: "prefer32",
+        },
+    },
+    header_libs: [
+        "dex2oat_headers",
+        "art_cmdlineparser_headers",
+    ],
+}
+
+cc_defaults {
+    name: "dex2oat-pgo-defaults",
+    pgo: {
+        instrumentation: true,
+        benchmarks: ["dex2oat"],
+    },
+    target: {
+        android_arm64: {
+            pgo: {
+                profile_file: "art/dex2oat_arm_arm64.profdata",
+            },
+        },
+        android_arm: {
+            pgo: {
+                profile_file: "art/dex2oat_arm_arm64.profdata",
+            },
+        },
+        android_x86_64: {
+            pgo: {
+                profile_file: "art/dex2oat_x86_x86_64.profdata",
+            },
+        },
+        android_x86: {
+            pgo: {
+                profile_file: "art/dex2oat_x86_x86_64.profdata",
+            },
+        },
+        android_mips64: {
+            pgo: {
+                profile_file: "art/dex2oat_mips_mips64.profdata",
+            },
+        },
+        android_mips: {
+            pgo: {
+                profile_file: "art/dex2oat_mips_mips64.profdata",
+            },
+        },
+    },
+}
+
+art_cc_binary {
+    name: "dex2oat",
+    defaults: [
+        "dex2oat-defaults",
+        "dex2oat-pgo-defaults",
+    ],
+    shared_libs: [
+        "libart-compiler",
+        "libart-dexlayout",
+        "libart",
+        "libdexfile",
+        "libbase",
+        "liblz4",
+        "libsigchain",
+    ],
+    static_libs: [
+        "libart-dex2oat",
+    ],
+
+    pgo: {
+        // Additional cflags just for dex2oat during PGO instrumentation
+        cflags: [
+            // Ignore frame-size increase resulting from instrumentation.
+            "-Wno-frame-larger-than=",
+            "-DART_PGO_INSTRUMENTATION",
+        ],
+    },
+    target: {
+        android: {
+            lto: {
+                 thin: true,
+            },
+        },
+    },
+}
+
+art_cc_binary {
+    name: "dex2oatd",
+    defaults: [
+        "art_debug_defaults",
+        "dex2oat-defaults",
+    ],
+    shared_libs: [
+        "libartd-compiler",
+        "libartd-dexlayout",
+        "libartd",
+        "libdexfiled",
+        "libbase",
+        "liblz4",
+        "libsigchain",
+    ],
+    static_libs: [
+        "libartd-dex2oat",
+    ],
+}
+
+art_cc_binary {
+    name: "dex2oats",
+    device_supported: false,
+    static_executable: true,
+    defaults: ["dex2oat-defaults"],
+    target: {
+        darwin: {
+            enabled: false,
+        },
+    },
+    ldflags: [
+        // We need this because GC stress mode makes use of
+        // _Unwind_GetIP and _Unwind_Backtrace and the symbols are also
+        // defined in libgcc_eh.a(unwind-dw2.o)
+        // TODO: Having this is not ideal as it might obscure errors.
+        // Try to get rid of it.
+        "-z muldefs",
+    ],
+    static_libs: [
+        "libart-dex2oat",
+        "libart-compiler",
+        "libart-dexlayout",
+        "libart",
+        "libdexfile",
+        "libvixl-arm",
+        "libvixl-arm64",
+    ] + art_static_dependencies,
+}
+
+art_cc_binary {
+    name: "dex2oatds",
+    device_supported: false,
+    static_executable: true,
+    defaults: [
+        "art_debug_defaults",
+        "dex2oat-defaults",
+    ],
+    target: {
+        darwin: {
+            enabled: false,
+        },
+    },
+    ldflags: [
+        // We need this because GC stress mode makes use of
+        // _Unwind_GetIP and _Unwind_Backtrace and the symbols are also
+        // defined in libgcc_eh.a(unwind-dw2.o)
+        // TODO: Having this is not ideal as it might obscure errors.
+        // Try to get rid of it.
+        "-z muldefs",
+    ],
+    static_libs: [
+        "libartd-dex2oat",
+        "libartd-compiler",
+        "libartd-dexlayout",
+        "libartd",
+        "libdexfiled",
+        "libvixld-arm",
+        "libvixld-arm64",
+    ] + art_static_dependencies,
+}
+
+art_cc_test {
+    name: "art_dex2oat_tests",
+    defaults: [
+        "art_gtest_defaults",
+    ],
+    srcs: [
+        "dex2oat_test.cc",
+        "dex2oat_image_test.cc",
+        "linker/elf_writer_test.cc",
+        "linker/image_test.cc",
+        "linker/image_write_read_test.cc",
+        "linker/index_bss_mapping_encoder_test.cc",
+        "linker/multi_oat_relative_patcher_test.cc",
+        "linker/oat_writer_test.cc",
+    ],
+    header_libs: ["dex2oat_headers"],
+    include_dirs: [
+        "external/zlib",
+    ],
+    shared_libs: [
+        "libartd-compiler",
+        "libartd-dexlayout",
+        "libbase",
+        "liblz4",
+        "libsigchain",
+        "libziparchive",
+    ],
+    static_libs: [
+        "libartd-dex2oat",
+    ],
+}

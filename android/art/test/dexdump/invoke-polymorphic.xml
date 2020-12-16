@@ -1,0 +1,33 @@
+<api>
+<package name=""
+>
+<class name="Main"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="Main"
+ type="Main"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="main"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+</class>
+</package>
+</api>

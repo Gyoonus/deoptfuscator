@@ -1,0 +1,3 @@
+Regression test for intrinsics on x86, which used to wrongly assume
+a HInvokeStaticOrDirect must have a special input (does not apply for irreducible
+loops).

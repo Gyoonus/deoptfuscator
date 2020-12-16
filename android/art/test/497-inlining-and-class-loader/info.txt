@@ -1,0 +1,2 @@
+Regression test for optimizing to ensure it is using
+the correct class loader when walking inlined frames.

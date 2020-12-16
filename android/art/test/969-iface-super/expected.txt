@@ -1,0 +1,47 @@
+Testing for type A
+A-virtual           A.SayHi()='Hello '
+A-interface     Iface.SayHi()='Hello '
+End testing for type A
+Testing for type B
+B-virtual           B.SayHi()='Hello Hello '
+B-interface     Iface.SayHi()='Hello Hello '
+B-interface    Iface2.SayHi()='Hello Hello '
+End testing for type B
+Testing for type C
+C-virtual           C.SayHi()='Hello  and welcome '
+C-interface     Iface.SayHi()='Hello  and welcome '
+End testing for type C
+Testing for type D
+D-virtual           D.SayHi()='Hello Hello  and welcome '
+D-interface     Iface.SayHi()='Hello Hello  and welcome '
+D-interface    Iface2.SayHi()='Hello Hello  and welcome '
+End testing for type D
+Testing for type E
+E-virtual           E.SayHi()='Hello  there!'
+E-interface     Iface.SayHi()='Hello  there!'
+E-interface    Iface3.SayHi()='Hello  there!'
+End testing for type E
+Testing for type F
+F-virtual           E.SayHi()='Hello  there!'
+F-virtual           F.SayHi()='Hello  there!'
+F-interface     Iface.SayHi()='Hello  there!'
+F-interface    Iface3.SayHi()='Hello  there!'
+F-virtual           F.SaySurprisedHi()='Hello  there!!'
+End testing for type F
+Testing for type G
+G-virtual           E.SayHi()='Hello  there!?'
+G-virtual           F.SayHi()='Hello  there!?'
+G-virtual           G.SayHi()='Hello  there!?'
+G-interface     Iface.SayHi()='Hello  there!?'
+G-interface    Iface3.SayHi()='Hello  there!?'
+G-virtual           F.SaySurprisedHi()='Hello  there!!'
+G-virtual           G.SaySurprisedHi()='Hello  there!!'
+G-virtual           G.SayVerySurprisedHi()='Hello  there!!!'
+End testing for type G
+Testing for type H
+H-virtual           H.SayConfusedHi()='Hello ?!'
+H-virtual           A.SayHi()='Hello ?'
+H-virtual           H.SayHi()='Hello ?'
+H-interface     Iface.SayHi()='Hello ?'
+H-virtual           H.SaySurprisedHi()='Hello !'
+End testing for type H

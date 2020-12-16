@@ -1,0 +1,1 @@
+Regression test for optimizing that used assume that array types are always exact.

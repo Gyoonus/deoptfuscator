@@ -1,0 +1,132 @@
+// Copyright (C) 2016 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+art_cc_defaults {
+    name: "libart-dexlayout-defaults",
+    defaults: ["art_defaults"],
+    host_supported: true,
+    srcs: [
+        "compact_dex_writer.cc",
+        "dexlayout.cc",
+        "dex_ir.cc",
+        "dex_ir_builder.cc",
+        "dex_verify.cc",
+        "dex_visualize.cc",
+        "dex_writer.cc",
+    ],
+    export_include_dirs: ["."],
+    shared_libs: [
+        "libbase",
+    ],
+    static_libs: ["libz"],
+}
+
+art_cc_library {
+    name: "libart-dexlayout",
+    defaults: [
+        "libart-dexlayout-defaults",
+        "dex2oat-pgo-defaults",
+    ],
+    shared_libs: [
+        "libart",
+        "libdexfile",
+    ],
+
+    target: {
+        android: {
+            lto: {
+                 thin: true,
+            },
+        },
+    },
+}
+
+art_cc_library {
+    name: "libartd-dexlayout",
+    defaults: [
+      "libart-dexlayout-defaults",
+      "art_debug_defaults",
+    ],
+    shared_libs: [
+        "libartd",
+        "libdexfiled",
+    ],
+}
+
+cc_defaults {
+    name: "dexlayout-defaults",
+    defaults: ["art_defaults"],
+    host_supported: true,
+    srcs: ["dexlayout_main.cc"],
+    shared_libs: [
+        "libbase",
+    ],
+}
+
+art_cc_binary {
+    name: "dexlayout",
+    defaults: ["dexlayout-defaults"],
+    shared_libs: [
+        "libart",
+        "libart-dexlayout",
+    ],
+}
+
+art_cc_binary {
+    name: "dexlayoutd",
+    defaults: [
+        "art_debug_defaults",
+        "dexlayout-defaults",
+    ],
+    shared_libs: [
+        "libartd",
+        "libartd-dexlayout",
+    ],
+}
+
+art_cc_test {
+    name: "art_dexlayout_tests",
+    defaults: ["art_gtest_defaults"],
+    shared_libs: ["libart-dexlayout"],
+    srcs: ["dexlayout_test.cc"],
+}
+
+art_cc_binary {
+    name: "dexdiag",
+    defaults: ["art_defaults"],
+    host_supported: true,
+    srcs: ["dexdiag.cc"],
+    cflags: ["-Wall"],
+    shared_libs: [
+        "libart",
+        "libart-dexlayout",
+        "libbase",
+    ],
+    target: {
+        android: {
+            shared_libs: [
+                "libpagemap",
+            ],
+        },
+    },
+}
+
+art_cc_test {
+    name: "art_dexdiag_tests",
+    host_supported: true,
+    defaults: [
+        "art_gtest_defaults",
+    ],
+    srcs: ["dexdiag_test.cc"],
+}

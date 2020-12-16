@@ -1,0 +1,23 @@
+The situations in these tests were discovered by running the mutating
+dexfuzz on the DEX files of fuzzingly random generated Java test.
+
+(A) b/28908555:
+    soft verification failure (on the final field modification) should
+    not hide the hard verification failure (on the type mismatch) to
+    avoid compiler crash later on
+(B) b/29070461:
+    hard verification failure (not calling super in constructor) should
+    bail immediately and not allow soft verification failures to pile up
+    behind it to avoid fatal message later on
+(C) b/29068831:
+    access validation on field should occur prior to null reference check
+(D) b/29126870:
+    soft verification failure (cannot access) should not hide the hard
+    verification failure (non-reference type) to avoid a compiler crash
+    later on
+(E) b/29068831:
+    access validation on method should occur prior to null reference check
+(F) b/29758098:
+    new-instance of java.lang.Class should throw an IllegalAccessError to
+    avoid interpreter crash on zero size object later
+

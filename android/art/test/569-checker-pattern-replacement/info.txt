@@ -1,0 +1,1 @@
+Test pattern substitution used when we cannot inline.

@@ -1,0 +1,2 @@
+Test that compilers don't crash when having to compile
+an interface method.

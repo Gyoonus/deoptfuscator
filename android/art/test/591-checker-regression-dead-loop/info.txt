@@ -1,0 +1,2 @@
+Regression test for Optimizing's dead block elimination which used to remove
+dependencies in the wrong order.

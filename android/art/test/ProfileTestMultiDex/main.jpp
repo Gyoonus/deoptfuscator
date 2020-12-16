@@ -1,0 +1,21 @@
+Main:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Main
+TestInqline:
+  @@com.android.jack.annotations.ForceInMainDex
+  class TestInline
+Super:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Super
+SubA:
+  @@com.android.jack.annotations.ForceInMainDex
+  class SubA
+SubB:
+  @@com.android.jack.annotations.ForceInMainDex
+  class SubB
+SubD:
+  @@com.android.jack.annotations.ForceInMainDex
+  class SubD
+SubE:
+  @@com.android.jack.annotations.ForceInMainDex
+  class SubE

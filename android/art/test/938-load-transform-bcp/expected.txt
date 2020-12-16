@@ -1,0 +1,2 @@
+ol.foo() -> 'This is foo for val=123'
+ol.toString() -> 'This is toString() for val=123'

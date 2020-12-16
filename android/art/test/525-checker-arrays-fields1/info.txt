@@ -1,0 +1,1 @@
+Test on (in)variant static field and array references in loops.

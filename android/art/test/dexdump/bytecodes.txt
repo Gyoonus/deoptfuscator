@@ -1,0 +1,1852 @@
+Processing 'bytecodes.dex'...
+Opened 'bytecodes.dex', DEX version '035'
+DEX file header:
+magic               : 'dex\n035\0'
+checksum            : 7d869259
+signature           : 6fb7...9cc4
+file_size           : 10288
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 153
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 42
+type_ids_off        : 724 (0x0002d4)
+proto_ids_size      : 12
+proto_ids_off       : 892 (0x00037c)
+field_ids_size      : 40
+field_ids_off       : 1036 (0x00040c)
+method_ids_size     : 28
+method_ids_off      : 1356 (0x00054c)
+class_defs_size     : 7
+class_defs_off      : 1580 (0x00062c)
+data_size           : 8464
+data_off            : 1824 (0x000720)
+
+Class #0 header:
+class_idx           : 6
+access_flags        : 9729 (0x2601)
+superclass_idx      : 20
+interfaces_off      : 2116 (0x000844)
+source_file_idx     : 46
+annotations_off     : 10256 (0x002810)
+class_data_off      : 2188 (0x00088c)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 0
+virtual_methods_size: 1
+
+Class #0 annotations:
+Annotations on class
+  VISIBILITY_RUNTIME Ljava/lang/annotation/Retention; value=CLASS
+  VISIBILITY_RUNTIME Ljava/lang/annotation/Target; value={ TYPE FIELD METHOD PARAMETER CONSTRUCTOR LOCAL_VARIABLE }
+
+Class #0            -
+  Class descriptor  : 'Landroid/annotation/SuppressLint;'
+  Access flags      : 0x2601 (PUBLIC INTERFACE ABSTRACT ANNOTATION)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/annotation/Annotation;'
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+  Virtual methods   -
+    #0              : (in Landroid/annotation/SuppressLint;)
+      name          : 'value'
+      type          : '()[Ljava/lang/String;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+  source_file_idx   : 46 (SuppressLint.java)
+
+Class #1 header:
+class_idx           : 7
+access_flags        : 9729 (0x2601)
+superclass_idx      : 20
+interfaces_off      : 2116 (0x000844)
+source_file_idx     : 48
+annotations_off     : 10272 (0x002820)
+class_data_off      : 2196 (0x000894)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 0
+virtual_methods_size: 1
+
+Class #1 annotations:
+Annotations on class
+  VISIBILITY_RUNTIME Ljava/lang/annotation/Retention; value=CLASS
+  VISIBILITY_RUNTIME Ljava/lang/annotation/Target; value={ TYPE METHOD CONSTRUCTOR }
+
+Class #1            -
+  Class descriptor  : 'Landroid/annotation/TargetApi;'
+  Access flags      : 0x2601 (PUBLIC INTERFACE ABSTRACT ANNOTATION)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/annotation/Annotation;'
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+  Virtual methods   -
+    #0              : (in Landroid/annotation/TargetApi;)
+      name          : 'value'
+      type          : '()I'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+  source_file_idx   : 48 (TargetApi.java)
+
+Class #2 header:
+class_idx           : 9
+access_flags        : 17 (0x0011)
+superclass_idx      : 20
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 3
+annotations_off     : 0 (0x000000)
+class_data_off      : 2204 (0x00089c)
+static_fields_size  : 1
+instance_fields_size: 0
+direct_methods_size : 1
+virtual_methods_size: 0
+
+Class #2            -
+  Class descriptor  : 'Lcom/google/android/test/BuildConfig;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/google/android/test/BuildConfig;)
+      name          : 'DEBUG'
+      type          : 'Z'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/google/android/test/BuildConfig;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+000990:                                        |[000990] com.google.android.test.BuildConfig.<init>:()V
+0009a0: 7010 1900 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0019
+0009a6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=4
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Lcom/google/android/test/BuildConfig; 
+
+  Virtual methods   -
+  source_file_idx   : 3 (BuildConfig.java)
+
+Class #3 header:
+class_idx           : 10
+access_flags        : 17 (0x0011)
+superclass_idx      : 20
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 44
+annotations_off     : 10184 (0x0027c8)
+class_data_off      : 2216 (0x0008a8)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 1
+virtual_methods_size: 0
+
+Class #3 annotations:
+Annotations on class
+  VISIBILITY_SYSTEM Ldalvik/annotation/EnclosingClass; value=Lcom/google/android/test/R;
+  VISIBILITY_SYSTEM Ldalvik/annotation/InnerClass; accessFlags=25 name="attr"
+
+Class #3            -
+  Class descriptor  : 'Lcom/google/android/test/R$attr;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/google/android/test/R$attr;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0009a8:                                        |[0009a8] com.google.android.test.R.attr.<init>:()V
+0009b8: 7010 1900 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0019
+0009be: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=11
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Lcom/google/android/test/R$attr; 
+
+  Virtual methods   -
+  source_file_idx   : 44 (R.java)
+
+Class #4 header:
+class_idx           : 11
+access_flags        : 17 (0x0011)
+superclass_idx      : 20
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 44
+annotations_off     : 10200 (0x0027d8)
+class_data_off      : 2226 (0x0008b2)
+static_fields_size  : 1
+instance_fields_size: 0
+direct_methods_size : 1
+virtual_methods_size: 0
+
+Class #4 annotations:
+Annotations on class
+  VISIBILITY_SYSTEM Ldalvik/annotation/EnclosingClass; value=Lcom/google/android/test/R;
+  VISIBILITY_SYSTEM Ldalvik/annotation/InnerClass; accessFlags=25 name="drawable"
+
+Class #4            -
+  Class descriptor  : 'Lcom/google/android/test/R$drawable;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/google/android/test/R$drawable;)
+      name          : 'icon'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837504
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/google/android/test/R$drawable;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0009c0:                                        |[0009c0] com.google.android.test.R.drawable.<init>:()V
+0009d0: 7010 1900 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0019
+0009d6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=13
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Lcom/google/android/test/R$drawable; 
+
+  Virtual methods   -
+  source_file_idx   : 44 (R.java)
+
+Class #5 header:
+class_idx           : 12
+access_flags        : 17 (0x0011)
+superclass_idx      : 20
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 44
+annotations_off     : 10216 (0x0027e8)
+class_data_off      : 2238 (0x0008be)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 1
+virtual_methods_size: 0
+
+Class #5 annotations:
+Annotations on class
+  VISIBILITY_SYSTEM Ldalvik/annotation/MemberClasses; value={ Lcom/google/android/test/R$attr; Lcom/google/android/test/R$drawable; }
+
+Class #5            -
+  Class descriptor  : 'Lcom/google/android/test/R;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/google/android/test/R;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0009d8:                                        |[0009d8] com.google.android.test.R.<init>:()V
+0009e8: 7010 1900 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0019
+0009ee: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=10
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Lcom/google/android/test/R; 
+
+  Virtual methods   -
+  source_file_idx   : 44 (R.java)
+
+Class #6 header:
+class_idx           : 13
+access_flags        : 1 (0x0001)
+superclass_idx      : 8
+interfaces_off      : 2100 (0x000834)
+source_file_idx     : 49
+annotations_off     : 10232 (0x0027f8)
+class_data_off      : 2248 (0x0008c8)
+static_fields_size  : 10
+instance_fields_size: 20
+direct_methods_size : 13
+virtual_methods_size: 2
+
+Class #6 annotations:
+Annotations on method #13 'doit'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Exception; }
+
+Class #6            -
+  Class descriptor  : 'Lcom/google/android/test/Test;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Landroid/app/Activity;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+    #0              : (in Lcom/google/android/test/Test;)
+      name          : 'sArray'
+      type          : '[I'
+      access        : 0x000a (PRIVATE STATIC)
+    #1              : (in Lcom/google/android/test/Test;)
+      name          : 'sB'
+      type          : 'B'
+      access        : 0x000a (PRIVATE STATIC)
+    #2              : (in Lcom/google/android/test/Test;)
+      name          : 'sBool'
+      type          : 'Z'
+      access        : 0x000a (PRIVATE STATIC)
+    #3              : (in Lcom/google/android/test/Test;)
+      name          : 'sC'
+      type          : 'C'
+      access        : 0x000a (PRIVATE STATIC)
+    #4              : (in Lcom/google/android/test/Test;)
+      name          : 'sD'
+      type          : 'D'
+      access        : 0x000a (PRIVATE STATIC)
+    #5              : (in Lcom/google/android/test/Test;)
+      name          : 'sF'
+      type          : 'F'
+      access        : 0x000a (PRIVATE STATIC)
+    #6              : (in Lcom/google/android/test/Test;)
+      name          : 'sI'
+      type          : 'I'
+      access        : 0x000a (PRIVATE STATIC)
+    #7              : (in Lcom/google/android/test/Test;)
+      name          : 'sL'
+      type          : 'J'
+      access        : 0x000a (PRIVATE STATIC)
+    #8              : (in Lcom/google/android/test/Test;)
+      name          : 'sO'
+      type          : 'Ljava/lang/Object;'
+      access        : 0x000a (PRIVATE STATIC)
+    #9              : (in Lcom/google/android/test/Test;)
+      name          : 'sS'
+      type          : 'S'
+      access        : 0x000a (PRIVATE STATIC)
+  Instance fields   -
+    #0              : (in Lcom/google/android/test/Test;)
+      name          : 'aBool'
+      type          : '[Z'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/google/android/test/Test;)
+      name          : 'aByte'
+      type          : '[B'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/google/android/test/Test;)
+      name          : 'aChar'
+      type          : '[C'
+      access        : 0x0002 (PRIVATE)
+    #3              : (in Lcom/google/android/test/Test;)
+      name          : 'aDouble'
+      type          : '[D'
+      access        : 0x0002 (PRIVATE)
+    #4              : (in Lcom/google/android/test/Test;)
+      name          : 'aFloat'
+      type          : '[F'
+      access        : 0x0002 (PRIVATE)
+    #5              : (in Lcom/google/android/test/Test;)
+      name          : 'aInt'
+      type          : '[I'
+      access        : 0x0002 (PRIVATE)
+    #6              : (in Lcom/google/android/test/Test;)
+      name          : 'aLong'
+      type          : '[J'
+      access        : 0x0002 (PRIVATE)
+    #7              : (in Lcom/google/android/test/Test;)
+      name          : 'aObject'
+      type          : '[Ljava/lang/Object;'
+      access        : 0x0002 (PRIVATE)
+    #8              : (in Lcom/google/android/test/Test;)
+      name          : 'aShort'
+      type          : '[S'
+      access        : 0x0002 (PRIVATE)
+    #9              : (in Lcom/google/android/test/Test;)
+      name          : 'mArray'
+      type          : '[I'
+      access        : 0x0002 (PRIVATE)
+    #10              : (in Lcom/google/android/test/Test;)
+      name          : 'mB'
+      type          : 'B'
+      access        : 0x0002 (PRIVATE)
+    #11              : (in Lcom/google/android/test/Test;)
+      name          : 'mBool'
+      type          : 'Z'
+      access        : 0x0002 (PRIVATE)
+    #12              : (in Lcom/google/android/test/Test;)
+      name          : 'mC'
+      type          : 'C'
+      access        : 0x0002 (PRIVATE)
+    #13              : (in Lcom/google/android/test/Test;)
+      name          : 'mD'
+      type          : 'D'
+      access        : 0x0002 (PRIVATE)
+    #14              : (in Lcom/google/android/test/Test;)
+      name          : 'mF'
+      type          : 'F'
+      access        : 0x0002 (PRIVATE)
+    #15              : (in Lcom/google/android/test/Test;)
+      name          : 'mI'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+    #16              : (in Lcom/google/android/test/Test;)
+      name          : 'mL'
+      type          : 'J'
+      access        : 0x0002 (PRIVATE)
+    #17              : (in Lcom/google/android/test/Test;)
+      name          : 'mO'
+      type          : 'Ljava/lang/Object;'
+      access        : 0x0002 (PRIVATE)
+    #18              : (in Lcom/google/android/test/Test;)
+      name          : 'mRunner'
+      type          : 'Ljava/lang/Runnable;'
+      access        : 0x0002 (PRIVATE)
+    #19              : (in Lcom/google/android/test/Test;)
+      name          : 'mS'
+      type          : 'S'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/google/android/test/Test;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 74 16-bit code units
+0009f0:                                        |[0009f0] com.google.android.test.Test.<clinit>:()V
+000a00: 1200                                   |0000: const/4 v0, #int 0 // #0
+000a02: 6a00 1800                              |0001: sput-boolean v0, Lcom/google/android/test/Test;.sBool:Z // field@0018
+000a06: 1300 1f00                              |0003: const/16 v0, #int 31 // #1f
+000a0a: 6b00 1700                              |0005: sput-byte v0, Lcom/google/android/test/Test;.sB:B // field@0017
+000a0e: 1400 ffff 0000                         |0007: const v0, #float 9.18341e-41 // #0000ffff
+000a14: 6c00 1900                              |000a: sput-char v0, Lcom/google/android/test/Test;.sC:C // field@0019
+000a18: 1300 3412                              |000c: const/16 v0, #int 4660 // #1234
+000a1c: 6d00 1f00                              |000e: sput-short v0, Lcom/google/android/test/Test;.sS:S // field@001f
+000a20: 1400 7856 3412                         |0010: const v0, #float 5.69046e-28 // #12345678
+000a26: 6700 1c00                              |0013: sput v0, Lcom/google/android/test/Test;.sI:I // field@001c
+000a2a: 1800 ffff cdab 7956 3412               |0015: const-wide v0, #double 5.62635e-221 // #12345679abcdffff
+000a34: 6800 1d00                              |001a: sput-wide v0, Lcom/google/android/test/Test;.sL:J // field@001d
+000a38: 1400 00e4 4046                         |001c: const v0, #float 12345 // #4640e400
+000a3e: 6700 1b00                              |001f: sput v0, Lcom/google/android/test/Test;.sF:F // field@001b
+000a42: 1800 0000 0000 801c c840               |0021: const-wide v0, #double 12345 // #40c81c8000000000
+000a4c: 6800 1a00                              |0026: sput-wide v0, Lcom/google/android/test/Test;.sD:D // field@001a
+000a50: 1200                                   |0028: const/4 v0, #int 0 // #0
+000a52: 6900 1e00                              |0029: sput-object v0, Lcom/google/android/test/Test;.sO:Ljava/lang/Object; // field@001e
+000a56: 1300 0800                              |002b: const/16 v0, #int 8 // #8
+000a5a: 2300 2400                              |002d: new-array v0, v0, [I // type@0024
+000a5e: 2600 0700 0000                         |002f: fill-array-data v0, 00000036 // +00000007
+000a64: 6900 1600                              |0032: sput-object v0, Lcom/google/android/test/Test;.sArray:[I // field@0016
+000a68: 0e00                                   |0034: return-void
+000a6a: 0000                                   |0035: nop // spacer
+000a6c: 0003 0400 0800 0000 0100 0000 0200 ... |0036: array-data (20 units)
+      catches       : (none)
+      positions     : 
+        0x0000 line=7
+        0x0003 line=8
+        0x0007 line=9
+        0x000c line=10
+        0x0010 line=11
+        0x0015 line=12
+        0x001c line=13
+        0x0021 line=14
+        0x0028 line=15
+        0x002b line=16
+      locals        : 
+
+    #1              : (in Lcom/google/android/test/Test;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 9
+      ins           : 1
+      outs          : 2
+      insns size    : 234 16-bit code units
+000a94:                                        |[000a94] com.google.android.test.Test.<init>:()V
+000aa4: 1606 0000                              |0000: const-wide/16 v6, #int 0 // #0
+000aa8: 1215                                   |0002: const/4 v5, #int 1 // #1
+000aaa: 1224                                   |0003: const/4 v4, #int 2 // #2
+000aac: 7010 0200 0800                         |0004: invoke-direct {v8}, Landroid/app/Activity;.<init>:()V // method@0002
+000ab2: 1201                                   |0007: const/4 v1, #int 0 // #0
+000ab4: 5c81 0d00                              |0008: iput-boolean v1, v8, Lcom/google/android/test/Test;.mBool:Z // field@000d
+000ab8: 1301 1f00                              |000a: const/16 v1, #int 31 // #1f
+000abc: 5d81 0c00                              |000c: iput-byte v1, v8, Lcom/google/android/test/Test;.mB:B // field@000c
+000ac0: 1401 ffff 0000                         |000e: const v1, #float 9.18341e-41 // #0000ffff
+000ac6: 5e81 0e00                              |0011: iput-char v1, v8, Lcom/google/android/test/Test;.mC:C // field@000e
+000aca: 1301 3412                              |0013: const/16 v1, #int 4660 // #1234
+000ace: 5f81 1500                              |0015: iput-short v1, v8, Lcom/google/android/test/Test;.mS:S // field@0015
+000ad2: 1401 7856 3412                         |0017: const v1, #float 5.69046e-28 // #12345678
+000ad8: 5981 1100                              |001a: iput v1, v8, Lcom/google/android/test/Test;.mI:I // field@0011
+000adc: 1802 ffff cdab 7956 3412               |001c: const-wide v2, #double 5.62635e-221 // #12345679abcdffff
+000ae6: 5a82 1200                              |0021: iput-wide v2, v8, Lcom/google/android/test/Test;.mL:J // field@0012
+000aea: 1401 00e4 4046                         |0023: const v1, #float 12345 // #4640e400
+000af0: 5981 1000                              |0026: iput v1, v8, Lcom/google/android/test/Test;.mF:F // field@0010
+000af4: 1802 0000 0000 801c c840               |0028: const-wide v2, #double 12345 // #40c81c8000000000
+000afe: 5a82 0f00                              |002d: iput-wide v2, v8, Lcom/google/android/test/Test;.mD:D // field@000f
+000b02: 1201                                   |002f: const/4 v1, #int 0 // #0
+000b04: 5b81 1300                              |0030: iput-object v1, v8, Lcom/google/android/test/Test;.mO:Ljava/lang/Object; // field@0013
+000b08: 1241                                   |0032: const/4 v1, #int 4 // #4
+000b0a: 2311 2400                              |0033: new-array v1, v1, [I // type@0024
+000b0e: 2601 7500 0000                         |0035: fill-array-data v1, 000000aa // +00000075
+000b14: 5b81 0b00                              |0038: iput-object v1, v8, Lcom/google/android/test/Test;.mArray:[I // field@000b
+000b18: 2341 2900                              |003a: new-array v1, v4, [Z // type@0029
+000b1c: 4e05 0105                              |003c: aput-boolean v5, v1, v5
+000b20: 5b81 0200                              |003e: iput-object v1, v8, Lcom/google/android/test/Test;.aBool:[Z // field@0002
+000b24: 2341 2000                              |0040: new-array v1, v4, [B // type@0020
+000b28: 2601 7400 0000                         |0042: fill-array-data v1, 000000b6 // +00000074
+000b2e: 5b81 0300                              |0045: iput-object v1, v8, Lcom/google/android/test/Test;.aByte:[B // field@0003
+000b32: 2341 2100                              |0047: new-array v1, v4, [C // type@0021
+000b36: 2601 7300 0000                         |0049: fill-array-data v1, 000000bc // +00000073
+000b3c: 5b81 0400                              |004c: iput-object v1, v8, Lcom/google/android/test/Test;.aChar:[C // field@0004
+000b40: 2341 2800                              |004e: new-array v1, v4, [S // type@0028
+000b44: 5b81 0a00                              |0050: iput-object v1, v8, Lcom/google/android/test/Test;.aShort:[S // field@000a
+000b48: 2341 2400                              |0052: new-array v1, v4, [I // type@0024
+000b4c: 2601 6e00 0000                         |0054: fill-array-data v1, 000000c2 // +0000006e
+000b52: 5b81 0700                              |0057: iput-object v1, v8, Lcom/google/android/test/Test;.aInt:[I // field@0007
+000b56: 2341 2500                              |0059: new-array v1, v4, [J // type@0025
+000b5a: 2601 6f00 0000                         |005b: fill-array-data v1, 000000ca // +0000006f
+000b60: 5b81 0800                              |005e: iput-object v1, v8, Lcom/google/android/test/Test;.aLong:[J // field@0008
+000b64: 2341 2300                              |0060: new-array v1, v4, [F // type@0023
+000b68: 2601 7400 0000                         |0062: fill-array-data v1, 000000d6 // +00000074
+000b6e: 5b81 0600                              |0065: iput-object v1, v8, Lcom/google/android/test/Test;.aFloat:[F // field@0006
+000b72: 2341 2200                              |0067: new-array v1, v4, [D // type@0022
+000b76: 2601 7500 0000                         |0069: fill-array-data v1, 000000de // +00000075
+000b7c: 5b81 0500                              |006c: iput-object v1, v8, Lcom/google/android/test/Test;.aDouble:[D // field@0005
+000b80: 2341 2600                              |006e: new-array v1, v4, [Ljava/lang/Object; // type@0026
+000b84: 2202 1400                              |0070: new-instance v2, Ljava/lang/Object; // type@0014
+000b88: 7010 1900 0200                         |0072: invoke-direct {v2}, Ljava/lang/Object;.<init>:()V // method@0019
+000b8e: 4d02 0105                              |0075: aput-object v2, v1, v5
+000b92: 5b81 0900                              |0077: iput-object v1, v8, Lcom/google/android/test/Test;.aObject:[Ljava/lang/Object; // field@0009
+000b96: 1231                                   |0079: const/4 v1, #int 3 // #3
+000b98: 7020 0d00 1800                         |007a: invoke-direct {v8, v1}, Lcom/google/android/test/Test;.doit:(I)V // method@000d
+000b9e: 5a86 1200                              |007d: iput-wide v6, v8, Lcom/google/android/test/Test;.mL:J // field@0012
+000ba2: 7020 0a00 8800                         |007f: invoke-direct {v8, v8}, Lcom/google/android/test/Test;.add:(Ljava/lang/Object;)Ljava/lang/Object; // method@000a
+000ba8: 0c01                                   |0082: move-result-object v1
+000baa: 5b81 1300                              |0083: iput-object v1, v8, Lcom/google/android/test/Test;.mO:Ljava/lang/Object; // field@0013
+000bae: 7110 0b00 0800                         |0085: invoke-static {v8}, Lcom/google/android/test/Test;.adds:(Ljava/lang/Object;)Ljava/lang/Object; // method@000b
+000bb4: 0c01                                   |0088: move-result-object v1
+000bb6: 6901 1e00                              |0089: sput-object v1, Lcom/google/android/test/Test;.sO:Ljava/lang/Object; // field@001e
+000bba: 7010 0c00 0800                         |008b: invoke-direct {v8}, Lcom/google/android/test/Test;.copies:()V // method@000c
+000bc0: 7010 1600 0800                         |008e: invoke-direct {v8}, Lcom/google/android/test/Test;.seta:()V // method@0016
+000bc6: 7010 0e00 0800                         |0091: invoke-direct {v8}, Lcom/google/android/test/Test;.geta:()Z // method@000e
+000bcc: 0a01                                   |0094: move-result v1
+000bce: 3801 0900                              |0095: if-eqz v1, 009e // +0009
+000bd2: 6201 2000                              |0097: sget-object v1, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0020
+000bd6: 1a02 7600                              |0099: const-string v2, "ok then" // string@0076
+000bda: 6e20 1700 2100                         |009b: invoke-virtual {v1, v2}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0017
+000be0: 0e00                                   |009e: return-void
+000be2: 0d00                                   |009f: move-exception v0
+000be4: 1251                                   |00a0: const/4 v1, #int 5 // #5
+000be6: 5981 1100                              |00a1: iput v1, v8, Lcom/google/android/test/Test;.mI:I // field@0011
+000bea: 5a86 1200                              |00a3: iput-wide v6, v8, Lcom/google/android/test/Test;.mL:J // field@0012
+000bee: 28da                                   |00a5: goto 007f // -0026
+000bf0: 0d01                                   |00a6: move-exception v1
+000bf2: 5a86 1200                              |00a7: iput-wide v6, v8, Lcom/google/android/test/Test;.mL:J // field@0012
+000bf6: 2701                                   |00a9: throw v1
+000bf8: 0003 0400 0400 0000 0100 0000 0200 ... |00aa: array-data (12 units)
+000c10: 0003 0100 0200 0000 0102               |00b6: array-data (5 units)
+000c1a: 0000                                   |00bb: nop // spacer
+000c1c: 0003 0200 0200 0000 6100 6200          |00bc: array-data (6 units)
+000c28: 0003 0400 0200 0000 0100 0000 0200 ... |00c2: array-data (8 units)
+000c38: 0003 0800 0200 0000 0100 0000 0000 ... |00ca: array-data (12 units)
+000c50: 0003 0400 0200 0000 0000 803f 0000 ... |00d6: array-data (8 units)
+000c60: 0003 0800 0200 0000 0000 0000 0000 ... |00de: array-data (12 units)
+      catches       : 2
+        0x007a - 0x007d
+          Ljava/lang/Exception; -> 0x009f
+          <any> -> 0x00a6
+        0x00a1 - 0x00a3
+          <any> -> 0x00a6
+      positions     : 
+        0x0004 line=43
+        0x0007 line=18
+        0x000a line=19
+        0x000e line=20
+        0x0013 line=21
+        0x0017 line=22
+        0x001c line=23
+        0x0023 line=24
+        0x0028 line=25
+        0x002f line=26
+        0x0032 line=27
+        0x003a line=31
+        0x0040 line=32
+        0x0047 line=33
+        0x004e line=34
+        0x0052 line=35
+        0x0059 line=36
+        0x0060 line=37
+        0x0067 line=38
+        0x006e line=39
+        0x0079 line=45
+        0x007d line=49
+        0x007f line=51
+        0x0085 line=52
+        0x008b line=53
+        0x008e line=54
+        0x0091 line=55
+        0x0097 line=56
+        0x009e line=57
+        0x009f line=46
+        0x00a0 line=47
+        0x00a3 line=49
+        0x00a6 line=48
+        0x00a7 line=49
+        0x00a9 line=50
+        0x00aa line=27
+        0x00b6 line=32
+        0x00bb line=33
+        0x00c2 line=35
+        0x00ca line=36
+        0x00d6 line=37
+        0x00de line=38
+      locals        : 
+        0x00a0 - 0x00a6 reg=0 e Ljava/lang/Exception; 
+        0x0000 - 0x00ea reg=8 this Lcom/google/android/test/Test; 
+
+    #2              : (in Lcom/google/android/test/Test;)
+      name          : 'add'
+      type          : '(Ljava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x20002 (PRIVATE DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 13
+      ins           : 2
+      outs          : 0
+      insns size    : 239 16-bit code units
+000c94:                                        |[000c94] com.google.android.test.Test.add:(Ljava/lang/Object;)Ljava/lang/Object;
+000ca4: 150a 8040                              |0000: const/high16 v10, #int 1082130432 // #4080
+000ca8: 1908 1040                              |0002: const-wide/high16 v8, #long 4616189618054758400 // #4010
+000cac: 1d0b                                   |0004: monitor-enter v11
+000cae: 5bbc 1300                              |0005: iput-object v12, v11, Lcom/google/android/test/Test;.mO:Ljava/lang/Object; // field@0013
+000cb2: 55b0 0d00                              |0007: iget-boolean v0, v11, Lcom/google/android/test/Test;.mBool:Z // field@000d
+000cb6: de00 0000                              |0009: or-int/lit8 v0, v0, #int 0 // #00
+000cba: 5cb0 0d00                              |000b: iput-boolean v0, v11, Lcom/google/android/test/Test;.mBool:Z // field@000d
+000cbe: 56b0 0c00                              |000d: iget-byte v0, v11, Lcom/google/android/test/Test;.mB:B // field@000c
+000cc2: d800 001f                              |000f: add-int/lit8 v0, v0, #int 31 // #1f
+000cc6: 8d00                                   |0011: int-to-byte v0, v0
+000cc8: 5db0 0c00                              |0012: iput-byte v0, v11, Lcom/google/android/test/Test;.mB:B // field@000c
+000ccc: 57b0 0e00                              |0014: iget-char v0, v11, Lcom/google/android/test/Test;.mC:C // field@000e
+000cd0: 1401 ffff 0000                         |0016: const v1, #float 9.18341e-41 // #0000ffff
+000cd6: b010                                   |0019: add-int/2addr v0, v1
+000cd8: 8e00                                   |001a: int-to-char v0, v0
+000cda: 5eb0 0e00                              |001b: iput-char v0, v11, Lcom/google/android/test/Test;.mC:C // field@000e
+000cde: 58b0 1500                              |001d: iget-short v0, v11, Lcom/google/android/test/Test;.mS:S // field@0015
+000ce2: d000 3412                              |001f: add-int/lit16 v0, v0, #int 4660 // #1234
+000ce6: 8f00                                   |0021: int-to-short v0, v0
+000ce8: 5fb0 1500                              |0022: iput-short v0, v11, Lcom/google/android/test/Test;.mS:S // field@0015
+000cec: 52b0 1100                              |0024: iget v0, v11, Lcom/google/android/test/Test;.mI:I // field@0011
+000cf0: 1401 7856 3412                         |0026: const v1, #float 5.69046e-28 // #12345678
+000cf6: b010                                   |0029: add-int/2addr v0, v1
+000cf8: 59b0 1100                              |002a: iput v0, v11, Lcom/google/android/test/Test;.mI:I // field@0011
+000cfc: 52b0 1100                              |002c: iget v0, v11, Lcom/google/android/test/Test;.mI:I // field@0011
+000d00: 1501 f11f                              |002e: const/high16 v1, #int 535887872 // #1ff1
+000d04: b010                                   |0030: add-int/2addr v0, v1
+000d06: 59b0 1100                              |0031: iput v0, v11, Lcom/google/android/test/Test;.mI:I // field@0011
+000d0a: 53b0 1200                              |0033: iget-wide v0, v11, Lcom/google/android/test/Test;.mL:J // field@0012
+000d0e: 1802 ffff cdab 7956 3412               |0035: const-wide v2, #double 5.62635e-221 // #12345679abcdffff
+000d18: bb20                                   |003a: add-long/2addr v0, v2
+000d1a: 5ab0 1200                              |003b: iput-wide v0, v11, Lcom/google/android/test/Test;.mL:J // field@0012
+000d1e: 53b0 1200                              |003d: iget-wide v0, v11, Lcom/google/android/test/Test;.mL:J // field@0012
+000d22: 1902 f11f                              |003f: const-wide/high16 v2, #long 2301620884563034112 // #1ff1
+000d26: bb20                                   |0041: add-long/2addr v0, v2
+000d28: 5ab0 1200                              |0042: iput-wide v0, v11, Lcom/google/android/test/Test;.mL:J // field@0012
+000d2c: 52b0 1000                              |0044: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000d30: 1401 00e4 4046                         |0046: const v1, #float 12345 // #4640e400
+000d36: 52b2 1000                              |0049: iget v2, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000d3a: 1503 803f                              |004b: const/high16 v3, #int 1065353216 // #3f80
+000d3e: c732                                   |004d: sub-float/2addr v2, v3
+000d40: c621                                   |004e: add-float/2addr v1, v2
+000d42: 52b2 1000                              |004f: iget v2, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000d46: c8a2                                   |0051: mul-float/2addr v2, v10
+000d48: 1503 c03f                              |0052: const/high16 v3, #int 1069547520 // #3fc0
+000d4c: c932                                   |0054: div-float/2addr v2, v3
+000d4e: c621                                   |0055: add-float/2addr v1, v2
+000d50: c610                                   |0056: add-float/2addr v0, v1
+000d52: 59b0 1000                              |0057: iput v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000d56: 53b0 0f00                              |0059: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000d5a: 1802 0000 0000 801c c840               |005b: const-wide v2, #double 12345 // #40c81c8000000000
+000d64: 53b4 0f00                              |0060: iget-wide v4, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000d68: 1906 f03f                              |0062: const-wide/high16 v6, #long 4607182418800017408 // #3ff0
+000d6c: cc64                                   |0064: sub-double/2addr v4, v6
+000d6e: cb42                                   |0065: add-double/2addr v2, v4
+000d70: 53b4 0f00                              |0066: iget-wide v4, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000d74: cd84                                   |0068: mul-double/2addr v4, v8
+000d76: 1906 f83f                              |0069: const-wide/high16 v6, #long 4609434218613702656 // #3ff8
+000d7a: ce64                                   |006b: div-double/2addr v4, v6
+000d7c: cb42                                   |006c: add-double/2addr v2, v4
+000d7e: cb20                                   |006d: add-double/2addr v0, v2
+000d80: 5ab0 0f00                              |006e: iput-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000d84: 52b0 1000                              |0070: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000d88: 1201                                   |0072: const/4 v1, #int 0 // #0
+000d8a: 2d00 0001                              |0073: cmpl-float v0, v0, v1
+000d8e: 3800 2900                              |0075: if-eqz v0, 009e // +0029
+000d92: 52b0 1000                              |0077: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000d96: 1401 9a99 993e                         |0079: const v1, #float 0.3 // #3e99999a
+000d9c: 2d00 0001                              |007c: cmpl-float v0, v0, v1
+000da0: 3900 2000                              |007e: if-nez v0, 009e // +0020
+000da4: 52b0 1000                              |0080: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000da8: 2d00 000a                              |0082: cmpl-float v0, v0, v10
+000dac: 3c00 1a00                              |0084: if-gtz v0, 009e // +001a
+000db0: 52b0 1000                              |0086: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000db4: 1501 c040                              |0088: const/high16 v1, #int 1086324736 // #40c0
+000db8: 2e00 0001                              |008a: cmpg-float v0, v0, v1
+000dbc: 3a00 1200                              |008c: if-ltz v0, 009e // +0012
+000dc0: 52b0 1000                              |008e: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000dc4: 1501 b0c1                              |0090: const/high16 v1, #int -1045430272 // #c1b0
+000dc8: 2e00 0001                              |0092: cmpg-float v0, v0, v1
+000dcc: 3d00 0a00                              |0094: if-lez v0, 009e // +000a
+000dd0: 52b0 1000                              |0096: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000dd4: 1501 b041                              |0098: const/high16 v1, #int 1102053376 // #41b0
+000dd8: 2d00 0001                              |009a: cmpl-float v0, v0, v1
+000ddc: 3a00 0700                              |009c: if-ltz v0, 00a3 // +0007
+000de0: 53b0 0f00                              |009e: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000de4: 8c00                                   |00a0: double-to-float v0, v0
+000de6: 59b0 1000                              |00a1: iput v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000dea: 53b0 0f00                              |00a3: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000dee: 1602 0000                              |00a5: const-wide/16 v2, #int 0 // #0
+000df2: 2f00 0002                              |00a7: cmpl-double v0, v0, v2
+000df6: 3800 2b00                              |00a9: if-eqz v0, 00d4 // +002b
+000dfa: 53b0 0f00                              |00ab: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000dfe: 1802 3333 3333 3333 d33f               |00ad: const-wide v2, #double 0.3 // #3fd3333333333333
+000e08: 2f00 0002                              |00b2: cmpl-double v0, v0, v2
+000e0c: 3900 2000                              |00b4: if-nez v0, 00d4 // +0020
+000e10: 53b0 0f00                              |00b6: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000e14: 2f00 0008                              |00b8: cmpl-double v0, v0, v8
+000e18: 3c00 1a00                              |00ba: if-gtz v0, 00d4 // +001a
+000e1c: 53b0 0f00                              |00bc: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000e20: 1902 1840                              |00be: const-wide/high16 v2, #long 4618441417868443648 // #4018
+000e24: 3000 0002                              |00c0: cmpg-double v0, v0, v2
+000e28: 3a00 1200                              |00c2: if-ltz v0, 00d4 // +0012
+000e2c: 53b0 0f00                              |00c4: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000e30: 1902 36c0                              |00c6: const-wide/high16 v2, #long -4596486369685012480 // #c036
+000e34: 3000 0002                              |00c8: cmpg-double v0, v0, v2
+000e38: 3d00 0a00                              |00ca: if-lez v0, 00d4 // +000a
+000e3c: 53b0 0f00                              |00cc: iget-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000e40: 1902 3640                              |00ce: const-wide/high16 v2, #long 4626885667169763328 // #4036
+000e44: 2f00 0002                              |00d0: cmpl-double v0, v0, v2
+000e48: 3a00 1200                              |00d2: if-ltz v0, 00e4 // +0012
+000e4c: 52b0 1000                              |00d4: iget v0, v11, Lcom/google/android/test/Test;.mF:F // field@0010
+000e50: 8900                                   |00d6: float-to-double v0, v0
+000e52: 5ab0 0f00                              |00d7: iput-wide v0, v11, Lcom/google/android/test/Test;.mD:D // field@000f
+000e56: 6300 1800                              |00d9: sget-boolean v0, Lcom/google/android/test/Test;.sBool:Z // field@0018
+000e5a: 3900 0f00                              |00db: if-nez v0, 00ea // +000f
+000e5e: 55b0 0d00                              |00dd: iget-boolean v0, v11, Lcom/google/android/test/Test;.mBool:Z // field@000d
+000e62: 3900 0b00                              |00df: if-nez v0, 00ea // +000b
+000e66: 1200                                   |00e1: const/4 v0, #int 0 // #0
+000e68: 5cb0 0d00                              |00e2: iput-boolean v0, v11, Lcom/google/android/test/Test;.mBool:Z // field@000d
+000e6c: 390c 0400                              |00e4: if-nez v12, 00e8 // +0004
+000e70: 54bc 1300                              |00e6: iget-object v12, v11, Lcom/google/android/test/Test;.mO:Ljava/lang/Object; // field@0013
+000e74: 1e0b                                   |00e8: monitor-exit v11
+000e76: 110c                                   |00e9: return-object v12
+000e78: 1210                                   |00ea: const/4 v0, #int 1 // #1
+000e7a: 28f7                                   |00eb: goto 00e2 // -0009
+000e7c: 0d00                                   |00ec: move-exception v0
+000e7e: 1e0b                                   |00ed: monitor-exit v11
+000e80: 2700                                   |00ee: throw v0
+      catches       : 1
+        0x0005 - 0x00e8
+          <any> -> 0x00ec
+      positions     : 
+        0x0004 line=179
+        0x0007 line=180
+        0x000d line=181
+        0x0014 line=182
+        0x001d line=183
+        0x0024 line=184
+        0x002c line=185
+        0x0033 line=186
+        0x003d line=187
+        0x0044 line=188
+        0x0059 line=189
+        0x0070 line=190
+        0x009e line=191
+        0x00a3 line=193
+        0x00d4 line=194
+        0x00d9 line=195
+        0x00e4 line=197
+        0x00ea line=195
+        0x00ec line=179
+      locals        : 
+        0x0000 - 0x00e8 reg=12 o Ljava/lang/Object; 
+        0x0000 - 0x00ef reg=11 this Lcom/google/android/test/Test; 
+        0x00ea - 0x00ef reg=12 o Ljava/lang/Object; 
+
+    #3              : (in Lcom/google/android/test/Test;)
+      name          : 'adds'
+      type          : '(Ljava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 9
+      ins           : 1
+      outs          : 0
+      insns size    : 118 16-bit code units
+000e90:                                        |[000e90] com.google.android.test.Test.adds:(Ljava/lang/Object;)Ljava/lang/Object;
+000ea0: 6908 1e00                              |0000: sput-object v8, Lcom/google/android/test/Test;.sO:Ljava/lang/Object; // field@001e
+000ea4: 6300 1800                              |0002: sget-boolean v0, Lcom/google/android/test/Test;.sBool:Z // field@0018
+000ea8: de00 0000                              |0004: or-int/lit8 v0, v0, #int 0 // #00
+000eac: 6a00 1800                              |0006: sput-boolean v0, Lcom/google/android/test/Test;.sBool:Z // field@0018
+000eb0: 6400 1700                              |0008: sget-byte v0, Lcom/google/android/test/Test;.sB:B // field@0017
+000eb4: d800 001f                              |000a: add-int/lit8 v0, v0, #int 31 // #1f
+000eb8: 8d00                                   |000c: int-to-byte v0, v0
+000eba: 6b00 1700                              |000d: sput-byte v0, Lcom/google/android/test/Test;.sB:B // field@0017
+000ebe: 6500 1900                              |000f: sget-char v0, Lcom/google/android/test/Test;.sC:C // field@0019
+000ec2: 1401 ffff 0000                         |0011: const v1, #float 9.18341e-41 // #0000ffff
+000ec8: b010                                   |0014: add-int/2addr v0, v1
+000eca: 8e00                                   |0015: int-to-char v0, v0
+000ecc: 6c00 1900                              |0016: sput-char v0, Lcom/google/android/test/Test;.sC:C // field@0019
+000ed0: 6600 1f00                              |0018: sget-short v0, Lcom/google/android/test/Test;.sS:S // field@001f
+000ed4: d000 3412                              |001a: add-int/lit16 v0, v0, #int 4660 // #1234
+000ed8: 8f00                                   |001c: int-to-short v0, v0
+000eda: 6d00 1f00                              |001d: sput-short v0, Lcom/google/android/test/Test;.sS:S // field@001f
+000ede: 6000 1c00                              |001f: sget v0, Lcom/google/android/test/Test;.sI:I // field@001c
+000ee2: 1401 7856 3412                         |0021: const v1, #float 5.69046e-28 // #12345678
+000ee8: b010                                   |0024: add-int/2addr v0, v1
+000eea: 6700 1c00                              |0025: sput v0, Lcom/google/android/test/Test;.sI:I // field@001c
+000eee: 6000 1c00                              |0027: sget v0, Lcom/google/android/test/Test;.sI:I // field@001c
+000ef2: 1501 f11f                              |0029: const/high16 v1, #int 535887872 // #1ff1
+000ef6: b010                                   |002b: add-int/2addr v0, v1
+000ef8: 6700 1c00                              |002c: sput v0, Lcom/google/android/test/Test;.sI:I // field@001c
+000efc: 6100 1d00                              |002e: sget-wide v0, Lcom/google/android/test/Test;.sL:J // field@001d
+000f00: 1802 ffff cdab 7956 3412               |0030: const-wide v2, #double 5.62635e-221 // #12345679abcdffff
+000f0a: bb20                                   |0035: add-long/2addr v0, v2
+000f0c: 6800 1d00                              |0036: sput-wide v0, Lcom/google/android/test/Test;.sL:J // field@001d
+000f10: 6100 1d00                              |0038: sget-wide v0, Lcom/google/android/test/Test;.sL:J // field@001d
+000f14: 1902 f11f                              |003a: const-wide/high16 v2, #long 2301620884563034112 // #1ff1
+000f18: bb20                                   |003c: add-long/2addr v0, v2
+000f1a: 6800 1d00                              |003d: sput-wide v0, Lcom/google/android/test/Test;.sL:J // field@001d
+000f1e: 6000 1b00                              |003f: sget v0, Lcom/google/android/test/Test;.sF:F // field@001b
+000f22: 1401 00e4 4046                         |0041: const v1, #float 12345 // #4640e400
+000f28: 6002 1b00                              |0044: sget v2, Lcom/google/android/test/Test;.sF:F // field@001b
+000f2c: 7f22                                   |0046: neg-float v2, v2
+000f2e: 1503 803f                              |0047: const/high16 v3, #int 1065353216 // #3f80
+000f32: c732                                   |0049: sub-float/2addr v2, v3
+000f34: c621                                   |004a: add-float/2addr v1, v2
+000f36: 6002 1b00                              |004b: sget v2, Lcom/google/android/test/Test;.sF:F // field@001b
+000f3a: 1503 8040                              |004d: const/high16 v3, #int 1082130432 // #4080
+000f3e: c832                                   |004f: mul-float/2addr v2, v3
+000f40: 1503 c03f                              |0050: const/high16 v3, #int 1069547520 // #3fc0
+000f44: c932                                   |0052: div-float/2addr v2, v3
+000f46: c621                                   |0053: add-float/2addr v1, v2
+000f48: c610                                   |0054: add-float/2addr v0, v1
+000f4a: 6700 1b00                              |0055: sput v0, Lcom/google/android/test/Test;.sF:F // field@001b
+000f4e: 6100 1a00                              |0057: sget-wide v0, Lcom/google/android/test/Test;.sD:D // field@001a
+000f52: 1802 0000 0000 801c c840               |0059: const-wide v2, #double 12345 // #40c81c8000000000
+000f5c: 6104 1a00                              |005e: sget-wide v4, Lcom/google/android/test/Test;.sD:D // field@001a
+000f60: 8044                                   |0060: neg-double v4, v4
+000f62: 1906 f03f                              |0061: const-wide/high16 v6, #long 4607182418800017408 // #3ff0
+000f66: cc64                                   |0063: sub-double/2addr v4, v6
+000f68: cb42                                   |0064: add-double/2addr v2, v4
+000f6a: 6104 1a00                              |0065: sget-wide v4, Lcom/google/android/test/Test;.sD:D // field@001a
+000f6e: 1906 1040                              |0067: const-wide/high16 v6, #long 4616189618054758400 // #4010
+000f72: cd64                                   |0069: mul-double/2addr v4, v6
+000f74: 1906 f83f                              |006a: const-wide/high16 v6, #long 4609434218613702656 // #3ff8
+000f78: ce64                                   |006c: div-double/2addr v4, v6
+000f7a: cb42                                   |006d: add-double/2addr v2, v4
+000f7c: cb20                                   |006e: add-double/2addr v0, v2
+000f7e: 6800 1a00                              |006f: sput-wide v0, Lcom/google/android/test/Test;.sD:D // field@001a
+000f82: 3908 0400                              |0071: if-nez v8, 0075 // +0004
+000f86: 6208 1e00                              |0073: sget-object v8, Lcom/google/android/test/Test;.sO:Ljava/lang/Object; // field@001e
+000f8a: 1108                                   |0075: return-object v8
+      catches       : (none)
+      positions     : 
+        0x0000 line=201
+        0x0002 line=202
+        0x0008 line=203
+        0x000f line=204
+        0x0018 line=205
+        0x001f line=206
+        0x0027 line=207
+        0x002e line=208
+        0x0038 line=209
+        0x003f line=210
+        0x0057 line=211
+        0x0071 line=212
+      locals        : 
+        0x0000 - 0x0075 reg=8 o Ljava/lang/Object; 
+
+    #4              : (in Lcom/google/android/test/Test;)
+      name          : 'copies'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 19
+      ins           : 1
+      outs          : 12
+      insns size    : 171 16-bit code units
+000f8c:                                        |[000f8c] com.google.android.test.Test.copies:()V
+000f9c: 0800 1200                              |0000: move-object/from16 v0, v18
+000fa0: 5302 1200                              |0002: iget-wide v2, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+000fa4: 7d22                                   |0004: neg-long v2, v2
+000fa6: 6104 1d00                              |0005: sget-wide v4, Lcom/google/android/test/Test;.sL:J // field@001d
+000faa: 6106 1d00                              |0007: sget-wide v6, Lcom/google/android/test/Test;.sL:J // field@001d
+000fae: bd64                                   |0009: mul-long/2addr v4, v6
+000fb0: 0800 1200                              |000a: move-object/from16 v0, v18
+000fb4: 5306 1200                              |000c: iget-wide v6, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+000fb8: be64                                   |000e: div-long/2addr v4, v6
+000fba: bc42                                   |000f: sub-long/2addr v2, v4
+000fbc: 0800 1200                              |0010: move-object/from16 v0, v18
+000fc0: 5304 1200                              |0012: iget-wide v4, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+000fc4: 1606 ffff                              |0014: const-wide/16 v6, #int -1 // #ffff
+000fc8: c264                                   |0016: xor-long/2addr v4, v6
+000fca: bc42                                   |0017: sub-long/2addr v2, v4
+000fcc: 0800 1200                              |0018: move-object/from16 v0, v18
+000fd0: 5304 1200                              |001a: iget-wide v4, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+000fd4: 1606 0400                              |001c: const-wide/16 v6, #int 4 // #4
+000fd8: bf64                                   |001e: rem-long/2addr v4, v6
+000fda: a210 0204                              |001f: xor-long v16, v2, v4
+000fde: 0800 1200                              |0021: move-object/from16 v0, v18
+000fe2: 5302 0f00                              |0023: iget-wide v2, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+000fe6: 6004 1b00                              |0025: sget v4, Lcom/google/android/test/Test;.sF:F // field@001b
+000fea: 8944                                   |0027: float-to-double v4, v4
+000fec: cd42                                   |0028: mul-double/2addr v2, v4
+000fee: 0800 1200                              |0029: move-object/from16 v0, v18
+000ff2: 5304 0f00                              |002b: iget-wide v4, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+000ff6: ce42                                   |002d: div-double/2addr v2, v4
+000ff8: 6104 1a00                              |002e: sget-wide v4, Lcom/google/android/test/Test;.sD:D // field@001a
+000ffc: 0800 1200                              |0030: move-object/from16 v0, v18
+001000: 5306 0f00                              |0032: iget-wide v6, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+001004: cd64                                   |0034: mul-double/2addr v4, v6
+001006: ac0e 0204                              |0035: sub-double v14, v2, v4
+00100a: 6302 1800                              |0037: sget-boolean v2, Lcom/google/android/test/Test;.sBool:Z // field@0018
+00100e: 0800 1200                              |0039: move-object/from16 v0, v18
+001012: 5c02 0d00                              |003b: iput-boolean v2, v0, Lcom/google/android/test/Test;.mBool:Z // field@000d
+001016: 6402 1700                              |003d: sget-byte v2, Lcom/google/android/test/Test;.sB:B // field@0017
+00101a: 0800 1200                              |003f: move-object/from16 v0, v18
+00101e: 5d02 0c00                              |0041: iput-byte v2, v0, Lcom/google/android/test/Test;.mB:B // field@000c
+001022: 6502 1900                              |0043: sget-char v2, Lcom/google/android/test/Test;.sC:C // field@0019
+001026: 0800 1200                              |0045: move-object/from16 v0, v18
+00102a: 5e02 0e00                              |0047: iput-char v2, v0, Lcom/google/android/test/Test;.mC:C // field@000e
+00102e: 6602 1f00                              |0049: sget-short v2, Lcom/google/android/test/Test;.sS:S // field@001f
+001032: 0800 1200                              |004b: move-object/from16 v0, v18
+001036: 5f02 1500                              |004d: iput-short v2, v0, Lcom/google/android/test/Test;.mS:S // field@0015
+00103a: 6002 1c00                              |004f: sget v2, Lcom/google/android/test/Test;.sI:I // field@001c
+00103e: 0800 1200                              |0051: move-object/from16 v0, v18
+001042: 5203 1100                              |0053: iget v3, v0, Lcom/google/android/test/Test;.mI:I // field@0011
+001046: b432                                   |0055: rem-int/2addr v2, v3
+001048: 0800 1200                              |0056: move-object/from16 v0, v18
+00104c: 5902 1100                              |0058: iput v2, v0, Lcom/google/android/test/Test;.mI:I // field@0011
+001050: 6102 1d00                              |005a: sget-wide v2, Lcom/google/android/test/Test;.sL:J // field@001d
+001054: 1604 ffff                              |005c: const-wide/16 v4, #int -1 // #ffff
+001058: a204 0410                              |005e: xor-long v4, v4, v16
+00105c: bb42                                   |0060: add-long/2addr v2, v4
+00105e: 0800 1200                              |0061: move-object/from16 v0, v18
+001062: 5a02 1200                              |0063: iput-wide v2, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+001066: 6002 1b00                              |0065: sget v2, Lcom/google/android/test/Test;.sF:F // field@001b
+00106a: 0800 1200                              |0067: move-object/from16 v0, v18
+00106e: 5902 1000                              |0069: iput v2, v0, Lcom/google/android/test/Test;.mF:F // field@0010
+001072: 6102 1a00                              |006b: sget-wide v2, Lcom/google/android/test/Test;.sD:D // field@001a
+001076: cbe2                                   |006d: add-double/2addr v2, v14
+001078: 0800 1200                              |006e: move-object/from16 v0, v18
+00107c: 5a02 0f00                              |0070: iput-wide v2, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+001080: 6202 1e00                              |0072: sget-object v2, Lcom/google/android/test/Test;.sO:Ljava/lang/Object; // field@001e
+001084: 0800 1200                              |0074: move-object/from16 v0, v18
+001088: 5b02 1300                              |0076: iput-object v2, v0, Lcom/google/android/test/Test;.mO:Ljava/lang/Object; // field@0013
+00108c: 6202 1600                              |0078: sget-object v2, Lcom/google/android/test/Test;.sArray:[I // field@0016
+001090: 0800 1200                              |007a: move-object/from16 v0, v18
+001094: 5b02 0b00                              |007c: iput-object v2, v0, Lcom/google/android/test/Test;.mArray:[I // field@000b
+001098: 0800 1200                              |007e: move-object/from16 v0, v18
+00109c: 5603 0c00                              |0080: iget-byte v3, v0, Lcom/google/android/test/Test;.mB:B // field@000c
+0010a0: 0800 1200                              |0082: move-object/from16 v0, v18
+0010a4: 5704 0e00                              |0084: iget-char v4, v0, Lcom/google/android/test/Test;.mC:C // field@000e
+0010a8: 0800 1200                              |0086: move-object/from16 v0, v18
+0010ac: 5805 1500                              |0088: iget-short v5, v0, Lcom/google/android/test/Test;.mS:S // field@0015
+0010b0: 0800 1200                              |008a: move-object/from16 v0, v18
+0010b4: 5206 1100                              |008c: iget v6, v0, Lcom/google/android/test/Test;.mI:I // field@0011
+0010b8: 0800 1200                              |008e: move-object/from16 v0, v18
+0010bc: 5307 1200                              |0090: iget-wide v7, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+0010c0: 0800 1200                              |0092: move-object/from16 v0, v18
+0010c4: 5209 1000                              |0094: iget v9, v0, Lcom/google/android/test/Test;.mF:F // field@0010
+0010c8: 0800 1200                              |0096: move-object/from16 v0, v18
+0010cc: 530a 0f00                              |0098: iget-wide v10, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+0010d0: 0800 1200                              |009a: move-object/from16 v0, v18
+0010d4: 540c 1300                              |009c: iget-object v12, v0, Lcom/google/android/test/Test;.mO:Ljava/lang/Object; // field@0013
+0010d8: 0800 1200                              |009e: move-object/from16 v0, v18
+0010dc: 540d 0b00                              |00a0: iget-object v13, v0, Lcom/google/android/test/Test;.mArray:[I // field@000b
+0010e0: 0802 1200                              |00a2: move-object/from16 v2, v18
+0010e4: 760c 1100 0200                         |00a4: invoke-direct/range {v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13}, Lcom/google/android/test/Test;.params:(BCSIJFDLjava/lang/Object;[I)J // method@0011
+0010ea: 0b02                                   |00a7: move-result-wide v2
+0010ec: 6802 1d00                              |00a8: sput-wide v2, Lcom/google/android/test/Test;.sL:J // field@001d
+0010f0: 0e00                                   |00aa: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=216
+        0x0021 line=217
+        0x0037 line=218
+        0x003d line=219
+        0x0043 line=220
+        0x0049 line=221
+        0x004f line=222
+        0x005a line=223
+        0x0065 line=224
+        0x006b line=225
+        0x0072 line=226
+        0x0078 line=227
+        0x007e line=228
+        0x00aa line=229
+      locals        : 
+        0x0037 - 0x00ab reg=14 d D 
+        0x0021 - 0x00ab reg=16 x J 
+        0x0000 - 0x00ab reg=18 this Lcom/google/android/test/Test; 
+
+    #5              : (in Lcom/google/android/test/Test;)
+      name          : 'doit'
+      type          : '(I)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 3
+      insns size    : 78 16-bit code units
+0010f4:                                        |[0010f4] com.google.android.test.Test.doit:(I)V
+001104: 3d02 0700                              |0000: if-lez v2, 0007 // +0007
+001108: d800 02fd                              |0002: add-int/lit8 v0, v2, #int -3 // #fd
+00110c: 7020 0d00 0100                         |0004: invoke-direct {v1, v0}, Lcom/google/android/test/Test;.doit:(I)V // method@000d
+001112: 2b02 3500 0000                         |0007: packed-switch v2, 0000003c // +00000035
+001118: 2200 1300                              |000a: new-instance v0, Ljava/lang/Exception; // type@0013
+00111c: 7010 1800 0000                         |000c: invoke-direct {v0}, Ljava/lang/Exception;.<init>:()V // method@0018
+001122: 2700                                   |000f: throw v0
+001124: df00 02ff                              |0010: xor-int/lit8 v0, v2, #int -1 // #ff
+001128: 7020 1000 0100                         |0012: invoke-direct {v1, v0}, Lcom/google/android/test/Test;.p:(I)V // method@0010
+00112e: 5410 1400                              |0015: iget-object v0, v1, Lcom/google/android/test/Test;.mRunner:Ljava/lang/Runnable; // field@0014
+001132: 3800 0700                              |0017: if-eqz v0, 001e // +0007
+001136: 5410 1400                              |0019: iget-object v0, v1, Lcom/google/android/test/Test;.mRunner:Ljava/lang/Runnable; // field@0014
+00113a: 7210 1b00 0000                         |001b: invoke-interface {v0}, Ljava/lang/Runnable;.run:()V // method@001b
+001140: 2c02 2600 0000                         |001e: sparse-switch v2, 00000044 // +00000026
+001146: 0e00                                   |0021: return-void
+001148: 3d02 0700                              |0022: if-lez v2, 0029 // +0007
+00114c: 0120                                   |0024: move v0, v2
+00114e: 7030 1200 2100                         |0025: invoke-direct {v1, v2, v0}, Lcom/google/android/test/Test;.q:(II)V // method@0012
+001154: 28ed                                   |0028: goto 0015 // -0013
+001156: 7b20                                   |0029: neg-int v0, v2
+001158: 28fb                                   |002a: goto 0025 // -0005
+00115a: 7020 1000 2100                         |002b: invoke-direct {v1, v2}, Lcom/google/android/test/Test;.p:(I)V // method@0010
+001160: 5410 1400                              |002e: iget-object v0, v1, Lcom/google/android/test/Test;.mRunner:Ljava/lang/Runnable; // field@0014
+001164: 3900 f1ff                              |0030: if-nez v0, 0021 // -000f
+001168: 5b11 1400                              |0032: iput-object v1, v1, Lcom/google/android/test/Test;.mRunner:Ljava/lang/Runnable; // field@0014
+00116c: 28ed                                   |0034: goto 0021 // -0013
+00116e: d800 02ff                              |0035: add-int/lit8 v0, v2, #int -1 // #ff
+001172: 7030 1200 2100                         |0037: invoke-direct {v1, v2, v0}, Lcom/google/android/test/Test;.q:(II)V // method@0012
+001178: 28f4                                   |003a: goto 002e // -000c
+00117a: 0000                                   |003b: nop // spacer
+00117c: 0001 0200 0000 0000 0900 0000 1b00 ... |003c: packed-switch-data (8 units)
+00118c: 0002 0200 2dfb ffff 0ba2 0700 0d00 ... |0044: sparse-switch-data (10 units)
+      catches       : (none)
+      positions     : 
+        0x0000 line=98
+        0x0002 line=99
+        0x0007 line=101
+        0x000a line=104
+        0x0010 line=102
+        0x0015 line=106
+        0x0019 line=107
+        0x001e line=109
+        0x0021 line=117
+        0x0022 line=103
+        0x002b line=110
+        0x002e line=114
+        0x0032 line=115
+        0x0035 line=111
+        0x003b line=101
+        0x0044 line=109
+      locals        : 
+        0x0000 - 0x004e reg=1 this Lcom/google/android/test/Test; 
+        0x0000 - 0x004e reg=2 x I 
+
+    #6              : (in Lcom/google/android/test/Test;)
+      name          : 'geta'
+      type          : '()Z'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 8
+      ins           : 1
+      outs          : 0
+      insns size    : 73 16-bit code units
+0011a0:                                        |[0011a0] com.google.android.test.Test.geta:()Z
+0011b0: 1226                                   |0000: const/4 v6, #int 2 // #2
+0011b2: 1210                                   |0001: const/4 v0, #int 1 // #1
+0011b4: 5471 0200                              |0002: iget-object v1, v7, Lcom/google/android/test/Test;.aBool:[Z // field@0002
+0011b8: 4701 0106                              |0004: aget-boolean v1, v1, v6
+0011bc: 3801 0300                              |0006: if-eqz v1, 0009 // +0003
+0011c0: 0f00                                   |0008: return v0
+0011c2: 5471 0300                              |0009: iget-object v1, v7, Lcom/google/android/test/Test;.aByte:[B // field@0003
+0011c6: 4801 0106                              |000b: aget-byte v1, v1, v6
+0011ca: 3201 fbff                              |000d: if-eq v1, v0, 0008 // -0005
+0011ce: 5471 0400                              |000f: iget-object v1, v7, Lcom/google/android/test/Test;.aChar:[C // field@0004
+0011d2: 4901 0106                              |0011: aget-char v1, v1, v6
+0011d6: 1302 6400                              |0013: const/16 v2, #int 100 // #64
+0011da: 3221 f3ff                              |0015: if-eq v1, v2, 0008 // -000d
+0011de: 5471 0a00                              |0017: iget-object v1, v7, Lcom/google/android/test/Test;.aShort:[S // field@000a
+0011e2: 4a01 0106                              |0019: aget-short v1, v1, v6
+0011e6: 3201 edff                              |001b: if-eq v1, v0, 0008 // -0013
+0011ea: 5471 0700                              |001d: iget-object v1, v7, Lcom/google/android/test/Test;.aInt:[I // field@0007
+0011ee: 4401 0106                              |001f: aget v1, v1, v6
+0011f2: 3201 e7ff                              |0021: if-eq v1, v0, 0008 // -0019
+0011f6: 5471 0800                              |0023: iget-object v1, v7, Lcom/google/android/test/Test;.aLong:[J // field@0008
+0011fa: 4502 0106                              |0025: aget-wide v2, v1, v6
+0011fe: 1604 0100                              |0027: const-wide/16 v4, #int 1 // #1
+001202: 3101 0204                              |0029: cmp-long v1, v2, v4
+001206: 3801 ddff                              |002b: if-eqz v1, 0008 // -0023
+00120a: 5471 0600                              |002d: iget-object v1, v7, Lcom/google/android/test/Test;.aFloat:[F // field@0006
+00120e: 4401 0106                              |002f: aget v1, v1, v6
+001212: 1502 803f                              |0031: const/high16 v2, #int 1065353216 // #3f80
+001216: 2d01 0102                              |0033: cmpl-float v1, v1, v2
+00121a: 3801 d3ff                              |0035: if-eqz v1, 0008 // -002d
+00121e: 5471 0500                              |0037: iget-object v1, v7, Lcom/google/android/test/Test;.aDouble:[D // field@0005
+001222: 4502 0106                              |0039: aget-wide v2, v1, v6
+001226: 1904 f03f                              |003b: const-wide/high16 v4, #long 4607182418800017408 // #3ff0
+00122a: 2f01 0204                              |003d: cmpl-double v1, v2, v4
+00122e: 3801 c9ff                              |003f: if-eqz v1, 0008 // -0037
+001232: 5471 0900                              |0041: iget-object v1, v7, Lcom/google/android/test/Test;.aObject:[Ljava/lang/Object; // field@0009
+001236: 4601 0106                              |0043: aget-object v1, v1, v6
+00123a: 3271 c3ff                              |0045: if-eq v1, v7, 0008 // -003d
+00123e: 1200                                   |0047: const/4 v0, #int 0 // #0
+001240: 28c0                                   |0048: goto 0008 // -0040
+      catches       : (none)
+      positions     : 
+        0x0002 line=72
+        0x0008 line=81
+        0x0009 line=73
+        0x000f line=74
+        0x0017 line=75
+        0x001d line=76
+        0x0023 line=77
+        0x002d line=78
+        0x0037 line=79
+        0x0041 line=80
+        0x0047 line=81
+      locals        : 
+        0x0000 - 0x0049 reg=7 this Lcom/google/android/test/Test; 
+
+    #7              : (in Lcom/google/android/test/Test;)
+      name          : 'p'
+      type          : '(I)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 6
+      ins           : 2
+      outs          : 0
+      insns size    : 19 16-bit code units
+001244:                                        |[001244] com.google.android.test.Test.p:(I)V
+001254: 0151                                   |0000: move v1, v5
+001256: 1200                                   |0001: const/4 v0, #int 0 // #0
+001258: 5442 0b00                              |0002: iget-object v2, v4, Lcom/google/android/test/Test;.mArray:[I // field@000b
+00125c: 2122                                   |0004: array-length v2, v2
+00125e: 3420 0300                              |0005: if-lt v0, v2, 0008 // +0003
+001262: 0e00                                   |0007: return-void
+001264: 5442 0b00                              |0008: iget-object v2, v4, Lcom/google/android/test/Test;.mArray:[I // field@000b
+001268: 5243 1100                              |000a: iget v3, v4, Lcom/google/android/test/Test;.mI:I // field@0011
+00126c: 9303 0103                              |000c: div-int v3, v1, v3
+001270: 4b03 0200                              |000e: aput v3, v2, v0
+001274: d800 0001                              |0010: add-int/lit8 v0, v0, #int 1 // #01
+001278: 28f0                                   |0012: goto 0002 // -0010
+      catches       : (none)
+      positions     : 
+        0x0000 line=120
+        0x0001 line=121
+        0x0007 line=124
+        0x0008 line=122
+        0x0010 line=121
+      locals        : 
+        0x0002 - 0x0013 reg=0 i I 
+        0x0001 - 0x0013 reg=1 y I 
+        0x0000 - 0x0013 reg=4 this Lcom/google/android/test/Test; 
+        0x0000 - 0x0013 reg=5 x I 
+
+    #8              : (in Lcom/google/android/test/Test;)
+      name          : 'params'
+      type          : '(BCSIJFDLjava/lang/Object;[I)J'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 38
+      ins           : 12
+      outs          : 2
+      insns size    : 318 16-bit code units
+00127c:                                        |[00127c] com.google.android.test.Test.params:(BCSIJFDLjava/lang/Object;[I)J
+00128c: 0800 2400                              |0000: move-object/from16 v0, v36
+001290: 2000 1500                              |0002: instance-of v0, v0, Ljava/lang/Runnable; // type@0015
+001294: 0215 0000                              |0004: move/from16 v21, v0
+001298: 3815 0c00                              |0006: if-eqz v21, 0012 // +000c
+00129c: 0815 2400                              |0008: move-object/from16 v21, v36
+0012a0: 1f15 1500                              |000a: check-cast v21, Ljava/lang/Runnable; // type@0015
+0012a4: 0800 1500                              |000c: move-object/from16 v0, v21
+0012a8: 0801 1a00                              |000e: move-object/from16 v1, v26
+0012ac: 5b10 1400                              |0010: iput-object v0, v1, Lcom/google/android/test/Test;.mRunner:Ljava/lang/Runnable; // field@0014
+0012b0: 3825 0a00                              |0012: if-eqz v37, 001c // +000a
+0012b4: 3824 0800                              |0014: if-eqz v36, 001c // +0008
+0012b8: 7402 1a00 2400                         |0016: invoke-virtual/range {v36, v37}, Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z // method@001a
+0012be: 0a15                                   |0019: move-result v21
+0012c0: 3915 3800                              |001a: if-nez v21, 0052 // +0038
+0012c4: 1315 0200                              |001c: const/16 v21, #int 2 // #2
+0012c8: 0200 1500                              |001e: move/from16 v0, v21
+0012cc: 2304 2400                              |0020: new-array v4, v0, [I // type@0024
+0012d0: 2604 0801 0000                         |0022: fill-array-data v4, 0000012a // +00000108
+0012d6: 0800 1a00                              |0025: move-object/from16 v0, v26
+0012da: 5b04 0700                              |0027: iput-object v4, v0, Lcom/google/android/test/Test;.aInt:[I // field@0007
+0012de: 1315 0200                              |0029: const/16 v21, #int 2 // #2
+0012e2: 0200 1500                              |002b: move/from16 v0, v21
+0012e6: 2305 2500                              |002d: new-array v5, v0, [J // type@0025
+0012ea: 2605 0301 0000                         |002f: fill-array-data v5, 00000132 // +00000103
+0012f0: 0800 1a00                              |0032: move-object/from16 v0, v26
+0012f4: 5b05 0800                              |0034: iput-object v5, v0, Lcom/google/android/test/Test;.aLong:[J // field@0008
+0012f8: 9015 1b1c                              |0036: add-int v21, v27, v28
+0012fc: 9015 151d                              |0038: add-int v21, v21, v29
+001300: 9015 151e                              |003a: add-int v21, v21, v30
+001304: 0200 1500                              |003c: move/from16 v0, v21
+001308: 8100                                   |003e: int-to-long v0, v0
+00130a: 0516 0000                              |003f: move-wide/from16 v22, v0
+00130e: 9b16 161f                              |0041: add-long v22, v22, v31
+001312: 0200 2100                              |0043: move/from16 v0, v33
+001316: 8800                                   |0045: float-to-long v0, v0
+001318: 0518 0000                              |0046: move-wide/from16 v24, v0
+00131c: 9b16 1618                              |0048: add-long v22, v22, v24
+001320: 0500 2200                              |004a: move-wide/from16 v0, v34
+001324: 8b00                                   |004c: double-to-long v0, v0
+001326: 0518 0000                              |004d: move-wide/from16 v24, v0
+00132a: 9b16 1618                              |004f: add-long v22, v22, v24
+00132e: 1016                                   |0051: return-wide v22
+001330: 0200 1e00                              |0052: move/from16 v0, v30
+001334: 8200                                   |0054: int-to-float v0, v0
+001336: 0221 0000                              |0055: move/from16 v33, v0
+00133a: 0200 1e00                              |0057: move/from16 v0, v30
+00133e: 8300                                   |0059: int-to-double v0, v0
+001340: 0522 0000                              |005a: move-wide/from16 v34, v0
+001344: 0800 1a00                              |005c: move-object/from16 v0, v26
+001348: 5300 1200                              |005e: iget-wide v0, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+00134c: 0516 0000                              |0060: move-wide/from16 v22, v0
+001350: 0500 1600                              |0062: move-wide/from16 v0, v22
+001354: 8400                                   |0064: long-to-int v0, v0
+001356: 0215 0000                              |0065: move/from16 v21, v0
+00135a: 0200 1500                              |0067: move/from16 v0, v21
+00135e: 0801 1a00                              |0069: move-object/from16 v1, v26
+001362: 5910 1100                              |006b: iput v0, v1, Lcom/google/android/test/Test;.mI:I // field@0011
+001366: 0800 1a00                              |006d: move-object/from16 v0, v26
+00136a: 5300 1200                              |006f: iget-wide v0, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+00136e: 0516 0000                              |0071: move-wide/from16 v22, v0
+001372: 0500 1600                              |0073: move-wide/from16 v0, v22
+001376: 7d00                                   |0075: neg-long v0, v0
+001378: 0516 0000                              |0076: move-wide/from16 v22, v0
+00137c: 0500 1600                              |0078: move-wide/from16 v0, v22
+001380: 8500                                   |007a: long-to-float v0, v0
+001382: 0221 0000                              |007b: move/from16 v33, v0
+001386: 0800 1a00                              |007d: move-object/from16 v0, v26
+00138a: 5300 1200                              |007f: iget-wide v0, v0, Lcom/google/android/test/Test;.mL:J // field@0012
+00138e: 0516 0000                              |0081: move-wide/from16 v22, v0
+001392: 1618 ffff                              |0083: const-wide/16 v24, #int -1 // #ffff
+001396: a216 1618                              |0085: xor-long v22, v22, v24
+00139a: 0500 1600                              |0087: move-wide/from16 v0, v22
+00139e: 8600                                   |0089: long-to-double v0, v0
+0013a0: 0522 0000                              |008a: move-wide/from16 v34, v0
+0013a4: 0200 2100                              |008c: move/from16 v0, v33
+0013a8: 8700                                   |008e: float-to-int v0, v0
+0013aa: 021e 0000                              |008f: move/from16 v30, v0
+0013ae: 0500 2200                              |0091: move-wide/from16 v0, v34
+0013b2: 8a00                                   |0093: double-to-int v0, v0
+0013b4: 0215 0000                              |0094: move/from16 v21, v0
+0013b8: 0200 1500                              |0096: move/from16 v0, v21
+0013bc: 0801 1a00                              |0098: move-object/from16 v1, v26
+0013c0: 5910 1100                              |009a: iput v0, v1, Lcom/google/android/test/Test;.mI:I // field@0011
+0013c4: 0800 1a00                              |009c: move-object/from16 v0, v26
+0013c8: 5200 1000                              |009e: iget v0, v0, Lcom/google/android/test/Test;.mF:F // field@0010
+0013cc: 0215 0000                              |00a0: move/from16 v21, v0
+0013d0: 6016 1b00                              |00a2: sget v22, Lcom/google/android/test/Test;.sF:F // field@001b
+0013d4: a610 1516                              |00a4: add-float v16, v21, v22
+0013d8: 0800 1a00                              |00a6: move-object/from16 v0, v26
+0013dc: 5200 1000                              |00a8: iget v0, v0, Lcom/google/android/test/Test;.mF:F // field@0010
+0013e0: 0215 0000                              |00aa: move/from16 v21, v0
+0013e4: 6016 1b00                              |00ac: sget v22, Lcom/google/android/test/Test;.sF:F // field@001b
+0013e8: a711 1516                              |00ae: sub-float v17, v21, v22
+0013ec: 0800 1a00                              |00b0: move-object/from16 v0, v26
+0013f0: 5200 1000                              |00b2: iget v0, v0, Lcom/google/android/test/Test;.mF:F // field@0010
+0013f4: 0215 0000                              |00b4: move/from16 v21, v0
+0013f8: 6016 1b00                              |00b6: sget v22, Lcom/google/android/test/Test;.sF:F // field@001b
+0013fc: a912 1516                              |00b8: div-float v18, v21, v22
+001400: 0800 1a00                              |00ba: move-object/from16 v0, v26
+001404: 5200 1000                              |00bc: iget v0, v0, Lcom/google/android/test/Test;.mF:F // field@0010
+001408: 0215 0000                              |00be: move/from16 v21, v0
+00140c: 6016 1b00                              |00c0: sget v22, Lcom/google/android/test/Test;.sF:F // field@001b
+001410: a813 1516                              |00c2: mul-float v19, v21, v22
+001414: 0800 1a00                              |00c4: move-object/from16 v0, v26
+001418: 5200 1000                              |00c6: iget v0, v0, Lcom/google/android/test/Test;.mF:F // field@0010
+00141c: 0215 0000                              |00c8: move/from16 v21, v0
+001420: 6016 1b00                              |00ca: sget v22, Lcom/google/android/test/Test;.sF:F // field@001b
+001424: aa14 1516                              |00cc: rem-float v20, v21, v22
+001428: 0800 1a00                              |00ce: move-object/from16 v0, v26
+00142c: 5300 0f00                              |00d0: iget-wide v0, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+001430: 0516 0000                              |00d2: move-wide/from16 v22, v0
+001434: 6118 1a00                              |00d4: sget-wide v24, Lcom/google/android/test/Test;.sD:D // field@001a
+001438: ab06 1618                              |00d6: add-double v6, v22, v24
+00143c: 0800 1a00                              |00d8: move-object/from16 v0, v26
+001440: 5300 0f00                              |00da: iget-wide v0, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+001444: 0516 0000                              |00dc: move-wide/from16 v22, v0
+001448: 6118 1a00                              |00de: sget-wide v24, Lcom/google/android/test/Test;.sD:D // field@001a
+00144c: ac08 1618                              |00e0: sub-double v8, v22, v24
+001450: 0800 1a00                              |00e2: move-object/from16 v0, v26
+001454: 5300 0f00                              |00e4: iget-wide v0, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+001458: 0516 0000                              |00e6: move-wide/from16 v22, v0
+00145c: 6118 1a00                              |00e8: sget-wide v24, Lcom/google/android/test/Test;.sD:D // field@001a
+001460: ae0a 1618                              |00ea: div-double v10, v22, v24
+001464: 0800 1a00                              |00ec: move-object/from16 v0, v26
+001468: 5300 0f00                              |00ee: iget-wide v0, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+00146c: 0516 0000                              |00f0: move-wide/from16 v22, v0
+001470: 6118 1a00                              |00f2: sget-wide v24, Lcom/google/android/test/Test;.sD:D // field@001a
+001474: ad0c 1618                              |00f4: mul-double v12, v22, v24
+001478: 0800 1a00                              |00f6: move-object/from16 v0, v26
+00147c: 5300 0f00                              |00f8: iget-wide v0, v0, Lcom/google/android/test/Test;.mD:D // field@000f
+001480: 0516 0000                              |00fa: move-wide/from16 v22, v0
+001484: 6118 1a00                              |00fc: sget-wide v24, Lcom/google/android/test/Test;.sD:D // field@001a
+001488: af0e 1618                              |00fe: rem-double v14, v22, v24
+00148c: 0200 1000                              |0100: move/from16 v0, v16
+001490: 7f00                                   |0102: neg-float v0, v0
+001492: 0215 0000                              |0103: move/from16 v21, v0
+001496: a615 1511                              |0105: add-float v21, v21, v17
+00149a: a816 1213                              |0107: mul-float v22, v18, v19
+00149e: a916 1614                              |0109: div-float v22, v22, v20
+0014a2: aa16 1610                              |010b: rem-float v22, v22, v16
+0014a6: a715 1516                              |010d: sub-float v21, v21, v22
+0014aa: 0200 1500                              |010f: move/from16 v0, v21
+0014ae: 0801 1a00                              |0111: move-object/from16 v1, v26
+0014b2: 5910 1000                              |0113: iput v0, v1, Lcom/google/android/test/Test;.mF:F // field@0010
+0014b6: 8060                                   |0115: neg-double v0, v6
+0014b8: 0516 0000                              |0116: move-wide/from16 v22, v0
+0014bc: ab16 1608                              |0118: add-double v22, v22, v8
+0014c0: ad18 0a0c                              |011a: mul-double v24, v10, v12
+0014c4: ae18 180e                              |011c: div-double v24, v24, v14
+0014c8: af18 1806                              |011e: rem-double v24, v24, v6
+0014cc: ac16 1618                              |0120: sub-double v22, v22, v24
+0014d0: 0500 1600                              |0122: move-wide/from16 v0, v22
+0014d4: 0802 1a00                              |0124: move-object/from16 v2, v26
+0014d8: 5a20 0f00                              |0126: iput-wide v0, v2, Lcom/google/android/test/Test;.mD:D // field@000f
+0014dc: 2900 eafe                              |0128: goto/16 0012 // -0116
+0014e0: 0003 0400 0200 0000 0100 0000 0100 ... |012a: array-data (8 units)
+0014f0: 0003 0800 0200 0000 0100 0000 0000 ... |0132: array-data (12 units)
+      catches       : (none)
+      positions     : 
+        0x0000 line=232
+        0x000a line=233
+        0x0012 line=235
+        0x001c line=256
+        0x0025 line=257
+        0x0029 line=258
+        0x0032 line=259
+        0x0036 line=260
+        0x0052 line=236
+        0x0057 line=237
+        0x005c line=238
+        0x006d line=239
+        0x007d line=240
+        0x008c line=241
+        0x0091 line=242
+        0x009c line=243
+        0x00a6 line=244
+        0x00b0 line=245
+        0x00ba line=246
+        0x00c4 line=247
+        0x00ce line=248
+        0x00d8 line=249
+        0x00e2 line=250
+        0x00ec line=251
+        0x00f6 line=252
+        0x0100 line=253
+        0x0115 line=254
+        0x012a line=256
+        0x0132 line=258
+      locals        : 
+        0x0025 - 0x0052 reg=4 aa [I 
+        0x0032 - 0x0052 reg=5 bb [J 
+        0x00d8 - 0x013e reg=6 d1 D 
+        0x00e2 - 0x013e reg=8 d2 D 
+        0x00ec - 0x013e reg=10 d3 D 
+        0x00f6 - 0x013e reg=12 d4 D 
+        0x0100 - 0x013e reg=14 d5 D 
+        0x00a6 - 0x013e reg=16 f1 F 
+        0x00b0 - 0x013e reg=17 f2 F 
+        0x00ba - 0x013e reg=18 f3 F 
+        0x00c4 - 0x013e reg=19 f4 F 
+        0x00ce - 0x013e reg=20 f5 F 
+        0x0000 - 0x013e reg=26 this Lcom/google/android/test/Test; 
+        0x0000 - 0x013e reg=27 b B 
+        0x0000 - 0x013e reg=28 c C 
+        0x0000 - 0x013e reg=29 s S 
+        0x0000 - 0x013e reg=30 i I 
+        0x0000 - 0x013e reg=31 l J 
+        0x0000 - 0x013e reg=33 f F 
+        0x0000 - 0x013e reg=34 d D 
+        0x0000 - 0x013e reg=36 o Ljava/lang/Object; 
+        0x0000 - 0x013e reg=37 a [I 
+
+    #9              : (in Lcom/google/android/test/Test;)
+      name          : 'q'
+      type          : '(II)V'
+      access        : 0x0012 (PRIVATE FINAL)
+      code          -
+      registers     : 10
+      ins           : 3
+      outs          : 4
+      insns size    : 85 16-bit code units
+001508:                                        |[001508] com.google.android.test.Test.q:(II)V
+001518: 1301 0a00                              |0000: const/16 v1, #int 10 // #a
+00151c: 1236                                   |0002: const/4 v6, #int 3 // #3
+00151e: 3218 0400                              |0003: if-eq v8, v1, 0007 // +0004
+001522: 3568 1000                              |0005: if-ge v8, v6, 0015 // +0010
+001526: 6200 1600                              |0007: sget-object v0, Lcom/google/android/test/Test;.sArray:[I // field@0016
+00152a: 1221                                   |0009: const/4 v1, #int 2 // #2
+00152c: 5272 1100                              |000a: iget v2, v7, Lcom/google/android/test/Test;.mI:I // field@0011
+001530: 7120 1300 2800                         |000c: invoke-static {v8, v2}, Lcom/google/android/test/Test;.r:(II)I // method@0013
+001536: 0a02                                   |000f: move-result v2
+001538: b192                                   |0010: sub-int/2addr v2, v9
+00153a: b982                                   |0011: shr-int/2addr v2, v8
+00153c: 4b02 0001                              |0012: aput v2, v0, v1
+001540: 0e00                                   |0014: return-void
+001542: 3618 1600                              |0015: if-gt v8, v1, 002b // +0016
+001546: 1300 9cff                              |0017: const/16 v0, #int -100 // #ff9c
+00154a: 3208 1200                              |0019: if-eq v8, v0, 002b // +0012
+00154e: 6200 1600                              |001b: sget-object v0, Lcom/google/android/test/Test;.sArray:[I // field@0016
+001552: 6102 1d00                              |001d: sget-wide v2, Lcom/google/android/test/Test;.sL:J // field@001d
+001556: 5374 1200                              |001f: iget-wide v4, v7, Lcom/google/android/test/Test;.mL:J // field@0012
+00155a: 7140 1500 3254                         |0021: invoke-static {v2, v3, v4, v5}, Lcom/google/android/test/Test;.s:(JJ)J // method@0015
+001560: 0b02                                   |0024: move-result-wide v2
+001562: 8421                                   |0025: long-to-int v1, v2
+001564: b291                                   |0026: mul-int/2addr v1, v9
+001566: ba81                                   |0027: ushr-int/2addr v1, v8
+001568: 4b01 0006                              |0028: aput v1, v0, v6
+00156c: 28ea                                   |002a: goto 0014 // -0016
+00156e: 1250                                   |002b: const/4 v0, #int 5 // #5
+001570: 3508 0400                              |002c: if-ge v8, v0, 0030 // +0004
+001574: 3218 0e00                              |002e: if-eq v8, v1, 003c // +000e
+001578: 6200 1600                              |0030: sget-object v0, Lcom/google/android/test/Test;.sArray:[I // field@0016
+00157c: 7120 1300 8900                         |0032: invoke-static {v9, v8}, Lcom/google/android/test/Test;.r:(II)I // method@0013
+001582: 0a01                                   |0035: move-result v1
+001584: 9802 0809                              |0036: shl-int v2, v8, v9
+001588: b721                                   |0038: xor-int/2addr v1, v2
+00158a: 4b01 0006                              |0039: aput v1, v0, v6
+00158e: 28d9                                   |003b: goto 0014 // -0027
+001590: 3398 0a00                              |003c: if-ne v8, v9, 0046 // +000a
+001594: d800 0902                              |003e: add-int/lit8 v0, v9, #int 2 // #02
+001598: 3708 0600                              |0040: if-le v8, v0, 0046 // +0006
+00159c: 3b08 0400                              |0042: if-gez v8, 0046 // +0004
+0015a0: 3c08 d0ff                              |0044: if-gtz v8, 0014 // -0030
+0015a4: 6200 1600                              |0046: sget-object v0, Lcom/google/android/test/Test;.sArray:[I // field@0016
+0015a8: df01 09ff                              |0048: xor-int/lit8 v1, v9, #int -1 // #ff
+0015ac: 9401 0801                              |004a: rem-int v1, v8, v1
+0015b0: b081                                   |004c: add-int/2addr v1, v8
+0015b2: 9202 0909                              |004d: mul-int v2, v9, v9
+0015b6: b382                                   |004f: div-int/2addr v2, v8
+0015b8: b121                                   |0050: sub-int/2addr v1, v2
+0015ba: b791                                   |0051: xor-int/2addr v1, v9
+0015bc: 4b01 0006                              |0052: aput v1, v0, v6
+0015c0: 28c0                                   |0054: goto 0014 // -0040
+      catches       : (none)
+      positions     : 
+        0x0003 line=127
+        0x0007 line=128
+        0x0014 line=136
+        0x0015 line=129
+        0x001b line=130
+        0x002b line=131
+        0x0030 line=132
+        0x003c line=133
+        0x0046 line=134
+      locals        : 
+        0x0000 - 0x0055 reg=7 this Lcom/google/android/test/Test; 
+        0x0000 - 0x0055 reg=8 x I 
+        0x0000 - 0x0055 reg=9 y I 
+
+    #10              : (in Lcom/google/android/test/Test;)
+      name          : 'r'
+      type          : '(II)I'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 15
+      ins           : 2
+      outs          : 0
+      insns size    : 93 16-bit code units
+0015c4:                                        |[0015c4] com.google.android.test.Test.r:(II)I
+0015d4: e00d 0d01                              |0000: shl-int/lit8 v13, v13, #int 1 // #01
+0015d8: e10d 0d03                              |0002: shr-int/lit8 v13, v13, #int 3 // #03
+0015dc: e20d 0d04                              |0004: ushr-int/lit8 v13, v13, #int 4 // #04
+0015e0: b8ed                                   |0006: shl-int/2addr v13, v14
+0015e2: b9ed                                   |0007: shr-int/2addr v13, v14
+0015e4: baed                                   |0008: ushr-int/2addr v13, v14
+0015e6: df09 0eff                              |0009: xor-int/lit8 v9, v14, #int -1 // #ff
+0015ea: 9000 0e09                              |000b: add-int v0, v14, v9
+0015ee: 9101 0e09                              |000d: sub-int v1, v14, v9
+0015f2: 9202 0e09                              |000f: mul-int v2, v14, v9
+0015f6: 9303 0e09                              |0011: div-int v3, v14, v9
+0015fa: 9704 0e09                              |0013: xor-int v4, v14, v9
+0015fe: 9505 0e09                              |0015: and-int v5, v14, v9
+001602: 9806 0e09                              |0017: shl-int v6, v14, v9
+001606: 9907 0e09                              |0019: shr-int v7, v14, v9
+00160a: 9a08 0e09                              |001b: ushr-int v8, v14, v9
+00160e: d5da ff00                              |001d: and-int/lit16 v10, v13, #int 255 // #00ff
+001612: df0b 0d12                              |001f: xor-int/lit8 v11, v13, #int 18 // #12
+001616: df0b 0bff                              |0021: xor-int/lit8 v11, v11, #int -1 // #ff
+00161a: 960d 0a0b                              |0023: or-int v13, v10, v11
+00161e: df0a 00ff                              |0025: xor-int/lit8 v10, v0, #int -1 // #ff
+001622: b01a                                   |0027: add-int/2addr v10, v1
+001624: 920b 0203                              |0028: mul-int v11, v2, v3
+001628: b34b                                   |002a: div-int/2addr v11, v4
+00162a: b1ba                                   |002b: sub-int/2addr v10, v11
+00162c: b65a                                   |002c: or-int/2addr v10, v5
+00162e: df0b 05ff                              |002d: xor-int/lit8 v11, v5, #int -1 // #ff
+001632: 920c 0607                              |002f: mul-int v12, v6, v7
+001636: b48c                                   |0031: rem-int/2addr v12, v8
+001638: b0cb                                   |0032: add-int/2addr v11, v12
+00163a: b6ba                                   |0033: or-int/2addr v10, v11
+00163c: b1ad                                   |0034: sub-int/2addr v13, v10
+00163e: 7bda                                   |0035: neg-int v10, v13
+001640: d80a 0a01                              |0036: add-int/lit8 v10, v10, #int 1 // #01
+001644: da0b 0d03                              |0038: mul-int/lit8 v11, v13, #int 3 // #03
+001648: db0b 0b02                              |003a: div-int/lit8 v11, v11, #int 2 // #02
+00164c: b1ba                                   |003c: sub-int/2addr v10, v11
+00164e: b1ea                                   |003d: sub-int/2addr v10, v14
+001650: d5db ff00                              |003e: and-int/lit16 v11, v13, #int 255 // #00ff
+001654: b0ba                                   |0040: add-int/2addr v10, v11
+001656: d4db ff00                              |0041: rem-int/lit16 v11, v13, #int 255 // #00ff
+00165a: b0ba                                   |0043: add-int/2addr v10, v11
+00165c: d0db 01ff                              |0044: add-int/lit16 v11, v13, #int -255 // #ff01
+001660: b0ba                                   |0046: add-int/2addr v10, v11
+001662: d2db ff00                              |0047: mul-int/lit16 v11, v13, #int 255 // #00ff
+001666: b0ba                                   |0049: add-int/2addr v10, v11
+001668: d3db ff00                              |004a: div-int/lit16 v11, v13, #int 255 // #00ff
+00166c: b0ba                                   |004c: add-int/2addr v10, v11
+00166e: d6db ff00                              |004d: or-int/lit16 v11, v13, #int 255 // #00ff
+001672: b0ba                                   |004f: add-int/2addr v10, v11
+001674: d7db ff00                              |0050: xor-int/lit16 v11, v13, #int 255 // #00ff
+001678: b0ba                                   |0052: add-int/2addr v10, v11
+00167a: dd0b 0d01                              |0053: and-int/lit8 v11, v13, #int 1 // #01
+00167e: b0ba                                   |0055: add-int/2addr v10, v11
+001680: dc0b 0d01                              |0056: rem-int/lit8 v11, v13, #int 1 // #01
+001684: b0ba                                   |0058: add-int/2addr v10, v11
+001686: d80b 0dff                              |0059: add-int/lit8 v11, v13, #int -1 // #ff
+00168a: b0ba                                   |005b: add-int/2addr v10, v11
+00168c: 0f0a                                   |005c: return v10
+      catches       : (none)
+      positions     : 
+        0x0000 line=139
+        0x0006 line=140
+        0x0009 line=141
+        0x000b line=142
+        0x000d line=143
+        0x000f line=144
+        0x0011 line=145
+        0x0013 line=146
+        0x0015 line=147
+        0x0017 line=148
+        0x0019 line=149
+        0x001b line=150
+        0x001d line=151
+        0x0025 line=152
+        0x0035 line=153
+        0x0047 line=154
+        0x0049 line=153
+        0x004a line=154
+        0x004c line=153
+        0x004d line=154
+        0x004f line=153
+        0x0050 line=154
+        0x0052 line=153
+        0x0053 line=155
+        0x0055 line=153
+        0x0056 line=155
+        0x0058 line=153
+        0x0059 line=155
+        0x005b line=153
+      locals        : 
+        0x000d - 0x005d reg=0 t1 I 
+        0x000f - 0x005d reg=1 t2 I 
+        0x0011 - 0x005d reg=2 t3 I 
+        0x0013 - 0x005d reg=3 t4 I 
+        0x0015 - 0x005d reg=4 t5 I 
+        0x0017 - 0x005d reg=5 t6 I 
+        0x0019 - 0x005d reg=6 t7 I 
+        0x001b - 0x005d reg=7 t8 I 
+        0x001d - 0x005d reg=8 t9 I 
+        0x000b - 0x005d reg=9 z I 
+        0x0000 - 0x005d reg=13 x I 
+        0x0000 - 0x005d reg=14 y I 
+
+    #11              : (in Lcom/google/android/test/Test;)
+      name          : 's'
+      type          : '(JJ)J'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 32
+      ins           : 4
+      outs          : 0
+      insns size    : 194 16-bit code units
+001690:                                        |[001690] com.google.android.test.Test.s:(JJ)J
+0016a0: 1316 0100                              |0000: const/16 v22, #int 1 // #1
+0016a4: a31c 1c16                              |0002: shl-long v28, v28, v22
+0016a8: 1316 0300                              |0004: const/16 v22, #int 3 // #3
+0016ac: a41c 1c16                              |0006: shr-long v28, v28, v22
+0016b0: 1316 0400                              |0008: const/16 v22, #int 4 // #4
+0016b4: a51c 1c16                              |000a: ushr-long v28, v28, v22
+0016b8: 0500 1e00                              |000c: move-wide/from16 v0, v30
+0016bc: 8400                                   |000e: long-to-int v0, v0
+0016be: 0216 0000                              |000f: move/from16 v22, v0
+0016c2: a31c 1c16                              |0011: shl-long v28, v28, v22
+0016c6: 0500 1e00                              |0013: move-wide/from16 v0, v30
+0016ca: 8400                                   |0015: long-to-int v0, v0
+0016cc: 0216 0000                              |0016: move/from16 v22, v0
+0016d0: a41c 1c16                              |0018: shr-long v28, v28, v22
+0016d4: 0500 1e00                              |001a: move-wide/from16 v0, v30
+0016d8: 8400                                   |001c: long-to-int v0, v0
+0016da: 0216 0000                              |001d: move/from16 v22, v0
+0016de: a51c 1c16                              |001f: ushr-long v28, v28, v22
+0016e2: 1616 ffff                              |0021: const-wide/16 v22, #int -1 // #ffff
+0016e6: a214 1e16                              |0023: xor-long v20, v30, v22
+0016ea: 9b02 1e14                              |0025: add-long v2, v30, v20
+0016ee: 9c04 1e14                              |0027: sub-long v4, v30, v20
+0016f2: 9d06 1e14                              |0029: mul-long v6, v30, v20
+0016f6: 9e08 1e14                              |002b: div-long v8, v30, v20
+0016fa: a20a 1e14                              |002d: xor-long v10, v30, v20
+0016fe: a00c 1e14                              |002f: and-long v12, v30, v20
+001702: 0500 1400                              |0031: move-wide/from16 v0, v20
+001706: 8400                                   |0033: long-to-int v0, v0
+001708: 0216 0000                              |0034: move/from16 v22, v0
+00170c: a30e 1e16                              |0036: shl-long v14, v30, v22
+001710: 0500 1400                              |0038: move-wide/from16 v0, v20
+001714: 8400                                   |003a: long-to-int v0, v0
+001716: 0216 0000                              |003b: move/from16 v22, v0
+00171a: a410 1e16                              |003d: shr-long v16, v30, v22
+00171e: 0500 1400                              |003f: move-wide/from16 v0, v20
+001722: 8400                                   |0041: long-to-int v0, v0
+001724: 0216 0000                              |0042: move/from16 v22, v0
+001728: a512 1e16                              |0044: ushr-long v18, v30, v22
+00172c: 1616 ff00                              |0046: const-wide/16 v22, #int 255 // #ff
+001730: a016 161c                              |0048: and-long v22, v22, v28
+001734: 1618 1200                              |004a: const-wide/16 v24, #int 18 // #12
+001738: a218 181c                              |004c: xor-long v24, v24, v28
+00173c: 161a ffff                              |004e: const-wide/16 v26, #int -1 // #ffff
+001740: a218 181a                              |0050: xor-long v24, v24, v26
+001744: a11c 1618                              |0052: or-long v28, v22, v24
+001748: 1616 ffff                              |0054: const-wide/16 v22, #int -1 // #ffff
+00174c: a216 1602                              |0056: xor-long v22, v22, v2
+001750: 9b16 1604                              |0058: add-long v22, v22, v4
+001754: 9d18 0608                              |005a: mul-long v24, v6, v8
+001758: 9e18 180a                              |005c: div-long v24, v24, v10
+00175c: 9c16 1618                              |005e: sub-long v22, v22, v24
+001760: a116 160c                              |0060: or-long v22, v22, v12
+001764: 1618 ffff                              |0062: const-wide/16 v24, #int -1 // #ffff
+001768: a218 180c                              |0064: xor-long v24, v24, v12
+00176c: 9d1a 0e10                              |0066: mul-long v26, v14, v16
+001770: 9f1a 1a12                              |0068: rem-long v26, v26, v18
+001774: 9b18 181a                              |006a: add-long v24, v24, v26
+001778: a116 1618                              |006c: or-long v22, v22, v24
+00177c: 9c1c 1c16                              |006e: sub-long v28, v28, v22
+001780: 0500 1c00                              |0070: move-wide/from16 v0, v28
+001784: 7d00                                   |0072: neg-long v0, v0
+001786: 0516 0000                              |0073: move-wide/from16 v22, v0
+00178a: 1618 0100                              |0075: const-wide/16 v24, #int 1 // #1
+00178e: 9b16 1618                              |0077: add-long v22, v22, v24
+001792: 1618 0300                              |0079: const-wide/16 v24, #int 3 // #3
+001796: 9d18 181c                              |007b: mul-long v24, v24, v28
+00179a: 161a 0200                              |007d: const-wide/16 v26, #int 2 // #2
+00179e: 9e18 181a                              |007f: div-long v24, v24, v26
+0017a2: 9c16 1618                              |0081: sub-long v22, v22, v24
+0017a6: 9c16 161e                              |0083: sub-long v22, v22, v30
+0017aa: 1618 ff00                              |0085: const-wide/16 v24, #int 255 // #ff
+0017ae: a018 181c                              |0087: and-long v24, v24, v28
+0017b2: 9b16 1618                              |0089: add-long v22, v22, v24
+0017b6: 1618 ff00                              |008b: const-wide/16 v24, #int 255 // #ff
+0017ba: 9f18 1c18                              |008d: rem-long v24, v28, v24
+0017be: 9b16 1618                              |008f: add-long v22, v22, v24
+0017c2: 1618 ff00                              |0091: const-wide/16 v24, #int 255 // #ff
+0017c6: 9c18 1c18                              |0093: sub-long v24, v28, v24
+0017ca: 9b16 1618                              |0095: add-long v22, v22, v24
+0017ce: 1618 ff00                              |0097: const-wide/16 v24, #int 255 // #ff
+0017d2: 9d18 181c                              |0099: mul-long v24, v24, v28
+0017d6: 9b16 1618                              |009b: add-long v22, v22, v24
+0017da: 1618 ff00                              |009d: const-wide/16 v24, #int 255 // #ff
+0017de: 9e18 1c18                              |009f: div-long v24, v28, v24
+0017e2: 9b16 1618                              |00a1: add-long v22, v22, v24
+0017e6: 1618 ff00                              |00a3: const-wide/16 v24, #int 255 // #ff
+0017ea: a118 181c                              |00a5: or-long v24, v24, v28
+0017ee: 9b16 1618                              |00a7: add-long v22, v22, v24
+0017f2: 1618 ff00                              |00a9: const-wide/16 v24, #int 255 // #ff
+0017f6: a218 181c                              |00ab: xor-long v24, v24, v28
+0017fa: 9b16 1618                              |00ad: add-long v22, v22, v24
+0017fe: 1618 0100                              |00af: const-wide/16 v24, #int 1 // #1
+001802: a018 181c                              |00b1: and-long v24, v24, v28
+001806: 9b16 1618                              |00b3: add-long v22, v22, v24
+00180a: 1618 0100                              |00b5: const-wide/16 v24, #int 1 // #1
+00180e: 9f18 1c18                              |00b7: rem-long v24, v28, v24
+001812: 9b16 1618                              |00b9: add-long v22, v22, v24
+001816: 1618 0100                              |00bb: const-wide/16 v24, #int 1 // #1
+00181a: 9c18 1c18                              |00bd: sub-long v24, v28, v24
+00181e: 9b16 1618                              |00bf: add-long v22, v22, v24
+001822: 1016                                   |00c1: return-wide v22
+      catches       : (none)
+      positions     : 
+        0x0000 line=159
+        0x000c line=160
+        0x0021 line=161
+        0x0025 line=162
+        0x0027 line=163
+        0x0029 line=164
+        0x002b line=165
+        0x002d line=166
+        0x002f line=167
+        0x0031 line=168
+        0x0038 line=169
+        0x003f line=170
+        0x0046 line=171
+        0x0054 line=172
+        0x0070 line=173
+        0x0097 line=174
+        0x009b line=173
+        0x009d line=174
+        0x00a1 line=173
+        0x00a3 line=174
+        0x00a7 line=173
+        0x00a9 line=174
+        0x00ad line=173
+        0x00af line=175
+        0x00b3 line=173
+        0x00b5 line=175
+        0x00b9 line=173
+        0x00bb line=175
+        0x00bf line=173
+      locals        : 
+        0x0027 - 0x00c2 reg=2 t1 J 
+        0x0029 - 0x00c2 reg=4 t2 J 
+        0x002b - 0x00c2 reg=6 t3 J 
+        0x002d - 0x00c2 reg=8 t4 J 
+        0x002f - 0x00c2 reg=10 t5 J 
+        0x0031 - 0x00c2 reg=12 t6 J 
+        0x0038 - 0x00c2 reg=14 t7 J 
+        0x003f - 0x00c2 reg=16 t8 J 
+        0x0046 - 0x00c2 reg=18 t9 J 
+        0x0025 - 0x00c2 reg=20 z J 
+        0x0000 - 0x00c2 reg=28 x J 
+        0x0000 - 0x00c2 reg=30 y J 
+
+    #12              : (in Lcom/google/android/test/Test;)
+      name          : 'seta'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 0
+      insns size    : 48 16-bit code units
+001824:                                        |[001824] com.google.android.test.Test.seta:()V
+001834: 1211                                   |0000: const/4 v1, #int 1 // #1
+001836: 1224                                   |0001: const/4 v4, #int 2 // #2
+001838: 5450 0200                              |0002: iget-object v0, v5, Lcom/google/android/test/Test;.aBool:[Z // field@0002
+00183c: 4e01 0004                              |0004: aput-boolean v1, v0, v4
+001840: 5450 0300                              |0006: iget-object v0, v5, Lcom/google/android/test/Test;.aByte:[B // field@0003
+001844: 4f01 0004                              |0008: aput-byte v1, v0, v4
+001848: 5450 0400                              |000a: iget-object v0, v5, Lcom/google/android/test/Test;.aChar:[C // field@0004
+00184c: 5004 0004                              |000c: aput-char v4, v0, v4
+001850: 5450 0a00                              |000e: iget-object v0, v5, Lcom/google/android/test/Test;.aShort:[S // field@000a
+001854: 1301 8600                              |0010: const/16 v1, #int 134 // #86
+001858: 5101 0004                              |0012: aput-short v1, v0, v4
+00185c: 5450 0700                              |0014: iget-object v0, v5, Lcom/google/android/test/Test;.aInt:[I // field@0007
+001860: 12f1                                   |0016: const/4 v1, #int -1 // #ff
+001862: 4b01 0004                              |0017: aput v1, v0, v4
+001866: 5450 0800                              |0019: iget-object v0, v5, Lcom/google/android/test/Test;.aLong:[J // field@0008
+00186a: 1602 ffff                              |001b: const-wide/16 v2, #int -1 // #ffff
+00186e: 4c02 0004                              |001d: aput-wide v2, v0, v4
+001872: 5450 0600                              |001f: iget-object v0, v5, Lcom/google/android/test/Test;.aFloat:[F // field@0006
+001876: 1501 8841                              |0021: const/high16 v1, #int 1099431936 // #4188
+00187a: 4b01 0004                              |0023: aput v1, v0, v4
+00187e: 5450 0500                              |0025: iget-object v0, v5, Lcom/google/android/test/Test;.aDouble:[D // field@0005
+001882: 1902 3240                              |0027: const-wide/high16 v2, #long 4625759767262920704 // #4032
+001886: 4c02 0004                              |0029: aput-wide v2, v0, v4
+00188a: 5450 0900                              |002b: iget-object v0, v5, Lcom/google/android/test/Test;.aObject:[Ljava/lang/Object; // field@0009
+00188e: 4d05 0004                              |002d: aput-object v5, v0, v4
+001892: 0e00                                   |002f: return-void
+      catches       : (none)
+      positions     : 
+        0x0002 line=60
+        0x0006 line=61
+        0x000a line=62
+        0x000e line=63
+        0x0014 line=64
+        0x0019 line=65
+        0x001f line=66
+        0x0025 line=67
+        0x002b line=68
+        0x002f line=69
+      locals        : 
+        0x0000 - 0x0030 reg=5 this Lcom/google/android/test/Test; 
+
+  Virtual methods   -
+    #0              : (in Lcom/google/android/test/Test;)
+      name          : 'onStart'
+      type          : '()V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 7 16-bit code units
+001894:                                        |[001894] com.google.android.test.Test.onStart:()V
+0018a4: 6f10 0300 0100                         |0000: invoke-super {v1}, Landroid/app/Activity;.onStart:()V // method@0003
+0018aa: 1200                                   |0003: const/4 v0, #int 0 // #0
+0018ac: 5b10 0b00                              |0004: iput-object v0, v1, Lcom/google/android/test/Test;.mArray:[I // field@000b
+0018b0: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=86
+        0x0003 line=87
+        0x0006 line=88
+      locals        : 
+        0x0000 - 0x0007 reg=1 this Lcom/google/android/test/Test; 
+
+    #1              : (in Lcom/google/android/test/Test;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 0
+      insns size    : 9 16-bit code units
+0018b4:                                        |[0018b4] com.google.android.test.Test.run:()V
+0018c4: 1301 6400                              |0000: const/16 v1, #int 100 // #64
+0018c8: 2310 2400                              |0002: new-array v0, v1, [I // type@0024
+0018cc: 5b20 0b00                              |0004: iput-object v0, v2, Lcom/google/android/test/Test;.mArray:[I // field@000b
+0018d0: 6900 1600                              |0006: sput-object v0, Lcom/google/android/test/Test;.sArray:[I // field@0016
+0018d4: 0e00                                   |0008: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=92
+        0x0004 line=93
+        0x0006 line=94
+        0x0008 line=95
+      locals        : 
+        0x0004 - 0x0009 reg=0 x [I 
+        0x0000 - 0x0009 reg=2 this Lcom/google/android/test/Test; 
+
+  source_file_idx   : 49 (Test.java)
+

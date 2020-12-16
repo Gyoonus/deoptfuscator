@@ -1,0 +1,2 @@
+Regression test for the ARM backend, which used to have a bug
+handling branches fallthrough.

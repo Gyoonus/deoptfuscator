@@ -1,0 +1,93 @@
+[Ljava/lang/Object;, null]
+1
+[Ljava/lang/String;, Ljava/lang/Object;Ljava/io/Serializable;Ljava/lang/Comparable<Ljava/lang/String;>;Ljava/lang/CharSequence;]
+11
+[Ljava/lang/Math;, null]
+11
+[Ljava/util/List;, <E:Ljava/lang/Object;>Ljava/lang/Object;Ljava/util/Collection<TE;>;]
+601
+[L$Proxy20;, null]
+11
+[I, null]
+411
+[[D, null]
+411
+int interface=false array=false modifiable=false
+$Proxy20 interface=false array=false modifiable=false
+java.lang.Runnable interface=true array=false modifiable=false
+java.lang.String interface=false array=false modifiable=false
+java.util.ArrayList interface=false array=false modifiable=true
+[I interface=false array=true modifiable=false
+[Ljava.lang.Runnable; interface=false array=true modifiable=false
+[Ljava.lang.String; interface=false array=true modifiable=false
+[public static final int java.lang.Integer.BYTES, static final char[] java.lang.Integer.DigitOnes, static final char[] java.lang.Integer.DigitTens, public static final int java.lang.Integer.MAX_VALUE, public static final int java.lang.Integer.MIN_VALUE, public static final int java.lang.Integer.SIZE, private static final java.lang.String[] java.lang.Integer.SMALL_NEG_VALUES, private static final java.lang.String[] java.lang.Integer.SMALL_NONNEG_VALUES, public static final java.lang.Class java.lang.Integer.TYPE, static final char[] java.lang.Integer.digits, private static final long java.lang.Integer.serialVersionUID, static final int[] java.lang.Integer.sizeTable, private final int java.lang.Integer.value]
+[]
+[]
+[java.lang.Integer(), public java.lang.Integer(int), public java.lang.Integer(java.lang.String) throws java.lang.NumberFormatException, public static int java.lang.Integer.bitCount(int), public static int java.lang.Integer.compare(int,int), public static int java.lang.Integer.compareUnsigned(int,int), public static java.lang.Integer java.lang.Integer.decode(java.lang.String) throws java.lang.NumberFormatException, public static int java.lang.Integer.divideUnsigned(int,int), static int java.lang.Integer.formatUnsignedInt(int,int,char[],int,int), static void java.lang.Integer.getChars(int,int,char[]), public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String), public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,int), public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,java.lang.Integer), public static int java.lang.Integer.hashCode(int), public static int java.lang.Integer.highestOneBit(int), public static int java.lang.Integer.lowestOneBit(int), public static int java.lang.Integer.max(int,int), public static int java.lang.Integer.min(int,int), public static int java.lang.Integer.numberOfLeadingZeros(int), public static int java.lang.Integer.numberOfTrailingZeros(int), public static int java.lang.Integer.parseInt(java.lang.String) throws java.lang.NumberFormatException, public static int java.lang.Integer.parseInt(java.lang.String,int) throws java.lang.NumberFormatException, public static int java.lang.Integer.parseUnsignedInt(java.lang.String) throws java.lang.NumberFormatException, public static int java.lang.Integer.parseUnsignedInt(java.lang.String,int) throws java.lang.NumberFormatException, public static int java.lang.Integer.remainderUnsigned(int,int), public static int java.lang.Integer.reverse(int), public static int java.lang.Integer.reverseBytes(int), public static int java.lang.Integer.rotateLeft(int,int), public static int java.lang.Integer.rotateRight(int,int), public static int java.lang.Integer.signum(int), static int java.lang.Integer.stringSize(int), public static int java.lang.Integer.sum(int,int), public static java.lang.String java.lang.Integer.toBinaryString(int), public static java.lang.String java.lang.Integer.toHexString(int), public static java.lang.String java.lang.Integer.toOctalString(int), public static java.lang.String java.lang.Integer.toString(int), public static java.lang.String java.lang.Integer.toString(int,int), public static long java.lang.Integer.toUnsignedLong(int), public static java.lang.String java.lang.Integer.toUnsignedString(int), public static java.lang.String java.lang.Integer.toUnsignedString(int,int), private static java.lang.String java.lang.Integer.toUnsignedString0(int,int), public static java.lang.Integer java.lang.Integer.valueOf(int), public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String) throws java.lang.NumberFormatException, public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String,int) throws java.lang.NumberFormatException, public byte java.lang.Integer.byteValue(), public int java.lang.Integer.compareTo(java.lang.Integer), public int java.lang.Integer.compareTo(java.lang.Object), public double java.lang.Integer.doubleValue(), public boolean java.lang.Integer.equals(java.lang.Object), public float java.lang.Integer.floatValue(), public int java.lang.Integer.hashCode(), public int java.lang.Integer.intValue(), public long java.lang.Integer.longValue(), public short java.lang.Integer.shortValue(), public java.lang.String java.lang.Integer.toString()]
+[]
+[]
+int 100000
+class [Ljava.lang.String; 10000
+class java.lang.Object 111
+class art.Test912$TestForNonInit 11
+class art.Test912$TestForInitFail 1011
+int []
+class [Ljava.lang.String; []
+class java.lang.Object []
+interface art.Test912$InfA []
+interface art.Test912$InfB [interface art.Test912$InfA]
+interface art.Test912$InfC [interface art.Test912$InfB]
+class art.Test912$ClassA [interface art.Test912$InfA]
+class art.Test912$ClassB [interface art.Test912$InfB]
+class art.Test912$ClassC [interface art.Test912$InfA, interface art.Test912$InfC]
+class java.lang.String null
+class [Ljava.lang.String; null
+interface art.Test912$InfA dalvik.system.PathClassLoader
+class $Proxy20 dalvik.system.PathClassLoader
+
+boot <- (B) <- (A,C)
+[class A, class B, class java.lang.Object]
+[class B, class java.lang.Object]
+
+boot <- (B) <- (A, List)
+[class A, class java.lang.Object, interface java.util.List]
+[class B, class java.lang.Object]
+
+boot <- 1+2 (A,B)
+[class A, class B, class java.lang.Object]
+
+[35, 0]
+
+B, false
+Load: LB; on ClassEvents
+Prepare: LB; on ClassEvents (cur=ClassEvents)
+B, true
+Load: LB; on ClassEvents
+Prepare: LB; on ClassEvents (cur=ClassEvents)
+C, false
+Load: LA; on ClassEvents
+Prepare: LA; on ClassEvents (cur=ClassEvents)
+Load: LC; on ClassEvents
+Prepare: LC; on ClassEvents (cur=ClassEvents)
+A, false
+C, true
+Load: LA; on ClassEvents
+Prepare: LA; on ClassEvents (cur=ClassEvents)
+Load: LC; on ClassEvents
+Prepare: LC; on ClassEvents (cur=ClassEvents)
+A, true
+A, true
+Load: LA; on ClassEvents
+Prepare: LA; on ClassEvents (cur=ClassEvents)
+C, true
+Load: LC; on ClassEvents
+Prepare: LC; on ClassEvents (cur=ClassEvents)
+C, true
+Load: LA; on TestRunner
+Prepare: LA; on TestRunner (cur=TestRunner)
+Load: LC; on TestRunner
+Prepare: LC; on TestRunner (cur=TestRunner)
+Load: L$Proxy21; on ClassEvents
+Prepare: L$Proxy21; on ClassEvents (cur=ClassEvents)
+Load: [Lart/Test912; on ClassEvents
+Prepare: [Lart/Test912; on ClassEvents (cur=ClassEvents)

@@ -1,0 +1,118 @@
+Test is class art.Test991$DoNothingFieldTracer & class art.Test991$JavaReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$DoNothingFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1)
+normal read: xyz = 0
+FieldTracer: class art.Test991$DoNothingFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1). New value: 1 (type: class java.lang.Integer)
+Final state: xyz = 1
+Test is class art.Test991$ThrowReadFieldTracer & class art.Test991$JavaReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ThrowReadFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1)
+Caught error. art.Test991$TestError: Throwing error during access
+Final state: xyz = 0
+Test is class art.Test991$ThrowWriteFieldTracer & class art.Test991$JavaReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ThrowWriteFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1)
+normal read: xyz = 0
+FieldTracer: class art.Test991$ThrowWriteFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1). New value: 1 (type: class java.lang.Integer)
+Caught error. art.Test991$TestError: Throwing error during modify
+Final state: xyz = 0
+Test is class art.Test991$ModifyDuringReadFieldTracer & class art.Test991$JavaReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringReadFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1)
+normal read: xyz = 20
+FieldTracer: class art.Test991$ModifyDuringReadFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1). New value: 21 (type: class java.lang.Integer)
+Final state: xyz = 21
+Test is class art.Test991$ModifyDuringWriteFieldTracer & class art.Test991$JavaReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringWriteFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1)
+normal read: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringWriteFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1). New value: 1 (type: class java.lang.Integer)
+Final state: xyz = 1
+Test is class art.Test991$ModifyDuringReadAndWriteFieldTracer & class art.Test991$JavaReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringReadAndWriteFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1)
+normal read: xyz = 10
+FieldTracer: class art.Test991$ModifyDuringReadAndWriteFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public void art.Test991$JavaReadWrite.accept(art.Test991$TestClass1). New value: 11 (type: class java.lang.Integer)
+Final state: xyz = 11
+Test is class art.Test991$DoNothingFieldTracer & class art.Test991$ReflectiveReadWrite
+Initial state: xyz = 0
+reflective read: xyz = 0
+Final state: xyz = 1
+Test is class art.Test991$ThrowReadFieldTracer & class art.Test991$ReflectiveReadWrite
+Initial state: xyz = 0
+reflective read: xyz = 0
+Final state: xyz = 1
+Test is class art.Test991$ThrowWriteFieldTracer & class art.Test991$ReflectiveReadWrite
+Initial state: xyz = 0
+reflective read: xyz = 0
+Final state: xyz = 1
+Test is class art.Test991$ModifyDuringReadFieldTracer & class art.Test991$ReflectiveReadWrite
+Initial state: xyz = 0
+reflective read: xyz = 0
+Final state: xyz = 1
+Test is class art.Test991$ModifyDuringWriteFieldTracer & class art.Test991$ReflectiveReadWrite
+Initial state: xyz = 0
+reflective read: xyz = 0
+Final state: xyz = 1
+Test is class art.Test991$ModifyDuringReadAndWriteFieldTracer & class art.Test991$ReflectiveReadWrite
+Initial state: xyz = 0
+reflective read: xyz = 0
+Final state: xyz = 1
+Test is class art.Test991$DoNothingFieldTracer & class art.Test991$NativeReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$DoNothingFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1)
+native read: xyz = 0
+FieldTracer: class art.Test991$DoNothingFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1). New value: 1 (type: class java.lang.Integer)
+Final state: xyz = 1
+Test is class art.Test991$ThrowReadFieldTracer & class art.Test991$NativeReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ThrowReadFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1)
+Caught error. art.Test991$TestError: Throwing error during access
+Final state: xyz = 0
+Test is class art.Test991$ThrowWriteFieldTracer & class art.Test991$NativeReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ThrowWriteFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1)
+native read: xyz = 0
+FieldTracer: class art.Test991$ThrowWriteFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1). New value: 1 (type: class java.lang.Integer)
+Caught error. art.Test991$TestError: Throwing error during modify
+Final state: xyz = 1
+Test is class art.Test991$ModifyDuringReadFieldTracer & class art.Test991$NativeReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringReadFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1)
+native read: xyz = 20
+FieldTracer: class art.Test991$ModifyDuringReadFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1). New value: 21 (type: class java.lang.Integer)
+Final state: xyz = 21
+Test is class art.Test991$ModifyDuringWriteFieldTracer & class art.Test991$NativeReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringWriteFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1)
+native read: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringWriteFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1). New value: 1 (type: class java.lang.Integer)
+Final state: xyz = 1
+Test is class art.Test991$ModifyDuringReadAndWriteFieldTracer & class art.Test991$NativeReadWrite
+Initial state: xyz = 0
+FieldTracer: class art.Test991$ModifyDuringReadAndWriteFieldTracer
+	ACCESS of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1)
+native read: xyz = 10
+FieldTracer: class art.Test991$ModifyDuringReadAndWriteFieldTracer
+	MODIFY of public int art.Test991$TestClass1.xyz on object of type: class art.Test991$TestClass1 in method public static native void art.Test991.doNativeReadWrite(art.Test991$TestClass1). New value: 11 (type: class java.lang.Integer)
+Final state: xyz = 11

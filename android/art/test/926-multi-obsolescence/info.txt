@@ -1,0 +1,2 @@
+Tests that we can redefine multiple classes at once using the RedefineClasses
+function.

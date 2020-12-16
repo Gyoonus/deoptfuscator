@@ -1,0 +1,2 @@
+Lart/Test999;->foo()V
+Lart/Test999;->bar:I

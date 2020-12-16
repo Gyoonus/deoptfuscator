@@ -1,0 +1,5 @@
+array[0]=2.5f
+array[1]=2.625f
+array[0]=3.5
+array[1]=3.625
+finish

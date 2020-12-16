@@ -1,0 +1,1 @@
+Test various cases for full/partial-fragment deoptimization.

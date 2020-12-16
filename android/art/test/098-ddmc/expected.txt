@@ -1,0 +1,23 @@
+Confirm empty
+empty=Allocations[message header len: 15 entry header len: 9 stack frame len: 8 number of entries: 0 offset to string table from start of message: 15 number of class name strings: 0 number of method name strings: 0 number of source file name strings: 0]
+Confirm enable
+status=false
+status=true
+Capture some allocations (note just this causes allocations)
+before > 0=true
+Confirm when we overflow, we don't roll over to zero. b/17392248
+before < overflowAllocations=true
+after > before=true
+after.numberOfEntries=65535
+Disable and confirm back to empty
+status=false
+reset=Allocations[message header len: 15 entry header len: 9 stack frame len: 8 number of entries: 0 offset to string table from start of message: 15 number of class name strings: 0 number of method name strings: 0 number of source file name strings: 0]
+Confirm we can disable twice in a row
+status=false
+status=false
+Confirm we can reenable twice in a row without losing allocations
+status=true
+status=true
+second > first =true
+Goodbye
+goodbye=Allocations[message header len: 15 entry header len: 9 stack frame len: 8 number of entries: 0 offset to string table from start of message: 15 number of class name strings: 0 number of method name strings: 0 number of source file name strings: 0]

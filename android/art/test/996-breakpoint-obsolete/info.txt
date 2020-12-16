@@ -1,0 +1,4 @@
+Test JVMTI breakpoint/obsolete method interaction.
+
+This checks that redefining a class will clear breakpoints on the class's
+methods and that it is possible to set breakpoints on obsolete methods.

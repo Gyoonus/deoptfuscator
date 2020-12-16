@@ -1,0 +1,2 @@
+Regression for the optimizing for crashes during compilation of methods which
+use values before initializing them.

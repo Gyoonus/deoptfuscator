@@ -1,0 +1,7 @@
+Redefine in ClassLoad on current thread.
+Trying to redefine: class Transform. Caught error class java.lang.Exception: Failed to retransform class <LTransform;> due to JVMTI_ERROR_INTERNAL
+Object out is: NON Transformed Object
+Redefine during ClassLoad on another thread.
+retransformClasses on an unprepared class succeeded
+Object out is: Transformed object!
+Redefinition thread finished.

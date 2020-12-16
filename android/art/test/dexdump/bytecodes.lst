@@ -1,0 +1,20 @@
+#bytecodes.dex
+0x000009a0 8 com.google.android.test.BuildConfig <init> ()V BuildConfig.java 4
+0x000009b8 8 com.google.android.test.R$attr <init> ()V R.java 11
+0x000009d0 8 com.google.android.test.R$drawable <init> ()V R.java 13
+0x000009e8 8 com.google.android.test.R <init> ()V R.java 10
+0x00000a00 148 com.google.android.test.Test <clinit> ()V Test.java 7
+0x00000aa4 468 com.google.android.test.Test <init> ()V Test.java 43
+0x00000ca4 478 com.google.android.test.Test add (Ljava/lang/Object;)Ljava/lang/Object; Test.java 179
+0x00000ea0 236 com.google.android.test.Test adds (Ljava/lang/Object;)Ljava/lang/Object; Test.java 201
+0x00000f9c 342 com.google.android.test.Test copies ()V Test.java 216
+0x00001104 156 com.google.android.test.Test doit (I)V Test.java 98
+0x000011b0 146 com.google.android.test.Test geta ()Z Test.java 72
+0x00001254 38 com.google.android.test.Test p (I)V Test.java 120
+0x0000128c 636 com.google.android.test.Test params (BCSIJFDLjava/lang/Object;[I)J Test.java 232
+0x00001518 170 com.google.android.test.Test q (II)V Test.java 127
+0x000015d4 186 com.google.android.test.Test r (II)I Test.java 139
+0x000016a0 388 com.google.android.test.Test s (JJ)J Test.java 159
+0x00001834 96 com.google.android.test.Test seta ()V Test.java 60
+0x000018a4 14 com.google.android.test.Test onStart ()V Test.java 86
+0x000018c4 18 com.google.android.test.Test run ()V Test.java 92

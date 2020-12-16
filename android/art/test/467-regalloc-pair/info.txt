@@ -1,0 +1,2 @@
+Regression test for optimizing's register allocator
+that used to trip when compiling TestCase.testCase on x86.

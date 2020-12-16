@@ -1,0 +1,2 @@
+Regression test for sun.misc.Unsafe.getLong's intrinsic's locations
+not handled properly.

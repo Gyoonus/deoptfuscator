@@ -1,0 +1,1 @@
+Tests if zero/one constants and integer Phis are accepted as boolean values.

@@ -1,0 +1,2 @@
+Regression test for optimizing's builder which created a block under
+the assumption that Goto can fall through.

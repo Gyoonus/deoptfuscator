@@ -1,0 +1,135 @@
+//
+// Copyright (C) 2011 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+cc_defaults {
+    name: "libdexfile_defaults",
+    defaults: ["art_defaults"],
+    host_supported: true,
+    srcs: [
+        "dex/compact_dex_file.cc",
+        "dex/compact_offset_table.cc",
+        "dex/descriptors_names.cc",
+        "dex/dex_file.cc",
+        "dex/dex_file_exception_helpers.cc",
+        "dex/dex_file_layout.cc",
+        "dex/dex_file_loader.cc",
+        "dex/dex_file_tracking_registrar.cc",
+        "dex/dex_file_verifier.cc",
+        "dex/dex_instruction.cc",
+        "dex/modifiers.cc",
+        "dex/primitive.cc",
+        "dex/standard_dex_file.cc",
+        "dex/utf.cc",
+    ],
+
+    target: {
+        android: {
+            static_libs: [
+                "libziparchive",
+                "libz",
+            ],
+            shared_libs: [
+                "libutils",
+            ],
+        },
+        host: {
+            shared_libs: [
+                "libziparchive",
+                "libz",
+            ],
+        },
+    },
+    generated_sources: ["dexfile_operator_srcs"],
+    shared_libs: [
+        // Important note: relying on libartbase's header_lib is perfectly acceptable.
+        // However, relying on the libartbase shared library introduces further, possibly cyclic,
+	// dependencies for clients outside of ART.
+        "liblog",
+        // For common macros.
+        "libbase",
+        "libz",
+    ],
+    header_libs: [
+        "art_libartbase_headers",
+    ],
+    export_include_dirs: ["."],
+    export_shared_lib_headers: [
+        "libbase",
+    ],
+    export_header_lib_headers: [
+        "art_libartbase_headers",
+    ],
+}
+
+gensrcs {
+    name: "dexfile_operator_srcs",
+    cmd: "$(location generate_operator_out) art/libdexfile $(in) > $(out)",
+    tools: ["generate_operator_out"],
+    srcs: [
+        "dex/dex_file.h",
+        "dex/dex_file_layout.h",
+        "dex/dex_instruction.h",
+        "dex/dex_instruction_utils.h",
+        "dex/invoke_type.h",
+        "dex/method_reference.h",
+    ],
+    output_extension: "operator_out.cc",
+}
+
+art_cc_library {
+    name: "libdexfile",
+    defaults: ["libdexfile_defaults"],
+    // Leave the symbols in the shared library so that stack unwinders can
+    // produce meaningful name resolution.
+    strip: {
+        keep_symbols: true,
+    },
+}
+
+art_cc_library {
+    name: "libdexfiled",
+    defaults: [
+        "art_debug_defaults",
+        "libdexfile_defaults",
+    ],
+}
+
+art_cc_test {
+    name: "art_libdexfile_tests",
+    defaults: [
+        "art_gtest_defaults",
+    ],
+    srcs: [
+        "dex/code_item_accessors_test.cc",
+        "dex/compact_dex_file_test.cc",
+        "dex/compact_offset_table_test.cc",
+        "dex/descriptors_names_test.cc",
+        "dex/test_dex_file_builder_test.cc",
+        "dex/dex_file_loader_test.cc",
+        "dex/dex_file_verifier_test.cc",
+        "dex/dex_instruction_test.cc",
+        "dex/primitive_test.cc",
+        "dex/string_reference_test.cc",
+        "dex/utf_test.cc",
+    ],
+    shared_libs: [
+        "libbacktrace",
+        "libziparchive",
+    ],
+    include_dirs: [
+        "external/zlib",
+    ],
+}

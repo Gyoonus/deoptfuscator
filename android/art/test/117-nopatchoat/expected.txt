@@ -1,0 +1,12 @@
+Run without dex2oat/patchoat
+JNI_OnLoad called
+dex2oat & patchoat are disabled, has oat is true, has executable oat is expected.
+This is a function call
+Run with dexoat/patchoat
+JNI_OnLoad called
+dex2oat & patchoat are enabled, has oat is true, has executable oat is expected.
+This is a function call
+Run default
+JNI_OnLoad called
+dex2oat & patchoat are enabled, has oat is true, has executable oat is expected.
+This is a function call

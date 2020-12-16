@@ -1,0 +1,1 @@
+Test the instanceof in the case the classes are deep (depth > 6)

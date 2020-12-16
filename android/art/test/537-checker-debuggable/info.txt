@@ -1,0 +1,1 @@
+Test that CHECK-START-DEBUGGABLE runs only on --debuggable code.

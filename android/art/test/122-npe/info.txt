@@ -1,0 +1,1 @@
+Test that our NPE checks and stack traces work.

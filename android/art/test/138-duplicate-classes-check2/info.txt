@@ -1,0 +1,2 @@
+Check whether a duplicate class is not detected, even though we compiled against one (but removed
+it before creating the dex file).

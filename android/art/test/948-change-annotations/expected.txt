@@ -1,0 +1,21 @@
+Running test class RemoveAnnotationsTest
+Type annotations: [@TestClassAnnotation1(value=hello)]
+method public void Transform.sayHi() -> [@TestMethodAnnotation1(value=hi hi)]
+hello
+Goodbye
+Type annotations: []
+method public void Transform.sayHi() -> []
+Running test class AddAnnotationsTest
+Type annotations: [@TestClassAnnotation1(value=hello)]
+method public void Transform.sayHi() -> [@TestMethodAnnotation1(value=hi hi)]
+hello
+Goodbye
+Type annotations: [@TestClassAnnotation1(value=hello), @TestClassAnnotation2(value=hello2)]
+method public void Transform.sayHi() -> [@TestMethodAnnotation1(value=hi hi), @TestMethodAnnotation2(value=hi hi2)]
+Running test class ChangeAnnotationValues
+Type annotations: [@TestClassAnnotation1(value=hello)]
+method public void Transform.sayHi() -> [@TestMethodAnnotation1(value=hi hi)]
+hello
+Goodbye
+Type annotations: [@TestClassAnnotation1(value=Goodbye)]
+method public void Transform.sayHi() -> [@TestMethodAnnotation1(value=Bye Bye)]

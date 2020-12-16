@@ -1,0 +1,2 @@
+Regression test for vixl32 backend, which used to incorrectly
+use D14 as a temporary register.

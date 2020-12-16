@@ -1,0 +1,7 @@
+Test checking that reference arguments of proxy methods are visited as
+thread stack roots when visiting Quick frames roots (b/73149739).
+Previously, if the proxy method (direcly or indirectly) executed code
+accessing one of these reference arguments in the proxy method stack
+frame, it could end up with a stale reference, as the corresponding
+object may have been moved by the garbage collector, but the stack
+reference would not have been updated.

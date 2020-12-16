@@ -1,0 +1,2 @@
+Regression test for the reference type propagation pass
+of the optimizing compiler that used to break invariants.

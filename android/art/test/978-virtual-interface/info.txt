@@ -1,0 +1,7 @@
+Smali-based regression test for b/32201623
+
+This test cannot be run with --jvm.
+
+This test checks that we correctly detect when one attempts to invoke an
+interface method via the invoke-virtual opcode and that correct exceptions are
+sent.

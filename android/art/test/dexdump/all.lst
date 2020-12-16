@@ -1,0 +1,21 @@
+#all.dex
+0x0000043c 8 A <init> ()V (none) -1
+0x00000454 58 A arrays ()V (none) -1
+0x000004a0 130 A binary_ops ()V (none) -1
+0x00000534 66 A binary_ops_2addr ()V (none) -1
+0x00000588 34 A binary_ops_lit16 ()V (none) -1
+0x000005bc 46 A binary_ops_lit8 ()V (none) -1
+0x000005fc 22 A compares ()V (none) -1
+0x00000624 50 A conditionals ()V (none) -1
+0x00000668 56 A constants ()V (none) -1
+0x000006b0 108 A misc ()V (none) -1
+0x0000072c 46 A moves ()V (none) -1
+0x0000076c 32 A packed_switch ()V (none) -1
+0x0000079c 2 A return32 ()I (none) -1
+0x000007b0 2 A return64 ()I (none) -1
+0x000007c4 2 A return_object ()Ljava/lang/Object; (none) -1
+0x000007d8 44 A sparse_switch ()V (none) -1
+0x00000814 58 A static_fields ()V (none) -1
+0x00000860 44 A unary_ops ()V (none) -1
+0x0000089c 58 A instance_fields ()V (none) -1
+0x000008e8 30 A invokes ()V (none) -1

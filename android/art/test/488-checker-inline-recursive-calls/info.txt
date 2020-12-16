@@ -1,0 +1,1 @@
+Checker test for inlining calls that in turn call the outer method.

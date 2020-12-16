@@ -1,0 +1,11 @@
+Initial state.
+isLocked() = true
+isSuspended(target_thread) = false
+Suspend and sleep.
+isLocked() = true
+isSuspended(target_thread) = true
+Let other thread release the raw monitor.
+isLocked() = false
+isSuspended(target_thread) = true
+other thread doesn't hold lock!
+resumed test thread

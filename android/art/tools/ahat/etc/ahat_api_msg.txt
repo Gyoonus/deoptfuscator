@@ -1,0 +1,5 @@
+The public API for ahat.jar has changed.
+
+Please verify whether this change to the API is intentional and
+whether it may break any current users of the API. If the API change
+is intentional, run 'm ahat-update-api' to update the recorded API.

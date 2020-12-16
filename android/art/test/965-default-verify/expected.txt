@@ -1,0 +1,15 @@
+Create Main instance
+Calling functions on concrete Main
+Calling verifiable function on Main
+Hello
+Calling unverifiable function on Main
+Expected NSME Thrown on Main
+Calling verifiable function on Main
+Hello
+Calling functions on interface Iface
+Calling verifiable function on Iface
+Hello
+Calling unverifiable function on Iface
+Expected NSME Thrown on Iface
+Calling verifiable function on Iface
+Hello

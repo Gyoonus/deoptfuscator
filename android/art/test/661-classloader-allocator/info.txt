@@ -1,0 +1,3 @@
+Regression test for copied methods which used to not
+be (re-)allocated with the right class loader allocator,
+which crashed the JIT profiler.

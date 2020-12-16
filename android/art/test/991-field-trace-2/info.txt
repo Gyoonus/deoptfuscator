@@ -1,0 +1,5 @@
+Tests field access and modification watches in JVMTI.
+
+This test specifically examines how the runtime responds to exceptions occurring
+while handling these events. It also verifies the situations in which these
+events are sent.

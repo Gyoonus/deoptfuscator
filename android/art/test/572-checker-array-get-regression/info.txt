@@ -1,0 +1,3 @@
+Regression test for the ARM64 Baker's read barrier fast path compiler
+instrumentation of array loads with a large constant index, where we
+used to require too many scratch (temporary) registers.

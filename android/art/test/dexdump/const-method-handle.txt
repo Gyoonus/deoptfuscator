@@ -1,0 +1,275 @@
+Processing 'const-method-handle.dex'...
+Opened 'const-method-handle.dex', DEX version '039'
+DEX file header:
+magic               : 'dex\n039\0'
+checksum            : 16656a27
+signature           : 1953...5aa5
+file_size           : 2524
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 57
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 26
+type_ids_off        : 340 (0x000154)
+proto_ids_size      : 18
+proto_ids_off       : 444 (0x0001bc)
+field_ids_size      : 2
+field_ids_off       : 660 (0x000294)
+method_ids_size     : 23
+method_ids_off      : 676 (0x0002a4)
+class_defs_size     : 2
+class_defs_off      : 860 (0x00035c)
+data_size           : 1588
+data_off            : 936 (0x0003a8)
+
+Class #0 header:
+class_idx           : 5
+access_flags        : 1 (0x0001)
+superclass_idx      : 11
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 29
+annotations_off     : 1336 (0x000538)
+class_data_off      : 2270 (0x0008de)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 2
+virtual_methods_size: 0
+
+Class #0 annotations:
+Annotations on method #1 'main'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Throwable; }
+
+Class #0            -
+  Class descriptor  : 'LMain;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in LMain;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0003b0:                                        |[0003b0] Main.<init>:()V
+0003c0: 7010 0a00 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@000a
+0003c6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=22
+      locals        : 
+        0x0000 - 0x0004 reg=0 this LMain; 
+
+    #1              : (in LMain;)
+      name          : 'main'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 4
+      insns size    : 25 16-bit code units
+0003c8:                                        |[0003c8] Main.main:([Ljava/lang/String;)V
+0003d8: 7100 1500 0000                         |0000: invoke-static {}, Ljava/lang/invoke/MethodHandles;.lookup:()Ljava/lang/invoke/MethodHandles$Lookup; // method@0015
+0003de: 0c00                                   |0003: move-result-object v0
+0003e0: 1c01 0600                              |0004: const-class v1, Lconstmethodhandle/ConstTest; // type@0006
+0003e4: 1a02 3000                              |0006: const-string v2, "main" // string@0030
+0003e8: 6203 0100                              |0008: sget-object v3, Ljava/lang/Void;.TYPE:Ljava/lang/Class; // field@0001
+0003ec: 1c04 1900                              |000a: const-class v4, [Ljava/lang/String; // type@0019
+0003f0: 7120 1600 4300                         |000c: invoke-static {v3, v4}, Ljava/lang/invoke/MethodType;.methodType:(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/MethodType; // method@0016
+0003f6: 0c03                                   |000f: move-result-object v3
+0003f8: 6e40 1400 1032                         |0010: invoke-virtual {v0, v1, v2, v3}, Ljava/lang/invoke/MethodHandles$Lookup;.findStatic:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; // method@0014
+0003fe: 0c00                                   |0013: move-result-object v0
+000400: fa20 1200 5000 1000                    |0014: invoke-polymorphic {v0, v5}, Ljava/lang/invoke/MethodHandle;.invokeExact:([Ljava/lang/Object;)Ljava/lang/Object;, ([Ljava/lang/String;)V // method@0012, proto@0010
+000408: 0e00                                   |0018: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=26
+        0x000c line=27
+        0x0014 line=28
+        0x0018 line=29
+      locals        : 
+        0x0000 - 0x0019 reg=5 (null) [Ljava/lang/String; 
+
+  Virtual methods   -
+  source_file_idx   : 29 (Main.java)
+
+Class #1 header:
+class_idx           : 6
+access_flags        : 1 (0x0001)
+superclass_idx      : 11
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 3
+annotations_off     : 1360 (0x000550)
+class_data_off      : 2284 (0x0008ec)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 6
+virtual_methods_size: 0
+
+Class #1 annotations:
+Annotations on method #3 'displayMethodHandle'
+  VISIBILITY_SYSTEM Ldalvik/annotation/Throws; value={ Ljava/lang/Throwable; }
+
+Class #1            -
+  Class descriptor  : 'Lconstmethodhandle/ConstTest;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lconstmethodhandle/ConstTest;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+00040c:                                        |[00040c] constmethodhandle.ConstTest.<init>:()V
+00041c: 7010 0a00 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@000a
+000422: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=22
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Lconstmethodhandle/ConstTest; 
+
+    #1              : (in Lconstmethodhandle/ConstTest;)
+      name          : 'displayMethodHandle'
+      type          : '(Ljava/lang/invoke/MethodHandle;)V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 47 16-bit code units
+000424:                                        |[000424] constmethodhandle.ConstTest.displayMethodHandle:(Ljava/lang/invoke/MethodHandle;)V
+000434: 6200 0000                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0000
+000438: 2201 0d00                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@000d
+00043c: 7010 0c00 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@000c
+000442: 1a02 1e00                              |0007: const-string v2, "MethodHandle " // string@001e
+000446: 6e20 0e00 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@000e
+00044c: 0c01                                   |000c: move-result-object v1
+00044e: 6e20 0d00 3100                         |000d: invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@000d
+000454: 0c01                                   |0010: move-result-object v1
+000456: 1a02 0000                              |0011: const-string v2, " => " // string@0000
+00045a: 6e20 0e00 2100                         |0013: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@000e
+000460: 0c01                                   |0016: move-result-object v1
+000462: 1402 0030 4046                         |0017: const v2, #float 12300 // #46403000
+000468: 7110 0900 0200                         |001a: invoke-static {v2}, Ljava/lang/Float;.valueOf:(F)Ljava/lang/Float; // method@0009
+00046e: 0c02                                   |001d: move-result-object v2
+000470: fa20 1100 2300 0100                    |001e: invoke-polymorphic {v3, v2}, Ljava/lang/invoke/MethodHandle;.invoke:([Ljava/lang/Object;)Ljava/lang/Object;, (Ljava/lang/Object;)Ljava/lang/Class; // method@0011, proto@0001
+000478: 0c02                                   |0022: move-result-object v2
+00047a: 6e20 0d00 2100                         |0023: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@000d
+000480: 0c01                                   |0026: move-result-object v1
+000482: 6e10 0f00 0100                         |0027: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@000f
+000488: 0c01                                   |002a: move-result-object v1
+00048a: 6e20 0800 1000                         |002b: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0008
+000490: 0e00                                   |002e: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=24
+        0x001a line=25
+        0x002b line=24
+        0x002e line=26
+      locals        : 
+        0x0000 - 0x002f reg=3 (null) Ljava/lang/invoke/MethodHandle; 
+
+    #2              : (in Lconstmethodhandle/ConstTest;)
+      name          : 'displayMethodType'
+      type          : '(Ljava/lang/invoke/MethodType;)V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 25 16-bit code units
+000494:                                        |[000494] constmethodhandle.ConstTest.displayMethodType:(Ljava/lang/invoke/MethodType;)V
+0004a4: 6200 0000                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0000
+0004a8: 2201 0d00                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@000d
+0004ac: 7010 0c00 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@000c
+0004b2: 1a02 1f00                              |0007: const-string v2, "MethodType " // string@001f
+0004b6: 6e20 0e00 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@000e
+0004bc: 0c01                                   |000c: move-result-object v1
+0004be: 6e20 0d00 3100                         |000d: invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@000d
+0004c4: 0c01                                   |0010: move-result-object v1
+0004c6: 6e10 0f00 0100                         |0011: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@000f
+0004cc: 0c01                                   |0014: move-result-object v1
+0004ce: 6e20 0800 1000                         |0015: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0008
+0004d4: 0e00                                   |0018: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=29
+        0x0018 line=30
+      locals        : 
+        0x0000 - 0x0019 reg=3 (null) Ljava/lang/invoke/MethodType; 
+
+    #3              : (in Lconstmethodhandle/ConstTest;)
+      name          : 'main'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 15 16-bit code units
+0004d8:                                        |[0004d8] constmethodhandle.ConstTest.main:([Ljava/lang/String;)V
+0004e8: 7100 0600 0000                         |0000: invoke-static {}, Lconstmethodhandle/ConstTest;.test1:()Ljava/lang/invoke/MethodHandle; // method@0006
+0004ee: 0c00                                   |0003: move-result-object v0
+0004f0: 7110 0300 0000                         |0004: invoke-static {v0}, Lconstmethodhandle/ConstTest;.displayMethodHandle:(Ljava/lang/invoke/MethodHandle;)V // method@0003
+0004f6: 7100 0700 0000                         |0007: invoke-static {}, Lconstmethodhandle/ConstTest;.test2:()Ljava/lang/invoke/MethodType; // method@0007
+0004fc: 0c00                                   |000a: move-result-object v0
+0004fe: 7110 0400 0000                         |000b: invoke-static {v0}, Lconstmethodhandle/ConstTest;.displayMethodType:(Ljava/lang/invoke/MethodType;)V // method@0004
+000504: 0e00                                   |000e: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #4              : (in Lconstmethodhandle/ConstTest;)
+      name          : 'test1'
+      type          : '()Ljava/lang/invoke/MethodHandle;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+000508:                                        |[000508] constmethodhandle.ConstTest.test1:()Ljava/lang/invoke/MethodHandle;
+000518: fe00 0000                              |0000: const-method-handle v0, method_handle@0000
+00051c: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #5              : (in Lconstmethodhandle/ConstTest;)
+      name          : 'test2'
+      type          : '()Ljava/lang/invoke/MethodType;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+000520:                                        |[000520] constmethodhandle.ConstTest.test2:()Ljava/lang/invoke/MethodType;
+000530: ff00 1100                              |0000: const-method-type v0, (CSIJFDLjava/lang/Object;)Z // proto@0011
+000534: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+  Virtual methods   -
+  source_file_idx   : 3 (ConstTest.java)
+
+Method handle #0:
+  type        : invoke-instance
+  target      : Ljava/lang/Object; getClass
+  target_type : (Ljava/lang/Object;)Ljava/lang/Class;

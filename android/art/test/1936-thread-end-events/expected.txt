@@ -1,0 +1,42 @@
+Entered public static void art.Test1936.foo()
+Thread: test-thread
+  | alive: true
+  | interrupted: false
+  | daemon: false
+  | group: java.lang.ThreadGroup[name=main,maxpri=10]
+
+Entered void java.lang.ThreadGroup.threadTerminated(java.lang.Thread)
+Thread: test-thread
+  | alive: true
+  | interrupted: false
+  | daemon: false
+  | group: java.lang.ThreadGroup[name=main,maxpri=10]
+
+Entered private void java.lang.ThreadGroup.remove(java.lang.Thread)
+Thread: test-thread
+  | alive: true
+  | interrupted: false
+  | daemon: false
+  | group: java.lang.ThreadGroup[name=main,maxpri=10]
+
+Entered public static native void java.lang.System.arraycopy(java.lang.Object,int,java.lang.Object,int,int)
+Thread: test-thread
+  | alive: true
+  | interrupted: false
+  | daemon: false
+  | group: java.lang.ThreadGroup[name=main,maxpri=10]
+
+Entered public static void art.Test1936.NotifyThreadEnd(java.lang.Thread)
+Thread: test-thread
+  | alive: true
+  | interrupted: false
+  | daemon: false
+  | group: java.lang.ThreadGroup[name=main,maxpri=10]
+
+Entered public static void art.Test1936.foo()
+Thread: test-thread
+  | alive: true
+  | interrupted: false
+  | daemon: false
+  | group: java.lang.ThreadGroup[name=main,maxpri=10]
+

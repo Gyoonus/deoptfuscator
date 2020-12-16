@@ -1,0 +1,32 @@
+/*
+ * Copyright (C) 2017 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Offsets within java.lang.DexCache (mirror::DexCache).
+
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#include "mirror/class.h"         // art::mirror::Object
+#endif
+
+#include "common.def"        // DEFINE_OFFSET_EXPR
+
+#define DEFINE_MIRROR_DEX_CACHE_OFFSET(field_name, method_name) \
+  DEFINE_OFFSET_EXPR(MIRROR_DEX_CACHE, field_name, int32_t, art::mirror::DexCache::method_name##Offset().Int32Value())
+
+//                             New macro suffix         Method Name (of the Offset method)
+DEFINE_MIRROR_DEX_CACHE_OFFSET(RESOLVED_METHODS,        ResolvedMethods)
+
+#undef DEFINE_MIRROR_CLASS_OFFSET
+#include "common_undef.def"  // undef DEFINE_OFFSET_EXPR

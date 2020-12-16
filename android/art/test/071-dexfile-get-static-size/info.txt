@@ -1,0 +1,3 @@
+Test DexFile.getStaticSizeOfDexFile API.
+
+test1.dex and test2.dex are arbitrary valid dex files.

@@ -1,0 +1,78 @@
+Message: foo, Message2: 42
+Message: foo, Message2: 42
+Message: foo, Message2: 42
+Message: foo, Message2: 42
+Message: foo, Message2: 42
+Message: foo, Message2: 42
+Message: foo, Message2: 42
+Target: Arg1: foo, Arg2: 42
+Target: Arg1: foo, Arg2: 42
+Handler: java.lang.IllegalArgumentException: exceptionMessage, Arg1: foo, Arg2: 42, ExMsg: exceptionMessage
+Handler: java.lang.IllegalArgumentException: exceptionMessage, Arg1: foo, Arg2: 42, ExMsg: exceptionMessage
+Handler: java.lang.IllegalArgumentException: exceptionMessage, Arg1: foo
+Handler: java.lang.IllegalArgumentException: exceptionMessage, Arg1: foo
+target: target, 42, 56
+target: target, 42, 56
+fallback: fallback, 42, 56
+target: target, 42, 56
+target: target, 42, 56
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:43
+a: a, b:43
+a: a, b:43
+a: a, b:43
+a: a, b:43
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:true, c: false
+a: a, b:true, c: false
+a: a, b:1, c: 2, d: 3, e: 4, f:5, g: 6.0, h: 7.0
+a: a, b:1, c: 2, d: 3, e: 4, f:5, g: 6.0, h: 7.0
+a: a, b:1, c: 2, d: 51, e: 52, f:53.0, g: 54.0
+a: a, b:1, c: 2, d: 51, e: 52, f:53.0, g: 54.0
+a: a, b:1, c: 2, d: 3, e: 4, f:5.0, g:6.0
+a: a, b:1, c: 2, d: 3, e: 4, f:5.0, g:6.0
+a: a, b:1, c: 2, d: 3, e: 4.0, f:5.0
+a: a, b:1, c: 2, d: 3, e: 4.0, f:5.0
+a: a, b:1, c: 2, d: 3.0, e: 4.0
+a: a, b:1, c: 2, d: 3.0, e: 4.0
+a: a, b:1.0, c: 2.0, d: 3.0
+a: a, b:1.0, c: 2.0, d: 3.0
+a: a, b:1.0, c: 2.0
+a: a, b:1.0, c: 2.0
+a: a, b:b, c: c
+a: a, b:b, c: c
+a: a, b:43
+a: a, b:b, c: c
+a: a, b:true, c: false
+a: a, b:1, c: 2
+a: a, b:a, c: b
+a: a, b:3, c: 4
+a: a, b:42, c: 43
+a: a, b:100, c: 99
+a: a, b:8.9, c: 9.1
+a: a, b:6.7, c: 7.8
+a: a, b: b, c:c, d:d
+a: a, b: b, c:c, d:d
+a: a, b: b, c:c, d:d
+a: a+b, b: c, c: d
+a: a, b: b+c, c: d
+a: a, b: b, c: c+d
+voidFilter
+a: a, b: b, c: c
+voidFilter
+a: a, b: b, c: c
+a: foo, b:45, c:56, d:bar
+a: foo, b:56, c:57, d:bar
+a: foo, b:56, c:57, d:bar
+a: foo, b:45, c:46, d:bar
+a: c+d ,b:c ,c:d ,d:e
+c+d
+a: a ,b:c ,c:d ,d:e

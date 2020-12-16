@@ -1,0 +1,1 @@
+Test jvmti SuspendThreadList with the current thread as the first thread in the list.

@@ -1,0 +1,61 @@
+JNI_OnLoad called
+first: Helper1 class loader: DelegatingLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: DelegatingLoader
+second: Test class loader: DefiningLoader
+testClearDexCache done
+first: Helper1 class loader: DelegatingLoader
+second: Test class loader: DefiningLoader
+first: Helper2 class loader: DelegatingLoader
+second: Test class loader: DefiningLoader
+testMultiDex done
+first: Helper1 class loader: RacyLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyLoader
+second: Test class loader: DefiningLoader
+total: 4
+  throwables: 0
+  classes: 4 (1 unique)
+testRacyLoader done
+first: Helper1 class loader: RacyLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyLoader
+second: Test class loader: DefiningLoader
+first: Helper3 class loader: RacyLoader
+second: Test3 class loader: DefiningLoader
+first: Helper3 class loader: RacyLoader
+second: Test3 class loader: DefiningLoader
+total: 4
+  throwables: 0
+  classes: 4 (2 unique)
+testRacyLoader2 done
+java.lang.NoClassDefFoundError: Initiating class loader of type MisbehavingLoader returned class Helper2 instead of Test.
+testMisbehavingLoader done
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+total: 4
+  throwables: 0
+  classes: 4 (1 unique)
+testRacyMisbehavingLoader done
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+first: Helper1 class loader: RacyMisbehavingLoader
+second: Test class loader: DefiningLoader
+total: 4
+  throwables: 0
+  classes: 4 (1 unique)
+testRacyMisbehavingLoader2 done

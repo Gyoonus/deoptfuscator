@@ -1,0 +1,101 @@
+#!/bin/bash
+#
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# ---------------------------------------------------------------------------
+
+# Generates asm_support_gen.h into the $OUT directory in the build.
+# Then verifies that it is the same as in runtime/generated/asm_support_gen.h
+
+# Validates that art/runtime/generated/asm_support_gen.h
+# - This must be run after a build since it uses cpp-define-generator-data
+
+# Path to asm_support_gen.h that we check into our git repository.
+ASM_SUPPORT_GEN_CHECKED_IN_COPY="runtime/generated/asm_support_gen.h"
+# Instead of producing an error if checked-in copy differs from the generated version,
+# overwrite the local checked-in copy instead.
+OVERWRITE_CHECKED_IN_COPY_IF_CHANGED="n"
+
+#######################
+#######################
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ART_DIR="$( cd "$DIR/../.." && pwd )"
+ABS_ASM_SUPPORT_GEN_CHECKED_IN_COPY="$ART_DIR/runtime/generated/asm_support_gen.h"
+
+# Sanity check that we haven't moved the file around.
+# If we did, perhaps the above constant should be updated.
+if ! [[ -f "$ABS_ASM_SUPPORT_GEN_CHECKED_IN_COPY" ]]; then
+  echo "ERROR: Missing asm_support_gen.h, expected to be in '$ABS_ASM_SUPPORT_GEN_CHECKED_IN_COPY'" >&2
+  exit 1
+fi
+
+# The absolute path to cpp-define-generator is in $1
+# Generate the file as part of the build into the out location specified by $2.
+
+# Compare that the generated file matches our golden copy that's checked into git.
+# If not, it is a fatal error and the user needs to run 'generate-asm-support' to rebuild.
+
+if [[ $# -lt 2 ]]; then
+  echo "Usage: $0 [--quiet] [--presubmit] <path-to-cpp-define-generator-data-binary> <output-file>'" >&2
+  exit 1
+fi
+
+# Supress 'chatty' messages during the build.
+# If anything is printed in a success case then
+# the main Android build can't reuse the same line for
+# showing multiple commands being executed.
+QUIET=false
+if [[ "$1" == "--quiet" ]]; then
+  QUIET=true
+  shift
+fi
+
+CPP_DEFINE_GENERATOR_TOOL="$1"
+OUTPUT_FILE="$2"
+
+function pecho() {
+  if ! $QUIET; then
+    echo "$@"
+  fi
+}
+
+# Generate the header. Print the command we're running to console for readability.
+pecho "cpp-define-generator-data > \"$OUTPUT_FILE\""
+"$CPP_DEFINE_GENERATOR_TOOL" > "$OUTPUT_FILE"
+retval="$?"
+
+if [[ $retval -ne 0 ]]; then
+  echo "verify-asm-support: FATAL: Error while running cpp-define-generator-data" >&2
+  exit $retval
+fi
+
+if ! diff "$ABS_ASM_SUPPORT_GEN_CHECKED_IN_COPY" "$OUTPUT_FILE"; then
+
+  if [[ $OVERWRITE_CHECKED_IN_COPY_IF_CHANGED == "y" ]]; then
+    cp "$OUTPUT_FILE" "$ABS_ASM_SUPPORT_GEN_CHECKED_IN_COPY"
+    echo "verify-asm-support: OK: Overwrote '$ASM_SUPPORT_GEN_CHECKED_IN_COPY' with build copy."
+    echo "                        Please 'git add $ASM_SUPPORT_GEN_CHECKED_IN_COPY'."
+  else
+    echo "---------------------------------------------------------------------------------------------" >&2
+    echo "verify-asm-support: ERROR: Checked-in copy of '$ASM_SUPPORT_GEN_CHECKED_IN_COPY' " >&2
+    echo "                    has diverged from the build copy." >&2
+    echo "                    Please re-run the 'generate-asm-support' command to resync the header." >&2
+    [[ -f "$OUTPUT_FILE" ]] && rm "$OUTPUT_FILE"
+    exit 1
+  fi
+fi
+
+pecho "verify-asm-support: SUCCESS. Built '$OUTPUT_FILE' which matches our checked in copy."

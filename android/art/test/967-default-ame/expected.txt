@@ -1,0 +1,18 @@
+Create Main instance
+Calling functions on concrete Main
+Calling non-abstract function on Main
+CHARGE
+Calling abstract function on Main
+Expected AME Thrown on Main
+Calling non-abstract function on Main
+CHARGE
+Calling functions on interface Iface
+Calling non-abstract function on Iface
+CHARGE
+Calling abstract function on Iface
+Expected AME Thrown on Iface
+Calling non-abstract function on Iface
+CHARGE
+Calling functions on interface Iface2
+Calling abstract function on Iface2
+Expected AME Thrown on Iface2

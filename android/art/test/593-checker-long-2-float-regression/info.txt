@@ -1,0 +1,3 @@
+Regression test for x86_64's code generator, which had a bug in
+the long-to-float implementation loading a constant as 64-bit double
+instead of 32-bit float.

@@ -1,0 +1,3 @@
+Eating all memory.
+memoryWasAllocated = true
+match: true

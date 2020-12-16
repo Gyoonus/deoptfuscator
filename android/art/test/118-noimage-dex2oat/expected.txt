@@ -1,0 +1,14 @@
+Run -Xnoimage-dex2oat
+JNI_OnLoad called
+Has image is false, is image dex2oat enabled is false, is BOOTCLASSPATH on disk is false.
+testB18485243 PASS
+Run -Xnoimage-dex2oat -Xno-dex-file-fallback
+Failed to initialize runtime (check log for details)
+Run -Ximage-dex2oat
+JNI_OnLoad called
+Has image is true, is image dex2oat enabled is true, is BOOTCLASSPATH on disk is true.
+testB18485243 PASS
+Run default
+JNI_OnLoad called
+Has image is true, is image dex2oat enabled is true, is BOOTCLASSPATH on disk is true.
+testB18485243 PASS

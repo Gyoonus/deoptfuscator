@@ -1,0 +1,6 @@
+
+trouble writing output: Too many field references to fit in one dex file: 131000; max is 65536.
+You may try using multi-dex. If multi-dex is enabled then the list of classes for the main dex list is too large.
+References by package:
+131000 default
+build exit status: 2

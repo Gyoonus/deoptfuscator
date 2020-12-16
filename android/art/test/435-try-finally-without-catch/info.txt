@@ -1,0 +1,26 @@
+Exercise a method containing a `try' statement with several
+instructions with a `finally' clause but without any `catch' block,
+enclosed in a loop.
+
+When dx processes an integer division (or modulo) enclosing a `try'
+block and whose result is assigned to a local value, it is smart
+enough not to emit a `div-int' (or `rem-int') instruction when the
+divisor is non-null, as it wouldn't be used.  However, dx is not
+that clever regarding exception handling: if the divisor is known to
+be non-null at compile-time (as is the case in this test), it will
+still emit a block with the exception catching and rethrowing
+mechanism, even if it is not used.
+
+This used to be a problem for a `try' block followed by a `finally'
+clause but with no `catch' block: in that case, the generated Dex code
+item would list zero catch block for this method (see
+art::CodeItem::tries_size_) and the optimizing compiler would have no
+clue that it contains a `try' statement, which it cannot optimize
+(yet).  With no hint that this method might contain one (or several)
+special block(s) related to `catch'-less `try' statement(s), the
+optimizing compiler considered this (these) as dead block(s) and
+improperly tried to remove its (their) instructions, sometimes
+removing instructions used by others instructions, thus triggering
+assertions.  The optimizing compiler was thus adjusted to remove these
+instructions in a proper fashion, by removing them as users first, and
+then by suppressing them for good.

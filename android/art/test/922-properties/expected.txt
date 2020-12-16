@@ -1,0 +1,59 @@
+Recommended properties:
+ "java.class.path": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.library.path": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.info": OK !!!JVMTI_ERROR_NOT_AVAILABLE
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.name": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.vendor": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.version": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+Missing recommended properties: [java.vm.info]
+Other properties:
+ "file.encoding": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "file.separator": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.class.version": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.compiler": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.ext.dirs": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.net.preferIPv6Addresses": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.specification.name": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.specification.vendor": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.specification.version": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vendor": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vendor.url": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.version": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.specification.name": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.specification.vendor": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.specification.version": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "java.vm.vendor.url": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "line.separator": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "os.name": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+ "path.separator": OK
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+Non-specified property:
+ "java.boot.class.path": ERROR !!!JVMTI_ERROR_NOT_AVAILABLE
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE
+Non-specified property (2):
+ "a": OK !!!JVMTI_ERROR_NOT_AVAILABLE
+  Setting value to "abc": !!!JVMTI_ERROR_NOT_AVAILABLE

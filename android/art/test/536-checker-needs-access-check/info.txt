@@ -1,0 +1,1 @@
+Verifies that we don't remove type checks when we need to check for access rights.

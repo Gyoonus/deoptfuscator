@@ -1,0 +1,2 @@
+Regression test for the SSA building of the optimizing
+compiler. See comment in smali file.

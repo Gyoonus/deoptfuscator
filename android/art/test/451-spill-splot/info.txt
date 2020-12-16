@@ -1,0 +1,2 @@
+Regression test for the optimizing compiler and the
+way it spills intervals of different types.

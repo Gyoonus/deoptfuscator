@@ -1,0 +1,8 @@
+Main:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Main
+
+AAA:
+  @@com.android.jack.annotations.ForceInMainDex
+  class AAA
+

@@ -1,0 +1,2 @@
+Checker test that we inline interface calls and if we can't inline
+them, we can turn them into a virtual invoke.

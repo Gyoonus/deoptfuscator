@@ -1,0 +1,4 @@
+Tests Oat Writer is correctly changing the layout of OatMethod code addresses.
+
+Whenever we pass in a profile to dex2oat, we expect that it sorts the methods by the
+MethodHotness bitmask (and sub-sorts by class_def_idx, then method_id).

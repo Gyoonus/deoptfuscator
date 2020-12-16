@@ -1,0 +1,5 @@
+Smali-based tests for experimental interface private methods.
+
+This test cannot be run with --jvm.
+
+This test checks that synthetic private methods in interfaces work correctly.

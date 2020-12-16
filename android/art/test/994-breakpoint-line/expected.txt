@@ -1,0 +1,34 @@
+Breaking on line: 29 calling with arg: true
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=29
+	argument was true
+Breaking on line: 29 calling with arg: false
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=29
+	argument was false
+Breaking on line: 30 calling with arg: true
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=30
+	argument was true
+Breaking on line: 30 calling with arg: false
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=30
+	argument was false
+Breaking on line: 31 calling with arg: true
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=31
+	argument was true
+Breaking on line: 31 calling with arg: false
+	argument was false
+Breaking on line: 33 calling with arg: true
+	argument was true
+Breaking on line: 33 calling with arg: false
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=33
+	argument was false
+Breaking on line: 35 calling with arg: true
+	argument was true
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=35
+Breaking on line: 35 calling with arg: false
+	argument was false
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=35
+Breaking on line: 36 calling with arg: true
+	argument was true
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=36
+Breaking on line: 36 calling with arg: false
+	argument was false
+	Breakpoint reached: public static void art.Test994.doMultiPath(boolean) @ line=36

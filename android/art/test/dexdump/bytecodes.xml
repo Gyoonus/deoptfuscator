@@ -1,0 +1,171 @@
+<api>
+<package name="android.annotation"
+>
+<class name="SuppressLint"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.annotation.Annotation">
+</implements>
+<method name="value"
+ return="java.lang.String[]"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TargetApi"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.annotation.Annotation">
+</implements>
+<method name="value"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="com.google.android.test"
+>
+<class name="BuildConfig"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="DEBUG"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<constructor name="BuildConfig"
+ type="com.google.android.test.BuildConfig"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="R.attr"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<constructor name="R.attr"
+ type="com.google.android.test.R.attr"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="R.drawable"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="icon"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2130837504"
+>
+</field>
+<constructor name="R.drawable"
+ type="com.google.android.test.R.drawable"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="R"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<constructor name="R"
+ type="com.google.android.test.R"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="Test"
+ extends="android.app.Activity"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.Runnable">
+</implements>
+<constructor name="Test"
+ type="com.google.android.test.Test"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="onStart"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+</api>

@@ -1,0 +1,27 @@
+foo_A
+foo_A
+foo_A
+foo_B
+privateRyan_D
+Received WrongMethodTypeException exception
+G.sayHi()
+G.sayHi()
+G.sayHi()
+F.sayHi()
+F.sayHi()
+H.chatter()
+H.chatter()
+H.chatter()
+Chatty.chatter()
+Chatty.chatter()
+String constructors done.
+testReferenceReturnValueConversions done.
+testPrimitiveReturnValueConversions done.
+Hi
+Hi
+Hi
+Hi
+Expect Hi here: Hi
+Don't expect Hi now
+[3, 2, 1]
+[1, 2, 3]

@@ -1,0 +1,1 @@
+Simple test for try/catch/throw.

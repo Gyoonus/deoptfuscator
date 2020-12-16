@@ -1,0 +1,2 @@
+Tests inlining into a nested loop. SSAChecker should verify that
+loop information was updated correctly.

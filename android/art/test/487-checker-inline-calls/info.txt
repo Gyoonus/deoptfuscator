@@ -1,0 +1,1 @@
+Checker test for ensuring inlining preserves stack traces.

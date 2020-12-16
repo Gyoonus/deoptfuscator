@@ -1,0 +1,32 @@
+24c24
+<  doTest ()V 34 25
+---
+>  doTest ()V 38 25
+44c44
+<  doTest ()V 38 26
+---
+>  doTest ()V 42 26
+65c65
+<  doTest ()V 60 32
+---
+>  doTest ()V 65 32
+363c363
+<  doTest ()V 122 59
+---
+>  doTest ()V 128 59
+598c598
+<  doTest ()V 127 61
+---
+>  doTest ()V 133 61
+630c630
+<  doTest ()V 112 54
+---
+>  doTest ()V 116 54
+677c677
+<  doTest ()V 117 56
+---
+>  doTest ()V 121 56
+792c792
+< [public static void art.Frames.doTestSameThread(), 35]
+---
+> [public static void art.Frames.doTestSameThread(), 38]

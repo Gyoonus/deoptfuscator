@@ -1,0 +1,3 @@
+Stress test for daemon threads stuck in a method that requires the thread list lock.
+(for example Thread.isInterrupted). The shutdown thread used to block those daemons
+from making progress.

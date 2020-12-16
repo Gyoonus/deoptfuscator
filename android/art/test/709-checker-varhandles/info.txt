@@ -1,0 +1,1 @@
+Test support for intrinsics in Java 9 java.lang.invoke.VarHandle.

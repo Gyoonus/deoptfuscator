@@ -1,0 +1,4 @@
+Checks that the register allocator does not punish other
+blocks because one block forced spilling. The block that
+forces the spilling should restore the registers at the merge
+point.

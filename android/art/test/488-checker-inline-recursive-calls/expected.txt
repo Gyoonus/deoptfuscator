@@ -1,0 +1,7 @@
+java.lang.Error
+	at Main.inline3(Main.java:51)
+	at Main.doTopCall(Main.java:37)
+	at Main.inline2(Main.java:47)
+	at Main.inline1(Main.java:43)
+	at Main.doTopCall(Main.java:34)
+	at Main.main(Main.java:21)

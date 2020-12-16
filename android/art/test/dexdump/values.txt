@@ -1,0 +1,355 @@
+Processing 'values.dex'...
+Opened 'values.dex', DEX version '035'
+DEX file header:
+magic               : 'dex\n035\0'
+checksum            : 7605eec0
+signature           : c197...a065
+file_size           : 1864
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 70
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 12
+type_ids_off        : 392 (0x000188)
+proto_ids_size      : 1
+proto_ids_off       : 440 (0x0001b8)
+field_ids_size      : 54
+field_ids_off       : 452 (0x0001c4)
+method_ids_size     : 3
+method_ids_off      : 884 (0x000374)
+class_defs_size     : 1
+class_defs_off      : 908 (0x00038c)
+data_size           : 924
+data_off            : 940 (0x0003ac)
+
+Class #0 header:
+class_idx           : 6
+access_flags        : 1 (0x0001)
+superclass_idx      : 7
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 13
+annotations_off     : 0 (0x000000)
+class_data_off      : 1578 (0x00062a)
+static_fields_size  : 54
+instance_fields_size: 0
+direct_methods_size : 2
+virtual_methods_size: 0
+
+Class #0            -
+  Class descriptor  : 'LTest;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in LTest;)
+      name          : 'mB0'
+      type          : 'B'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 0
+    #1              : (in LTest;)
+      name          : 'mB1'
+      type          : 'B'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 127
+    #2              : (in LTest;)
+      name          : 'mB2'
+      type          : 'B'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -128
+    #3              : (in LTest;)
+      name          : 'mB3'
+      type          : 'B'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -1
+    #4              : (in LTest;)
+      name          : 'mC0'
+      type          : 'C'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 0
+    #5              : (in LTest;)
+      name          : 'mC1'
+      type          : 'C'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 32767
+    #6              : (in LTest;)
+      name          : 'mC2'
+      type          : 'C'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 32768
+    #7              : (in LTest;)
+      name          : 'mC3'
+      type          : 'C'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 255
+    #8              : (in LTest;)
+      name          : 'mC4'
+      type          : 'C'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 65520
+    #9              : (in LTest;)
+      name          : 'mC5'
+      type          : 'C'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 65535
+    #10              : (in LTest;)
+      name          : 'mD0'
+      type          : 'D'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -inf
+    #11              : (in LTest;)
+      name          : 'mD1'
+      type          : 'D'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 4.94066e-324
+    #12              : (in LTest;)
+      name          : 'mD2'
+      type          : 'D'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -0
+    #13              : (in LTest;)
+      name          : 'mD3'
+      type          : 'D'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 0
+    #14              : (in LTest;)
+      name          : 'mD4'
+      type          : 'D'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 1.79769e+308
+    #15              : (in LTest;)
+      name          : 'mD5'
+      type          : 'D'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : inf
+    #16              : (in LTest;)
+      name          : 'mD6'
+      type          : 'D'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : nan
+    #17              : (in LTest;)
+      name          : 'mF0'
+      type          : 'F'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -inf
+    #18              : (in LTest;)
+      name          : 'mF1'
+      type          : 'F'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 1.4013e-45
+    #19              : (in LTest;)
+      name          : 'mF2'
+      type          : 'F'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -0
+    #20              : (in LTest;)
+      name          : 'mF3'
+      type          : 'F'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 0
+    #21              : (in LTest;)
+      name          : 'mF4'
+      type          : 'F'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 3.40282e+38
+    #22              : (in LTest;)
+      name          : 'mF5'
+      type          : 'F'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : inf
+    #23              : (in LTest;)
+      name          : 'mF6'
+      type          : 'F'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : nan
+    #24              : (in LTest;)
+      name          : 'mI0'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 0
+    #25              : (in LTest;)
+      name          : 'mI1'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2147483647
+    #26              : (in LTest;)
+      name          : 'mI2'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -2147483648
+    #27              : (in LTest;)
+      name          : 'mI3'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 255
+    #28              : (in LTest;)
+      name          : 'mI4'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -16
+    #29              : (in LTest;)
+      name          : 'mI5'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -4096
+    #30              : (in LTest;)
+      name          : 'mI6'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -1048576
+    #31              : (in LTest;)
+      name          : 'mI7'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -1
+    #32              : (in LTest;)
+      name          : 'mJ0'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 0
+    #33              : (in LTest;)
+      name          : 'mJ1'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 9223372036854775807
+    #34              : (in LTest;)
+      name          : 'mJ2'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -9223372036854775808
+    #35              : (in LTest;)
+      name          : 'mJ3'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 255
+    #36              : (in LTest;)
+      name          : 'mJ4'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -16
+    #37              : (in LTest;)
+      name          : 'mJ5'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -4096
+    #38              : (in LTest;)
+      name          : 'mJ6'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -1048576
+    #39              : (in LTest;)
+      name          : 'mJ7'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -268435456
+    #40              : (in LTest;)
+      name          : 'mJ8'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -68719476736
+    #41              : (in LTest;)
+      name          : 'mJ9'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -17592186044416
+    #42              : (in LTest;)
+      name          : 'mJa'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -4503599627370496
+    #43              : (in LTest;)
+      name          : 'mJb'
+      type          : 'J'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -1
+    #44              : (in LTest;)
+      name          : 'mObject'
+      type          : 'Ljava/lang/Object;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #45              : (in LTest;)
+      name          : 'mS0'
+      type          : 'S'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 0
+    #46              : (in LTest;)
+      name          : 'mS1'
+      type          : 'S'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 32767
+    #47              : (in LTest;)
+      name          : 'mS2'
+      type          : 'S'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -32768
+    #48              : (in LTest;)
+      name          : 'mS3'
+      type          : 'S'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 255
+    #49              : (in LTest;)
+      name          : 'mS4'
+      type          : 'S'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -16
+    #50              : (in LTest;)
+      name          : 'mS5'
+      type          : 'S'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : -1
+    #51              : (in LTest;)
+      name          : 'mString'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "<&\"JOHO\"&>\n"
+    #52              : (in LTest;)
+      name          : 'mZ0'
+      type          : 'Z'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : false
+    #53              : (in LTest;)
+      name          : 'mZ1'
+      type          : 'Z'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : true
+  Instance fields   -
+  Direct methods    -
+    #0              : (in LTest;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 4 16-bit code units
+0003ac:                                        |[0003ac] Test.<clinit>:()V
+0003bc: 1200                                   |0000: const/4 v0, #int 0 // #0
+0003be: 6900 2c00                              |0001: sput-object v0, LTest;.mObject:Ljava/lang/Object; // field@002c
+0003c2: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=66
+      locals        : 
+
+    #1              : (in LTest;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0003c4:                                        |[0003c4] Test.<init>:()V
+0003d4: 7010 0200 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0002
+0003da: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=1
+      locals        : 
+        0x0000 - 0x0004 reg=0 this LTest; 
+
+  Virtual methods   -
+  source_file_idx   : 13 (Test.java)
+

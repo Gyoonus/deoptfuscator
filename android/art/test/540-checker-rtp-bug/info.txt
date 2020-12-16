@@ -1,0 +1,1 @@
+Test that we set the proper types for objects (b/25008765).

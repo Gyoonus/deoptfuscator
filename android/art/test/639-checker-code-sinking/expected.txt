@@ -1,0 +1,3 @@
+0
+class java.lang.Object
+42

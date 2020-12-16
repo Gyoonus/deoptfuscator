@@ -1,0 +1,4 @@
+Tests basic obsolete method support
+
+Tests that a specific method of potentially executing obsolete method code does
+not work.

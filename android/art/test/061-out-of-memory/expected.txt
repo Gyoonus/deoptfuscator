@@ -1,0 +1,8 @@
+tests beginning
+Got expected huge-array OOM
+testOomeLarge beginning
+testOomeLarge succeeded
+testOomeSmall beginning
+testOomeSmall succeeded
+Got expected toCharArray OOM
+tests succeeded

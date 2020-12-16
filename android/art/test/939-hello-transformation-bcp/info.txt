@@ -1,0 +1,6 @@
+Tests basic functions in the jvmti plugin.
+
+Note this function is reliant on the definition of java.util.OptionalLong not
+changing. If this classes definition changes we will need to update this class
+so that the CLASS_BYTES and DEX_BYTES fields contain dex/class bytes for an
+OptionalLong with all the same methods and fields.

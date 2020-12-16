@@ -1,0 +1,87 @@
+{
+   b/27596582
+   Memcheck:Cond
+   fun:index
+   fun:expand_dynamic_string_token
+   fun:_dl_map_object
+   fun:map_doit
+   fun:_dl_catch_error
+   fun:do_preload
+   fun:dl_main
+   fun:_dl_sysdep_start
+   fun:_dl_start_final
+   fun:_dl_start
+   obj:/lib/x86_64-linux-gnu/ld-2.19.so
+}
+
+{
+   b/31275764
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   ...
+   fun:_ZN3art7Runtime17InitNativeMethodsEv
+}
+
+# SigQuit runs libbacktrace
+{
+   BackTraceReading64
+   Memcheck:Addr8
+   fun:access_mem_unrestricted
+   fun:_Uelf64_memory_read
+   fun:_Uelf64_valid_object_memory
+   fun:map_create_list
+   fun:unw_map_local_create
+   fun:_ZN14UnwindMapLocal5BuildEv
+   fun:_ZN12BacktraceMap6CreateEib
+}
+{
+   BackTraceReading32
+   Memcheck:Addr4
+   fun:access_mem_unrestricted
+   fun:_Uelf32_memory_read
+   fun:_Uelf32_valid_object_memory
+   fun:map_create_list
+   fun:unw_map_local_create
+   fun:_ZN14UnwindMapLocal5BuildEv
+   fun:_ZN12BacktraceMap6CreateEib
+}
+{
+   BackTraceReading64
+   Memcheck:Addr8
+   fun:access_mem_unrestricted
+   fun:_Uelf64_memory_read
+   fun:_Uelf64_get_load_base
+   fun:map_create_list
+   fun:unw_map_local_create
+   fun:_ZN14UnwindMapLocal5BuildEv
+   fun:_ZN12BacktraceMap6CreateEib
+}
+{
+   BackTraceReading32
+   Memcheck:Addr4
+   fun:access_mem_unrestricted
+   fun:_Uelf32_memory_read
+   fun:_Uelf32_get_load_base
+   fun:map_create_list
+   fun:unw_map_local_create
+   fun:_ZN14UnwindMapLocal5BuildEv
+   fun:_ZN12BacktraceMap6CreateEib
+}
+
+{
+   process_vm_readv
+   Memcheck:Param
+   process_vm_readv(lvec[...])
+   fun:process_vm_readv
+}
+
+# Suppressions for IsAddressMapped check in MemMapTest
+{
+   MemMapTest_IsAddressMapped
+   Memcheck:Param
+   msync(start)
+   ...
+   fun:_ZN3art10MemMapTest15IsAddressMappedEPv
+   ...
+}

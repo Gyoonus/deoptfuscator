@@ -1,0 +1,2 @@
+Regression test for the code sinking optimization, which used
+to incorrectly use catch phis.

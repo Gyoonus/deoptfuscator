@@ -1,0 +1,1 @@
+Tests the correct order of RegisterNatives.

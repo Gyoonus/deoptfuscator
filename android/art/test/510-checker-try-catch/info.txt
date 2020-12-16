@@ -1,0 +1,1 @@
+Tests the generation of try/catch blocks in Optimizing.

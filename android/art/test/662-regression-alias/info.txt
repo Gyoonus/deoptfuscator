@@ -1,0 +1,1 @@
+Regression test on missed array element aliasing.

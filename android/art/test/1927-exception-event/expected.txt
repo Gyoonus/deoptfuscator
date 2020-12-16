@@ -1,0 +1,278 @@
+class art.Test1927$TestException
+Running test_J
+main: public static void art.Test1927.test_J() @ line = 110 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.test_J() @ line = 110
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 239
+	Will be caught by: public static void art.Test1927.test_J() @ line = 111
+main: public static void art.Test1927.test_J() @ line = 111 caught class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 43
+		public static void art.Test1927.test_J() @ line = 111
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 239
+Caught exception: art.Test1927$TestException: from java
+Running test_N()
+Caught exception: art.Test1927$TestException: from native
+Running test_J_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static void art.Test1927.test_J_J() @ line = 121
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 243
+	Will be caught by: public static void art.Test1927.test_J_J() @ line = 122
+main: public static void art.Test1927.test_J_J() @ line = 122 caught class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 43
+		public static void art.Test1927.test_J_J() @ line = 122
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 243
+Caught exception: art.Test1927$TestException: from java
+Running test_J_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static void art.Test1927.test_J_N() @ line = 129
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 245
+	Will be caught by: public static void art.Test1927.test_J_N() @ line = 130
+main: public static void art.Test1927.test_J_N() @ line = 130 caught class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 43
+		public static void art.Test1927.test_J_N() @ line = 130
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 245
+Caught exception: art.Test1927$TestException: from native
+Running test_N_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static native void art.Test1927.test_N_J() @ line = -1
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 247
+	Will be caught by: <UNKNOWN>
+Caught exception: art.Test1927$TestException: from java
+Running test_N_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static native void art.Test1927.test_N_N() @ line = -1
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 249
+	Will be caught by: <UNKNOWN>
+Caught exception: art.Test1927$TestException: from native
+Running test_J_J_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static void art.Test1927.intermediate_J_J() @ line = 138
+		public static void art.Test1927.test_J_J_J() @ line = 145
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 251
+	Will be caught by: public static void art.Test1927.test_J_J_J() @ line = 146
+main: public static void art.Test1927.test_J_J_J() @ line = 146 caught class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 43
+		public static void art.Test1927.test_J_J_J() @ line = 146
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 251
+Caught exception: art.Test1927$TestException: from java
+Running test_J_J_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static void art.Test1927.intermediate_J_N() @ line = 139
+		public static void art.Test1927.test_J_J_N() @ line = 153
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 253
+	Will be caught by: public static void art.Test1927.test_J_J_N() @ line = 154
+main: public static void art.Test1927.test_J_J_N() @ line = 154 caught class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 43
+		public static void art.Test1927.test_J_J_N() @ line = 154
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 253
+Caught exception: art.Test1927$TestException: from native
+Running test_J_N_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static native void art.Test1927.intermediate_N_J() @ line = -1
+		public static void art.Test1927.test_J_N_J() @ line = 161
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 255
+	Will be caught by: public static void art.Test1927.test_J_N_J() @ line = 162
+main: public static void art.Test1927.test_J_N_J() @ line = 162 caught class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 43
+		public static void art.Test1927.test_J_N_J() @ line = 162
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 255
+Caught exception: art.Test1927$TestException: from java
+Running test_J_N_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static native void art.Test1927.intermediate_N_N() @ line = -1
+		public static void art.Test1927.test_J_N_N() @ line = 169
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 257
+	Will be caught by: public static void art.Test1927.test_J_N_N() @ line = 170
+main: public static void art.Test1927.test_J_N_N() @ line = 170 caught class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 43
+		public static void art.Test1927.test_J_N_N() @ line = 170
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 257
+Caught exception: art.Test1927$TestException: from native
+Running test_N_J_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static void art.Test1927.intermediate_J_J() @ line = 138
+		public static native void art.Test1927.test_N_J_J() @ line = -1
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 259
+	Will be caught by: <UNKNOWN>
+Caught exception: art.Test1927$TestException: from java
+Running test_N_J_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static void art.Test1927.intermediate_J_N() @ line = 139
+		public static native void art.Test1927.test_N_J_N() @ line = -1
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 261
+	Will be caught by: <UNKNOWN>
+Caught exception: art.Test1927$TestException: from native
+Running test_N_N_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static native void art.Test1927.intermediate_N_J() @ line = -1
+		public static native void art.Test1927.test_N_N_J() @ line = -1
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 263
+	Will be caught by: <UNKNOWN>
+Caught exception: art.Test1927$TestException: from java
+Running test_N_N_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static native void art.Test1927.intermediate_N_N() @ line = -1
+		public static native void art.Test1927.test_N_N_N() @ line = -1
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 265
+	Will be caught by: <UNKNOWN>
+Caught exception: art.Test1927$TestException: from native
+Running test_extra_N_J_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static void art.Test1927.intermediate_J_J() @ line = 138
+		public static native void art.Test1927.test_N_J_J() @ line = -1
+		public static void art.Test1927.test_extra_N_J_J() @ line = 182
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 267
+	Will be caught by: public static void art.Test1927.test_extra_N_J_J() @ line = 183
+Caught exception: art.Test1927$TestException: from java
+Running test_extra_N_J_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static void art.Test1927.intermediate_J_N() @ line = 139
+		public static native void art.Test1927.test_N_J_N() @ line = -1
+		public static void art.Test1927.test_extra_N_J_N() @ line = 189
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 269
+	Will be caught by: public static void art.Test1927.test_extra_N_J_N() @ line = 190
+Caught exception: art.Test1927$TestException: from native
+Running test_extra_N_N_J()
+main: public static void art.Test1927.terminal_J() @ line = 103 throws class art.Test1927$TestException: from java
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static void art.Test1927.terminal_J() @ line = 103
+		public static native void art.Test1927.intermediate_N_J() @ line = -1
+		public static native void art.Test1927.test_N_N_J() @ line = -1
+		public static void art.Test1927.test_extra_N_N_J() @ line = 196
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 271
+	Will be caught by: public static void art.Test1927.test_extra_N_N_J() @ line = 197
+Caught exception: art.Test1927$TestException: from java
+Running test_extra_N_N_N()
+main: public static native void art.Test1927.terminal_N() @ line = -1 throws class art.Test1927$TestException: from native
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1927.PrintStack() @ line = 28
+		public static void art.Test1927.ExceptionEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable,java.lang.reflect.Executable,long) @ line = 66
+		public static native void art.Test1927.terminal_N() @ line = -1
+		public static native void art.Test1927.intermediate_N_N() @ line = -1
+		public static native void art.Test1927.test_N_N_N() @ line = -1
+		public static void art.Test1927.test_extra_N_N_N() @ line = 203
+		public static void art.Test1927.run() throws java.lang.Exception @ line = 273
+	Will be caught by: public static void art.Test1927.test_extra_N_N_N() @ line = 204
+Caught exception: art.Test1927$TestException: from native

@@ -1,0 +1,2 @@
+Regression test for optimizing which used to be
+too aggresive in removing instanceof checks.

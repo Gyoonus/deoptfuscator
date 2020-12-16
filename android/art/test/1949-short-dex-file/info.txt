@@ -1,0 +1,30 @@
+Tests the fix for b/74116990
+
+The JIT was reading into incorrect dex files during class redefinition if a
+native method was present.
+
+The transformed dex file is specifically crafted to have exactly 4 methodIDs in
+it. They are (in order):
+  (0) Ljava/lang/Object;-><init>()V
+  (1) Lxyz/Transform;-><init>()V
+  (2) Lxyz/Transform;->bar()V
+  (3) Lxyz/Transform;->foo()V
+
+In the transformed version of the dex file there is a new method. The new list of methodIDs is:
+  (0) Lart/Test1949;->doNothing()V
+  (1) Ljava/lang/Object;-><init>()V
+  (2) Lxyz/Transform;-><init>()V
+  (3) Lxyz/Transform;->bar()V
+  (4) Lxyz/Transform;->foo()V
+
+This test tries to get the JIT to read out-of-bounds on the initial dex file by getting it to
+read the 5th method id of the new file (Lxyz/Transform;->foo()V) from the old dex file (which
+only has 4 method ids).
+
+To do this we need to make sure that the class being transformed is near the end of the
+alphabet (package xyz, method foo). If it is further forward than the other method-ids then the
+JIT will read an incorrect (but valid) method-id from the old-dex file. This is why the error
+wasn't caught in our other tests (package art is always at the front).
+
+The final method that causes the OOB read needs to be a native method because that is the only
+method-type the jit uses dex-file information to keep track of.

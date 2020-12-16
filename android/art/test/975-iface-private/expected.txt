@@ -1,0 +1,4 @@
+Saying hi from class
+HELLO!
+Saying hi from interface
+HELLO!

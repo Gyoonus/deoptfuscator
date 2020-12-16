@@ -1,0 +1,2 @@
+Test that dex2oat can compile an APK that has uncompressed dex files,
+and where --input-vdex is passed.

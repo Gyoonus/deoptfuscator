@@ -1,0 +1,6 @@
+Tests that obsolete methods work correctly in the presence of const-method-type.
+
+const-method-type and the invoke-custom/polymorphic opcodes are new in dex 39.
+It is almost impossible to get them emmited from normal java code so we don't
+have any coverage on them. To get this coverage we use ASM to build a class file
+that contains the required opcodes.

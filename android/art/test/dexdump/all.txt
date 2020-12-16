@@ -1,0 +1,622 @@
+Processing 'all.dex'...
+Opened 'all.dex', DEX version '035'
+DEX file header:
+magic               : 'dex\n035\0'
+checksum            : d5134208
+signature           : 7af6...100f
+file_size           : 2572
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 46
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 10
+type_ids_off        : 296 (0x000128)
+proto_ids_size      : 3
+proto_ids_off       : 336 (0x000150)
+field_ids_size      : 14
+field_ids_off       : 372 (0x000174)
+method_ids_size     : 21
+method_ids_off      : 484 (0x0001e4)
+class_defs_size     : 1
+class_defs_off      : 652 (0x00028c)
+data_size           : 1888
+data_off            : 684 (0x0002ac)
+
+Class #0 header:
+class_idx           : 4
+access_flags        : 1 (0x0001)
+superclass_idx      : 5
+interfaces_off      : 0 (0x000000)
+source_file_idx     : -1
+annotations_off     : 0 (0x000000)
+class_data_off      : 2310 (0x000906)
+static_fields_size  : 7
+instance_fields_size: 7
+direct_methods_size : 18
+virtual_methods_size: 2
+
+Class #0            -
+  Class descriptor  : 'LA;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in LA;)
+      name          : 'sB'
+      type          : 'B'
+      access        : 0x000a (PRIVATE STATIC)
+    #1              : (in LA;)
+      name          : 'sC'
+      type          : 'C'
+      access        : 0x000a (PRIVATE STATIC)
+    #2              : (in LA;)
+      name          : 'sI'
+      type          : 'I'
+      access        : 0x000a (PRIVATE STATIC)
+    #3              : (in LA;)
+      name          : 'sJ'
+      type          : 'J'
+      access        : 0x000a (PRIVATE STATIC)
+    #4              : (in LA;)
+      name          : 'sO'
+      type          : 'LA;'
+      access        : 0x000a (PRIVATE STATIC)
+    #5              : (in LA;)
+      name          : 'sS'
+      type          : 'S'
+      access        : 0x000a (PRIVATE STATIC)
+    #6              : (in LA;)
+      name          : 'sZ'
+      type          : 'Z'
+      access        : 0x000a (PRIVATE STATIC)
+  Instance fields   -
+    #0              : (in LA;)
+      name          : 'mB'
+      type          : 'B'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in LA;)
+      name          : 'mC'
+      type          : 'C'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in LA;)
+      name          : 'mI'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+    #3              : (in LA;)
+      name          : 'mJ'
+      type          : 'J'
+      access        : 0x0002 (PRIVATE)
+    #4              : (in LA;)
+      name          : 'mO'
+      type          : 'LA;'
+      access        : 0x0002 (PRIVATE)
+    #5              : (in LA;)
+      name          : 'mS'
+      type          : 'S'
+      access        : 0x0002 (PRIVATE)
+    #6              : (in LA;)
+      name          : 'mZ'
+      type          : 'Z'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in LA;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+00042c:                                        |[00042c] A.<init>:()V
+00043c: 7010 1400 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0014
+000442: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #1              : (in LA;)
+      name          : 'arrays'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 0
+      insns size    : 29 16-bit code units
+000444:                                        |[000444] A.arrays:()V
+000454: 4400 0102                              |0000: aget v0, v1, v2
+000458: 4500 0102                              |0002: aget-wide v0, v1, v2
+00045c: 4600 0102                              |0004: aget-object v0, v1, v2
+000460: 4700 0102                              |0006: aget-boolean v0, v1, v2
+000464: 4800 0102                              |0008: aget-byte v0, v1, v2
+000468: 4900 0102                              |000a: aget-char v0, v1, v2
+00046c: 4a00 0102                              |000c: aget-short v0, v1, v2
+000470: 4b00 0102                              |000e: aput v0, v1, v2
+000474: 4c00 0102                              |0010: aput-wide v0, v1, v2
+000478: 4d00 0102                              |0012: aput-object v0, v1, v2
+00047c: 4e00 0102                              |0014: aput-boolean v0, v1, v2
+000480: 4f00 0102                              |0016: aput-byte v0, v1, v2
+000484: 5000 0102                              |0018: aput-char v0, v1, v2
+000488: 5100 0102                              |001a: aput-short v0, v1, v2
+00048c: 0e00                                   |001c: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #2              : (in LA;)
+      name          : 'binary_ops'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 0
+      insns size    : 65 16-bit code units
+000490:                                        |[000490] A.binary_ops:()V
+0004a0: 9000 0102                              |0000: add-int v0, v1, v2
+0004a4: 9100 0102                              |0002: sub-int v0, v1, v2
+0004a8: 9200 0102                              |0004: mul-int v0, v1, v2
+0004ac: 9300 0102                              |0006: div-int v0, v1, v2
+0004b0: 9400 0102                              |0008: rem-int v0, v1, v2
+0004b4: 9500 0102                              |000a: and-int v0, v1, v2
+0004b8: 9600 0102                              |000c: or-int v0, v1, v2
+0004bc: 9700 0102                              |000e: xor-int v0, v1, v2
+0004c0: 9800 0102                              |0010: shl-int v0, v1, v2
+0004c4: 9900 0102                              |0012: shr-int v0, v1, v2
+0004c8: 9a00 0102                              |0014: ushr-int v0, v1, v2
+0004cc: 9b00 0102                              |0016: add-long v0, v1, v2
+0004d0: 9c00 0102                              |0018: sub-long v0, v1, v2
+0004d4: 9d00 0102                              |001a: mul-long v0, v1, v2
+0004d8: 9e00 0102                              |001c: div-long v0, v1, v2
+0004dc: 9f00 0102                              |001e: rem-long v0, v1, v2
+0004e0: a000 0102                              |0020: and-long v0, v1, v2
+0004e4: a100 0102                              |0022: or-long v0, v1, v2
+0004e8: a200 0102                              |0024: xor-long v0, v1, v2
+0004ec: a300 0102                              |0026: shl-long v0, v1, v2
+0004f0: a400 0102                              |0028: shr-long v0, v1, v2
+0004f4: a500 0102                              |002a: ushr-long v0, v1, v2
+0004f8: a600 0102                              |002c: add-float v0, v1, v2
+0004fc: a700 0102                              |002e: sub-float v0, v1, v2
+000500: a800 0102                              |0030: mul-float v0, v1, v2
+000504: a900 0102                              |0032: div-float v0, v1, v2
+000508: aa00 0102                              |0034: rem-float v0, v1, v2
+00050c: ab00 0102                              |0036: add-double v0, v1, v2
+000510: ac00 0102                              |0038: sub-double v0, v1, v2
+000514: ad00 0102                              |003a: mul-double v0, v1, v2
+000518: ae00 0102                              |003c: div-double v0, v1, v2
+00051c: af00 0102                              |003e: rem-double v0, v1, v2
+000520: 0e00                                   |0040: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #3              : (in LA;)
+      name          : 'binary_ops_2addr'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 33 16-bit code units
+000524:                                        |[000524] A.binary_ops_2addr:()V
+000534: b010                                   |0000: add-int/2addr v0, v1
+000536: b110                                   |0001: sub-int/2addr v0, v1
+000538: b210                                   |0002: mul-int/2addr v0, v1
+00053a: b310                                   |0003: div-int/2addr v0, v1
+00053c: b410                                   |0004: rem-int/2addr v0, v1
+00053e: b510                                   |0005: and-int/2addr v0, v1
+000540: b610                                   |0006: or-int/2addr v0, v1
+000542: b710                                   |0007: xor-int/2addr v0, v1
+000544: b810                                   |0008: shl-int/2addr v0, v1
+000546: b910                                   |0009: shr-int/2addr v0, v1
+000548: ba10                                   |000a: ushr-int/2addr v0, v1
+00054a: bb10                                   |000b: add-long/2addr v0, v1
+00054c: bc10                                   |000c: sub-long/2addr v0, v1
+00054e: bd10                                   |000d: mul-long/2addr v0, v1
+000550: be10                                   |000e: div-long/2addr v0, v1
+000552: bf10                                   |000f: rem-long/2addr v0, v1
+000554: c010                                   |0010: and-long/2addr v0, v1
+000556: c110                                   |0011: or-long/2addr v0, v1
+000558: c210                                   |0012: xor-long/2addr v0, v1
+00055a: c310                                   |0013: shl-long/2addr v0, v1
+00055c: c410                                   |0014: shr-long/2addr v0, v1
+00055e: c510                                   |0015: ushr-long/2addr v0, v1
+000560: c610                                   |0016: add-float/2addr v0, v1
+000562: c710                                   |0017: sub-float/2addr v0, v1
+000564: c810                                   |0018: mul-float/2addr v0, v1
+000566: c910                                   |0019: div-float/2addr v0, v1
+000568: ca10                                   |001a: rem-float/2addr v0, v1
+00056a: cb10                                   |001b: add-double/2addr v0, v1
+00056c: cc10                                   |001c: sub-double/2addr v0, v1
+00056e: cd10                                   |001d: mul-double/2addr v0, v1
+000570: ce10                                   |001e: div-double/2addr v0, v1
+000572: cf10                                   |001f: rem-double/2addr v0, v1
+000574: 0e00                                   |0020: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #4              : (in LA;)
+      name          : 'binary_ops_lit16'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 17 16-bit code units
+000578:                                        |[000578] A.binary_ops_lit16:()V
+000588: d010 3412                              |0000: add-int/lit16 v0, v1, #int 4660 // #1234
+00058c: d110 3412                              |0002: rsub-int v0, v1, #int 4660 // #1234
+000590: d210 3412                              |0004: mul-int/lit16 v0, v1, #int 4660 // #1234
+000594: d310 3412                              |0006: div-int/lit16 v0, v1, #int 4660 // #1234
+000598: d410 3412                              |0008: rem-int/lit16 v0, v1, #int 4660 // #1234
+00059c: d510 3412                              |000a: and-int/lit16 v0, v1, #int 4660 // #1234
+0005a0: d610 3412                              |000c: or-int/lit16 v0, v1, #int 4660 // #1234
+0005a4: d710 3412                              |000e: xor-int/lit16 v0, v1, #int 4660 // #1234
+0005a8: 0e00                                   |0010: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #5              : (in LA;)
+      name          : 'binary_ops_lit8'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 23 16-bit code units
+0005ac:                                        |[0005ac] A.binary_ops_lit8:()V
+0005bc: d800 0112                              |0000: add-int/lit8 v0, v1, #int 18 // #12
+0005c0: d900 0112                              |0002: rsub-int/lit8 v0, v1, #int 18 // #12
+0005c4: da00 0112                              |0004: mul-int/lit8 v0, v1, #int 18 // #12
+0005c8: db00 0112                              |0006: div-int/lit8 v0, v1, #int 18 // #12
+0005cc: dc00 0112                              |0008: rem-int/lit8 v0, v1, #int 18 // #12
+0005d0: dd00 0112                              |000a: and-int/lit8 v0, v1, #int 18 // #12
+0005d4: de00 0112                              |000c: or-int/lit8 v0, v1, #int 18 // #12
+0005d8: df00 0112                              |000e: xor-int/lit8 v0, v1, #int 18 // #12
+0005dc: e000 0112                              |0010: shl-int/lit8 v0, v1, #int 18 // #12
+0005e0: e100 0112                              |0012: shr-int/lit8 v0, v1, #int 18 // #12
+0005e4: e200 0112                              |0014: ushr-int/lit8 v0, v1, #int 18 // #12
+0005e8: 0e00                                   |0016: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #6              : (in LA;)
+      name          : 'compares'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 0
+      insns size    : 11 16-bit code units
+0005ec:                                        |[0005ec] A.compares:()V
+0005fc: 2d00 0102                              |0000: cmpl-float v0, v1, v2
+000600: 2e00 0102                              |0002: cmpg-float v0, v1, v2
+000604: 2f00 0102                              |0004: cmpl-double v0, v1, v2
+000608: 3000 0102                              |0006: cmpg-double v0, v1, v2
+00060c: 3100 0102                              |0008: cmp-long v0, v1, v2
+000610: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #7              : (in LA;)
+      name          : 'conditionals'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 25 16-bit code units
+000614:                                        |[000614] A.conditionals:()V
+000624: 3210 1800                              |0000: if-eq v0, v1, 0018 // +0018
+000628: 3310 1600                              |0002: if-ne v0, v1, 0018 // +0016
+00062c: 3410 1400                              |0004: if-lt v0, v1, 0018 // +0014
+000630: 3510 1200                              |0006: if-ge v0, v1, 0018 // +0012
+000634: 3610 1000                              |0008: if-gt v0, v1, 0018 // +0010
+000638: 3710 0e00                              |000a: if-le v0, v1, 0018 // +000e
+00063c: 3800 0c00                              |000c: if-eqz v0, 0018 // +000c
+000640: 3900 0a00                              |000e: if-nez v0, 0018 // +000a
+000644: 3a00 0800                              |0010: if-ltz v0, 0018 // +0008
+000648: 3b00 0600                              |0012: if-gez v0, 0018 // +0006
+00064c: 3c00 0400                              |0014: if-gtz v0, 0018 // +0004
+000650: 3d00 0200                              |0016: if-lez v0, 0018 // +0002
+000654: 0e00                                   |0018: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #8              : (in LA;)
+      name          : 'constants'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 28 16-bit code units
+000658:                                        |[000658] A.constants:()V
+000668: 1210                                   |0000: const/4 v0, #int 1 // #1
+00066a: 1300 3412                              |0001: const/16 v0, #int 4660 // #1234
+00066e: 1400 7856 3412                         |0003: const v0, #float 5.69046e-28 // #12345678
+000674: 1500 3412                              |0006: const/high16 v0, #int 305397760 // #1234
+000678: 1600 3412                              |0008: const-wide/16 v0, #int 4660 // #1234
+00067c: 1700 7856 3412                         |000a: const-wide/32 v0, #float 5.69046e-28 // #12345678
+000682: 1800 efcd ab90 7856 3412               |000d: const-wide v0, #double 5.62635e-221 // #1234567890abcdef
+00068c: 1900 3412                              |0012: const-wide/high16 v0, #long 1311673391471656960 // #1234
+000690: 1a00 2c00                              |0014: const-string v0, "string" // string@002c
+000694: 1b00 2c00 0000                         |0016: const-string/jumbo v0, "string" // string@0000002c
+00069a: 1c00 0500                              |0019: const-class v0, Ljava/lang/Object; // type@0005
+00069e: 0e00                                   |001b: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #9              : (in LA;)
+      name          : 'misc'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 0
+      outs          : 0
+      insns size    : 54 16-bit code units
+0006a0:                                        |[0006a0] A.misc:()V
+0006b0: 0000                                   |0000: nop // spacer
+0006b2: 1d00                                   |0001: monitor-enter v0
+0006b4: 1e00                                   |0002: monitor-exit v0
+0006b6: 1f00 0500                              |0003: check-cast v0, Ljava/lang/Object; // type@0005
+0006ba: 2010 0500                              |0005: instance-of v0, v1, Ljava/lang/Object; // type@0005
+0006be: 2110                                   |0007: array-length v0, v1
+0006c0: 2200 0500                              |0008: new-instance v0, Ljava/lang/Object; // type@0005
+0006c4: 2310 0500                              |000a: new-array v0, v1, Ljava/lang/Object; // type@0005
+0006c8: 2454 0900 1032                         |000c: filled-new-array {v0, v1, v2, v3, v4}, [Ljava/lang/Object; // type@0009
+0006ce: 2505 0900 0000                         |000f: filled-new-array/range {v0, v1, v2, v3, v4}, [Ljava/lang/Object; // type@0009
+0006d4: 2600 0c00 0000                         |0012: fill-array-data v0, 0000001e // +0000000c
+0006da: 2700                                   |0015: throw v0
+0006dc: 2806                                   |0016: goto 001c // +0006
+0006de: 2900 0500                              |0017: goto/16 001c // +0005
+0006e2: 2a00 0300 0000                         |0019: goto/32 #00000003
+0006e8: 0e00                                   |001c: return-void
+0006ea: 0000                                   |001d: nop // spacer
+0006ec: 0003 0400 0a00 0000 0100 0000 0200 ... |001e: array-data (24 units)
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #10              : (in LA;)
+      name          : 'moves'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 23 16-bit code units
+00071c:                                        |[00071c] A.moves:()V
+00072c: 0110                                   |0000: move v0, v1
+00072e: 0200 0100                              |0001: move/from16 v0, v1
+000732: 0300 0000 0100                         |0003: move/16 v0, v1
+000738: 0410                                   |0006: move-wide v0, v1
+00073a: 0500 0100                              |0007: move-wide/from16 v0, v1
+00073e: 0600 0000 0100                         |0009: move-wide/16 v0, v1
+000744: 0710                                   |000c: move-object v0, v1
+000746: 0800 0100                              |000d: move-object/from16 v0, v1
+00074a: 0900 0000 0100                         |000f: move-object/16 v0, v1
+000750: 0a00                                   |0012: move-result v0
+000752: 0b00                                   |0013: move-result-wide v0
+000754: 0c00                                   |0014: move-result-object v0
+000756: 0d00                                   |0015: move-exception v0
+000758: 0e00                                   |0016: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #11              : (in LA;)
+      name          : 'packed_switch'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 16 16-bit code units
+00075c:                                        |[00075c] A.packed_switch:()V
+00076c: 2b00 0800 0000                         |0000: packed-switch v0, 00000008 // +00000008
+000772: 0e00                                   |0003: return-void
+000774: 28ff                                   |0004: goto 0003 // -0001
+000776: 28fe                                   |0005: goto 0003 // -0002
+000778: 28fd                                   |0006: goto 0003 // -0003
+00077a: 0000                                   |0007: nop // spacer
+00077c: 0001 0200 feff ff7f 0500 0000 0600 ... |0008: packed-switch-data (8 units)
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #12              : (in LA;)
+      name          : 'return32'
+      type          : '()I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 1 16-bit code units
+00078c:                                        |[00078c] A.return32:()I
+00079c: 0f00                                   |0000: return v0
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #13              : (in LA;)
+      name          : 'return64'
+      type          : '()I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 1 16-bit code units
+0007a0:                                        |[0007a0] A.return64:()I
+0007b0: 1000                                   |0000: return-wide v0
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #14              : (in LA;)
+      name          : 'return_object'
+      type          : '()Ljava/lang/Object;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 1 16-bit code units
+0007b4:                                        |[0007b4] A.return_object:()Ljava/lang/Object;
+0007c4: 1100                                   |0000: return-object v0
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #15              : (in LA;)
+      name          : 'sparse_switch'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 22 16-bit code units
+0007c8:                                        |[0007c8] A.sparse_switch:()V
+0007d8: 2c00 0400 0000                         |0000: sparse-switch v0, 00000004 // +00000004
+0007de: 0e00                                   |0003: return-void
+0007e0: 0002 0400 1111 0000 2222 0000 3333 ... |0004: sparse-switch-data (18 units)
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #16              : (in LA;)
+      name          : 'static_fields'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 29 16-bit code units
+000804:                                        |[000804] A.static_fields:()V
+000814: 6000 0900                              |0000: sget v0, LA;.sI:I // field@0009
+000818: 6100 0a00                              |0002: sget-wide v0, LA;.sJ:J // field@000a
+00081c: 6200 0b00                              |0004: sget-object v0, LA;.sO:LA; // field@000b
+000820: 6300 0d00                              |0006: sget-boolean v0, LA;.sZ:Z // field@000d
+000824: 6400 0700                              |0008: sget-byte v0, LA;.sB:B // field@0007
+000828: 6500 0800                              |000a: sget-char v0, LA;.sC:C // field@0008
+00082c: 6600 0c00                              |000c: sget-short v0, LA;.sS:S // field@000c
+000830: 6700 0900                              |000e: sput v0, LA;.sI:I // field@0009
+000834: 6800 0a00                              |0010: sput-wide v0, LA;.sJ:J // field@000a
+000838: 6900 0b00                              |0012: sput-object v0, LA;.sO:LA; // field@000b
+00083c: 6a00 0d00                              |0014: sput-boolean v0, LA;.sZ:Z // field@000d
+000840: 6b00 0700                              |0016: sput-byte v0, LA;.sB:B // field@0007
+000844: 6c00 0800                              |0018: sput-char v0, LA;.sC:C // field@0008
+000848: 6d00 0500                              |001a: sput-short v0, LA;.mS:S // field@0005
+00084c: 0e00                                   |001c: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #17              : (in LA;)
+      name          : 'unary_ops'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 22 16-bit code units
+000850:                                        |[000850] A.unary_ops:()V
+000860: 7b10                                   |0000: neg-int v0, v1
+000862: 7c10                                   |0001: not-int v0, v1
+000864: 7d10                                   |0002: neg-long v0, v1
+000866: 7e10                                   |0003: not-long v0, v1
+000868: 7f10                                   |0004: neg-float v0, v1
+00086a: 8010                                   |0005: neg-double v0, v1
+00086c: 8110                                   |0006: int-to-long v0, v1
+00086e: 8210                                   |0007: int-to-float v0, v1
+000870: 8310                                   |0008: int-to-double v0, v1
+000872: 8410                                   |0009: long-to-int v0, v1
+000874: 8510                                   |000a: long-to-float v0, v1
+000876: 8610                                   |000b: long-to-double v0, v1
+000878: 8710                                   |000c: float-to-int v0, v1
+00087a: 8810                                   |000d: float-to-long v0, v1
+00087c: 8910                                   |000e: float-to-double v0, v1
+00087e: 8a10                                   |000f: double-to-int v0, v1
+000880: 8b10                                   |0010: double-to-long v0, v1
+000882: 8c10                                   |0011: double-to-float v0, v1
+000884: 8d10                                   |0012: int-to-byte v0, v1
+000886: 8e10                                   |0013: int-to-char v0, v1
+000888: 8f10                                   |0014: int-to-short v0, v1
+00088a: 0e00                                   |0015: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+  Virtual methods   -
+    #0              : (in LA;)
+      name          : 'instance_fields'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 29 16-bit code units
+00088c:                                        |[00088c] A.instance_fields:()V
+00089c: 5210 0900                              |0000: iget v0, v1, LA;.sI:I // field@0009
+0008a0: 5310 0a00                              |0002: iget-wide v0, v1, LA;.sJ:J // field@000a
+0008a4: 5410 0b00                              |0004: iget-object v0, v1, LA;.sO:LA; // field@000b
+0008a8: 5510 0d00                              |0006: iget-boolean v0, v1, LA;.sZ:Z // field@000d
+0008ac: 5610 0700                              |0008: iget-byte v0, v1, LA;.sB:B // field@0007
+0008b0: 5710 0800                              |000a: iget-char v0, v1, LA;.sC:C // field@0008
+0008b4: 5810 0c00                              |000c: iget-short v0, v1, LA;.sS:S // field@000c
+0008b8: 5910 0900                              |000e: iput v0, v1, LA;.sI:I // field@0009
+0008bc: 5a10 0a00                              |0010: iput-wide v0, v1, LA;.sJ:J // field@000a
+0008c0: 5b10 0b00                              |0012: iput-object v0, v1, LA;.sO:LA; // field@000b
+0008c4: 5c10 0d00                              |0014: iput-boolean v0, v1, LA;.sZ:Z // field@000d
+0008c8: 5d10 0700                              |0016: iput-byte v0, v1, LA;.sB:B // field@0007
+0008cc: 5e10 0800                              |0018: iput-char v0, v1, LA;.sC:C // field@0008
+0008d0: 5f10 0c00                              |001a: iput-short v0, v1, LA;.sS:S // field@000c
+0008d4: 0e00                                   |001c: return-void
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+    #1              : (in LA;)
+      name          : 'invokes'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 1
+      insns size    : 15 16-bit code units
+0008d8:                                        |[0008d8] A.invokes:()V
+0008e8: 6e54 0a00 1032                         |0000: invoke-virtual {v0, v1, v2, v3, v4}, LA;.invokes:()V // method@000a
+0008ee: 6f54 0a00 1032                         |0003: invoke-super {v0, v1, v2, v3, v4}, LA;.invokes:()V // method@000a
+0008f4: 7054 0a00 1032                         |0006: invoke-direct {v0, v1, v2, v3, v4}, LA;.invokes:()V // method@000a
+0008fa: 7154 0a00 1032                         |0009: invoke-static {v0, v1, v2, v3, v4}, LA;.invokes:()V // method@000a
+000900: 7254 0a00 1032                         |000c: invoke-interface {v0, v1, v2, v3, v4}, LA;.invokes:()V // method@000a
+      catches       : (none)
+      positions     : 
+      locals        : 
+
+  source_file_idx   : -1 (unknown)
+

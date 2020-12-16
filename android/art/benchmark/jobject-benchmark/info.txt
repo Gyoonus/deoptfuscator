@@ -1,0 +1,7 @@
+Benchmark for jobject functions
+
+Measures performance of:
+Add/RemoveLocalRef
+Add/RemoveGlobalRef
+Add/RemoveWeakGlobalRef
+Decoding local, weak, global, handle scope jobjects.

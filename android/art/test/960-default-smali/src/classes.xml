@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<data>
+  <classes>
+    <class name="A" super="java/lang/Object">
+      <implements>
+        <item>Greeter</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="B" super="java/lang/Object">
+      <implements>
+        <item>Greeter2</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="C" super="A">
+      <implements> </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="D" super="java/lang/Object">
+      <implements>
+        <item>Greeter3</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="E" super="A">
+      <implements>
+        <item>Greeter2</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="F" super="A">
+      <implements>
+        <item>Attendant</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="G" super="java/lang/Object">
+      <implements>
+        <item>Attendant</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="H" super="java/lang/Object">
+      <implements>
+        <item>Extension</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="I" super="A">
+      <implements>
+        <item>Greeter2</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="J" super="A">
+      <implements> </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="K" super="java/lang/Object">
+      <implements>
+        <item>Foo</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="L" super="K">
+      <implements> </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="M" super="L">
+      <implements>
+        <item>Fooer</item>
+      </implements>
+      <methods>
+        <method>bar</method>
+      </methods>
+    </class>
+
+    <class name="N" super="java/lang/Object">
+      <implements>
+        <item>Foo</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="O" super="N">
+      <implements>
+        <item>Foo2</item>
+      </implements>
+      <methods> </methods>
+    </class>
+
+    <class name="P" super="O">
+      <implements>
+        <item>Foo2</item>
+      </implements>
+      <methods>
+        <method>bar</method>
+      </methods>
+    </class>
+
+    <class name="Q" super="O">
+      <implements>
+        <item>Foo2</item>
+        <item>Foo3</item>
+      </implements>
+      <methods> </methods>
+    </class>
+  </classes>
+
+  <interfaces>
+    <interface name="Extension" super="java/lang/Object">
+      <implements> </implements>
+      <methods>
+        <method type="default">SayHi</method>
+      </methods>
+    </interface>
+
+    <interface name="Greeter" super="java/lang/Object">
+      <implements> </implements>
+      <methods>
+        <method type="abstract">SayHi</method>
+        <method type="default">SayHiTwice</method>
+      </methods>
+    </interface>
+
+    <interface name="Greeter2" super="java/lang/Object">
+      <implements>
+        <item>Greeter</item>
+      </implements>
+      <methods> </methods>
+    </interface>
+
+    <interface name="Greeter3" super="java/lang/Object">
+      <implements>
+        <item>Greeter</item>
+      </implements>
+      <methods>
+        <method type="abstract">GetName</method>
+      </methods>
+    </interface>
+
+    <interface name="Attendant" super="java/lang/Object">
+      <implements> </implements>
+      <methods>
+        <method type="default">SayHi</method>
+        <method type="default">SayHiTwice</method>
+        <method type="abstract">GetPlace</method>
+      </methods>
+    </interface>
+
+    <interface name="Foo" super="java/lang/Object">
+      <implements>
+      </implements>
+      <methods>
+        <method type="default">bar</method>
+      </methods>
+    </interface>
+
+    <interface name="Foo2" super="java/lang/Object">
+      <implements>
+        <item>Foo</item>
+      </implements>
+      <methods>
+        <method type="default">bar</method>
+      </methods>
+    </interface>
+
+    <interface name="Foo3" super="java/lang/Object">
+      <implements>
+        <item>Foo</item>
+      </implements>
+      <methods>
+        <method type="default">bar</method>
+      </methods>
+    </interface>
+
+    <interface name="Fooer" super="java/lang/Object">
+      <implements>
+        <item>Foo</item>
+      </implements>
+      <methods>
+        <method type="abstract">bar</method>
+      </methods>
+    </interface>
+  </interfaces>
+</data>

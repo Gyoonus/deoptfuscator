@@ -1,0 +1,6 @@
+HSLMain;->inlineMonomorphicSubA(LSuper;)I+LSubA;
+HSLMain;->inlinePolymophicSubASubB(LSuper;)I+LSubA;,LSubB;
+HSLMain;->inlinePolymophicCrossDexSubASubC(LSuper;)I+LSubA;,LSubC;
+HSLMain;->inlineMegamorphic(LSuper;)I+LSubA;,LSubB;,LSubC;,LSubD;,LSubE;
+HSLMain;->inlineMissingTypes(LSuper;)I+missing_types
+HSLMain;->noInlineCache(LSuper;)I

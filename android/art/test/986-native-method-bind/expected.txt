@@ -1,0 +1,11 @@
+private static native void art.Test986$Transform.sayHi2() = Java_art_Test986_00024Transform_sayHi2 -> Java_art_Test986_00024Transform_sayHi2
+Hello - 2
+private static native void art.Test986$Transform.sayHi() = Java_art_Test986_00024Transform_sayHi__ -> NoReallySayGoodbye
+Bye
+private static native void art.Test986.rebindTransformClass(java.lang.Class) = Java_art_Test986_rebindTransformClass -> Java_art_Test986_rebindTransformClass
+private static native void art.Test986$Transform.sayHi() = Java_art_Test986_00024Transform_sayHi__ -> Java_art_Test986_00024Transform_sayHi2
+private static native void art.Test986$Transform.sayHi2() = Java_art_Test986_00024Transform_sayHi2 -> Java_art_Test986_00024Transform_sayHi2
+Hello - 2
+private static native void art.Test986$Transform.sayHi() = Java_art_Test986_00024Transform_sayHi__ -> Java_art_Test986_00024Transform_sayHi__
+private static native void art.Test986$Transform.sayHi2() = Java_art_Test986_00024Transform_sayHi2 -> Java_art_Test986_00024Transform_sayHi2
+Hello

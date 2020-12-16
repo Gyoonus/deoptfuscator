@@ -1,0 +1,2 @@
+Suspend self twice returned: [0, 14]
+Thread was no longer suspended after one resume.

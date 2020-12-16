@@ -1,0 +1,1 @@
+Method: public abstract void Interface.foo()

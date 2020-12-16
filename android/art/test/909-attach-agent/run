@@ -1,0 +1,55 @@
+#!/bin/bash
+#
+# Copyright 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+plugin=libopenjdkjvmtid.so
+agent=libtiagentd.so
+if  [[ "$@" == *"-O"* ]]; then
+  agent=libtiagent.so
+  plugin=libopenjdkjvmti.so
+fi
+
+if [[ "$@" == *"--interpreter"* ]]; then
+  # On interpreter we are fully capable of providing the full jvmti api so we
+  # have a slightly different expected output.
+  # TODO We should really be changing this in the 'check' script.
+  patch -s expected.txt <interpreter-expected.patch
+fi
+
+export ANDROID_LOG_TAGS='*:f'
+./default-run "$@" --android-runtime-option -Xplugin:${plugin} \
+                   --android-runtime-option -Xcompiler-option \
+                   --android-runtime-option --debuggable \
+                   --args agent:${agent}=909-attach-agent
+return_status1=$?
+
+./default-run "$@" --android-runtime-option -Xcompiler-option \
+                   --android-runtime-option --debuggable \
+                   --args agent:${agent}=909-attach-agent
+return_status2=$?
+
+./default-run "$@" --args agent:${agent}=909-attach-agent --external-log-tags
+return_status3=$?
+
+./default-run "$@" --args agent:${agent}=909-attach-agent \
+                   --args disallow-debugging \
+                   --external-log-tags
+return_status4=$?
+
+# Make sure we don't silently ignore an early failure.
+(exit $return_status1) && \
+  (exit $return_status2) && \
+  (exit $return_status3) && \
+  (exit $return_status4)

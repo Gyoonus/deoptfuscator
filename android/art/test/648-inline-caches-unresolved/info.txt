@@ -1,0 +1,1 @@
+Test for inlining with inline cache into an unresolved method.

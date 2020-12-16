@@ -1,0 +1,4 @@
+Regression test for the x86-64 Baker's read barrier fast path compiler
+instrumentation of CheckCasts, where we used to use an
+art::x86_64::NearLabel, the range of which was sometimes too short
+with Baker's read barriers enabled.

@@ -1,0 +1,2 @@
+Regression test for div/rem taking Integer.MIN_VALUE and
+Long.MIN_VALUE.

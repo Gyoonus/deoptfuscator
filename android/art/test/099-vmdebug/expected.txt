@@ -1,0 +1,31 @@
+Confirm enable/disable
+status=0
+status=1
+status=0
+Confirm sampling
+status=2
+status=0
+Test starting when already started
+status=1
+status=1
+Test stopping when already stopped
+status=0
+status=0
+Test tracing with empty filename
+Got expected exception
+Test tracing with bogus (< 1024 && != 0) filesize
+Got expected exception
+Test sampling with bogus (<= 0) interval
+Got expected exception
+Instances of ClassA 2
+Instances of ClassB 1
+Instances of null 0
+Instances of ClassA assignable 3
+Array counts [2, 1, 0]
+Array counts assignable [3, 1, 0]
+ClassD got 3, combined mask: 13
+ClassE got 2, combined mask: 18
+null got 0
+ClassD assignable got 5, combined mask: 31
+ClassE assignable got 2, combined mask: 18
+null assignable got 0

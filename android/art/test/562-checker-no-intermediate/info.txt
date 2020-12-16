@@ -1,0 +1,2 @@
+Regression test for optimizing, checking that there is no
+intermediate address live across a Java call.

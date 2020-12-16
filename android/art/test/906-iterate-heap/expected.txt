@@ -1,0 +1,45 @@
+[{tag=1, class-tag=0, size=8, length=-1}, {tag=2, class-tag=100, size=8, length=-1}, {tag=3, class-tag=100, size=8, length=-1}, {tag=4, class-tag=0, size=32, length=5}, {tag=5, class-tag=0, size=32, length=-1}, {tag=100, class-tag=0, size=<class>, length=-1}]
+[{tag=11, class-tag=0, size=8, length=-1}, {tag=12, class-tag=110, size=8, length=-1}, {tag=13, class-tag=110, size=8, length=-1}, {tag=14, class-tag=0, size=32, length=5}, {tag=15, class-tag=0, size=32, length=-1}, {tag=110, class-tag=0, size=<class>, length=-1}]
+15@0 (32, 'Hello World')
+16
+1@0 (14, 2xZ '0001')
+2
+1@0 (15, 3xB '010203')
+2
+1@0 (16, 2xC '41005a00')
+2
+1@0 (18, 3xS '010002000300')
+2
+1@0 (24, 3xI '010000000200000003000000')
+2
+1@0 (20, 2xF '000000000000803f')
+2
+1@0 (40, 3xJ '010000000000000002000000000000000300000000000000')
+2
+1@0 (32, 2xD '0000000000000000000000000000f03f')
+2
+doTestPrimitiveFieldsClasses
+10000@0 (static, int, index=3) 0000000000000000
+10001
+10000@0 (static, int, index=11) 0000000000000000
+10001
+10001
+10001
+doTestPrimitiveFieldsIntegral
+10000@0 (instance, int, index=2) 0000000000000000
+10001@0 (instance, byte, index=4) 0000000000000001
+10002@0 (instance, char, index=5) 0000000000000061
+10003@0 (instance, int, index=6) 0000000000000003
+10004@0 (instance, long, index=7) 0000000000000004
+10005@0 (instance, short, index=9) 0000000000000002
+10006
+doTestPrimitiveFieldsFloat
+10000@0 (instance, int, index=3) 0000000000000000
+10001@0 (instance, byte, index=5) 0000000000000001
+10002@0 (instance, char, index=6) 0000000000000061
+10003@0 (instance, int, index=7) 0000000000000003
+10004@0 (instance, long, index=8) 0000000000000004
+10005@0 (instance, short, index=10) 0000000000000002
+10006@0 (instance, double, index=12) 3ff3ae147ae147ae
+10007@0 (instance, float, index=13) 000000003f9d70a4
+10008

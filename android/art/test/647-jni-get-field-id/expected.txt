@@ -1,0 +1,26 @@
+JNI_OnLoad called
+getFieldId(class TestClass, "intField", "I")
+Result: true
+getFieldId(class TestClass, "intField", "int")
+Caught java.lang.NoSuchFieldError
+  caused by java.lang.NoClassDefFoundError
+getFieldId(class TestClass, "intField", "Lint;")
+Caught java.lang.NoSuchFieldError
+  caused by java.lang.ClassNotFoundException
+getFieldId(class TestClass, "stringField", "I")
+Caught java.lang.NoSuchFieldError
+getFieldId(class TestClass, "stringField", "Ljava/lang/String;")
+Result: true
+getFieldId(class TestClass, "stringField", "java/lang/String")
+Caught java.lang.NoSuchFieldError
+  caused by java.lang.NoClassDefFoundError
+getFieldId(class TestClass, "stringField", "Ljava.lang.String;")
+Caught java.lang.NoSuchFieldError
+  caused by java.lang.NoClassDefFoundError
+getFieldId(class TestClass, "stringField", "java.lang.String")
+Caught java.lang.NoSuchFieldError
+  caused by java.lang.NoClassDefFoundError
+Test that MyClassLoader.loadClass("Bad.Class") shall not be called.
+  Error message for Bad/Class: Invalid descriptor: Bad/Class.
+  Error message for Bad.Class: Invalid descriptor: Bad.Class.
+  Error message for LBad.Class;: Invalid descriptor: LBad.Class;.

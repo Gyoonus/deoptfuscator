@@ -1,0 +1,54 @@
+//
+// Copyright (C) 2013 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+art_cc_binary {
+    name: "dalvikvm",
+    host_supported: true,
+    compile_multilib: "both",
+
+    srcs: ["dalvikvm.cc"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wextra",
+    ],
+    shared_libs: [
+        "libnativehelper",
+    ],
+    whole_static_libs: ["libsigchain"],
+    target: {
+        android: {
+            shared_libs: [
+                "liblog",
+            ],
+        },
+        linux: {
+            ldflags: ["-Wl,--export-dynamic"],
+        },
+    },
+
+    multilib: {
+        lib32: {
+            suffix: "32",
+        },
+        lib64: {
+            suffix: "64",
+        },
+    },
+
+    // Create symlink for the primary version target.
+    symlink_preferred_arch: true,
+}

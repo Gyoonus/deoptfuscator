@@ -1,0 +1,1 @@
+Test on (in)variant instance field and array references in loops.

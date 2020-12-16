@@ -1,0 +1,110 @@
+/*
+ * This file contains expectations for ART's buildbot. The purpose of this file is
+ * to temporarily list failing tests and not break the bots.
+ *
+ * This file contains the expectations for the 'prebuilt-libjdwp-aot' and
+ * 'prebuilt-libjdwp-jit' test groups on the chromium buildbot.
+ */
+[
+{
+  description: "Test fails due to unexpectedly getting the thread-groups of zombie threads",
+  result: EXEC_FAILED,
+  bug: 66906414,
+  name: "org.apache.harmony.jpda.tests.jdwp.ThreadReference.ThreadGroup002Test#testThreadGroup002"
+},
+{
+  description: "Test fails due to modifiers not including ACC_SUPER",
+  result: EXEC_FAILED,
+  bug: 66906055,
+  name: "org.apache.harmony.jpda.tests.jdwp.ReferenceType.ModifiersTest#testModifiers001"
+},
+{
+  description: "Test fails due to static values not being set correctly.",
+  result: EXEC_FAILED,
+  bug: 66905894,
+  name: "org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues006Test#testGetValues006"
+},
+{
+  description: "Tests fail with assertion error on slot number",
+  result: EXEC_FAILED,
+  bug: 66905468,
+  names: [ "org.apache.harmony.jpda.tests.jdwp.Method.VariableTableTest#testVariableTableTest001",
+           "org.apache.harmony.jpda.tests.jdwp.Method.VariableTableWithGenericTest#testVariableTableWithGenericTest001" ]
+},
+{
+  description: "Test fails with assertion error 'Invalid Path' for class path.",
+  result: EXEC_FAILED,
+  bug: 66904994,
+  name: "org.apache.harmony.jpda.tests.jdwp.VirtualMachine.ClassPathsTest#testClassPaths001"
+},
+{
+  description: "Test fails with Error VM_DEAD when trying to resume during VM_DEATH event",
+  result: EXEC_FAILED,
+  bug: 66904725,
+  name: "org.apache.harmony.jpda.tests.jdwp.Events.VMDeath002Test#testVMDeathRequest"
+},
+{
+  description: "Test fails with OPAQUE_FRAME error due to attempting a GetLocalReference on a proxy frame instead of GetLocalInstance!",
+  result: EXEC_FAILED,
+  bug: 66903662,
+  name: "org.apache.harmony.jpda.tests.jdwp.StackFrame.ProxyThisObjectTest#testThisObject"
+},
+{
+  description: "Test fails with unexpected TYPE_MISMATCH error",
+  result: EXEC_FAILED,
+  bug: 66904008,
+  name: "org.apache.harmony.jpda.tests.jdwp.StackFrame.ThisObjectTest#testThisObjectTest001"
+},
+{
+  description: "Tests that fail only on ART with INVALID_SLOT error",
+  result: EXEC_FAILED,
+  bug: 66903181,
+  names: [ "org.apache.harmony.jpda.tests.jdwp.EventModifiers.InstanceOnlyModifierTest#testBreakpoint",
+           "org.apache.harmony.jpda.tests.jdwp.EventModifiers.InstanceOnlyModifierTest#testException",
+           "org.apache.harmony.jpda.tests.jdwp.EventModifiers.InstanceOnlyModifierTest#testFieldAccess",
+           "org.apache.harmony.jpda.tests.jdwp.EventModifiers.InstanceOnlyModifierTest#testFieldModification",
+           "org.apache.harmony.jpda.tests.jdwp.EventModifiers.InstanceOnlyModifierTest#testMethodEntry",
+           "org.apache.harmony.jpda.tests.jdwp.EventModifiers.InstanceOnlyModifierTest#testMethodExit",
+           "org.apache.harmony.jpda.tests.jdwp.EventModifiers.InstanceOnlyModifierTest#testMethodExitWithReturnValue" ]
+},
+{
+  description: "Tests for VMDebug functionality not implemented in the upstream libjdwp",
+  result: EXEC_FAILED,
+  names: [ "org.apache.harmony.jpda.tests.jdwp.VMDebug.VMDebugTest#testVMDebug",
+           "org.apache.harmony.jpda.tests.jdwp.VMDebug.VMDebugTest002#testVMDebug" ]
+},
+/* TODO Categorize these failures more. */
+{
+  description: "Tests that fail on both ART and RI. These tests are likely incorrect",
+  result: EXEC_FAILED,
+  bug: 66906734,
+  names: [ "org.apache.harmony.jpda.tests.jdwp.ArrayReference.SetValues003Test#testSetValues003_InvalidIndex",
+           "org.apache.harmony.jpda.tests.jdwp.ClassType.InvokeMethod002Test#testInvokeMethod_wrong_argument_types",
+           "org.apache.harmony.jpda.tests.jdwp.ClassType.InvokeMethodTest#testInvokeMethod002",
+           "org.apache.harmony.jpda.tests.jdwp.ClassType.InvokeMethodTest#testInvokeMethod003",
+           "org.apache.harmony.jpda.tests.jdwp.ClassType.NewInstanceTest#testNewInstance002",
+           "org.apache.harmony.jpda.tests.jdwp.ClassType.SetValues002Test#testSetValues002",
+           "org.apache.harmony.jpda.tests.jdwp.Events.ClassPrepare002Test#testClassPrepareCausedByDebugger",
+           "org.apache.harmony.jpda.tests.jdwp.Events.ExceptionCaughtTest#testExceptionEvent_ThrowLocation_FromNative",
+           "org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionTest#testDisableCollection_null",
+           "org.apache.harmony.jpda.tests.jdwp.ObjectReference.EnableCollectionTest#testEnableCollection_invalid",
+           "org.apache.harmony.jpda.tests.jdwp.ObjectReference.EnableCollectionTest#testEnableCollection_null",
+           "org.apache.harmony.jpda.tests.jdwp.ObjectReference.GetValues002Test#testGetValues002",
+           "org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValues003Test#testSetValues003",
+           "org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValuesTest#testSetValues001",
+           "org.apache.harmony.jpda.tests.jdwp.ReferenceType.FieldsWithGenericTest#testFieldsWithGeneric001",
+           "org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues002Test#testGetValues002",
+           "org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues004Test#testGetValues004",
+           "org.apache.harmony.jpda.tests.jdwp.StringReference.ValueTest#testStringReferenceValueTest001_NullString",
+           "org.apache.harmony.jpda.tests.jdwp.ThreadGroupReference.ChildrenTest#testChildren_NullObject",
+           "org.apache.harmony.jpda.tests.jdwp.ThreadGroupReference.NameTest#testName001_NullObject",
+           "org.apache.harmony.jpda.tests.jdwp.ThreadGroupReference.ParentTest#testParent_NullObject",
+           "org.apache.harmony.jpda.tests.jdwp.VirtualMachine.CapabilitiesNewTest#testCapabilitiesNew001" ]
+},
+{
+  description: "Test for ddms extensions that are not implemented for prebuilt-libjdwp",
+  result: EXEC_FAILED,
+  bug: 69169846,
+  name: "org.apache.harmony.jpda.tests.jdwp.DDM.DDMTest#testChunk001"
+},
+]

@@ -1,0 +1,3 @@
+Tests basic obsolete method support
+
+Tests that we correctly handle exceptions thrown through obsolete methods.

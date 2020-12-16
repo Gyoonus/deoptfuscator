@@ -1,0 +1,16 @@
+class Main
+class Main
+class Main$Other
+class Main$Other
+class java.lang.System
+class java.lang.System
+Hello from OtherWithClinit
+42
+class Main$OtherWithClinit
+42
+class Main$OtherWithClinit
+class Main$OtherWithClinit2
+Hello from OtherWithClinit2
+43
+class Main$OtherWithClinit2
+43

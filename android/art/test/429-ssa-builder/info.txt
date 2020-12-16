@@ -1,0 +1,3 @@
+Regression test for the type propagation phase of the optimizing
+compiler, that used to crash when dealing with phi floating-point
+equivalents.

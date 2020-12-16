@@ -1,0 +1,8 @@
+JNI_OnLoad called
+Hello
+	Breakpoint reached: public void Main$Transform.sayHi() @ line=27
+Hello
+Redefining transform!
+Goodbye
+	Breakpoint reached: public void Main$Transform.sayHi() @ line=20
+Goodbye

@@ -1,0 +1,12 @@
+Main:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Main
+Super:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Super
+SubA:
+  @@com.android.jack.annotations.ForceInMainDex
+  class SubA
+SubB
+  @@com.android.jack.annotations.ForceInMainDex
+  class SubB

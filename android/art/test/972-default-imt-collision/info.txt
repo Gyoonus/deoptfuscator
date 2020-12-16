@@ -1,0 +1,1 @@
+Test for interaction of miranda and non-miranda methods on interface dispatch.

@@ -1,0 +1,1 @@
+Regression test for classes that have conflict tables but no methods. b/28707801

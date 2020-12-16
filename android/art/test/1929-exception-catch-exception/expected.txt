@@ -1,0 +1,302 @@
+Test "art.Test1929$DoThrowClass": Running breakpoint with handler "art.Test1929$DoNothingHandler"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: doThrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowClass": Caught error art.Test1929$TestException:"doThrow" with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowClass": Finished running with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchBaseTestException": Running breakpoint with handler "art.Test1929$DoNothingHandler"
+main: public static void art.Test1929.throwCatchBaseTestException() @ line = 140 caught class art.Test1929$TestException: throwCatchBaseTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchBaseTestException() @ line = 140
+		public void art.Test1929$DoThrowCatchBaseTestException.run() @ line = 149
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Doing nothing!
+Caught art.Test1929$TestException: "throwCatchBaseTestException"
+Test "art.Test1929$DoThrowCatchBaseTestException": No error caught with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchBaseTestException": Finished running with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Running breakpoint with handler "art.Test1929$DoNothingHandler"
+main: public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161 caught class art.Test1929$TestException: throwCatchBaseTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161
+		public static void art.Test1929.throwCatchBaseTestExceptionTwice() @ line = 197
+		public void art.Test1929$DoThrowCatchBaseTestExceptionTwice.run() @ line = 201
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchBaseTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": No error caught with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Finished running with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchTestException": Running breakpoint with handler "art.Test1929$DoNothingHandler"
+main: public static void art.Test1929.throwCatchTestException() @ line = 207 caught class art.Test1929$TestException: throwCatchTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchTestException() @ line = 207
+		public void art.Test1929$DoThrowCatchTestException.run() @ line = 216
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Doing nothing!
+Caught art.Test1929$TestException: "throwCatchTestException"
+Test "art.Test1929$DoThrowCatchTestException": No error caught with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchTestException": Finished running with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Running breakpoint with handler "art.Test1929$DoNothingHandler"
+main: public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179 caught class art.Test1929$TestException: throwCatchTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179
+		public static void art.Test1929.throwCatchTestExceptionTwice() @ line = 222
+		public void art.Test1929$DoThrowCatchTestExceptionTwice.run() @ line = 226
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": No error caught with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Finished running with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Running breakpoint with handler "art.Test1929$DoNothingHandler"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: throwCatchTestExceptionNoRethrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Caught error art.Test1929$TestException:"throwCatchTestExceptionNoRethrow" with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Finished running with handler "art.Test1929$DoNothingHandler"
+Test "art.Test1929$DoThrowClass": Running breakpoint with handler "art.Test1929$ThrowCatchBase"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: doThrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowClass": Caught error art.Test1929$TestException:"doThrow" with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowClass": Finished running with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchBaseTestException": Running breakpoint with handler "art.Test1929$ThrowCatchBase"
+main: public static void art.Test1929.throwCatchBaseTestException() @ line = 140 caught class art.Test1929$TestException: throwCatchBaseTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchBaseTestException() @ line = 140
+		public void art.Test1929$DoThrowCatchBaseTestException.run() @ line = 149
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Throwing BaseTestException and catching it!
+Caught art.Test1929$BaseTestException: "ThrowBaseHandler during throw from public static void art.Test1929.throwCatchBaseTestException() @ line = 140"
+Caught art.Test1929$TestException: "throwCatchBaseTestException"
+Test "art.Test1929$DoThrowCatchBaseTestException": No error caught with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchBaseTestException": Finished running with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Running breakpoint with handler "art.Test1929$ThrowCatchBase"
+main: public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161 caught class art.Test1929$TestException: throwCatchBaseTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161
+		public static void art.Test1929.throwCatchBaseTestExceptionTwice() @ line = 197
+		public void art.Test1929$DoThrowCatchBaseTestExceptionTwice.run() @ line = 201
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchBaseTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": No error caught with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Finished running with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchTestException": Running breakpoint with handler "art.Test1929$ThrowCatchBase"
+main: public static void art.Test1929.throwCatchTestException() @ line = 207 caught class art.Test1929$TestException: throwCatchTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchTestException() @ line = 207
+		public void art.Test1929$DoThrowCatchTestException.run() @ line = 216
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Throwing BaseTestException and catching it!
+Caught art.Test1929$BaseTestException: "ThrowBaseHandler during throw from public static void art.Test1929.throwCatchTestException() @ line = 207"
+Caught art.Test1929$TestException: "throwCatchTestException"
+Test "art.Test1929$DoThrowCatchTestException": No error caught with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchTestException": Finished running with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Running breakpoint with handler "art.Test1929$ThrowCatchBase"
+main: public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179 caught class art.Test1929$TestException: throwCatchTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179
+		public static void art.Test1929.throwCatchTestExceptionTwice() @ line = 222
+		public void art.Test1929$DoThrowCatchTestExceptionTwice.run() @ line = 226
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": No error caught with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Finished running with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Running breakpoint with handler "art.Test1929$ThrowCatchBase"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: throwCatchTestExceptionNoRethrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Caught error art.Test1929$TestException:"throwCatchTestExceptionNoRethrow" with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Finished running with handler "art.Test1929$ThrowCatchBase"
+Test "art.Test1929$DoThrowClass": Running breakpoint with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: doThrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowClass": Caught error art.Test1929$TestException:"doThrow" with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowClass": Finished running with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchBaseTestException": Running breakpoint with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+main: public static void art.Test1929.throwCatchBaseTestException() @ line = 140 caught class art.Test1929$TestException: throwCatchBaseTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchBaseTestException() @ line = 140
+		public void art.Test1929$DoThrowCatchBaseTestException.run() @ line = 149
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Throwing BaseTestException!
+Test "art.Test1929$DoThrowCatchBaseTestException": Caught error art.Test1929$BaseTestException:"ThrowBaseHandler during throw from public static void art.Test1929.throwCatchBaseTestException() @ line = 140" with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchBaseTestException": Finished running with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Running breakpoint with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+main: public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161 caught class art.Test1929$TestException: throwCatchBaseTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161
+		public static void art.Test1929.throwCatchBaseTestExceptionTwice() @ line = 197
+		public void art.Test1929$DoThrowCatchBaseTestExceptionTwice.run() @ line = 201
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchBaseTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": No error caught with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Finished running with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchTestException": Running breakpoint with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+main: public static void art.Test1929.throwCatchTestException() @ line = 207 caught class art.Test1929$TestException: throwCatchTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchTestException() @ line = 207
+		public void art.Test1929$DoThrowCatchTestException.run() @ line = 216
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Throwing BaseTestException!
+Test "art.Test1929$DoThrowCatchTestException": Caught error art.Test1929$BaseTestException:"ThrowBaseHandler during throw from public static void art.Test1929.throwCatchTestException() @ line = 207" with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchTestException": Finished running with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Running breakpoint with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+main: public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179 caught class art.Test1929$TestException: throwCatchTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179
+		public static void art.Test1929.throwCatchTestExceptionTwice() @ line = 222
+		public void art.Test1929$DoThrowCatchTestExceptionTwice.run() @ line = 226
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": No error caught with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Finished running with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Running breakpoint with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: throwCatchTestExceptionNoRethrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Caught error art.Test1929$TestException:"throwCatchTestExceptionNoRethrow" with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Finished running with handler "art.Test1929$ThrowBaseTestExceptionHandler"
+Test "art.Test1929$DoThrowClass": Running breakpoint with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: doThrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowClass": Caught error art.Test1929$TestException:"doThrow" with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowClass": Finished running with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchBaseTestException": Running breakpoint with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+main: public static void art.Test1929.throwCatchBaseTestException() @ line = 140 caught class art.Test1929$TestException: throwCatchBaseTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchBaseTestException() @ line = 140
+		public void art.Test1929$DoThrowCatchBaseTestException.run() @ line = 149
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Throwing TestExceptionNoRethrow!
+Test "art.Test1929$DoThrowCatchBaseTestException": Caught error art.Test1929$TestExceptionNoRethrow:"ThrowTestExceptionNoRethrowHandler during throw from public static void art.Test1929.throwCatchBaseTestException() @ line = 140" with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchBaseTestException": Finished running with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Running breakpoint with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+main: public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161 caught class art.Test1929$TestException: throwCatchBaseTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchBaseTestExceptionTwiceImpl() @ line = 161
+		public static void art.Test1929.throwCatchBaseTestExceptionTwice() @ line = 197
+		public void art.Test1929$DoThrowCatchBaseTestExceptionTwice.run() @ line = 201
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchBaseTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": No error caught with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchBaseTestExceptionTwice": Finished running with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchTestException": Running breakpoint with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+main: public static void art.Test1929.throwCatchTestException() @ line = 207 caught class art.Test1929$TestException: throwCatchTestException
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.throwCatchTestException() @ line = 207
+		public void art.Test1929$DoThrowCatchTestException.run() @ line = 216
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+	Throwing TestExceptionNoRethrow!
+Test "art.Test1929$DoThrowCatchTestException": Caught error art.Test1929$TestExceptionNoRethrow:"ThrowTestExceptionNoRethrowHandler during throw from public static void art.Test1929.throwCatchTestException() @ line = 207" with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchTestException": Finished running with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Running breakpoint with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+main: public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179 caught class art.Test1929$TestException: throwCatchTestExceptionTwice
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929$Impl.throwCatchTestExceptionTwiceImpl() @ line = 179
+		public static void art.Test1929.throwCatchTestExceptionTwice() @ line = 222
+		public void art.Test1929$DoThrowCatchTestExceptionTwice.run() @ line = 226
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 280
+Caught art.Test1929$TestException: "throwCatchTestExceptionTwice"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": No error caught with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionTwice": Finished running with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Running breakpoint with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+main: public static void art.Test1929.run() throws java.lang.Exception @ line = 283 caught class art.Test1929$TestException: throwCatchTestExceptionNoRethrow
+	Current Stack:
+		private static native art.StackTrace$StackFrameData[] art.StackTrace.nativeGetStackTrace(java.lang.Thread) @ line = -1
+		public static art.StackTrace$StackFrameData[] art.StackTrace.GetStackTrace(java.lang.Thread) @ line = 61
+		private static void art.Test1929.PrintStack() @ line = 52
+		public static void art.Test1929.ExceptionCatchEvent(java.lang.Thread,java.lang.reflect.Executable,long,java.lang.Throwable) @ line = 65
+		public static void art.Test1929.run() throws java.lang.Exception @ line = 283
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Caught error art.Test1929$TestException:"throwCatchTestExceptionNoRethrow" with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"
+Test "art.Test1929$DoThrowCatchTestExceptionNoRethrow": Finished running with handler "art.Test1929$ThrowTestExceptionNoRethrowHandler"

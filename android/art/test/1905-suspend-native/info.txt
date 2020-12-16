@@ -1,0 +1,1 @@
+Tests jvmti suspending of a thread that is spinning in native code.

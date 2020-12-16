@@ -1,0 +1,1 @@
+Regression test for verifier crash when processing a final abstract (erroneous) class.

@@ -1,0 +1,2 @@
+Tests interaction between the JIT and the method tracing
+functionality.

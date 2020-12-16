@@ -1,0 +1,6 @@
+checkAccessModes...PASS
+checkInstantiatedVarHandles...vz...vb...vc...vs...vi...vj...vf...vd...vo...vfz...vfb...vfc...vfs...vfi...vfj...vff...vfd...vfo...vfss...vsz...vsb...vsc...vss...vsi...vsj...vsf...vsd...vso...vaz...vab...vac...vas...vai...vaj...vaf...vad...vao...vbaz...vbab...vbac...vbas...vbai...vbaj...vbaf...vbad...vbao...vbbz...vbbb...vbbc...vbbs...vbbi...vbbj...vbbf...vbbd...vbbo...PASS
+LookupCheckA...PASS
+LookupCheckB...PASS
+UnreflectCheck...PASS
+LookupCheckC...PASS

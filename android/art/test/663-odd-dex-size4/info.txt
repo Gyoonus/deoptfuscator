@@ -1,0 +1,19 @@
+Test for an aligned dex file followed by a dex file with an odd size.
+
+The code in classes.dex is:
+
+class Foo {
+}
+
+The code in classes2.dex is:
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("HelloWorld");
+  }
+}
+
+The generated dex file was then manually edited to:
+1) Add 1 to the size value in the dex header.
+2) Add 1 byte to the file.
+3) Change the checksum in the dex header.

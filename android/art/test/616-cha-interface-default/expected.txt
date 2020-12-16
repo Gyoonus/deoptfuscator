@@ -1,0 +1,1 @@
+JNI_OnLoad called

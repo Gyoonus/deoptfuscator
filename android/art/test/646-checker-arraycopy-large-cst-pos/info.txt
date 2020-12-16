@@ -1,0 +1,4 @@
+Regression test for an issue with a depleted VIXL scratch register
+pool during the emission of a SystemArrayCopy intrinsic with a large
+constant destination position, on ARM64, with read barriers
+(b/37256530).

@@ -1,0 +1,1 @@
+Tests JIT cache for page permission updates and CPU cache inconsistencies. Only runs when test runner permits JIT, e.g. --jit.

@@ -1,0 +1,2 @@
+Regression test for the linear scan register allocator, that use to
+fail compiling removeElementAt in x86.

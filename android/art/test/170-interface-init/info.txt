@@ -1,0 +1,2 @@
+Check that holding a lock on an interface class does not block initialization of an
+implementing class.

@@ -1,0 +1,14 @@
+In static method
+In static method with 2 args 1 2
+In static method with 5 args 1 2 3 4 5
+In static method with 7 args 1 2 3 4 5 6 7
+Forced GC
+java.lang.Error: Error
+Forced GC
+In static method with object arg class java.lang.Object
+Forced GC
+Forced GC
+Forced GC
+Forced GC
+Forced GC
+Forced GC

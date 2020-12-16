@@ -1,0 +1,1 @@
+Tests that phis with check-casted reference type inputs are typed.

@@ -1,0 +1,12 @@
+Stepping through doMultiPath(true)
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=41
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=42
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=43
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=47
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=48
+Stepping through doMultiPath(false)
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=41
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=42
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=45
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=47
+Single step: public static void art.Test997.doMultiPath(boolean) @ line=48

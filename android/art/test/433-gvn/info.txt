@@ -1,0 +1,3 @@
+Regression test for the optimizing compiler's GVN, that
+used to not take into account all side effects between
+a dominator and its dominated blocks.

@@ -1,0 +1,2 @@
+Regression test for the linear scan register allocator. It used
+to miscompute the number of live registers at a safepoint.

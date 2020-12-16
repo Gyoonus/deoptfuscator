@@ -1,0 +1,5 @@
+A simple test that forces many monitors to be inflated, while checking
+that hashcodes are consistently maintained.
+
+This allocates more monitors and hence may exercise the monitor pool
+differently, and with more context, than the monitor_pool_test gtest.

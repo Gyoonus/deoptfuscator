@@ -1,0 +1,1 @@
+Test that daemon threads that call into a JNI env after the runtime is shutdown do not crash.

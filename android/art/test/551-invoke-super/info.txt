@@ -1,0 +1,1 @@
+Tests the invoke-super opcode when resolving to an abstract method.

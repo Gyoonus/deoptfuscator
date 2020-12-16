@@ -1,0 +1,1 @@
+Test for the native bridge interface.

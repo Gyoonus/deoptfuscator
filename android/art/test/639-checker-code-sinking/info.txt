@@ -1,0 +1,1 @@
+Checker tests for the code sinking optimization pass.

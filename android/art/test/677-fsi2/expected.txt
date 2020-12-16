@@ -1,0 +1,4 @@
+Run default
+Hello World
+Run without dex2oat
+Hello World

@@ -1,0 +1,4 @@
+Checker test to make sure we recognize the pattern:
+if (foo.getClass() == Foo.class)
+
+For doing better type propagation.

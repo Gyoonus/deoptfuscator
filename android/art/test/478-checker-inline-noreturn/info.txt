@@ -1,0 +1,3 @@
+Tests inlining a function with a no-exit loop into a loop. LinearOrder
+computation fails because of incorrect HLoopInformation if we inline
+a loop without an exit.

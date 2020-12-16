@@ -1,0 +1,2 @@
+JNI_OnLoad called
+Finishing

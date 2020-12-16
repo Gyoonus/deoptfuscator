@@ -1,0 +1,82 @@
+//
+// Copyright (C) 2014 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+// Build variants {target,host} x {debug,ndebug} x {32,64}
+
+cc_defaults {
+    name: "imgdiag-defaults",
+    host_supported: true,
+    srcs: ["imgdiag.cc"],
+    defaults: ["art_defaults"],
+
+    // Note that this tool needs to be built for both 32-bit and 64-bit since it requires
+    // that the image it's analyzing be the same ISA as the runtime ISA.
+    compile_multilib: "both",
+
+    shared_libs: [
+        "libbacktrace",
+        "libbase",
+    ],
+    target: {
+        android: {
+            shared_libs: ["libcutils"],
+        },
+        host: {
+            shared_libs: ["libziparchive"],
+        },
+    },
+    header_libs: [
+        "art_cmdlineparser_headers",
+    ],
+    multilib: {
+        lib32: {
+            suffix: "32",
+        },
+        lib64: {
+            suffix: "64",
+        },
+    },
+    symlink_preferred_arch: true,
+}
+
+art_cc_binary {
+    name: "imgdiag",
+    defaults: ["imgdiag-defaults"],
+    shared_libs: [
+        "libart",
+        "libart-compiler",
+    ],
+}
+
+art_cc_binary {
+    name: "imgdiagd",
+    defaults: [
+        "art_debug_defaults",
+        "imgdiag-defaults",
+    ],
+    shared_libs: [
+        "libartd",
+        "libartd-compiler",
+    ],
+}
+
+art_cc_test {
+    name: "art_imgdiag_tests",
+    defaults: [
+        "art_gtest_defaults",
+    ],
+    srcs: ["imgdiag_test.cc"],
+}

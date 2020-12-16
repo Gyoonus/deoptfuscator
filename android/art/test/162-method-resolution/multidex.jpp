@@ -1,0 +1,127 @@
+Test1Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test1Base
+Test1Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test1Derived
+Test1User2:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test1User2
+
+Test2Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test2Base
+Test2Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test2Derived
+Test2Interface:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test2Interface
+Test2User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test2User
+Test2User2:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test2User2
+
+Test3Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test3Base
+Test3Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test3Derived
+Test3Interface:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test3Interface
+
+Test4Interface:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test4Interface
+Test4Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test4Derived
+Test4User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test4User
+
+Test5Interface:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test5Interface
+Test5Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test5Base
+Test5Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test5Derived
+Test5User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test5User
+Test5User2:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test5User2
+
+Test6Interface:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test6Interface
+Test6Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test6Derived
+Test6User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test6User
+Test6User2:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test6User2
+
+Test7Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test7Base
+Test7Interface:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test7Interface
+Test7Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test7Derived
+Test7User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test7User
+
+Test8Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test8Base
+Test8Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test8Derived
+Test8User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test8User
+Test8User2:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test8User2
+
+Test9Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test9Base
+Test9Derived:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test9Derived
+Test9User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test9User
+Test9User2:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test9User2
+
+Test10Base:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test10Base
+Test10Interface:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test10Interface
+Test10User:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Test10User
+
+Main:
+  @@com.android.jack.annotations.ForceInMainDex
+  class Main

@@ -1,0 +1,68 @@
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Includes every single offset file in art.
+// Useful for processing every single offset together.
+
+// Usage:
+// #define DEFINE_INCLUDE_DEPENDENCIES
+// #include "offsets_all.def"
+// to automatically include each def file's header dependencies.
+//
+// Afterwards,
+// #define DEFINE_EXPR(define_name, field_type, expr) ...
+// #include "offsets_all.def"
+// to process each offset however one wants.
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#define DEFINE_EXPR(define_name, field_type, expr)
+#endif
+
+#if !defined(DEFINE_EXPR)
+#error "Either DEFINE_INCLUDE_DEPENDENCIES or DEFINE_EXPR must be defined"
+#endif
+
+#include "constant_reference.def"
+#include "offset_runtime.def"
+// TODO: rest of THREAD_ offsets (depends on __SIZEOF__POINTER__).
+#include "offset_thread.def"
+// TODO: SHADOW_FRAME depends on __SIZEOF__POINTER__
+// #include "offset_shadow_frame.def"
+// TODO: MIRROR_OBJECT_HEADER_SIZE (depends on #ifdef read barrier)
+#include "offset_mirror_class.def"
+#include "offset_mirror_dex_cache.def"
+#include "offset_mirror_object.def"
+#include "constant_class.def"
+// TODO: MIRROR_*_ARRAY offsets (depends on header size)
+// TODO: MIRROR_STRING offsets (depends on header size)
+#include "offset_art_method.def"
+#include "constant_dexcache.def"
+#include "constant_card_table.def"
+#include "constant_heap.def"
+#include "constant_lockword.def"
+#include "constant_globals.def"
+#include "constant_rosalloc.def"
+#include "constant_thread.def"
+#include "constant_jit.def"
+
+// TODO: MIRROR_OBJECT_HEADER_SIZE #ifdef depends on read barriers
+// TODO: Array offsets (depends on MIRROR_OBJECT_HEADER_SIZE)
+
+#if defined(DEFINE_INCLUDE_DEPENDENCIES)
+#undef DEFINE_EXPR
+#undef DEFINE_INCLUDE_DEPENDENCIES
+#endif
+
+

@@ -1,0 +1,1 @@
+This checks the neg_double bytecode.

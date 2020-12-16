@@ -1,0 +1,1 @@
+Tests the invoke-super opcode when the super class does not have the method.

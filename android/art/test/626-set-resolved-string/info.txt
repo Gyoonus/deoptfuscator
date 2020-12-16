@@ -1,0 +1,3 @@
+Test that even if Java code calls DexCache.setResolvedString and does
+not strongly intern the given string, the JIT will ensure that the
+strings it references are strongly interned.

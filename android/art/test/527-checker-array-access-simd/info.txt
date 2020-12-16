@@ -1,0 +1,1 @@
+Test arm- and arm64-specific array access optimization for simd loops.

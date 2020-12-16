@@ -1,0 +1,3 @@
+Regression test for the concurrent GC whose region space had
+a bug when the request for allocation ended up using 'usable_size'
+instead of the initially requested number of bytes.

@@ -1,0 +1,14 @@
+wimp: [FinalizerTest message=wahoo, finalized=false]
+gc
+wimp: null
+finalize
+wimp: null
+sleep
+reborn: [FinalizerTest message=wahoo, finalized=true]
+wimp: null
+reset reborn
+gc + finalize
+sleep
+reborn: [FinalizerTest message=nothing, finalized=false]
+wimp: null
+After sleep finalized 1024 / 1024

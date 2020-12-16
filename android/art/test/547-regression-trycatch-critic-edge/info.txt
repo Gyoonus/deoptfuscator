@@ -1,0 +1,2 @@
+Test a specific SSA building regression a back edge would not be split due to
+being on try/catch boundary.

@@ -1,0 +1,3 @@
+Test ensuring class initializations checks (and load class instructions)
+added by the graph builder during the construction of a static invoke
+are properly pruned.

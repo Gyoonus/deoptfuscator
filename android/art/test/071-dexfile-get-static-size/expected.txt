@@ -1,0 +1,4 @@
+Size for test1.dex: 1864
+Size for test2.dex: 1264
+Size for test-jar.jar: 1864
+Size for multi-jar.jar: 3128

@@ -1,0 +1,3 @@
+Test features with a secondary dex file.
+
+- Regression test to ensure slow path of direct invoke does null check.

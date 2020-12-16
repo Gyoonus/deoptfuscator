@@ -1,0 +1,3 @@
+Regression test for a bug where an inlined call to a static method
+failed to emit a prior initialization check of the method's declaring
+class.

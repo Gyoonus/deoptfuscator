@@ -1,0 +1,6 @@
+Smali-based tests for experimental interface static methods.
+
+This tests invoke-super with default methods.
+
+To run with --jvm you must export JAVA_HOME to a java-8 installation and pass
+the --use-java-home to run-test

@@ -1,0 +1,22 @@
+hello2
+hello1
+Not doing anything here
+hello0
+goodbye0
+goodbye1
+goodbye2
+hello2
+hello1
+transforming calling function
+hello0 - transformed
+goodbye0 - transformed
+goodbye1
+goodbye2
+hello2 - transformed
+hello1 - transformed
+Not doing anything here
+hello0 - transformed
+goodbye0 - transformed
+goodbye1 - transformed
+goodbye2 - transformed
+

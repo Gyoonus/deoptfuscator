@@ -1,0 +1,2 @@
+Regression test for the interpreter/JIT, where the interpreter used to not
+record inline caches when seeing an intrinsic.

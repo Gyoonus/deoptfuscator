@@ -1,0 +1,2 @@
+Regression test (b/72440777) for load store elimination across invocation
+that has only write side effects.

@@ -1,0 +1,131 @@
+Testing for type A
+A-virtual           A.SayHi()='Hi '
+A-interface   Greeter.SayHi()='Hi '
+A-virtual           A.SayHiTwice()='Hi Hi '
+A-interface   Greeter.SayHiTwice()='Hi Hi '
+End testing for type A
+Testing for type B
+B-virtual           B.SayHi()='Hello '
+B-interface   Greeter.SayHi()='Hello '
+B-interface  Greeter2.SayHi()='Hello '
+B-virtual           B.SayHiTwice()='I say Hello Hello '
+B-interface   Greeter.SayHiTwice()='I say Hello Hello '
+B-interface  Greeter2.SayHiTwice()='I say Hello Hello '
+End testing for type B
+Testing for type C
+C-virtual           A.SayHi()='Hi '
+C-virtual           C.SayHi()='Hi '
+C-interface   Greeter.SayHi()='Hi '
+C-virtual           A.SayHiTwice()='You don't control me'
+C-virtual           C.SayHiTwice()='You don't control me'
+C-interface   Greeter.SayHiTwice()='You don't control me'
+End testing for type C
+Testing for type D
+D-virtual           D.GetName()='Alex '
+D-interface  Greeter3.GetName()='Alex '
+D-virtual           D.SayHi()='Hello Alex '
+D-interface   Greeter.SayHi()='Hello Alex '
+D-interface  Greeter3.SayHi()='Hello Alex '
+D-virtual           D.SayHiTwice()='Hello Alex Hello Alex '
+D-interface   Greeter.SayHiTwice()='Hello Alex Hello Alex '
+D-interface  Greeter3.SayHiTwice()='Hello Alex Hello Alex '
+End testing for type D
+Testing for type E
+E-virtual           A.SayHi()='Hi2 '
+E-virtual           E.SayHi()='Hi2 '
+E-interface   Greeter.SayHi()='Hi2 '
+E-interface  Greeter2.SayHi()='Hi2 '
+E-virtual           A.SayHiTwice()='I say Hi2 Hi2 '
+E-virtual           E.SayHiTwice()='I say Hi2 Hi2 '
+E-interface   Greeter.SayHiTwice()='I say Hi2 Hi2 '
+E-interface  Greeter2.SayHiTwice()='I say Hi2 Hi2 '
+End testing for type E
+Testing for type F
+F-interface Attendant.GetPlace()='android'
+F-virtual           F.GetPlace()='android'
+F-virtual           A.SayHi()='Hi '
+F-interface Attendant.SayHi()='Hi '
+F-virtual           F.SayHi()='Hi '
+F-interface   Greeter.SayHi()='Hi '
+F-virtual           A.SayHiTwice()='We can override both interfaces'
+F-interface Attendant.SayHiTwice()='We can override both interfaces'
+F-virtual           F.SayHiTwice()='We can override both interfaces'
+F-interface   Greeter.SayHiTwice()='We can override both interfaces'
+End testing for type F
+Testing for type G
+G-interface Attendant.GetPlace()='android'
+G-virtual           G.GetPlace()='android'
+G-interface Attendant.SayHi()='welcome to android'
+G-virtual           G.SayHi()='welcome to android'
+G-interface Attendant.SayHiTwice()='welcome to androidwelcome to android'
+G-virtual           G.SayHiTwice()='welcome to androidwelcome to android'
+End testing for type G
+Testing for type H
+H-interface Extension.SayHi()='welcome '
+H-virtual           H.SayHi()='welcome '
+End testing for type H
+Testing for type I
+I-virtual           A.SayHi()='Hi '
+I-interface   Greeter.SayHi()='Hi '
+I-interface  Greeter2.SayHi()='Hi '
+I-virtual           I.SayHi()='Hi '
+I-virtual           A.SayHiTwice()='I say Hi Hi '
+I-interface   Greeter.SayHiTwice()='I say Hi Hi '
+I-interface  Greeter2.SayHiTwice()='I say Hi Hi '
+I-virtual           I.SayHiTwice()='I say Hi Hi '
+End testing for type I
+Testing for type J
+J-virtual           A.SayHi()='Hi '
+J-interface   Greeter.SayHi()='Hi '
+J-virtual           J.SayHi()='Hi '
+J-virtual           A.SayHiTwice()='Hi Hi '
+J-interface   Greeter.SayHiTwice()='Hi Hi '
+J-virtual           J.SayHiTwice()='Hi Hi '
+End testing for type J
+Testing for type K
+K-interface       Foo.bar()='foobar'
+K-virtual           K.bar()='foobar'
+End testing for type K
+Testing for type L
+L-interface       Foo.bar()='foobar'
+L-virtual           K.bar()='foobar'
+L-virtual           L.bar()='foobar'
+End testing for type L
+Testing for type M
+M-interface       Foo.bar()='BAZ!'
+M-interface     Fooer.bar()='BAZ!'
+M-virtual           K.bar()='BAZ!'
+M-virtual           L.bar()='BAZ!'
+M-virtual           M.bar()='BAZ!'
+End testing for type M
+Testing for type N
+N-interface       Foo.bar()='foobar'
+N-virtual           N.bar()='foobar'
+End testing for type N
+Testing for type O
+O-interface       Foo.bar()='foobar foobar'
+O-interface      Foo2.bar()='foobar foobar'
+O-virtual           N.bar()='foobar foobar'
+O-virtual           O.bar()='foobar foobar'
+End testing for type O
+Testing for type P
+P-interface       Foo.bar()='not foobar!'
+P-interface      Foo2.bar()='not foobar!'
+P-virtual           N.bar()='not foobar!'
+P-virtual           O.bar()='not foobar!'
+P-virtual           P.bar()='not foobar!'
+End testing for type P
+Testing for type Q
+Q-interface on Foo: bar() threw exception!
+Exception is of type java.lang.IncompatibleClassChangeError
+Q-interface on Foo2: bar() threw exception!
+Exception is of type java.lang.IncompatibleClassChangeError
+Q-interface on Foo3: bar() threw exception!
+Exception is of type java.lang.IncompatibleClassChangeError
+Q-virtual on N: bar() threw exception!
+Exception is of type java.lang.IncompatibleClassChangeError
+Q-virtual on O: bar() threw exception!
+Exception is of type java.lang.IncompatibleClassChangeError
+Q-virtual on Q: bar() threw exception!
+Exception is of type java.lang.IncompatibleClassChangeError
+End testing for type Q

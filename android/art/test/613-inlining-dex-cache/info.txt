@@ -1,0 +1,2 @@
+Regression test for the JIT compiler which used to
+wrongly update the dex cache of a class loader.

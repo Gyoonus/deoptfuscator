@@ -1,0 +1,3 @@
+Test that once a const-class instruction is linked, it will keep referring
+to the same class even in the presence of custom class loaders even after
+clearing the dex cache type array.

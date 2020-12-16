@@ -1,0 +1,11 @@
+Regression test for art::PrepareForRegisterAllocation, which replaces
+
+  ArraySet[array, index, BoundType[NullConstant]]
+
+with
+
+  ArraySet[array, index, NullConstant]
+
+but used to forget to remove the "need for a type check" bit in the
+ArraySet, thus failing "!may_need_runtime_call_for_type_check"
+assertions in code generators.

@@ -1,0 +1,70 @@
+4,5c4
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+< root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=8,location= 31])--> 1@1000 [size=16, length=-1]
+49c48
+< root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=10,location= 8])--> 1@1000 [size=16, length=-1]
+51c50,51
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=5,location= 21])--> 1@1000 [size=16, length=-1]
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=8,location= 21])--> 1@1000 [size=16, length=-1]
+102,103c102
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+< root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=8,location= 31])--> 1@1000 [size=16, length=-1]
+115c114
+< root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=10,location= 8])--> 1@1000 [size=16, length=-1]
+117c116,117
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=5,location= 21])--> 1@1000 [size=16, length=-1]
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=8,location= 21])--> 1@1000 [size=16, length=-1]
+162c162
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=8,location= 31])--> 1@1000 [size=16, length=-1]
+177c177
+< root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=10,location= 8])--> 1@1000 [size=16, length=-1]
+179c179,180
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=5,location= 21])--> 1@1000 [size=16, length=-1]
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=8,location= 21])--> 1@1000 [size=16, length=-1]
+201,202c202
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+< root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=8,location= 31])--> 1@1000 [size=16, length=-1]
+246c246
+< root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=10,location= 8])--> 1@1000 [size=16, length=-1]
+248c248,249
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=5,location= 21])--> 1@1000 [size=16, length=-1]
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=8,location= 21])--> 1@1000 [size=16, length=-1]
+292d292
+< root@root --(stack-local[id=1,tag=3000,depth=3,method=doFollowReferencesTest,vreg=1,location= 28])--> 3000@0 [size=136, length=-1]
+347c347
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=13,location= 30])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestNonRoot,vreg=8,location= 31])--> 1@1000 [size=16, length=-1]
+366c366
+< root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=11,location= 8])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=1,method=doFollowReferencesTestImpl,vreg=10,location= 8])--> 1@1000 [size=16, length=-1]
+368c368,369
+< root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=4,location= 19])--> 1@1000 [size=16, length=-1]
+---
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=5,location= 21])--> 1@1000 [size=16, length=-1]
+> root@root --(stack-local[id=1,tag=3000,depth=2,method=doFollowReferencesTestRoot,vreg=8,location= 21])--> 1@1000 [size=16, length=-1]
