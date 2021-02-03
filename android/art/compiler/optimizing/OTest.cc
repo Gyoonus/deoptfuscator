@@ -44,6 +44,10 @@
 #include "pretty_printer.h"
 #include "well_known_classes.h"
 
+ /* 
+  * Add OTest Suite based on GTEST framework
+  * Referneced on Dex2Oat Test module
+  */
 
 
 namespace art{
