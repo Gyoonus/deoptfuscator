@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+ /* 
+  * Add [opaque_identification] optimizing Module
+  */
 #ifndef ART_COMPILER_OPTIMIZING_OPAQUE_IDENTIFICATION_H_
 #define ART_COMPILER_OPTIMIZING_OPAQUE_IDENTIFICATION_H_
 
