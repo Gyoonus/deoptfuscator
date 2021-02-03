@@ -13,6 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+ /* 
+  * Add [opaque_location] optimizing Module
+  */
+
+
 #include "scoped_thread_state_change-inl.h"
 #include "opaque_location.h"
 #include "art_field.h"
