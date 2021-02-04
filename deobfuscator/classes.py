@@ -18,12 +18,10 @@ def dexfile(dex):
             if lcc.find(":") >= 0 :
                 num = lcc.split(" : ")
                 class_dic[int(num[0])] = int(num[1])
-                
-            '''
+            
             else if lcc.find("No") >= 0 :
                 break
-            '''
-            
+                
             else :
                 dex_locations.append(int(lcc, 16))
                 
