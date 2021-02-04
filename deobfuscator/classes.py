@@ -19,7 +19,7 @@ def dexfile(dex):
                 num = lcc.split(" : ")
                 class_dic[int(num[0])] = int(num[1])
             
-            else if lcc.find("No") >= 0 :
+            elif lcc.find("No") >= 0 :
                 break
                 
             else :
@@ -27,6 +27,7 @@ def dexfile(dex):
         
         if bool(class_dic) : 
             for dex_location in dex_locations :
+
                 f_idx = dexf_a[dex_location+2]
                 add = dexf_a[dex_location+3] << 8
                 dexf_a[dex_location] = 0x13
