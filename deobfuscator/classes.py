@@ -24,13 +24,14 @@ def dexfile(dex):
                 
             else :
                 dex_locations.append(int(lcc, 16))
-                
-        for dex_location in dex_locations :
-            
-            f_idx = dexf_a[dex_location+2]
-            add = dexf_a[dex_location+3] << 8
-            dexf_a[dex_location] = 0x13
-            dexf_a[dex_location+2] = class_dic[f_idx+add]
+        
+        if not bool(class_dic) : 
+            for dex_location in dex_locations :
+
+                f_idx = dexf_a[dex_location+2]
+                add = dexf_a[dex_location+3] << 8
+                dexf_a[dex_location] = 0x13
+                dexf_a[dex_location+2] = class_dic[f_idx+add]
             
     new_dexf.write(bytes(dexf_a))
 
