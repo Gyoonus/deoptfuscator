@@ -14,12 +14,15 @@ def dexfile(dex):
         lc = list(filter(('').__ne__, location))
         dex_locations = []
         for lcc in lc :
+            
             if lcc.find(":") >= 0 :
                 num = lcc.split(" : ")
                 class_dic[int(num[0])] = int(num[1])
-            
+                
+            '''
             else if lcc.find("No") >= 0 :
                 break
+            '''
             
             else :
                 dex_locations.append(int(lcc, 16))
@@ -30,6 +33,7 @@ def dexfile(dex):
             add = dexf_a[dex_location+3] << 8
             dexf_a[dex_location] = 0x13
             dexf_a[dex_location+2] = class_dic[f_idx+add]
+            
     new_dexf.write(bytes(dexf_a))
 
     '''
