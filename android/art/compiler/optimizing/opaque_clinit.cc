@@ -81,6 +81,8 @@ void HOpaqueClinitVisitor::VisitBasicBlock(HBasicBlock* block) {
               HInstruction* input_instruction = input_.GetInstruction();
               if (input_instruction -> GetKind() == HInstruction::kIntConstant)
                 std::cout << ref_field << " : "<< ((HIntConstant *)input_instruction)->GetValue() << std::endl; 
+              else
+               std::cout << "No_Integer" << std::endl;
            }
         }
 
