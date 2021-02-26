@@ -23,23 +23,12 @@ for dex in dex_li:
 	deobfuscator.main(".apk/"+dex)
 	os.system("$TOOLS/redex-all -c $TOOLS/default.config .apk/const/const.dex -o .apk/const")
 	print("$TOOLS/redex-all .apk/const/const.dex -o .apk/const")
-#	os.system("$TOOLS/redex-all -c $TOOLS/default.config .apk/const/const.dex -o .apk/const")
-#	print("$TOOLS/redex-all -c $TOOLS/default.config .apk/const/const.dex -o .apk/const")
 	os.system("mv .apk/const/classes.dex .apk/"+dex)
+
 apk_name = apk_name.replace(".apk", "_deobfuscated.apk")
 apk_name = os.path.basename(apk_name)
 os.system("java -jar $TOOLS/apktool.jar b ./.apk -o " + apk_name)
 
 os.system("zipalign -f -v 4 " + apk_name + " " + apk_name.replace(".apk", "_align.apk"))
 os.system("apksigner sign --ks deoptfuscator.keystore --ks-pass pass:123456 " + apk_name.replace(".apk", "_align.apk"))
-#outfile = apk_name.replace(".apk", "_align.apk")
-#os.system("mv " + outfile + " " + outpath)
 os.system("rm -rf " + apk_name)
-#os.system("rm -rf " + apk_name + " .std* .pro*")
-#os.system("rm -rf .apk")
-
-
-#file = '/home/hbryu/Desktop/deoptfuscator/.profile'
-#file_size = getsize(file)
-#if file_size != 0:
-#	os.system('cp .profile ~/Desktop/dataset/AndroZoo_profile' + apk_name + '_profile')
