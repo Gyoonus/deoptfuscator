@@ -17,7 +17,7 @@ def dexfile(dex):
             
             if lcc.find(":") >= 0 :
                 num = lcc.split(" : ")
-                class_dic[int(num[0])] = int(num[1])
+                class_dic[int(num[0], 16)] = int(num[1])
             
             elif lcc.find("No") >= 0 :
                 break
