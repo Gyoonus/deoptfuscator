@@ -49,8 +49,13 @@ Our repository Already Contains Tools needed to run our Tool
 ## HOW TO USE
 + Set Local Environment  
   ``` 
-  $. ./launch.sh
+  $ . ./launch.sh  
   ```
+    OR
+  ```
+   $ source ./launch.sh
+  ```
+
 + Deobfuscate an Android application that has been transformed using control-flow obfuscated techniques.  
   ```
   $ python3 deoptfuscator.py <obfuscated_apk>  
