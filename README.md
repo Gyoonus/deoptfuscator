@@ -1,9 +1,14 @@
 This Tool is selected as 
 [BlackHat Arsenal USA 2020](https://www.blackhat.com/us-20/arsenal/schedule/#deoptfuscator-automated-deobfuscation-of-android-bytecode-using-compilation-optimization-19958)
+
 ## What is Deoptfuscator
 
 + Deoptfuscator is a tool for deobfuscating Android applications that have been transformed using control-flow obfuscation mechanisms.
 + Deoptfuscator can reverse the control-flow obfuscation performed by DexGuard on open-source Android applications.
+
+## Contact Point
++ E-mail : gyoonus at gmail dot com [Gyoosik Kim(김규식)]
++ Mobile : 082)10-9888-2792 [김규식]
 
 ## Prerequisites
 In order to build and run deoptfuscator, the followings are required:
