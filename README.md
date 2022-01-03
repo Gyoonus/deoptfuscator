@@ -6,10 +6,6 @@ This Tool is selected as
 + Deoptfuscator is a tool for deobfuscating Android applications that have been transformed using control-flow obfuscation mechanisms.
 + Deoptfuscator can reverse the control-flow obfuscation performed by DexGuard on open-source Android applications.
 
-## Contact
-+ E-mail : gyoonus at gmail dot com [Gyoosik Kim(김규식)]
-+ Mobile : 082)10-9888-2792
-
 ## Prerequisites
 In order to build and run deoptfuscator, the followings are required:
 
@@ -76,6 +72,10 @@ Our repository Already Contains Tools needed to run our Tool
   + Our tool can currently handle the control-flow obfuscation techniques of DexGuard.
   + It cannot handle other obfuscation techniques such as layout obfuscation, identifier renaming, and string encryption.
 ![git](https://user-images.githubusercontent.com/64211521/100713131-2542b700-33f7-11eb-87f5-968d5eb13563.png)
+
+## Contact
++ E-mail : gyoonus at gmail dot com [Gyoosik Kim(김규식)]
++ Mobile : 082)10-9888-2792
 
 ## Acknowledgement
 
