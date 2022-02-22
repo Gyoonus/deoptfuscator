@@ -66,7 +66,6 @@ Our repository Already Contains Tools needed to run our Tool
   $ python3 deoptfuscator.py test/AndroZoo_DexGuard_apk/com.alienguns.scifirifles_4F326C99558145BB636D31C96488823A.apk
   ```
   + If the input file (an obfuscated app) was `com.alienguns.scifirifles_4F326C99558145BB636D31C96488823A.apk`, the file name of the deobfuscated apk is `com.alienguns.scifirifles_4F326C99558145BB636D31C96488823A_deobfuscated_align.apk`
-  + There is a problem with the license, so we stop sharing the test app for a while.
 
 + Our tool can effectively deobfuscate Android applications transformed with the control flow obfuscation option of DexGuard :
   + Our tool can currently handle the control-flow obfuscation techniques of DexGuard.
