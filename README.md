@@ -19,7 +19,7 @@ This Tool is selected as
     year = "2022",
     issn = "2169-3536",
     doi = "10.1109/ACCESS.2022.3181373",
-    url = "[http://www.sciencedirect.com/science/article/pii/S2352711019302791](https://ieeexplore.ieee.org/document/9791370)",
+    url = "https://ieeexplore.ieee.org/document/9791370",
     author = "You, Geunha and Kim, Gyoosik and Han, Sangchul and Park, Minkyu and Cho, Seong-je",
     keywords = "Android app, malicious app, obfuscation, deobfuscation, control-flow obfuscation"
  }
