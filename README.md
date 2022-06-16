@@ -9,6 +9,8 @@ This Tool is selected as
 ## Publication
 
 + More details about Obfuscapk can be found in the paper "Deoptfuscator: Defeating Advanced Control-flow Obfuscation Using Android Runtime (ART)". You can cite the paper as follows:
+
+```
 @article{you2022deoptfuscator,
   title={Deoptfuscator: Defeating Advanced Control-flow Obfuscation Using Android Runtime (ART)},
   author={You, Geunha and Kim, Gyoosik and Han, Sangchul and Park, Minkyu and Cho, Seong-je},
@@ -16,6 +18,7 @@ This Tool is selected as
   year={2022},
   publisher={IEEE}
 }
+```
 
 ## Prerequisites
 In order to build and run deoptfuscator, the followings are required:
