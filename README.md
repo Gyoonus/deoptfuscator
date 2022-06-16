@@ -12,13 +12,18 @@ This Tool is selected as
 
 ```
 @article{you2022deoptfuscator,
-  title={Deoptfuscator: Defeating Advanced Control-flow Obfuscation Using Android Runtime (ART)},
-  author={You, Geunha and Kim, Gyoosik and Han, Sangchul and Park, Minkyu and Cho, Seong-je},
-  journal={IEEE Access},
-  year={2022},
-  publisher={IEEE}
-}
-```
+    title = "Deoptfuscator: Defeating Advanced Control-flow Obfuscation Using Android Runtime (ART)",
+    journal = "IEEE Access",
+    volume = "10",
+    pages = "61426-61440",
+    year = "2022",
+    issn = "2169-3536",
+    doi = "10.1109/ACCESS.2022.3181373",
+    url = "[http://www.sciencedirect.com/science/article/pii/S2352711019302791](https://ieeexplore.ieee.org/document/9791370)",
+    author = "You, Geunha and Kim, Gyoosik and Han, Sangchul and Park, Minkyu and Cho, Seong-je",
+    keywords = "Android app, malicious app, obfuscation, deobfuscation, control-flow obfuscation"
+ }
+ ```
 
 ## Prerequisites
 In order to build and run deoptfuscator, the followings are required:
